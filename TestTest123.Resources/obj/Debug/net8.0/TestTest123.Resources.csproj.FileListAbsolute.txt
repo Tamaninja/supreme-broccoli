@@ -1,0 +1,13 @@
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\bin\Debug\net8.0\TestTest123.Resources.deps.json
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\bin\Debug\net8.0\TestTest123.Resources.dll
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\bin\Debug\net8.0\TestTest123.Resources.pdb
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\bin\Debug\net8.0\TestTest123.Resources.xml
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.AssemblyInfoInputs.cache
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.AssemblyInfo.cs
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.csproj.CoreCompileInputs.cache
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.dll
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\refint\TestTest123.Resources.dll
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.xml
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.pdb
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\ref\TestTest123.Resources.dll
