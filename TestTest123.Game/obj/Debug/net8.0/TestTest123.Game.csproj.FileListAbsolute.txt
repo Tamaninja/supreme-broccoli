@@ -16,3 +16,4 @@ D:\Tamaninja\Documents\TestTest123\TestTest123.Game\obj\Debug\net8.0\refint\Test
 D:\Tamaninja\Documents\TestTest123\TestTest123.Game\obj\Debug\net8.0\TestTest123.Game.xml
 D:\Tamaninja\Documents\TestTest123\TestTest123.Game\obj\Debug\net8.0\TestTest123.Game.pdb
 D:\Tamaninja\Documents\TestTest123\TestTest123.Game\obj\Debug\net8.0\ref\TestTest123.Game.dll
+D:\Tamaninja\Documents\TestTest123\TestTest123.Game\obj\Debug\net8.0\TestTest123.Game.sourcelink.json

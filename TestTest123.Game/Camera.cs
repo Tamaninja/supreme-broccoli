@@ -20,24 +20,21 @@ namespace TestTest123.Game
         private int vFov = 60;
 
         public float FarPlane{ get;}
-        private double hRange;
-        private double vRange;
 
         public Camera(Vector3 xyz3D, SpriteText output)
         {
             this.output = output;
             this.FarPlane = 5000f;
-            initViewport();
             Set3DPos(xyz3D);
-
+            this.output = output;
 
             RelativeSizeAxes = Axes.Both;
             RelativePositionAxes = Axes.Both;
             Anchor = Anchor.Centre;
             Origin = Anchor.Centre;
             Size = new Vector2(0.8f, 0.8f);
-
         }
+
 
         public Vector3 VisibleRange(float distance)
         {
@@ -48,32 +45,26 @@ namespace TestTest123.Game
             float vLimit = MathF.Sqrt(distanceSqrd + distanceSqrd - 2 * distanceSqrd * MathF.Cos(vFov)) / 2;
 
             Vector3 visibleRange = new Vector3(hLimit, vLimit, distance);
-            output.Text = visibleRange.ToString();  
             return (visibleRange);
         }
 
-        public Vector2 Vec3toVec2(Vector3 diff)
+        public Vector2 ToScreenSpace(Vector3 pos)
         {
+            Vector3 diff = pos - XYZ3D;
             Vector3 visibleRange = VisibleRange(diff.Z);
 
-            return (new Vector2(1/visibleRange.X*diff.X, 1/visibleRange.Y*diff.Y));
-        }
-        private void initViewport()
-        {
-            float farPlaneSqrd = FarPlane * FarPlane;
-            hRange = Math.Sqrt(farPlaneSqrd + farPlaneSqrd - 2 * farPlaneSqrd * Math.Cos(hFov));
-            vRange = Math.Sqrt(farPlaneSqrd + farPlaneSqrd - 2 * farPlaneSqrd * Math.Cos(vFov));
+
+
+            return (new Vector2(1/visibleRange.X*diff.X, -1/visibleRange.Y*diff.Y));
         }
         public void Set3DPos(Vector3 xyz3D)
         {
             XYZ3D = xyz3D;
-            output.Text = xyz3D.ToString() +" "+ hRange +" "+ vRange;
-
 
 
             foreach (ZDrawable drawable in InternalChildren)
             {
-                drawable.Update();
+                drawable.Update3D();
             }
         }   
 

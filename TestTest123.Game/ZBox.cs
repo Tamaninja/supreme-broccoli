@@ -4,10 +4,6 @@ using osuTK;
 using osu.Framework.Graphics.Primitives;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Sprites;
-using System.Runtime.CompilerServices;
-using System;
-using System.Diagnostics;
-using osuTK.Audio.OpenAL;
 
 namespace TestTest123.Game
 {
@@ -50,8 +46,9 @@ namespace TestTest123.Game
                 renderer.DrawQuad(Texture, toZBox(ScreenSpaceDrawQuad), DrawColourInfo.Colour, null, null,
                     new Vector2(InflationAmount.X / DrawRectangle.Width, InflationAmount.Y / DrawRectangle.Height),
                     null, TextureCoords);
+                
 
-            }
+            }   
             private Quad toZBox(Quad q) {
                 float gap = (q.Width * xFactor) / 2;
                 Quad quad = new Quad(

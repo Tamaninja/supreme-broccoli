@@ -144,3 +144,4 @@ D:\Tamaninja\Documents\TestTest123\TestTest123.Desktop\obj\Debug\net8.0\TestTest
 D:\Tamaninja\Documents\TestTest123\TestTest123.Desktop\obj\Debug\net8.0\TestTest123.pdb
 D:\Tamaninja\Documents\TestTest123\TestTest123.Desktop\obj\Debug\net8.0\TestTest123.Desktop.genruntimeconfig.cache
 D:\Tamaninja\Documents\TestTest123\TestTest123.Desktop\obj\Debug\net8.0\ref\TestTest123.dll
+D:\Tamaninja\Documents\TestTest123\TestTest123.Desktop\obj\Debug\net8.0\TestTest123.Desktop.sourcelink.json

@@ -8,16 +8,18 @@ using osuTK;
 using osuTK.Graphics;
 using osu.Framework.Graphics.Rendering;
 using System;
+using osu.Framework.Extensions.Color4Extensions;
+using System.ComponentModel.DataAnnotations;
 
 namespace TestTest123.Game
 {
     public partial class Note : ZDrawable
     {
 
+
         public Note(Camera camera, Vector3 xyz3D) : base(camera, xyz3D)
         {
-
-
+            Colour = Color4.DodgerBlue.Opacity(0.5f);
             Masking = true;
             RelativeSizeAxes = Axes.Both;
             Anchor = Anchor.Centre;
@@ -29,12 +31,16 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load(IRenderer renderer)
         {
-            InternalChild = new Box
+            AddInternal(new Box()
+            {
+                RelativeSizeAxes = Axes.Both,
+            });
+            AddInternal(new Box()
             {
                 RelativeSizeAxes = Axes.Both,
 
-            };
-            Set3DPos(new Vector3(0,0,10));
+            });
+
         }
 
         protected override void LoadComplete()
