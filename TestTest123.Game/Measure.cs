@@ -42,29 +42,6 @@ namespace TestTest123.Game
 
 
             };
-            ZBox playField1 = new ZBox(0.6f)
-            {
-                Anchor = Anchor.Centre,
-                Origin = Anchor.BottomCentre,
-                RelativeSizeAxes = Axes.Both,
-                Size = new Vector2(0.6f, 0.5f)
-
-            };
-            Box second = new Box()
-            {
-                Colour = Color4.Brown.Opacity(0.5f),
-                RelativeSizeAxes = Axes.Both
-            };
-            ZBox bottomView = new ZBox(0.4f)
-            {
-                Anchor = Anchor.BottomLeft,
-                Origin = Anchor.BottomLeft,
-                RelativeSizeAxes = Axes.Both,
-                Size = new Vector2(1, 0.5f)
-            };
-
-            playField.Add(bottomView);
-            playField.Add(playField1);
             box.Add(playField);
         } 
 

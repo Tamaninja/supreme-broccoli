@@ -4,77 +4,69 @@ using osuTK;
 using osu.Framework.Graphics.Primitives;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Sprites;
+using osu.Framework.Graphics.Textures;
+using Veldrid;
 
 namespace TestTest123.Game
 {
-    public partial class ZBox : Sprite
+    public partial class ZBox : Drawable
     {
         private Quad quad {  get; }
-        private float xFactor {  get; set; }
-        public ZBox(float xFactor)
+        private SimpleConvexPolygon polygon { get; set; }
+        public ZBox()
         {
-            if (xFactor < 0 || xFactor > 1) return;
+            this.RelativeSizeAxes = Axes.Both;
+            Size = new Vector2(0.6f);
 
-            this.xFactor = xFactor;
+            Vector2 ver = new Vector2(2, 0);
+            Vector2 ver1 = new Vector2(4, 2);
+            Vector2 ver2 = new Vector2(4, 3);
+            Vector2 ver3 = new Vector2(6, -2);
+            Vector2[] ver4 = {ver, ver1, ver2, ver3};
+            quad = new Quad(ver,ver2,ver3,ver1);
+
+            this.polygon = new SimpleConvexPolygon(ver4);
+            Colour = Colour4.AliceBlue;
+
             RelativeSizeAxes = Axes.Both;
         }
 
         [BackgroundDependencyLoader]
         private void load(IRenderer renderer)
         {
-            base.Texture = renderer.WhitePixel;
+            renderer.DrawQuad(renderer.WhitePixel, quad, DrawColourInfo.Colour);
         }
-        public override bool Contains(Vector2 screenSpacePos) => quad.Contains(screenSpacePos);
+        protected override DrawNode CreateDrawNode() => new PolygonDrawNode(this);
 
-        protected override DrawNode CreateDrawNode() => new QuadDrawNode(this, xFactor);
-
-        private class QuadDrawNode : SpriteDrawNode
+        private class PolygonDrawNode : DrawNode
 
         {
-            private float xFactor;
-            public QuadDrawNode(ZBox source, float xFactor)
+            protected new ZBox Source => (ZBox)base.Source;
+
+
+            private SimpleConvexPolygon polygon;
+            private Quad quad;
+            public PolygonDrawNode(ZBox source)
                 : base(source)
             {
-                this.xFactor = xFactor;
+
+                this.quad = Source.quad;
+                this.polygon = Source.polygon;
             }
 
-            protected override void Blit(IRenderer renderer)
+            public override void ApplyState()
             {
-                if (DrawRectangle.Width == 0 || DrawRectangle.Height == 0)
-                    return;
-                
-                renderer.DrawQuad(Texture, toZBox(ScreenSpaceDrawQuad), DrawColourInfo.Colour, null, null,
-                    new Vector2(InflationAmount.X / DrawRectangle.Width, InflationAmount.Y / DrawRectangle.Height),
-                    null, TextureCoords);
-                
-
-            }   
-            private Quad toZBox(Quad q) {
-                float gap = (q.Width * xFactor) / 2;
-                Quad quad = new Quad(
-                    new Vector2(q.TopLeft.X + gap, q.TopLeft.Y),
-                    new Vector2(q.TopRight.X - gap, q.TopRight.Y),
-                    q.BottomLeft,
-                    q.BottomRight
-                    );
-                return (quad);
-            } 
+                base.ApplyState();
+            }
+            protected override void Draw(IRenderer renderer)
+            {
+                base.Draw(renderer);
 
 
-            /*            protected override void BlitOpaqueInterior(IRenderer renderer)
-                        {
-                            if (DrawRectangle.Width == 0 || DrawRectangle.Height == 0)
-                                return;
+                renderer.DrawQuad(renderer.WhitePixel, quad, DrawColourInfo.Colour);
+                renderer.DrawClipped(ref polygon, renderer.WhitePixel, DrawColourInfo.Colour);
+            }
 
-                            if (renderer.IsMaskingActive)
-                            {
-                                renderer.DrawClipped(ref quad, Texture, DrawColourInfo.Colour);
-                            }
-                            else
-                            {
-                                renderer.DrawQuad(Texture, quad, DrawColourInfo.Colour);
-                            }
-                        }*/
         }
     }
 }

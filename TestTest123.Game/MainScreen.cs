@@ -34,6 +34,7 @@ namespace TestTest123.Game
                     Font = FontUsage.Default.With(size: 40)
                 },
                 camera = new Camera(new Vector3(0, 0, -50), text),
+                new ZBox()
 
 /*                new Playfield(8)
                 {
