@@ -1,5 +1,7 @@
-﻿using osu.Framework.Graphics;
+﻿using System.Collections.Generic;
+using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
+using osu.Framework.Graphics.Primitives;
 using osuTK;
 
 namespace TestTest123.Game
@@ -10,16 +12,25 @@ namespace TestTest123.Game
 
         private Camera camera;
         public ZDrawable(Camera camera, Vector3 xyz3d){
-
+            Anchor = Anchor.Centre;
+            Origin = Anchor.Centre;
+            
             this.camera = camera;
+
             Set3DPos(xyz3d);
             RelativePositionAxes = Axes.Both;
         }
+
+        public void AddQuad(Quad quad)
+        {
+            Add(new QuadSprite(quad));
+        }
+
+
+
         public void Update3D()
         {
-
-            Scale = new Vector2(1 / (DistanceToCamera()));
-            Position = camera.ToScreenSpace(XYZ3D);
+            
         }
 
 

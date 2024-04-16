@@ -90,11 +90,11 @@ namespace TestTest123.Game
                     return true;
 
                 case osuTK.Input.Key.A:
-                    Set3DPos(XYZ3D + new Vector3(-1, 0, 0));
+                    Set3DPos(XYZ3D + new Vector3(1, 0, 0));
                     return true;
 
                 case osuTK.Input.Key.D:
-                    Set3DPos(XYZ3D + new Vector3(1, 0, 0));
+                    Set3DPos(XYZ3D + new Vector3(-1, 0, 0));
                     return true;
             }
 

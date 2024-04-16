@@ -33,17 +33,13 @@ namespace TestTest123.Game
                     Origin = Anchor.TopCentre,
                     Font = FontUsage.Default.With(size: 40)
                 },
-                camera = new Camera(new Vector3(0, 0, -50), text),
-                new ZBox()
-
+                camera = new Camera(new Vector3(0, 0, -20), text),
 /*                new Playfield(8)
                 {
 
                 }*/
             };
             camera.Add(new Note(camera, new Vector3(0, 0, 0)));
-            camera.Add(new Note(camera, new Vector3(0, 0, 1)));
-
         }
 
 
