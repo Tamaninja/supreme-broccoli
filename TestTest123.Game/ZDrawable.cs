@@ -1,60 +1,45 @@
-﻿using System.Collections.Generic;
-using osu.Framework.Graphics;
-using osu.Framework.Graphics.Containers;
-using osu.Framework.Graphics.Primitives;
+﻿using osu.Framework.Graphics;
+using osu.Framework.Graphics.Sprites;
 using osuTK;
 
 namespace TestTest123.Game
 {
-    public partial class ZDrawable : Container
+    public partial class ZDrawable : Sprite
     {
-        private Vector3 XYZ3D;
+        protected Vector3[] Vertices {  get; set; }
+        private Vector3[] projectedVertices;
 
-        private Camera camera;
-        public ZDrawable(Camera camera, Vector3 xyz3d){
+
+        public ZDrawable(Vector3[] vertices){
+            Vertices = vertices;
+            projectedVertices = vertices;
+
             Anchor = Anchor.Centre;
             Origin = Anchor.Centre;
-            
-            this.camera = camera;
 
-            Set3DPos(xyz3d);
+
+
             RelativePositionAxes = Axes.Both;
         }
 
-        public void AddQuad(Quad quad)
+        public Vector3[] ProjectedVertices()
         {
-            Add(new QuadSprite(quad));
+            return (projectedVertices);
         }
 
-
-
-        public void Update3D()
+        public Vector3[] GetVertices()
         {
-            
+            return (Vertices);
         }
 
+        public Vector3[] ProjectVertices(Matrix4 worldViewProjection, Camera camera) {
+            for (int i = 0; i < Vertices.Length; i++)
+            {
+                projectedVertices[i] = Vector3.Project(camera.GetPos3D() - Vertices[i], 1, 1, DrawWidth, DrawHeight, 1, 5000, worldViewProjection);
+            }
 
-        public float DistanceToCamera()
-        {
-
-            return (Vector3.Distance(XYZ3D, camera.XYZ3D));
+            return projectedVertices;
         }
 
-        public Vector3 Get3DPos()
-        {
-            return XYZ3D;
-        }
-        public void Set3DPos(Vector3 newPos)
-        {
-            //
-            XYZ3D = newPos;
-            Depth = (1 / newPos.Z);
-            Update3D();
-        }
-
-        protected override void LoadComplete()
-        {
-            base.LoadComplete();
-        }
     }
 }

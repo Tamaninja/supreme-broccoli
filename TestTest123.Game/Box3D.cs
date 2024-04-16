@@ -4,35 +4,19 @@ using osuTK;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Graphics.Primitives;
-using System.Collections.Generic;
-using osu.Framework.Logging;
-using Vortice;
-using osuTK.Graphics.OpenGL;
-using System.Runtime.CompilerServices;
 using osuTK.Graphics;
 using osu.Framework.Extensions.Color4Extensions;
 
-
-
 namespace TestTest123.Game
 {
-    public partial class Box3D : Sprite
+    public partial class Box3D : ZDrawable
     {
-
-        private List<Quad> quads;
-        public Vector3[] Vertices;
-        private Camera camera;
-        public Box3D(Vector3 v1, Vector3 v2, Vector3 v3, Vector3 v4, Vector3 v5, Vector3 v6, Vector3 v7, Vector3 v8, Camera camera)
+        public Box3D(Vector3 v1, Vector3 v2, Vector3 v3, Vector3 v4, Vector3 v5, Vector3 v6, Vector3 v7, Vector3 v8)
+            : base([v1, v2, v3, v4, v5, v6, v7, v8])
         {
-            Vertices = [ v1, v2, v3, v4, v5, v6, v7, v8 ];
-            this.camera = camera;
+            this.Vertices = [v1, v2, v3, v4, v5, v6, v7, v8];
             RelativeSizeAxes = Axes.Both;
             this.Colour = Color4.AliceBlue.Opacity(0.5f);
-        }
-
-        public Vector3[] GetVertices()
-        {
-            return (Vertices);
         }
 
         protected override Quad ComputeScreenSpaceDrawQuad()
@@ -60,27 +44,15 @@ namespace TestTest123.Game
         public class BoxNode : SpriteDrawNode
         {
             protected new Box3D Source => (Box3D)base.Source;
-            private float width;
-            private float height;
-            private Camera camera;
-            private Vector3[] vertices1;
+            
             public BoxNode(Box3D source)
                 : base(source)
             {
-                width = Source.DrawWidth;
-                height = Source.DrawHeight;
-                camera = Source.camera;
-                vertices1 = Source.GetVertices();
             }
 
             private void render(IRenderer renderer)
             {
-                Vector3[] vertices = new Vector3[8];
-                Matrix4 matrix = Matrix4.CreatePerspectiveFieldOfView(2, 16 / 9, 1, 5000);
-                for (int i = 0; i < vertices.Length; i++)
-                {
-                    vertices[i] = Vector3.Project(camera.XYZ3D - vertices1[i], 1, 1, width, height, 1, 5000, matrix);
-                }
+                Vector3[] vertices = Source.ProjectedVertices();
 
                 Quad[] faces =
                 [

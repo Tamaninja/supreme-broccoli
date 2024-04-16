@@ -14,11 +14,11 @@ using osu.Framework.Graphics.Primitives;
 
 namespace TestTest123.Game
 {
-    public partial class Note : ZDrawable
+    public partial class Note : Container<ZDrawable>
     {
+        public Box3D Box { get; set; }
 
-
-        public Note(Camera camera, Vector3 xyz3D) : base(camera, xyz3D)
+        public Note(Vector3[] vertices)
         {
             RelativeSizeAxes = Axes.Both;
             Colour = Color4.DodgerBlue.Opacity(0.5f);
@@ -38,9 +38,14 @@ namespace TestTest123.Game
             Vector3 v7 = new Vector3(0.5f, 0.5f, 0.5f);  // Top-right-back corner
             Vector3 v8 = new Vector3(-0.5f, 0.5f, 0.5f);  // Top-left-back corner
 
-            Box3D box = new Box3D(v1, v2, v3, v4, v5, v6, v7, v8, camera);
+            Box3D box = new Box3D(v1, v2, v3, v4, v5, v6, v7, v8);
 
-            Add(box);
+            Box = box;
+        }
+
+        public ZDrawable GetChild()
+        {
+            return (Box);
         }
 
 
@@ -48,11 +53,6 @@ namespace TestTest123.Game
         private void load(IRenderer renderer)
         {
 
-        }
-
-        protected override void LoadComplete()
-        {
-            base.LoadComplete();
         }
     }
 }

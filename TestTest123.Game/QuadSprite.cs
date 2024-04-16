@@ -60,11 +60,6 @@ namespace TestTest123.Game
 
             base.Texture = renderer.WhitePixel;
         }
-/*        protected override void LoadComplete()
-        {
-            base.LoadComplete();
-            Invalidate();
-        }*/
 
         }
 }

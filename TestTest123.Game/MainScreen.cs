@@ -39,7 +39,8 @@ namespace TestTest123.Game
 
                 }*/
             };
-            camera.Add(new Note(camera, new Vector3(0, 0, 0)));
+            Note note = new Note([Vector3.Zero]);
+            camera.Add(note.Box);
         }
 
 

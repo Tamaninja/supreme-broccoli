@@ -2,31 +2,29 @@
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Graphics;
-using osu.Framework.Graphics.Shapes;
 using osuTK;
 using osu.Framework.Input.Events;
 using osu.Framework.Graphics.Sprites;
-using System;
+using osu.Framework.Logging;
 
 
 namespace TestTest123.Game
 {
     public partial class Camera : Container<ZDrawable>
     {
-        public Vector3 XYZ3D {  get; set; }
-        private SpriteText output {  get; set; }
+        protected Vector3 Pos3D;
 
-        private int hFov = 90;
-        private int vFov = 60;
+        private Matrix4 projectionMatrix;
+        private SpriteText output {  get; set; }
 
         public float FarPlane{ get;}
 
-        public Camera(Vector3 xyz3D, SpriteText output)
+        public Camera(Vector3 pos, SpriteText output)
         {
+            UpdateOrigin(pos);
+
             this.output = output;
             this.FarPlane = 5000f;
-            Set3DPos(xyz3D);
-            this.output = output;
 
             RelativeSizeAxes = Axes.Both;
             RelativePositionAxes = Axes.Both;
@@ -35,38 +33,29 @@ namespace TestTest123.Game
             Size = new Vector2(0.8f, 0.8f);
         }
 
-
-        public Vector3 VisibleRange(float distance)
+        public Matrix4 GetProjectionMatrix()
         {
+            projectionMatrix = Matrix4.CreatePerspectiveFieldOfView(2, 16 / 9, 1, 5000);
+            return(projectionMatrix);
 
-            float distanceSqrd = distance * distance;
-
-            float hLimit = MathF.Sqrt(distanceSqrd + distanceSqrd - 2 * distanceSqrd * MathF.Cos(hFov)) / 2;
-            float vLimit = MathF.Sqrt(distanceSqrd + distanceSqrd - 2 * distanceSqrd * MathF.Cos(vFov)) / 2;
-
-            Vector3 visibleRange = new Vector3(hLimit, vLimit, distance);
-            return (visibleRange);
         }
-
-        public Vector2 ToScreenSpace(Vector3 pos)
+        public void UpdateOrigin(Vector3 newPos)
         {
-            Vector3 diff = pos - XYZ3D;
-            Vector3 visibleRange = VisibleRange(diff.Z);
+            Pos3D = newPos;
 
-
-
-            return (new Vector2(1/visibleRange.X*diff.X, -1/visibleRange.Y*diff.Y));
-        }
-        public void Set3DPos(Vector3 xyz3D)
-        {
-            XYZ3D = xyz3D;
-
-
-            foreach (ZDrawable drawable in InternalChildren)
+            
+            foreach (ZDrawable child in Children)
             {
-                drawable.Update3D();
+
+
+                child.ProjectVertices(GetProjectionMatrix(), this);
             }
-        }   
+        }
+
+        public Vector3 GetPos3D()
+        {
+            return Pos3D;
+        }
 
         protected override bool OnKeyDown(KeyDownEvent e)
         {
@@ -74,27 +63,27 @@ namespace TestTest123.Game
             {
 
                 case osuTK.Input.Key.Space:
-                    Set3DPos(XYZ3D + new Vector3(0, 1, 0));
+                    UpdateOrigin(Pos3D + new Vector3(0, 1, 0));
                     return true;
 
                 case osuTK.Input.Key.LShift:
-                    Set3DPos(XYZ3D + new Vector3(0, -1, 0));
+                    UpdateOrigin(Pos3D + new Vector3(0, -1, 0));
                     return true;
 
                 case osuTK.Input.Key.W:
-                    Set3DPos(XYZ3D + new Vector3(0, 0, 1));
+                    UpdateOrigin(Pos3D + new Vector3(0, 0, 1));
                     return true;
 
                 case osuTK.Input.Key.S:
-                    Set3DPos(XYZ3D + new Vector3(0, 0, -1));
+                    UpdateOrigin(Pos3D + new Vector3(0, 0, -1));
                     return true;
 
                 case osuTK.Input.Key.A:
-                    Set3DPos(XYZ3D + new Vector3(1, 0, 0));
+                    UpdateOrigin(Pos3D + new Vector3(1, 0, 0));
                     return true;
 
                 case osuTK.Input.Key.D:
-                    Set3DPos(XYZ3D + new Vector3(-1, 0, 0));
+                    UpdateOrigin(Pos3D + new Vector3(-1, 0, 0));
                     return true;
             }
 
@@ -105,11 +94,6 @@ namespace TestTest123.Game
         private void load(TextureStore textures)
         {
             
-        }
-
-        protected override void LoadComplete()
-        {
-            base.LoadComplete();
         }
     }
 }
