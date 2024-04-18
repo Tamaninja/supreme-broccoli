@@ -8,67 +8,50 @@ using osuTK;
 using osuTK.Graphics;
 using osu.Framework.Extensions.Color4Extensions;
 using osu.Framework.Extensions;
+using osu.Framework.Graphics.Primitives;
 
 namespace TestTest123.Game
 {
     public partial class Playfield : Container
     {
 
+        private Model zDrawable;
         private GridContainer playfield;
-        private int beatsAhead;
-        private Fretboard fretboard;
-        private Drawable[,] cells;
-        public Playfield(int beatsAhead)
+        private Drawable[,] lanes;
+        public new RectangleF DrawRectangle;
+        public Playfield(Vector2 topLeft, Vector2 topRight, Vector2 bottomLeft, Vector2 bottomRight)
         {
-            this.beatsAhead = beatsAhead;
+            DrawRectangle = new Quad(topLeft, topRight, bottomLeft, bottomRight).AABBFloat;
+
             Anchor = Anchor.Centre;
             Origin = Anchor.Centre;
-            Masking = true;
+
+
             RelativeSizeAxes = Axes.Both;
             RelativePositionAxes = Axes.Both;
-            Size = new Vector2(1f, 1f);
-            Shear = new Vector2(0f, -0.025f);
 
 
             init();
         }
-
+        public Model GetZDrawable()
+        {
+            return (zDrawable);
+        }
         private void init()
         {
 
-
-            fretboard = new Fretboard(4, 12)
-            {
-                Depth = 1,
-                Anchor = Anchor.BottomRight,
-                Origin = Anchor.BottomRight,
-                RelativeSizeAxes = Axes.Both,
-                RelativePositionAxes = Axes.Both,
-                Shear = new Vector2(-0.2f, 0f),
-                Position = new Vector2(-0.15f, -0.05f),
-                Size = new Vector2(0.8f, 0.25f),
-            };
-
             playfield = new GridContainer()
             {
-                Anchor = Anchor.BottomRight,
-                Origin = Anchor.BottomRight,
                 RelativeSizeAxes = Axes.Both,
                 RelativePositionAxes = Axes.Both,
-                Position = new Vector2(-0.15f, -0.05f),
-                Shear = new Vector2(0.25f, 0f),
-                Size = new Vector2(0.8f, 1.25f),
             };
 
 
 
-            cells = new Drawable[beatsAhead, fretboard.Range];
-
-            for (int r = 0; r < fretboard.Range; r++)
+            lanes = new Drawable[1, 12];
+            for (int i = 0; i < lanes.Length; i++)
             {
-                for (int c = 0; c < beatsAhead; c++)
-                {
-                    cells[c, r] = new Container
+                lanes[0, i] = new Container
                     {
                         RelativeSizeAxes = Axes.Both,
                         Child = new Box
@@ -78,12 +61,18 @@ namespace TestTest123.Game
                             RelativeSizeAxes = Axes.Both
                         }
                     };
-
-                }
             }
-            playfield.Content = cells.ToJagged();
-            Add(playfield);
-            Add(fretboard);
+            playfield.Content = lanes.ToJagged();
+            
+        }
+
+        protected override void UpdateAfterChildren()
+        {
+            base.UpdateAfterChildren();
+            Vector3[] vertices = zDrawable.GetVertices();
+
+            DrawRectangle = new Quad(vertices[0].Xz, vertices[1].Xz, vertices[2].Xz, vertices[3].Xz).AABBFloat;
+
         }
 
         [BackgroundDependencyLoader]

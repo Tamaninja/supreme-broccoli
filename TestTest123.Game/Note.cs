@@ -14,11 +14,11 @@ using osu.Framework.Graphics.Primitives;
 
 namespace TestTest123.Game
 {
-    public partial class Note : Container<ZDrawable>
+    public partial class Note : Container
     {
         public Box3D Box { get; set; }
 
-        public Note(Vector3[] vertices)
+        public Note()
         {
             RelativeSizeAxes = Axes.Both;
             Colour = Color4.DodgerBlue.Opacity(0.5f);
@@ -43,7 +43,7 @@ namespace TestTest123.Game
             Box = box;
         }
 
-        public ZDrawable GetChild()
+        public Model GetChild()
         {
             return (Box);
         }

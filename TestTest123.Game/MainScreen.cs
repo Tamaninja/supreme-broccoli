@@ -3,6 +3,7 @@ using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
+using osu.Framework.Logging;
 using osu.Framework.Screens;
 using osuTK;
 using osuTK.Graphics;
@@ -13,10 +14,12 @@ namespace TestTest123.Game
     {
         private Camera camera;
         private SpriteText text;
+        private Stage mainStage;
 
         [BackgroundDependencyLoader]
         private void load()
         {
+
             InternalChildren = new Drawable[]
             {
                 new Box
@@ -33,16 +36,13 @@ namespace TestTest123.Game
                     Origin = Anchor.TopCentre,
                     Font = FontUsage.Default.With(size: 40)
                 },
-                camera = new Camera(new Vector3(0, 0, -20), text),
-/*                new Playfield(8)
+                mainStage = new Stage
                 {
-
-                }*/
+                    Child = new Note().GetChild()
+                },
             };
-            Note note = new Note([Vector3.Zero]);
-            camera.Add(note.Box);
+            camera = new Camera(mainStage, new Vector3(0, 20, -50));
+
         }
-
-
     }
 }
