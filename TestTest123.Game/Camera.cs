@@ -5,32 +5,29 @@ using osuTK;
 using osu.Framework.Input.Events;
 using osu.Framework.Graphics.Sprites;
 using System.Collections.Generic;
-using osu.Framework.Logging;
 using osu.Framework.Graphics.Primitives;
 using osu.Framework.Graphics.Rendering;
+using osu.Framework.Graphics.Rendering.Vertices;
+using System.Linq;
 
 
 
 namespace TestTest123.Game
 {
-    public partial class Camera : Model 
+    public partial class Camera : Model
     {
         private Stage stage;
-        private Vector3 position3D;
         private List<Vector3[]> image;
 
 
         private Matrix4 projectionMatrix;
 
-
-
         public float FarPlane{ get;}
 
-        public Camera(Stage stage, Vector3 pos) : base(null)
+        public Camera(Stage stage, Vector3 pos) : base(pos)
         {
             stage.Add(this);
             this.stage = stage;
-            position3D = pos;
 
             FarPlane = 5000f;
 
@@ -41,14 +38,14 @@ namespace TestTest123.Game
             Origin = Anchor.Centre;
 
             Size = new Vector2(0.8f, 0.8f);
-            init();
-
         }
 
-        private void init()
+        
+
+        
+        protected override void Init()
         {
             SetProjectionMatrix();
-            image = stage.GetVertices(this);
         }
 
         
@@ -57,32 +54,25 @@ namespace TestTest123.Game
             projectionMatrix = Matrix4.CreatePerspectiveFieldOfView(2, 16 / 9, 1, 5000);
         }
 
-        public List<Vector3[]> Project()
+        public IReadOnlyList<Model> GetModels()
         {
-            List<Vector3[]> response = new List<Vector3[]>();
-            image = stage.GetVertices(this);
+            return (stage.Children);
+        }
 
-            for (int i = 0; i < image.Count; i++) {
+        public Vector3[] Project(Vector3[] toProject)
+        {
+            Vector3[] projection = new Vector3[toProject.Length];
 
-                if (image[i] == null) continue;
-                Vector3[] temp = new Vector3[image[i].Length];
-
-                for (int j = 0; j < image[i].Length; j++)
-                {
-                    temp[j] = Vector3.Project(position3D - image[i][j], 0, 0, DrawWidth, DrawHeight, 1, 5000, projectionMatrix);
-
-
-                }
-                response.Add(temp);
+            for (int i = 0; i < toProject.Length; i++)
+            {
+                projection[i] = Vector3.Project(Pos3D - toProject[i], 0, 0, DrawWidth, DrawHeight, 1, 5000, projectionMatrix);
             }
-            return (response);
+
+            return projection;
         }
 
 
-        public void MoveBy(Vector3 offset)
-        {
-            position3D += offset;
-        }
+
 
         protected override bool OnKeyDown(KeyDownEvent e)
         {
@@ -139,20 +129,27 @@ namespace TestTest123.Game
             {
                 base.Draw(renderer);
 
-                Vector3[] vertices = camera.Project()[0];
-
-                Quad top = new Quad(vertices[6].Xy, vertices[7].Xy, vertices[3].Xy, vertices[2].Xy);
-                Quad bottom = new Quad(vertices[0].Xy, vertices[1].Xy, vertices[5].Xy, vertices[4].Xy);
-                Quad front = new Quad(vertices[5].Xy, vertices[1].Xy, vertices[2].Xy, vertices[6].Xy);
-                Quad back = new Quad(vertices[4].Xy, vertices[0].Xy, vertices[3].Xy, vertices[7].Xy);
-                Quad left = new Quad(vertices[4].Xy, vertices[5].Xy, vertices[7].Xy, vertices[6].Xy);
-                Quad right = new Quad(vertices[0].Xy, vertices[1].Xy, vertices[3].Xy, vertices[2].Xy); // Same order as top for a cube
-
-                Quad[] quads = [top, bottom, front, back, left, right];
-
-                for (int i = 0; i < quads.Length; i++)
+                foreach (Model model in camera.GetModels())
                 {
-                    renderer.DrawQuad(renderer.WhitePixel, quads[i], DrawColourInfo.Colour);
+                    Vector3[] vertices = model.GetVertices();
+                    int[][] indices = model.GetIndices();
+
+                    IVertexBatch<TexturedVertex2D> batch = renderer.CreateQuadBatch<TexturedVertex2D>(6, 1);
+
+                    for (int i = 0; i < indices.Length; i++)
+                    {
+                        for (int j = 0; j < indices[i].Length; j++)
+                        {
+                            batch.Add(new TexturedVertex2D(renderer)
+                            {
+                                Position = vertices[indices[i][j]].Xy,
+                                TexturePosition = Vector2.Zero,
+                                TextureRect = Vector4.Zero,
+                                Colour = DrawColourInfo.Colour,
+                            });
+                        }
+                    }
+
 
                 }
 

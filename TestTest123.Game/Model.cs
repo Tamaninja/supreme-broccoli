@@ -1,28 +1,53 @@
-﻿using osu.Framework.Graphics;
-using osu.Framework.Graphics.Containers;
-using osu.Framework.Graphics.Sprites;
+﻿using osu.Framework.Graphics.Sprites;
 using osuTK;
 
 namespace TestTest123.Game
 {
-    public partial class Model : Sprite
+    public abstract partial class Model : Sprite
     {
-        protected Vector3[] Vertices;
+        protected Vector3[] Vertices = [];
+        protected Vector3 Pos3D;
+        protected int[][] Indices = [];
 
-        public Model(Vector3[] vertices)
+        public Model(Vector3 pos)
         {
-            RelativePositionAxes = Axes.Both;
+            SetPosition(pos);
+            Init();
+        }
+        protected void SetIndices(int[][] indices)
+        {
+            Indices = indices;
+        }
 
-            Anchor = Anchor.Centre;
-            Origin = Anchor.Centre;
+        public int[][] GetIndices()
+        {
+            return Indices;
+        }
 
-            Vertices = vertices;
+        public void SetPosition(Vector3 pos)
+        {
+            Pos3D = pos;
+        }
 
+
+        public Vector3 GetPosition() {
+            return Pos3D;
         }
 
         public Vector3[] GetVertices()
         {
             return Vertices;
         }
+        public void SetVertices(Vector3[] vertices)
+        {
+            Vertices = vertices;
+        }
+
+        public void MoveBy(Vector3 offset)
+        {
+            SetPosition(Pos3D + offset);
+        }
+
+        protected abstract void Init();
     }
 }
