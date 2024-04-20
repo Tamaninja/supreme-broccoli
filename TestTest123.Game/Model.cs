@@ -5,49 +5,77 @@ namespace TestTest123.Game
 {
     public abstract partial class Model : Sprite
     {
-        protected Vector3[] Vertices = [];
-        protected Vector3 Pos3D;
-        protected int[][] Indices = [];
+        private Vector3[] vertices = [];
+        private Vector3[] rotatedVertices = [];
+        private Vector3 pos;
+        private int[][] indices = [];
+        private Quaternion orientation = Quaternion.Identity;
 
         public Model(Vector3 pos)
         {
             SetPosition(pos);
             Init();
         }
+
+        protected Quaternion GetOrientation() {
+
+            return orientation;
+        }
+
+        public void Rotate(float yaw, float pitch, float roll)
+        {
+            orientation *= new Quaternion(yaw, pitch, roll);            
+        }
+
+        public void SetRotation(float yaw, float pitch, float roll)
+        {
+            orientation = new Quaternion(yaw, pitch, roll);
+        }
+        public void ClearRotation()
+        {
+            SetRotation(0, 0, 0);
+        }
         protected void SetIndices(int[][] indices)
         {
-            Indices = indices;
+            this.indices = indices;
         }
 
         public int[][] GetIndices()
         {
-            return Indices;
+            return indices;
         }
 
         public void SetPosition(Vector3 pos)
         {
-            Pos3D = pos;
+            this.pos = pos;
         }
 
-
         public Vector3 GetPosition() {
-            return Pos3D;
+
+            return pos;
         }
 
         public Vector3[] GetVertices()
         {
-            return Vertices;
+            for (int i = 0; i < vertices.Length; i++)
+            {
+                rotatedVertices[i] = Vector3.Transform(vertices[i], orientation);
+            }
+            return rotatedVertices;
         }
         public void SetVertices(Vector3[] vertices)
         {
-            Vertices = vertices;
+            this.vertices = vertices;
+            rotatedVertices = vertices;
         }
 
         public void MoveBy(Vector3 offset)
         {
-            SetPosition(Pos3D + offset);
+            SetPosition(pos + offset);
         }
 
         protected abstract void Init();
+
+
     }
 }

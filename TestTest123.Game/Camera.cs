@@ -5,10 +5,9 @@ using osuTK;
 using osu.Framework.Input.Events;
 using osu.Framework.Graphics.Sprites;
 using System.Collections.Generic;
-using osu.Framework.Graphics.Primitives;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Rendering.Vertices;
-using System.Linq;
+using osu.Framework.Logging;
 
 
 
@@ -17,10 +16,11 @@ namespace TestTest123.Game
     public partial class Camera : Model
     {
         private Stage stage;
-        private List<Vector3[]> image;
-
 
         private Matrix4 projectionMatrix;
+        private Matrix4 viewMatrix;
+
+        private Vector3 viewDirection;
 
         public float FarPlane{ get;}
 
@@ -36,7 +36,6 @@ namespace TestTest123.Game
 
             Anchor = Anchor.Centre;
             Origin = Anchor.Centre;
-
             Size = new Vector2(0.8f, 0.8f);
         }
 
@@ -45,15 +44,12 @@ namespace TestTest123.Game
         
         protected override void Init()
         {
-            SetProjectionMatrix();
+            projectionMatrix = Matrix4.CreatePerspectiveFieldOfView(0.87f, 16 / 9, 5, 500);
+
+            viewDirection = Vector3.UnitZ; // forward
         }
 
-        
-        public void SetProjectionMatrix()
-        {
-            projectionMatrix = Matrix4.CreatePerspectiveFieldOfView(2, 16 / 9, 1, 5000);
-        }
-
+       
         public IReadOnlyList<Model> GetModels()
         {
             return (stage.Children);
@@ -61,18 +57,31 @@ namespace TestTest123.Game
 
         public Vector3[] Project(Vector3[] toProject)
         {
+            viewMatrix = Matrix4.LookAt(GetPosition(), viewDirection, Vector3.UnitY);
+
             Vector3[] projection = new Vector3[toProject.Length];
 
             for (int i = 0; i < toProject.Length; i++)
             {
-                projection[i] = Vector3.Project(Pos3D - toProject[i], 0, 0, DrawWidth, DrawHeight, 1, 5000, projectionMatrix);
+                projection[i] = Vector3.Project(GetPosition() - toProject[i], 0, 0, DrawWidth, DrawHeight, 5, 500,viewMatrix * projectionMatrix);
             }
 
             return projection;
         }
 
+        protected override bool OnMouseMove(MouseMoveEvent e)
+        {
+            Vector2 delta = e.Delta * -0.05f;
 
+            Quaternion rotation = Quaternion.FromEulerAngles(0, delta.X, 0);
 
+            viewDirection = rotation * viewDirection;
+
+            Logger.Log(GetPosition().ToString());
+            Logger.Log(viewDirection.ToString());
+
+            return base.OnMouseMove(e);
+        }
 
         protected override bool OnKeyDown(KeyDownEvent e)
         {
@@ -131,7 +140,10 @@ namespace TestTest123.Game
 
                 foreach (Model model in camera.GetModels())
                 {
-                    Vector3[] vertices = model.GetVertices();
+                    Vector3[] vertices = camera.Project(model.GetVertices());
+                    
+
+
                     int[][] indices = model.GetIndices();
 
                     IVertexBatch<TexturedVertex2D> batch = renderer.CreateQuadBatch<TexturedVertex2D>(6, 1);
@@ -145,7 +157,7 @@ namespace TestTest123.Game
                                 Position = vertices[indices[i][j]].Xy,
                                 TexturePosition = Vector2.Zero,
                                 TextureRect = Vector4.Zero,
-                                Colour = DrawColourInfo.Colour,
+                                Colour = model.DrawColourInfo.Colour,
                             });
                         }
                     }
