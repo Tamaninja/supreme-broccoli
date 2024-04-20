@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Rendering.Vertices;
 using osu.Framework.Logging;
+using System;
+
 
 
 
@@ -19,9 +21,6 @@ namespace TestTest123.Game
 
         private Matrix4 projectionMatrix;
         private Matrix4 viewMatrix;
-
-        private Vector3 viewDirection;
-
         public float FarPlane{ get;}
 
         public Camera(Stage stage, Vector3 pos) : base(pos)
@@ -46,7 +45,6 @@ namespace TestTest123.Game
         {
             projectionMatrix = Matrix4.CreatePerspectiveFieldOfView(0.87f, 16 / 9, 5, 500);
 
-            viewDirection = Vector3.UnitZ; // forward
         }
 
        
@@ -55,9 +53,11 @@ namespace TestTest123.Game
             return (stage.Children);
         }
 
+
         public Vector3[] Project(Vector3[] toProject)
         {
-            viewMatrix = Matrix4.LookAt(GetPosition(), viewDirection, Vector3.UnitY);
+
+            viewMatrix = Matrix4.LookAt(GetPosition().Normalized(), GetViewDirection(), Vector3.UnitY);
 
             Vector3[] projection = new Vector3[toProject.Length];
 
@@ -71,14 +71,17 @@ namespace TestTest123.Game
 
         protected override bool OnMouseMove(MouseMoveEvent e)
         {
-            Vector2 delta = e.Delta * -0.05f;
+            Vector2 delta = e.Delta * -0.25f;
 
-            Quaternion rotation = Quaternion.FromEulerAngles(0, delta.X, 0);
+            rotation.X += MathHelper.DegreesToRadians(delta.X);
 
-            viewDirection = rotation * viewDirection;
+            rotation.Y += MathHelper.DegreesToRadians(delta.Y);
 
-            Logger.Log(GetPosition().ToString());
-            Logger.Log(viewDirection.ToString());
+
+            SetViewDirection(Vector3.UnitZ * (Matrix3.CreateRotationY(rotation.X) * Matrix3.CreateRotationX(rotation.Y)));
+
+
+            Logger.Log(GetViewDirection().ToString());
 
             return base.OnMouseMove(e);
         }
@@ -89,7 +92,7 @@ namespace TestTest123.Game
             {
 
                 case osuTK.Input.Key.Space:
-                    MoveBy(new Vector3(0, 1, 0));
+                    ClearRotation();
                     return true;
 
                 case osuTK.Input.Key.LShift:

@@ -1,15 +1,18 @@
-﻿using osu.Framework.Graphics.Sprites;
+﻿using osu.Framework.Extensions.MatrixExtensions;
+using osu.Framework.Graphics.Sprites;
 using osuTK;
 
 namespace TestTest123.Game
 {
     public abstract partial class Model : Sprite
     {
+        private int[][] indices = [];
         private Vector3[] vertices = [];
         private Vector3[] rotatedVertices = [];
         private Vector3 pos;
-        private int[][] indices = [];
-        private Quaternion orientation = Quaternion.Identity;
+
+        private Vector3 viewDirection;
+        protected Vector3 rotation;
 
         public Model(Vector3 pos)
         {
@@ -17,23 +20,37 @@ namespace TestTest123.Game
             Init();
         }
 
-        protected Quaternion GetOrientation() {
-
-            return orientation;
+        public void ResetViewDirection()
+        {
+            viewDirection = Vector3.UnitZ;
         }
 
-        public void Rotate(float yaw, float pitch, float roll)
+        public void SetViewDirection(Vector3 newDirection)
         {
-            orientation *= new Quaternion(yaw, pitch, roll);            
+            viewDirection = newDirection;
+
+        }
+        public Vector3 GetViewDirection()
+        {
+
+            return (viewDirection);
+
+        }
+
+        public Vector3 GetRotation()
+        {
+            return rotation;
         }
 
         public void SetRotation(float yaw, float pitch, float roll)
         {
-            orientation = new Quaternion(yaw, pitch, roll);
+            rotation = new Vector3(yaw, pitch, roll);
         }
         public void ClearRotation()
         {
             SetRotation(0, 0, 0);
+            ResetViewDirection();
+
         }
         protected void SetIndices(int[][] indices)
         {
@@ -57,10 +74,6 @@ namespace TestTest123.Game
 
         public Vector3[] GetVertices()
         {
-            for (int i = 0; i < vertices.Length; i++)
-            {
-                rotatedVertices[i] = Vector3.Transform(vertices[i], orientation);
-            }
             return rotatedVertices;
         }
         public void SetVertices(Vector3[] vertices)
@@ -71,10 +84,20 @@ namespace TestTest123.Game
 
         public void MoveBy(Vector3 offset)
         {
+            offset *= rotation;
             SetPosition(pos + offset);
         }
 
         protected abstract void Init();
+
+        protected void Rotate(float yaw, float pitch, float roll)
+        {
+
+            Vector3 vector = new Vector3(yaw, pitch, roll);
+            rotation += vector;
+
+
+        }
 
 
     }
