@@ -41,7 +41,7 @@ namespace TestTest123.Game
                     Child = new Note().GetChild()
                 },
             };
-            camera = new Camera(mainStage, new Vector3(0, 0, -50));
+            camera = new Camera(mainStage, new Vector3(0, 0, -5));
 
         }
     }

@@ -11,6 +11,8 @@ using System;
 using osu.Framework.Extensions.Color4Extensions;
 using System.ComponentModel.DataAnnotations;
 using osu.Framework.Graphics.Primitives;
+using osu.Framework.Graphics.Shaders;
+using osuTK.Graphics.OpenGL;
 
 namespace TestTest123.Game
 {
@@ -35,10 +37,6 @@ namespace TestTest123.Game
         }
 
 
-        [BackgroundDependencyLoader]
-        private void load(IRenderer renderer)
-        {
 
-        }
     }
 }
