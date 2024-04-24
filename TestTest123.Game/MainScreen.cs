@@ -1,4 +1,5 @@
 using osu.Framework.Allocation;
+using osu.Framework.Extensions.Color4Extensions;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Shapes;
@@ -25,7 +26,7 @@ namespace TestTest123.Game
                 new Box
                 {
                     RelativeSizeAxes = Axes.Both,
-                    Colour = Color4.Black
+                    Colour = Color4.Black.Opacity(0.2f)
                 },
 
                 text = new SpriteText
@@ -41,7 +42,7 @@ namespace TestTest123.Game
                     Child = new Note().GetChild()
                 },
             };
-            camera = new Camera(mainStage, new Vector3(0, 0, -5));
+            camera = new Camera(mainStage, Vector3.Zero, text);
 
         }
     }

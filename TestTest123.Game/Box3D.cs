@@ -24,9 +24,6 @@ namespace TestTest123.Game
             Vector3 v7 = new Vector3(0.5f, 0.5f, 0.5f);  // Top-right-back corner
             Vector3 v8 = new Vector3(-0.5f, 0.5f, 0.5f);  // Top-left-back corner
 
-
-            SetVertices([v1, v2, v3, v4, v5, v6, v7, v8]);
-
             int[][] faceIndices = [
                 [0, 1, 2, 3],
                 [4, 5, 6, 7],
@@ -35,7 +32,12 @@ namespace TestTest123.Game
                 [0, 1, 5, 4],
                 [2, 3, 7, 6]];
 
+
+
+
+            SetVertices([v1, v2, v3, v4, v5, v6, v7, v8]);
             SetIndices(faceIndices);
+            SetScale(new Vector3(10));
 
         }
     }

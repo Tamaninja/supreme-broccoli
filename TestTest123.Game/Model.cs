@@ -1,10 +1,13 @@
 ﻿using osu.Framework.Allocation;
 using osu.Framework.Extensions.MatrixExtensions;
 using osu.Framework.Graphics;
+using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Logging;
+using osu.Framework.Platform.MacOS;
 using osuTK;
+using osuTK.Graphics;
 
 namespace TestTest123.Game
 {
@@ -14,11 +17,9 @@ namespace TestTest123.Game
         private Vector3[] vertices = [];
         private Vector3[] rotatedVertices = [];
         protected Vector3 Pos;
+        protected Vector3 Scale3D = Vector3.One;
 
         protected Quaternion quat = Quaternion.Identity;
-        protected Vector3 rotation;
-        private Matrix4 modelMatrix = Matrix4.Identity;
-
 
         public Model(Vector3 pos)
         {
@@ -36,21 +37,34 @@ namespace TestTest123.Game
 
 
 
-        public Matrix4 GetMatrix(){
+        public void SetScale(Vector3 scale)
+        {
+            Scale3D = scale;
+        }
+        public Matrix4 GetMatrix()
+        {
+            Matrix4 rot = Matrix4.CreateFromQuaternion(GetRotation());
+            Matrix4 matrix = Matrix4.CreateTranslation(Pos);
+            Matrix4 scale = Matrix4.CreateScale(Scale3D);
 
-            return modelMatrix;
+            return (rot * matrix * scale);
         }
 
-        public Vector3 GetRotation()
+        public virtual Quaternion GetRotation()
         {
-            return rotation;
+            return quat;
         }
 
         public void SetRotation(float yaw, float pitch, float roll)
         {
-            rotation = new Vector3(yaw, pitch, roll);
             quat = new Quaternion(yaw, pitch, roll);
         }
+        public void SetRotation(Vector3 rotation)
+        {
+            quat = new Quaternion(rotation);
+        }
+
+
         public void ClearRotation()
         {
             SetRotation(0, 0, 0);
@@ -67,13 +81,12 @@ namespace TestTest123.Game
 
         public void SetPosition(Vector3 pos)
         {
-            modelMatrix = Matrix4.CreateTranslation(pos);
             Pos = pos;
         }
 
         public Vector3 GetPosition() {
 
-            return modelMatrix.ExtractTranslation();
+            return Pos;
         }
 
         public Vector3[] GetVertices()
@@ -89,15 +102,6 @@ namespace TestTest123.Game
 
 
         protected abstract void Init();
-
-        protected void Rotate(float yaw, float pitch, float roll)
-        {
-
-            Vector3 vector = new Vector3(yaw, pitch, roll);
-            rotation += vector;
-
-
-        }
 
 
     }
