@@ -1,32 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ManagedBass.Fx;
-using osu.Framework.Graphics.Sprites;
-using osu.Framework.Input.Events;
+﻿using osu.Framework.Input.Events;
 using osuTK;
-using osuTK.Input;
 
 namespace TestTest123.Game
 {
-    public class MouseController
+    public partial class MouseController
     {
-        private bool snapToCenter;
-        public float Pitch { get; set; } = 0;
+        private float sensitivity;
+        public float Pitch { get;
+            set 
+                ; } = 0;
         public float Yaw
         {
             get => Yaw;
             set => MathHelper.Clamp(value, -89, 89);
         }
 
-        public MouseController(bool snapToCenter)
+        public MouseController()
         {
-            this.snapToCenter = snapToCenter;
+            sensitivity = 0.25f;
         }
 
+        public void HandleMouseEvent(MouseMoveEvent e)
+        {
+            Vector2 delta = e.Delta * sensitivity;
 
+            Yaw += delta.X;
+            Pitch += -delta.Y;
+            Pitch = MathHelper.Clamp(Pitch, -89, 89);
+
+        }
 
     }
 }

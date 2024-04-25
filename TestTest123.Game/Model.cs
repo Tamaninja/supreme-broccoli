@@ -1,13 +1,7 @@
 ﻿using osu.Framework.Allocation;
-using osu.Framework.Extensions.MatrixExtensions;
 using osu.Framework.Graphics;
-using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shaders;
-using osu.Framework.Graphics.Sprites;
-using osu.Framework.Logging;
-using osu.Framework.Platform.MacOS;
 using osuTK;
-using osuTK.Graphics;
 
 namespace TestTest123.Game
 {

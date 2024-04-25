@@ -8,7 +8,6 @@ using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Rendering.Vertices;
 using osu.Framework.Logging;
 using System;
-using osu.Framework.Graphics.Shaders;
 using osuTK.Graphics;
 using osuTK.Input;
 
@@ -20,23 +19,18 @@ namespace TestTest123.Game
     public partial class Camera : Model
     {
         private Stage stage;
-        private MouseController mouseController;
+
+        private float yaw;
+        private float pitch;
 
         private Vector3 viewDirection;
-        private Vector3 upAxis;
-        private Vector3 rightAxis;
         private SpriteText spriteText;
-        private Vector3 rotation;
-
-        private bool snapToCenter = true;
 
         private float yFov = 50;
-        public float FarPlane{ get;}
+        public float FarPlane { get; }
 
         public Camera(Stage stage, Vector3 pos, SpriteText debug) : base(pos)
         {
-            Logger.Log(pos.ToString());
-
             stage.Add(this);
             this.stage = stage;
 
@@ -54,14 +48,29 @@ namespace TestTest123.Game
         protected override void Init()
         {
             viewDirection = new Vector3(0, 0, -1);
+            pitch = 0;
+            yaw = 0;
+        }
 
-    }
+        public void HandleMouseEvent(MouseMoveEvent e)
+        {
+            Vector2 delta = e.Delta * 0.25f;
+
+            yaw += delta.X;
+            pitch += -delta.Y;
+
+            pitch = MathHelper.Clamp(pitch, -89, 89);
+
+            spriteText.Text = pitch.ToString() + "\t" + yaw.ToString();
+
+            UpdateViewDirection();
+        }
 
         public void MoveBy(Vector3 offset)
         {
 
-            Pos += Vector3.TransformNormal(offset, GetMatrix());
 
+            Pos += Vector3.TransformNormal(offset, GetViewMatrix());
         }
 
 
@@ -70,78 +79,36 @@ namespace TestTest123.Game
             return (stage.Children);
         }
 
-        public void UpdateVertexBuffer(Action<TexturedVertex3D> addAction, Model model)
+        public void UpdateViewDirection()
         {
-            Vector3[] vertices = model.GetVertices();
-            int[][] index = model.GetIndices();
 
-            for (int i = 0; i < index.Length; i++)
-            {
-                for (int j = 0; j < index[i].Length; j++)
-                {
 
-                    Vector3 temp = Vector3.Project(vertices[index[i][j]], 0, 0, DrawWidth, DrawHeight, 0.1f, 500,model.GetMatrix() * GetViewMatrix().Inverted() * GetProjectionMatrix());
+            viewDirection.X = MathF.Cos(MathHelper.DegreesToRadians(yaw)) * MathF.Cos(MathHelper.DegreesToRadians(pitch));
+            viewDirection.Y = MathF.Sin(MathHelper.DegreesToRadians(pitch));
+            viewDirection.Z = MathF.Sin(MathHelper.DegreesToRadians(yaw)) * MathF.Cos(MathHelper.DegreesToRadians(pitch));
 
-                    addAction(new TexturedVertex3D()
-                    {
-                        Position = new Vector3(temp.X, temp.Y, temp.Z),
-                        Colour = DrawColourInfo.Colour,
-                        TexturePosition = Vector2.Zero
-                    });
-
-                }
-            }
+            viewDirection.Normalize();
         }
-
-
 
         protected override bool OnMouseMove(MouseMoveEvent e)
         {
-            if (snapToCenter)
-            {
-                snapToCenter = false;
-                return true;
-            }
+           HandleMouseEvent(e);
+           
 
-
-            Vector2 delta = e.Delta * 0.25f;
-
-            rotation.X += delta.X;
-            rotation.Y += -delta.Y;
-
-            rotation.Y = MathHelper.Clamp(rotation.Y, -89, 89);
-
-            viewDirection.X += MathF.Cos(MathHelper.DegreesToRadians(rotation.X)) * MathF.Cos(MathHelper.DegreesToRadians(rotation.Y));
-            viewDirection.Y += MathF.Sin(MathHelper.DegreesToRadians(rotation.Y));
-            viewDirection.Z += MathF.Sin(MathHelper.DegreesToRadians(rotation.X)) * MathF.Cos(MathHelper.DegreesToRadians(rotation.Y));
-
-            viewDirection.Normalize();
-
-
-            Vector2 center = ToScreenSpace(OriginPosition);
-            snapToCenter = true;
-            Mouse.SetPosition(center.X, center.Y);
-                
-            spriteText.Text = viewDirection.ToString();
-
-
-            return false;
+           return true;
         }
 
 
         public Matrix4 GetViewMatrix()
         {
             Vector3 temp = Vector3.Normalize(Pos - viewDirection);
-            rightAxis = Vector3.Cross(Vector3.UnitY, temp).Normalized();
-            upAxis = Vector3.Cross(temp, rightAxis);
 
             return Matrix4.LookAt(Pos, Pos + viewDirection, Vector3.UnitY);
         }
 
         public Matrix4 GetProjectionMatrix()
         {
-
-            return Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), 16 / 9, 0.1f, 500);
+            return Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), 16 / 9, 1, 50);
         }
 
 
@@ -153,28 +120,28 @@ namespace TestTest123.Game
             switch (e.Key)
             {
 
-                case osuTK.Input.Key.Space:
+                case Key.Space:
                     SetPosition(GetPosition() + Vector3.UnitY);
                     return true;
 
-                case osuTK.Input.Key.LShift:
+                case Key.LShift:
                     SetPosition(GetPosition() - Vector3.UnitY);
                     return true;
 
-                case osuTK.Input.Key.A:
+                case Key.A:
                     MoveBy(new Vector3(1f, 0, 0));
                     return true;
 
-                case osuTK.Input.Key.D:
+                case Key.D:
                     MoveBy(new Vector3(-1f, 0, 0));
                     return true;
 
-                case osuTK.Input.Key.S:
-                    MoveBy(new Vector3(0, 0, 1f));
+                case Key.S:
+                    MoveBy(new Vector3(0, 0, -1f));
                     return true;
 
-                case osuTK.Input.Key.W:
-                    MoveBy(new Vector3(0, 0, -1f));
+                case Key.W:
+                    MoveBy(new Vector3(0, 0, 1f));
                     return true;
             }
             
@@ -201,20 +168,37 @@ namespace TestTest123.Game
 
             protected override void Draw(IRenderer renderer)
             {
+
                 BindTextureShader(renderer);
+                renderer.PushProjectionMatrix(camera.GetViewMatrix() * camera.GetProjectionMatrix());
+
+
                 foreach (Model model in camera.GetModels())
                 {
-                    
+                    Vector3[] vertices = model.GetVertices();
+                    int[][] index = model.GetIndices();
+
+
+                    renderer.PushLocalMatrix(model.GetMatrix());
                     IVertexBatch<TexturedVertex3D> batch = renderer.CreateQuadBatch<TexturedVertex3D>(6, 1);
 
-                    renderer.PushProjectionMatrix(model.GetMatrix() * camera.GetViewMatrix() * camera.GetProjectionMatrix());
+                    for (int i = 0; i < index.Length; i++)
+                    {
+                        for (int j = 0; j < index[i].Length; j++)
+                        {
+                            batch.AddAction(new TexturedVertex3D()
+                            {
+                                Position = new Vector3(vertices[index[i][j]]),
+                                Colour = DrawColourInfo.Colour,
+                                TexturePosition = Vector2.Zero
+                            });
 
-                        camera.UpdateVertexBuffer(batch.AddAction, model);
-
-
-                    renderer.PopProjectionMatrix();
-
+                        }
+                    }
+                    renderer.PopLocalMatrix();
                 }
+
+                renderer.PopProjectionMatrix();
                 UnbindTextureShader(renderer);
 
             }

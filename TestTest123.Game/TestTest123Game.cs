@@ -1,5 +1,8 @@
-﻿using osu.Framework.Allocation;
+﻿using osu.Framework;
+using osu.Framework.Allocation;
 using osu.Framework.Graphics;
+using osu.Framework.Graphics.Primitives;
+using osu.Framework.Platform;
 using osu.Framework.Screens;
 
 namespace TestTest123.Game
@@ -21,7 +24,8 @@ namespace TestTest123.Game
             base.LoadComplete();
 
             screenStack.Push(new MainScreen());
-
+            Window.CursorState = CursorState.Confined;
+            
         }
 
        
