@@ -1,6 +1,7 @@
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
+using osu.Framework.Input.Events;
 using osu.Framework.IO.Stores;
 using osuTK;
 using TestTest123.Resources;
@@ -23,6 +24,15 @@ namespace TestTest123.Game
                 // You may want to change TargetDrawSize to your "default" resolution, which will decide how things scale and position when using absolute coordinates.
                 TargetDrawSize = new Vector2(1366, 768)
             });
+        }
+        protected override bool OnKeyDown(KeyDownEvent e)
+        {
+            if (e.Key == osuTK.Input.Key.Escape)
+            {
+                Exit();
+            }
+
+            return base.OnKeyDown(e);
         }
 
         [BackgroundDependencyLoader]

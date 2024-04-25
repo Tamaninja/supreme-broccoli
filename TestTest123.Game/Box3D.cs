@@ -37,7 +37,7 @@ namespace TestTest123.Game
 
             SetVertices([v1, v2, v3, v4, v5, v6, v7, v8]);
             SetIndices(faceIndices);
-            SetScale(new Vector3(10));
+            SetPosition(new Vector3(5,5,5));
 
         }
     }

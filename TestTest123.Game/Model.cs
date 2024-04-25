@@ -15,11 +15,8 @@ namespace TestTest123.Game
     {
         private int[][] indices = [];
         private Vector3[] vertices = [];
-        private Vector3[] rotatedVertices = [];
         protected Vector3 Pos;
         protected Vector3 Scale3D = Vector3.One;
-
-        protected Quaternion quat = Quaternion.Identity;
 
         public Model(Vector3 pos)
         {
@@ -43,32 +40,12 @@ namespace TestTest123.Game
         }
         public Matrix4 GetMatrix()
         {
-            Matrix4 rot = Matrix4.CreateFromQuaternion(GetRotation());
             Matrix4 matrix = Matrix4.CreateTranslation(Pos);
             Matrix4 scale = Matrix4.CreateScale(Scale3D);
 
-            return (rot * matrix * scale);
+            return (matrix * scale);
         }
 
-        public virtual Quaternion GetRotation()
-        {
-            return quat;
-        }
-
-        public void SetRotation(float yaw, float pitch, float roll)
-        {
-            quat = new Quaternion(yaw, pitch, roll);
-        }
-        public void SetRotation(Vector3 rotation)
-        {
-            quat = new Quaternion(rotation);
-        }
-
-
-        public void ClearRotation()
-        {
-            SetRotation(0, 0, 0);
-        }
         protected void SetIndices(int[][] indices)
         {
             this.indices = indices;
@@ -91,14 +68,12 @@ namespace TestTest123.Game
 
         public Vector3[] GetVertices()
         {
-            return rotatedVertices;
+            return vertices;
         }
         public void SetVertices(Vector3[] vertices)
         {
             this.vertices = vertices;
-            rotatedVertices = vertices;
         }
-
 
 
         protected abstract void Init();

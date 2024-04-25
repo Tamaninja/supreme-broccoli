@@ -4,6 +4,7 @@ using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
+using osu.Framework.Input.Events;
 using osu.Framework.Logging;
 using osu.Framework.Screens;
 using osuTK;
@@ -42,8 +43,10 @@ namespace TestTest123.Game
                     Child = new Note().GetChild()
                 },
             };
-            camera = new Camera(mainStage, Vector3.Zero, text);
+            camera = new Camera(mainStage, new Vector3(0,0,5), text);
 
         }
+
+
     }
 }
