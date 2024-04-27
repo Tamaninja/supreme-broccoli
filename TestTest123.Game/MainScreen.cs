@@ -1,3 +1,5 @@
+using System.Text;
+using ManagedBass;
 using osu.Framework.Allocation;
 using osu.Framework.Extensions.Color4Extensions;
 using osu.Framework.Graphics;
@@ -32,16 +34,22 @@ namespace TestTest123.Game
 
                 text = new SpriteText
                 {
+                    RelativeSizeAxes = Axes.Both,
+                    Size = new Vector2(0.5f, 1f),
                     Y = 20,
-                    Text = Vector3.Zero.ToString(),
+                    Text = string.Empty,
                     Anchor = Anchor.TopCentre,
                     Origin = Anchor.TopCentre,
-                    Font = FontUsage.Default.With(size: 40)
+                    Font = FontUsage.Default.With(size: 30),
+                    AllowMultiline = true
                 },
                 mainStage = new Stage
                 {
                     Child = new Note().GetChild()
                 },
+                new Speaker(text
+                )
+
             };
             camera = new Camera(mainStage, new Vector3(0,0,5), text);
 

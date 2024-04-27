@@ -10,6 +10,7 @@ using osu.Framework.Logging;
 using System;
 using osuTK.Graphics;
 using osuTK.Input;
+using ManagedBass;
 
 
 
@@ -42,7 +43,6 @@ namespace TestTest123.Game
             Anchor = Anchor.Centre;
             Origin = Anchor.Centre;
 
-            spriteText = debug;
         }
 
         protected override void Init()
@@ -60,8 +60,6 @@ namespace TestTest123.Game
             pitch += -delta.Y;
 
             pitch = MathHelper.Clamp(pitch, -89, 89);
-
-            spriteText.Text = pitch.ToString() + "\t" + yaw.ToString();
 
             UpdateViewDirection();
         }
