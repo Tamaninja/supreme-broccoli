@@ -3,48 +3,83 @@
   "WorkspaceRootPath": "D:\\Tamaninja\\Documents\\TestTest123\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\audioinputthread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\audioinputthread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\box3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\box3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\playfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\playfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\vertex3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\vertex3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\565e00882c55fe5a8d6056e8f6d24cedf95f67023c3cde50d1c53a95e1e8be2c\\AudioInputThread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\stage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\stage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\playfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\playfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\4dd03bc4e9911101b4605bba85799ac1108247fb94000d57cf4cb48073204785\\PayloadTypeReaderWriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\b3ab4fb85b206f2413edb729cada949a41704b6f8655f0c544f8427c6a3a5c21\\Task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\282d3102042321a7ce8d2408208a03eb3d992afc8bb8c734b7aac98e31d8ce09\\UnwrapPromise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\a20bd37e69aed539991866bb0ac38d40d8214fa1b665bfb0fc7e77089b6c2606\\StartupHook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|solutionrelative:testtest123.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.desktop\\testtest123.desktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|solutionrelative:testtest123.desktop\\testtest123.desktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\vertex3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\vertex3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\fretboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,24 +90,12 @@
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\measure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\vstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\vstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|solutionrelative:testtest123.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\testtest123.game.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -88,10 +111,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Tamaninja\\Documents\\TestTest123\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.desktop\\testtest123.desktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|solutionrelative:testtest123.desktop\\testtest123.desktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -101,63 +120,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AudioInputThread.cs",
+              "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\565e00882c55fe5a8d6056e8f6d24cedf95f67023c3cde50d1c53a95e1e8be2c\\AudioInputThread.cs",
+              "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\565e00882c55fe5a8d6056e8f6d24cedf95f67023c3cde50d1c53a95e1e8be2c\\AudioInputThread.cs [Read Only]",
+              "ViewState": "AQIAAB0AAAAAAAAAAAD4vygAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T22:28:49.636Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Box3D.cs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Box3D.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\Box3D.cs",
               "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Box3D.cs",
               "RelativeToolTip": "TestTest123.Game\\Box3D.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T08:21:26.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T21:46:05.316Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Model.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Model.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Model.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Model.cs",
-              "RelativeToolTip": "TestTest123.Game\\Model.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "DocumentIndex": 14,
+              "Title": "UnwrapPromise.cs",
+              "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\282d3102042321a7ce8d2408208a03eb3d992afc8bb8c734b7aac98e31d8ce09\\UnwrapPromise.cs",
+              "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\282d3102042321a7ce8d2408208a03eb3d992afc8bb8c734b7aac98e31d8ce09\\UnwrapPromise.cs [Read Only]",
+              "ViewState": "AQIAABgAAAAAAAAAAAAswCYAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T11:38:37.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T18:42:48.995Z",
+              "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Camera.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Camera.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Camera.cs",
-              "RelativeToolTip": "TestTest123.Game\\Camera.cs",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAqwGsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:56:31.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Note.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Note.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Note.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Note.cs",
-              "RelativeToolTip": "TestTest123.Game\\Note.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAiwCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T04:43:46.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "TestTest123GameBase.cs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123GameBase.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123GameBase.cs",
@@ -169,32 +170,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Playfield.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Playfield.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Playfield.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Playfield.cs",
-              "RelativeToolTip": "TestTest123.Game\\Playfield.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAuwBcAAAADAAAA",
+              "DocumentIndex": 11,
+              "Title": "Note.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Note.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Note.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Note.cs",
+              "RelativeToolTip": "TestTest123.Game\\Note.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAiwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T13:13:01.516Z",
+              "WhenOpened": "2024-03-27T04:43:46.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Camera.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Camera.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Camera.cs",
+              "RelativeToolTip": "TestTest123.Game\\Camera.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAASwEYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:56:31.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AudioInputThread.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\AudioInputThread.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\AudioInputThread.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\AudioInputThread.cs",
+              "RelativeToolTip": "TestTest123.Game\\AudioInputThread.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T00:15:19.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VString.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\VString.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\VString.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\VString.cs",
-              "RelativeToolTip": "TestTest123.Game\\VString.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T20:17:18.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "TestTest123Game.cs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123Game.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123Game.cs",
@@ -206,77 +219,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "MouseController.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\MouseController.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\MouseController.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\MouseController.cs",
+              "RelativeToolTip": "TestTest123.Game\\MouseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T11:41:43.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Speaker.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Speaker.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Speaker.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Speaker.cs*",
+              "RelativeToolTip": "TestTest123.Game\\Speaker.cs*",
+              "ViewState": "AQIAACQAAAAAAAAAAAAgwDUAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T20:11:51.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "MainScreen.cs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\MainScreen.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\MainScreen.cs",
               "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\MainScreen.cs",
               "RelativeToolTip": "TestTest123.Game\\MainScreen.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAIAwwDIAAAARAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAABoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T23:39:52.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TestTest123.Desktop.csproj",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\TestTest123.Desktop.csproj",
-              "RelativeDocumentMoniker": "TestTest123.Desktop\\TestTest123.Desktop.csproj",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\TestTest123.Desktop.csproj",
-              "RelativeToolTip": "TestTest123.Desktop\\TestTest123.Desktop.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-25T23:47:33.187Z"
+              "WhenOpened": "2024-03-25T23:39:52.047Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Measure.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Measure.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Measure.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Measure.cs",
-              "RelativeToolTip": "TestTest123.Game\\Measure.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwBIAAAAeAAAA",
+              "Title": "PayloadTypeReaderWriter.cs",
+              "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\4dd03bc4e9911101b4605bba85799ac1108247fb94000d57cf4cb48073204785\\PayloadTypeReaderWriter.cs",
+              "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\4dd03bc4e9911101b4605bba85799ac1108247fb94000d57cf4cb48073204785\\PayloadTypeReaderWriter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T19:18:48.029Z"
+              "WhenOpened": "2024-04-29T17:23:42.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\Program.cs",
-              "RelativeDocumentMoniker": "TestTest123.Desktop\\Program.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\Program.cs",
-              "RelativeToolTip": "TestTest123.Desktop\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAQAAAA",
+              "DocumentIndex": 5,
+              "Title": "Stage.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Stage.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Stage.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Stage.cs",
+              "RelativeToolTip": "TestTest123.Game\\Stage.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T23:39:37.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Vertex3D.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Vertex3D.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Vertex3D.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Vertex3D.cs",
-              "RelativeToolTip": "TestTest123.Game\\Vertex3D.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T18:52:21.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Speaker.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Speaker.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Speaker.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Speaker.cs",
-              "RelativeToolTip": "TestTest123.Game\\Speaker.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAowDUAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T20:11:51.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T10:42:03.762Z"
             },
             {
               "$type": "Document",
@@ -292,7 +291,112 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\b3ab4fb85b206f2413edb729cada949a41704b6f8655f0c544f8427c6a3a5c21\\Task.cs",
+              "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\b3ab4fb85b206f2413edb729cada949a41704b6f8655f0c544f8427c6a3a5c21\\Task.cs",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAswM4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T17:23:33.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Vertex3D.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Vertex3D.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Vertex3D.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Vertex3D.cs",
+              "RelativeToolTip": "TestTest123.Game\\Vertex3D.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T18:52:21.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\Program.cs",
+              "RelativeDocumentMoniker": "TestTest123.Desktop\\Program.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\Program.cs",
+              "RelativeToolTip": "TestTest123.Desktop\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T23:39:37.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Measure.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Measure.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Measure.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Measure.cs",
+              "RelativeToolTip": "TestTest123.Game\\Measure.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T19:18:48.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Playfield.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Playfield.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Playfield.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Playfield.cs",
+              "RelativeToolTip": "TestTest123.Game\\Playfield.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAuwBcAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T13:13:01.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TestTest123.Desktop.csproj",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\TestTest123.Desktop.csproj",
+              "RelativeDocumentMoniker": "TestTest123.Desktop\\TestTest123.Desktop.csproj",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\TestTest123.Desktop.csproj",
+              "RelativeToolTip": "TestTest123.Desktop\\TestTest123.Desktop.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-25T23:47:33.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VString.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\VString.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\VString.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\VString.cs",
+              "RelativeToolTip": "TestTest123.Game\\VString.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T20:17:18.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StartupHook.cs",
+              "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\a20bd37e69aed539991866bb0ac38d40d8214fa1b665bfb0fc7e77089b6c2606\\StartupHook.cs",
+              "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\a20bd37e69aed539991866bb0ac38d40d8214fa1b665bfb0fc7e77089b6c2606\\StartupHook.cs [Read Only]",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswCEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T18:42:43.482Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Model.cs",
+              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Model.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Model.cs",
+              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Model.cs",
+              "RelativeToolTip": "TestTest123.Game\\Model.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T11:38:37.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Utils.cs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Utils.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\Utils.cs",
@@ -300,36 +404,11 @@
               "RelativeToolTip": "TestTest123.Game\\Utils.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T17:13:32.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T17:13:32.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Stage.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Stage.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Stage.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Stage.cs",
-              "RelativeToolTip": "TestTest123.Game\\Stage.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T10:42:03.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MouseController.cs",
-              "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\MouseController.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\MouseController.cs",
-              "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\MouseController.cs",
-              "RelativeToolTip": "TestTest123.Game\\MouseController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T11:41:43.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "Fretboard.cs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Fretboard.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\Fretboard.cs",
@@ -341,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "TestTest123.Game.csproj",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj",
               "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123.Game.csproj",
@@ -353,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "TestTest123.Game.Tests.csproj",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
               "RelativeDocumentMoniker": "TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
@@ -365,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "ID3D11DeviceContext.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\34c80cdfb988ea33161ddf173a76a94c66858faabc5347baf01b76f84a5f2e6a\\ID3D11DeviceContext.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\34c80cdfb988ea33161ddf173a76a94c66858faabc5347baf01b76f84a5f2e6a\\ID3D11DeviceContext.cs [Read Only]",
@@ -376,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
