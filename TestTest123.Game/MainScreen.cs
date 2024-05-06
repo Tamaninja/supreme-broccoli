@@ -11,6 +11,7 @@ using osu.Framework.Logging;
 using osu.Framework.Screens;
 using osuTK;
 using osuTK.Graphics;
+using TestTest123.Game.Audio;
 
 namespace TestTest123.Game
 {
