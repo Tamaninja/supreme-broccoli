@@ -67,8 +67,9 @@ namespace TestTest123.Game
         public void MoveBy(Vector3 offset)
         {
 
-
+            
             Pos += Vector3.TransformNormal(offset, GetViewMatrix());
+            
         }
 
 

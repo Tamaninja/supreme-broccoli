@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i9z2XkUSTHvCQbP82YG0PyL7NKU7fry/hypSB3T4SYZL2BuaDECpIe3iyAN9mYCqN+fWGc3vd5ijRFa4mbvU6g==",
+  "dgSpecHash": "rAbt5HHviRKlQb/V8uY3/2XV2PPheswwXv79biBNwV7dR3lUitOD/A5HyoxgJMfChma9UaEZgXKHHBgoLNVoSA==",
   "success": true,
   "projectFilePath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Desktop\\TestTest123.Desktop.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Tamaninja\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ffmpeg.autogen\\4.3.0.1\\ffmpeg.autogen.4.3.0.1.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\hidsharpcore\\1.2.1.1\\hidsharpcore.1.2.1.1.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",

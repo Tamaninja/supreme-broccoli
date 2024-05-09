@@ -1,100 +1,51 @@
 ﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using HidSharp;
 using ManagedBass;
 using ManagedBass.Wasapi;
+using osu.Framework.Extensions.IEnumerableExtensions;
 using osu.Framework.Logging;
-using static TestTest123.Game.Audio.Speaker;
 
 namespace TestTest123.Game.Audio
 {
     public class WasapiDevice
     {
         public WasapiDeviceInfo DeviceInfo { get; private set; }
-        public static BlockingCollection<WasapiDTO> SharedBuffer = new();
-        private WasapiProcedure wasapiProcedure;
-        private int deviceId;
+        public WasapiProcedure Procedure { get; set; }
+        public int Index { get; private set; }
 
-
-        public WasapiDevice(int deviceId, bool isInput, WasapiInitFlags Flags = WasapiInitFlags.Shared) {
-            this.deviceId = deviceId;
-
-            if (isInput)
-            {
-                wasapiProcedure = (buffer, length, user) =>
-                {
-                    SharedBuffer.Add(new WasapiDTO(buffer, length, user));
-                    return length;
-                };
-            }
-
-            InitiateWasapiDevice(isInput, Flags);
+        private WasapiDevice(int deviceId)
+        {
+            Index = deviceId;
+            DeviceInfo = BassWasapi.GetDeviceInfo(deviceId);
 
         }
-        private void outputThread()
+
+        public static WasapiDevice FromIndex(int index)
         {
-            var outputThread = new Thread(() =>
-            {
-                BassWasapi.CurrentDevice = deviceId;
-                BassWasapi.Start();
-
-                while (true)
-                {
-                    SharedBuffer.TryTake(out var incoming);
-                    BassWasapi.PutData(incoming.Buffer, incoming.Length);
-                }
-            });
-            outputThread.Start();
-
-        }
-        private void inputThread()
-        {
-            var inputThread = new Thread(() =>
-            {
-                BassWasapi.CurrentDevice = deviceId;
-                BassWasapi.Start();
-
-                while (true)
-                {
-
-                }
-            });
-            inputThread.Start();
+            return new WasapiDevice(index);
         }
 
-
-        public Errors InitiateWasapiDevice(bool isInput, WasapiInitFlags Flags = WasapiInitFlags.Shared)
+        public bool Initiate(int Frequency = 0, int Channels = 0, WasapiInitFlags Flags = WasapiInitFlags.Shared, float Buffer = 0f, float Period = 0f, IntPtr User = default)
         {
-            var initialized = BassWasapi.Init(deviceId, 48000, Procedure: wasapiProcedure, Flags: Flags, Buffer: 0.02f, Period: 0.01f);
-            if (initialized)
-            {
-                deviceId = BassWasapi.CurrentDevice;
-                DeviceInfo = BassWasapi.GetDeviceInfo(deviceId);
 
-                if (!DeviceInfo.IsInput)
-                {
-                    outputThread();
-                } else
-                {
-                    inputThread();
-                }
+            return (BassWasapi.Init(Index, Frequency, Channels, Flags, Buffer, Period, Procedure, User));
 
-            }
-
-            return (Bass.LastError);
         }
 
-
-
-        public readonly struct WasapiDTO(nint buffer, int length, nint user)
+        public override string ToString()
         {
-            public readonly nint Buffer = buffer;
-            public readonly int Length = length;
-            public readonly nint User = user;
+            return DeviceInfo.ToString();
+        }
+
+        public string GetInfo()
+        {
+            return
+                   $"Minimum Update Period (seconds): {DeviceInfo.MinimumUpdatePeriod}\n" +
+                   $"Mix Frequency: {DeviceInfo.MixFrequency}\n" +
+                   $"Mix Channels: {DeviceInfo.MixChannels}\n" +
+                   $"loopback: {DeviceInfo.IsLoopback}\n" +
+
+                   $"Is Input Device: {DeviceInfo.IsInput}\n";
         }
     }
 }

@@ -1,8 +1,10 @@
 ﻿
+using System;
 using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.IO.Pipes;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Threading;
 using ManagedBass;
 using ManagedBass.Wasapi;
@@ -24,70 +26,108 @@ namespace TestTest123.Game.Audio
         private SpriteText spriteText;
         private int playbackDevice;
         private int recordingDevice;
+        private WasapiProcedure procOutput;
+
 
 
         public Speaker(SpriteText text)
         {
             RelativeSizeAxes = Axes.Both;
+            Size = new Vector2(0.33f, 0.33f);
+
+            BasicDropdown<WasapiDevice> outputDropdown = new BasicDropdown<WasapiDevice>();
+            BasicDropdown<WasapiDevice> inputDropdown = new BasicDropdown<WasapiDevice>();
+
+            outputDropdown.Name = "Output devices";
+            inputDropdown.Name = "Input devices";
 
 
-            var scroll = new BasicScrollContainer();
-            scroll.RelativeSizeAxes = Axes.Both;
-            scroll.Size = new Vector2(0.33f, 0.33f);
+            inputDropdown.RelativeSizeAxes = Axes.X;
+            outputDropdown.RelativeSizeAxes = Axes.X;
+            inputDropdown.Width = 1f;
+            inputDropdown.Width = 1f;
 
 
-            var markdownList = new MarkdownList();
-            var marginPadding = new MarginPadding();
+            inputDropdown.Anchor = Anchor.TopRight;
 
-            scroll.Add(markdownList);
-
-
-            for (var i = 0; i < BassWasapi.DeviceCount; i++)
+            for (int i = 0; i < BassWasapi.DeviceCount; i++)
             {
-                BassWasapi.GetDeviceInfo(i, out var deviceInfo);
+                
+                WasapiDevice device = WasapiDevice.FromIndex(i);
+                if (device.DeviceInfo.IsLoopback
+                    || device.DeviceInfo.IsUnplugged
+                    || device.DeviceInfo.IsDisabled
+                    || device.DeviceInfo.MixFrequency == 0
+                    ) continue;
 
+                if(device.DeviceInfo.IsInput)
+                {
+                    inputDropdown.AddDropdownItem(device);
+                    if (device.DeviceInfo.IsDefault)
+                    {
+                        inputDropdown.Current.Default = device;
+                    }
 
-                var device = new Container();
-                device.RelativeSizeAxes = Axes.X;
-                device.Height = 100f;
+                }
+                else
+                {
+                    outputDropdown.AddDropdownItem(device);
+                    if (device.DeviceInfo.IsDefault)
+                    {
+                        outputDropdown.Current.Default = device;
+                    }
 
-
-                var box = new Box();
-                box.Colour = Colour4.AliceBlue.Opacity(0.5f);
-                box.RelativeSizeAxes = Axes.Both;
-
-                var textFlowContainer = new TextFlowContainer();
-
-                textFlowContainer.AddParagraph("DeviceId: " + i + "\n " +
-                    "DeviceName: " + deviceInfo.Name + "\n " +
-                    "Frequency: " + deviceInfo.MixFrequency + "\n " +
-                    "Channels: " + deviceInfo.MixChannels + "\n " +
-                    "init: " + deviceInfo.IsInitialized);
-                textFlowContainer.RelativeSizeAxes = Axes.Both;
-
-
-                device.Add(textFlowContainer);
-                device.Add(box);
-
-
-
-                markdownList.Insert(i, device);
+                }
             }
-            Add(scroll);
+            inputDropdown.Current.SetDefault();
+            outputDropdown.Current.SetDefault();
+
+            Add(inputDropdown);
+            Add(outputDropdown);
+
+            
             spriteText = text;
+
+            outputDropdown.Current.BindValueChanged((s) => {
+                
+                spriteText.Text = s.NewValue.GetInfo();
+            });
+            inputDropdown.Current.BindValueChanged((s) => {
+
+                spriteText.Text = s.NewValue.GetInfo();
+            });
 
 
         }
         protected override void LoadComplete()
         {
+            Thread thread = new Thread(() =>
+            {
 
-            WasapiDevice outputDevice = new WasapiDevice(BassWasapi.DefaultDevice, false);
-            WasapiDevice inputDevice = new WasapiDevice(BassWasapi.DefaultInputDevice, true, Flags: WasapiInitFlags.Exclusive);
+                WasapiProcedure wasapiProcedure = (nint buffer, int length, nint user) =>
+                {
+                    BassWasapi.CurrentDevice = 58;
+                    BassWasapi.PutData(buffer, length);
 
+                    return (length);
+                };
+
+                WasapiDevice outputDevice = WasapiDevice.FromIndex(58);
+                outputDevice.Initiate();
+                BassWasapi.Start();
+
+                WasapiDevice inputDevice = WasapiDevice.FromIndex(91);
+                inputDevice.Procedure = wasapiProcedure;
+                inputDevice.Initiate();
+                BassWasapi.Start();
+
+            });
+            thread.Start();
 
             base.LoadComplete();
         }
-        
+
+       
     }
 
 }
