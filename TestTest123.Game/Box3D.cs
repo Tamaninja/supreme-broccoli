@@ -1,6 +1,7 @@
 ﻿using osuTK;
 using osuTK.Graphics;
 using osu.Framework.Extensions.Color4Extensions;
+using Assimp;
 
 namespace TestTest123.Game
 {
@@ -34,8 +35,10 @@ namespace TestTest123.Game
 
 
 
+            AssimpContext importer = new AssimpContext();
+            Scene test = importer.ImportFile("");
 
-            SetVertices([v1, v2, v3, v4, v5, v6, v7, v8]);
+            SetVertices(test.Meshes[0].Vertices);
             SetIndices(faceIndices);
         }
     }

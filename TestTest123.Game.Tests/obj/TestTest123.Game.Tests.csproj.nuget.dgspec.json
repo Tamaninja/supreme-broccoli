@@ -54,13 +54,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AssimpNet": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.0.0, )"
+              "version": "[17.9.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.4.2, )"
+              "version": "[4.5.0, )"
             }
           },
           "imports": [
@@ -133,9 +137,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AssimpNet": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "ppy.osu.Framework": {
               "target": "Package",
-              "version": "[2024.306.0, )"
+              "version": "[2024.509.0, )"
             }
           },
           "imports": [
@@ -203,6 +211,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AssimpNet": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

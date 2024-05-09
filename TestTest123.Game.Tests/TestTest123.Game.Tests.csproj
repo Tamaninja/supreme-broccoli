@@ -8,7 +8,8 @@
     <ProjectReference Include="..\TestTest123.Game\TestTest123.Game.csproj" />
   </ItemGroup>
   <ItemGroup Label="Package References">
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.4.2" />
+    <PackageReference Include="AssimpNet" Version="4.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
   </ItemGroup>
 </Project>

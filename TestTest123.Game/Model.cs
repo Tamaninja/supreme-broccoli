@@ -1,4 +1,6 @@
-﻿using osu.Framework.Allocation;
+﻿using System.Collections.Generic;
+using Assimp;
+using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Shaders;
 using osuTK;
@@ -8,7 +10,7 @@ namespace TestTest123.Game
     public abstract partial class Model : Drawable, ITexturedShaderDrawable
     {
         private int[][] indices = [];
-        private Vector3[] vertices = [];
+        private List<Vector3D> vertices = [];
         protected Vector3 Pos;
         protected Vector3 Scale3D = Vector3.One;
 
@@ -60,11 +62,11 @@ namespace TestTest123.Game
             return Pos;
         }
 
-        public Vector3[] GetVertices()
+        public List<Vector3D> GetVertices()
         {
             return vertices;
         }
-        public void SetVertices(Vector3[] vertices)
+        public void SetVertices(List<Vector3D> vertices)
         {
             this.vertices = vertices;
         }

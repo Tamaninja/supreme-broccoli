@@ -6,11 +6,11 @@ using osu.Framework.Graphics.Sprites;
 using System.Collections.Generic;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Rendering.Vertices;
-using osu.Framework.Logging;
 using System;
 using osuTK.Graphics;
 using osuTK.Input;
-using ManagedBass;
+using Assimp;
+using Assimp.Unmanaged;
 
 
 
@@ -43,6 +43,11 @@ namespace TestTest123.Game
             Anchor = Anchor.Centre;
             Origin = Anchor.Centre;
 
+            AssimpContext importer = new AssimpContext();
+            Scene test = importer.ImportFile("");
+
+            test.Meshes[0].Vertices
+
         }
 
         protected override void Init()
@@ -68,6 +73,7 @@ namespace TestTest123.Game
         {
 
             
+
             Pos += Vector3.TransformNormal(offset, GetViewMatrix());
             
         }

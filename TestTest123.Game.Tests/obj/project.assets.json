@@ -2,6 +2,43 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/AssimpNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/AssimpNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libassimp.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libassimp.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/assimp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/assimp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "FFmpeg.AutoGen/4.3.0.1": {
         "type": "package",
         "compile": {
@@ -24,7 +61,7 @@
           "lib/net5.0/HidSharpCore.dll": {}
         }
       },
-      "JetBrains.Annotations/2022.3.1": {
+      "JetBrains.Annotations/2023.3.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/JetBrains.Annotations.dll": {
@@ -69,17 +106,17 @@
           }
         }
       },
-      "Microsoft.CodeCoverage/17.0.0": {
+      "Microsoft.CodeCoverage/17.9.0": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
         },
         "build": {
-          "build/netstandard1.0/Microsoft.CodeCoverage.props": {},
-          "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
+          "build/netstandard2.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
         }
       },
       "Microsoft.Diagnostics.NETCore.Client/0.2.61701": {
@@ -200,21 +237,21 @@
           }
         }
       },
-      "Microsoft.NET.Test.Sdk/17.0.0": {
+      "Microsoft.NET.Test.Sdk/17.9.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeCoverage": "17.0.0",
-          "Microsoft.TestPlatform.TestHost": "17.0.0"
+          "Microsoft.CodeCoverage": "17.9.0",
+          "Microsoft.TestPlatform.TestHost": "17.9.0"
         },
         "compile": {
-          "lib/netcoreapp2.1/_._": {}
+          "lib/netcoreapp3.1/_._": {}
         },
         "runtime": {
-          "lib/netcoreapp2.1/_._": {}
+          "lib/netcoreapp3.1/_._": {}
         },
         "build": {
-          "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.props": {},
-          "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.targets": {}
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.props": {},
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets": {}
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
@@ -238,254 +275,253 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.TestPlatform.ObjectModel/17.0.0": {
+      "Microsoft.TestPlatform.ObjectModel/17.9.0": {
         "type": "package",
         "dependencies": {
-          "NuGet.Frameworks": "5.0.0",
           "System.Reflection.Metadata": "1.6.0"
         },
         "compile": {
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
-          "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {}
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
-          "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {}
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {}
         },
         "resource": {
-          "lib/netcoreapp2.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "cs"
           },
-          "lib/netcoreapp2.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "cs"
           },
-          "lib/netcoreapp2.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "de"
           },
-          "lib/netcoreapp2.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "de"
           },
-          "lib/netcoreapp2.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "es"
           },
-          "lib/netcoreapp2.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "es"
           },
-          "lib/netcoreapp2.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "fr"
           },
-          "lib/netcoreapp2.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "fr"
           },
-          "lib/netcoreapp2.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "it"
           },
-          "lib/netcoreapp2.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "it"
           },
-          "lib/netcoreapp2.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "ja"
           },
-          "lib/netcoreapp2.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "ja"
           },
-          "lib/netcoreapp2.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "ko"
           },
-          "lib/netcoreapp2.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "ko"
           },
-          "lib/netcoreapp2.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "pl"
           },
-          "lib/netcoreapp2.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "pl"
           },
-          "lib/netcoreapp2.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netcoreapp2.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netcoreapp2.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "ru"
           },
-          "lib/netcoreapp2.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "ru"
           },
-          "lib/netcoreapp2.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "tr"
           },
-          "lib/netcoreapp2.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "tr"
           },
-          "lib/netcoreapp2.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netcoreapp2.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netcoreapp2.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
             "locale": "zh-Hant"
           },
-          "lib/netcoreapp2.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
             "locale": "zh-Hant"
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/17.0.0": {
+      "Microsoft.TestPlatform.TestHost/17.9.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "17.0.0",
-          "Newtonsoft.Json": "9.0.1"
+          "Microsoft.TestPlatform.ObjectModel": "17.9.0",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.Utilities.dll": {},
-          "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
-          "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {},
-          "lib/netcoreapp2.1/testhost.dll": {
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {},
+          "lib/netcoreapp3.1/testhost.dll": {
             "related": ".deps.json"
           }
         },
         "runtime": {
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.Utilities.dll": {},
-          "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
-          "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {},
-          "lib/netcoreapp2.1/testhost.dll": {
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {},
+          "lib/netcoreapp3.1/testhost.dll": {
             "related": ".deps.json"
           }
         },
         "resource": {
-          "lib/netcoreapp2.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "cs"
           },
-          "lib/netcoreapp2.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "cs"
           },
-          "lib/netcoreapp2.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "cs"
           },
-          "lib/netcoreapp2.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "de"
           },
-          "lib/netcoreapp2.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "de"
           },
-          "lib/netcoreapp2.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "de"
           },
-          "lib/netcoreapp2.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "es"
           },
-          "lib/netcoreapp2.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "es"
           },
-          "lib/netcoreapp2.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "es"
           },
-          "lib/netcoreapp2.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "fr"
           },
-          "lib/netcoreapp2.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "fr"
           },
-          "lib/netcoreapp2.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "fr"
           },
-          "lib/netcoreapp2.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "it"
           },
-          "lib/netcoreapp2.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "it"
           },
-          "lib/netcoreapp2.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "it"
           },
-          "lib/netcoreapp2.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "ja"
           },
-          "lib/netcoreapp2.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "ja"
           },
-          "lib/netcoreapp2.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "ja"
           },
-          "lib/netcoreapp2.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "ko"
           },
-          "lib/netcoreapp2.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "ko"
           },
-          "lib/netcoreapp2.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "ko"
           },
-          "lib/netcoreapp2.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "pl"
           },
-          "lib/netcoreapp2.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "pl"
           },
-          "lib/netcoreapp2.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "pl"
           },
-          "lib/netcoreapp2.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netcoreapp2.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netcoreapp2.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netcoreapp2.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "ru"
           },
-          "lib/netcoreapp2.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "ru"
           },
-          "lib/netcoreapp2.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "ru"
           },
-          "lib/netcoreapp2.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "tr"
           },
-          "lib/netcoreapp2.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "tr"
           },
-          "lib/netcoreapp2.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "tr"
           },
-          "lib/netcoreapp2.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netcoreapp2.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netcoreapp2.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netcoreapp2.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
             "locale": "zh-Hant"
           },
-          "lib/netcoreapp2.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
             "locale": "zh-Hant"
           },
-          "lib/netcoreapp2.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
             "locale": "zh-Hant"
           }
         },
         "build": {
-          "build/netcoreapp2.1/Microsoft.TestPlatform.TestHost.props": {}
+          "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
       "NativeLibraryLoader/1.0.13": {
@@ -696,7 +732,7 @@
           "build/_._": {}
         }
       },
-      "NUnit3TestAdapter/4.4.2": {
+      "NUnit3TestAdapter/4.5.0": {
         "type": "package",
         "build": {
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
@@ -820,11 +856,11 @@
           }
         }
       },
-      "ppy.osu.Framework/2024.306.0": {
+      "ppy.osu.Framework/2024.509.0": {
         "type": "package",
         "dependencies": {
           "FFmpeg.AutoGen": "4.3.0.1",
-          "JetBrains.Annotations": "2022.3.1",
+          "JetBrains.Annotations": "2023.3.0",
           "Markdig": "0.23.0",
           "Microsoft.Diagnostics.Runtime": "2.0.161401",
           "Microsoft.Extensions.ObjectPool": "5.0.11",
@@ -833,7 +869,7 @@
           "NuGet.ProjectModel": "5.11.0",
           "OpenTabletDriver": "0.6.4",
           "SharpFNT": "2.0.0",
-          "SixLabors.ImageSharp": "3.1.3",
+          "SixLabors.ImageSharp": "3.1.4",
           "StbiSharp": "1.1.0",
           "System.Numerics.Tensors": "8.0.0",
           "managed-midi": "1.10.0",
@@ -841,10 +877,10 @@
           "ppy.ManagedBass.Fx": "2022.1216.0",
           "ppy.ManagedBass.Mix": "2022.1216.0",
           "ppy.ManagedBass.Wasapi": "2022.1216.0",
-          "ppy.SDL2-CS": "1.0.693-alpha",
-          "ppy.Veldrid": "4.9.5-gc8dfc5ca19",
+          "ppy.SDL3-CS": "2024.418.1",
+          "ppy.Veldrid": "4.9.11-ged7d28974e",
           "ppy.Veldrid.SPIRV": "1.0.15-gca6cec7843",
-          "ppy.osu.Framework.NativeLibs": "2023.1225.0-nativelibs",
+          "ppy.osu.Framework.NativeLibs": "2024.326.0-nativelibs",
           "ppy.osu.Framework.SourceGeneration": "2023.720.0",
           "ppy.osuTK.NS20": "1.0.211"
         },
@@ -859,28 +895,28 @@
           }
         }
       },
-      "ppy.osu.Framework.NativeLibs/2023.1225.0-nativelibs": {
+      "ppy.osu.Framework.NativeLibs/2024.326.0-nativelibs": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net8.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net8.0/_._": {}
         },
         "runtimeTargets": {
           "runtimes/android/native/_._": {
             "assetType": "native",
             "rid": "android"
           },
-          "runtimes/linux-x64/native/libavcodec.so": {
+          "runtimes/linux-x64/native/libavcodec.so.58": {
             "assetType": "native",
             "rid": "linux-x64"
           },
-          "runtimes/linux-x64/native/libavformat.so": {
+          "runtimes/linux-x64/native/libavformat.so.58": {
             "assetType": "native",
             "rid": "linux-x64"
           },
-          "runtimes/linux-x64/native/libavutil.so": {
+          "runtimes/linux-x64/native/libavutil.so.56": {
             "assetType": "native",
             "rid": "linux-x64"
           },
@@ -896,7 +932,7 @@
             "assetType": "native",
             "rid": "linux-x64"
           },
-          "runtimes/linux-x64/native/libswscale.so": {
+          "runtimes/linux-x64/native/libswscale.so.5": {
             "assetType": "native",
             "rid": "linux-x64"
           },
@@ -1046,81 +1082,81 @@
           "lib/netstandard2.0/osuTK.dll": {}
         }
       },
-      "ppy.SDL2-CS/1.0.693-alpha": {
+      "ppy.SDL3-CS/2024.418.1": {
         "type": "package",
+        "dependencies": {
+          "JetBrains.Annotations": "2023.3.0"
+        },
         "compile": {
-          "lib/net6.0/SDL2-CS.dll": {}
+          "lib/net8.0/SDL3-CS.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/SDL2-CS.dll": {}
-        },
-        "contentFiles": {
-          "contentFiles/any/any/_._": {
-            "buildAction": "None",
-            "codeLanguage": "any",
-            "copyToOutput": false
+          "lib/net8.0/SDL3-CS.dll": {
+            "related": ".xml"
           }
         },
         "runtimeTargets": {
-          "runtimes/ios/native/SDL2.xcframework/Info.plist": {
+          "runtimes/ios/native/SDL3.xcframework/Info.plist": {
             "assetType": "native",
             "rid": "ios"
           },
-          "runtimes/ios/native/SDL2.xcframework/ios-arm64/SDL2.framework/Info.plist": {
+          "runtimes/ios/native/SDL3.xcframework/ios-arm64/SDL3.framework/Info.plist": {
             "assetType": "native",
             "rid": "ios"
           },
-          "runtimes/ios/native/SDL2.xcframework/ios-arm64/SDL2.framework/SDL2": {
+          "runtimes/ios/native/SDL3.xcframework/ios-arm64/SDL3.framework/SDL3": {
             "assetType": "native",
             "rid": "ios"
           },
-          "runtimes/ios/native/SDL2.xcframework/ios-arm64_x86_64-simulator/SDL2.framework/Info.plist": {
+          "runtimes/ios/native/SDL3.xcframework/ios-arm64_x86_64-simulator/SDL3.framework/Info.plist": {
             "assetType": "native",
             "rid": "ios"
           },
-          "runtimes/ios/native/SDL2.xcframework/ios-arm64_x86_64-simulator/SDL2.framework/SDL2": {
+          "runtimes/ios/native/SDL3.xcframework/ios-arm64_x86_64-simulator/SDL3.framework/SDL3": {
             "assetType": "native",
             "rid": "ios"
           },
-          "runtimes/linux-x64/native/libSDL2.so": {
+          "runtimes/linux-x64/native/libSDL3.so": {
             "assetType": "native",
             "rid": "linux-x64"
           },
-          "runtimes/linux-x86/native/libSDL2.so": {
+          "runtimes/linux-x86/native/libSDL3.so": {
             "assetType": "native",
             "rid": "linux-x86"
           },
-          "runtimes/osx-arm64/native/libSDL2.dylib": {
+          "runtimes/osx-arm64/native/libSDL3.dylib": {
             "assetType": "native",
             "rid": "osx-arm64"
           },
-          "runtimes/osx-x64/native/libSDL2.dylib": {
+          "runtimes/osx-x64/native/libSDL3.dylib": {
             "assetType": "native",
             "rid": "osx-x64"
           },
-          "runtimes/win-arm64/native/SDL2.dll": {
+          "runtimes/win-arm64/native/SDL3.dll": {
             "assetType": "native",
             "rid": "win-arm64"
           },
-          "runtimes/win-x64/native/SDL2.dll": {
+          "runtimes/win-x64/native/SDL3.dll": {
             "assetType": "native",
             "rid": "win-x64"
           },
-          "runtimes/win-x86/native/SDL2.dll": {
+          "runtimes/win-x86/native/SDL3.dll": {
             "assetType": "native",
             "rid": "win-x86"
           }
         }
       },
-      "ppy.Veldrid/4.9.5-gc8dfc5ca19": {
+      "ppy.Veldrid/4.9.11-ged7d28974e": {
         "type": "package",
         "dependencies": {
           "NativeLibraryLoader": "1.0.13",
-          "Vk": "1.0.25",
           "Vortice.D3DCompiler": "2.4.2",
           "Vortice.Direct3D11": "2.4.2",
-          "ppy.Veldrid.MetalBindings": "4.9.5-gc8dfc5ca19",
-          "ppy.Veldrid.OpenGLBindings": "4.9.5-gc8dfc5ca19"
+          "ppy.Veldrid.MetalBindings": "4.9.11-ged7d28974e",
+          "ppy.Veldrid.OpenGLBindings": "4.9.11-ged7d28974e",
+          "ppy.Vk": "1.0.26"
         },
         "compile": {
           "lib/net6.0/ppy.Veldrid.dll": {
@@ -1133,7 +1169,7 @@
           }
         }
       },
-      "ppy.Veldrid.MetalBindings/4.9.5-gc8dfc5ca19": {
+      "ppy.Veldrid.MetalBindings/4.9.11-ged7d28974e": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
@@ -1149,7 +1185,7 @@
           }
         }
       },
-      "ppy.Veldrid.OpenGLBindings/4.9.5-gc8dfc5ca19": {
+      "ppy.Veldrid.OpenGLBindings/4.9.11-ged7d28974e": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/ppy.Veldrid.OpenGLBindings.dll": {
@@ -1221,6 +1257,15 @@
           }
         }
       },
+      "ppy.Vk/1.0.26": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/vk.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/vk.dll": {}
+        }
+      },
       "runtime.native.System/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -1283,7 +1328,7 @@
           "buildMultiTargeting/_._": {}
         }
       },
-      "SixLabors.ImageSharp/3.1.3": {
+      "SixLabors.ImageSharp/3.1.4": {
         "type": "package",
         "compile": {
           "lib/net6.0/SixLabors.ImageSharp.dll": {
@@ -1927,15 +1972,6 @@
           }
         }
       },
-      "Vk/1.0.25": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0/vk.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/vk.dll": {}
-        }
-      },
       "Vortice.D3DCompiler/2.4.2": {
         "type": "package",
         "dependencies": {
@@ -2052,8 +2088,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AssimpNet": "4.1.0",
           "TestTest123.Resources": "1.0.0",
-          "ppy.osu.Framework": "2024.306.0"
+          "ppy.osu.Framework": "2024.509.0"
         },
         "compile": {
           "bin/placeholder/TestTest123.Game.dll": {}
@@ -2065,6 +2102,9 @@
       "TestTest123.Resources/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AssimpNet": "4.1.0"
+        },
         "compile": {
           "bin/placeholder/TestTest123.Resources.dll": {}
         },
@@ -2075,6 +2115,31 @@
     }
   },
   "libraries": {
+    "AssimpNet/4.1.0": {
+      "sha512": "z/4Tmf3Q2r1+vN6o/szArEZvPsdYNRYiS0L/yArybQd7n7KCiS9L4lRZhwwlHJb/edECM+Jky0XisVspr5aQWQ==",
+      "type": "package",
+      "path": "assimpnet/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AssimpNet Documentation (October 2018).chm",
+        "ChangeLog.txt",
+        "License.txt",
+        "assimpnet.4.1.0.nupkg.sha512",
+        "assimpnet.nuspec",
+        "build/AssimpNet.targets",
+        "lib/net35/AssimpNet.dll",
+        "lib/net35/AssimpNet.xml",
+        "lib/net40/AssimpNet.dll",
+        "lib/net40/AssimpNet.xml",
+        "lib/netstandard1.3/AssimpNet.dll",
+        "lib/netstandard1.3/AssimpNet.xml",
+        "runtimes/linux-x64/native/libassimp.so",
+        "runtimes/osx-x64/native/libassimp.dylib",
+        "runtimes/win-x64/native/assimp.dll",
+        "runtimes/win-x86/native/assimp.dll"
+      ]
+    },
     "FFmpeg.AutoGen/4.3.0.1": {
       "sha512": "koM5zqdZZHGAVK0faNZgi9HjCrHrMRGaTqmTEbvMSx3YeNIZBd62JQMZjAE0HlQ3NsLnRvXigVJtwRidOnosUw==",
       "type": "package",
@@ -2109,15 +2174,15 @@
         "lib/net5.0/HidSharpCore.dll"
       ]
     },
-    "JetBrains.Annotations/2022.3.1": {
-      "sha512": "11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+    "JetBrains.Annotations/2023.3.0": {
+      "sha512": "PHfnvdBUdGaTVG9bR/GEfxgTwWM0Z97Y6X3710wiljELBISipSfF5okn/vz+C2gfO+ihoEyVPjaJwn8ZalVukA==",
       "type": "package",
-      "path": "jetbrains.annotations/2022.3.1",
+      "path": "jetbrains.annotations/2023.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "jetbrains.annotations.2022.3.1.nupkg.sha512",
+        "jetbrains.annotations.2023.3.0.nupkg.sha512",
         "jetbrains.annotations.nuspec",
         "lib/net20/JetBrains.Annotations.dll",
         "lib/net20/JetBrains.Annotations.xml",
@@ -2188,69 +2253,69 @@
         "markdig.png"
       ]
     },
-    "Microsoft.CodeCoverage/17.0.0": {
-      "sha512": "+B+09FPYBtf+cXfZOPIgpnP5mzLq5QdlBo+JEFy9CdqBaWHWE/YMY0Mos9uDsZhcgFegJm9GigAgMyqBZyfq+Q==",
+    "Microsoft.CodeCoverage/17.9.0": {
+      "sha512": "RGD37ZSrratfScYXm7M0HjvxMxZyWZL4jm+XgMZbkIY1UPgjUpbNA/t+WTGj/rC/0Hm9A3IrH3ywbKZkOCnoZA==",
       "type": "package",
-      "path": "microsoft.codecoverage/17.0.0",
+      "path": "microsoft.codecoverage/17.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE_NET.txt",
+        "LICENSE_MIT.txt",
         "ThirdPartyNotices.txt",
-        "build/netstandard1.0/CodeCoverage/CodeCoverage.config",
-        "build/netstandard1.0/CodeCoverage/CodeCoverage.exe",
-        "build/netstandard1.0/CodeCoverage/VanguardInstrumentationProfiler_x86.config",
-        "build/netstandard1.0/CodeCoverage/amd64/CodeCoverage.exe",
-        "build/netstandard1.0/CodeCoverage/amd64/VanguardInstrumentationProfiler_x64.config",
-        "build/netstandard1.0/CodeCoverage/amd64/covrun64.dll",
-        "build/netstandard1.0/CodeCoverage/amd64/msdia140.dll",
-        "build/netstandard1.0/CodeCoverage/amd64/msvcdis140.dll",
-        "build/netstandard1.0/CodeCoverage/amd64/msvcp140.dll",
-        "build/netstandard1.0/CodeCoverage/amd64/msvcp140_atomic_wait.dll",
-        "build/netstandard1.0/CodeCoverage/amd64/vcruntime140.dll",
-        "build/netstandard1.0/CodeCoverage/amd64/vcruntime140_1.dll",
-        "build/netstandard1.0/CodeCoverage/codecoveragemessages.dll",
-        "build/netstandard1.0/CodeCoverage/coreclr/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "build/netstandard1.0/CodeCoverage/covrun32.dll",
-        "build/netstandard1.0/CodeCoverage/msdia140.dll",
-        "build/netstandard1.0/CodeCoverage/msvcdis140.dll",
-        "build/netstandard1.0/CodeCoverage/msvcp140.dll",
-        "build/netstandard1.0/CodeCoverage/msvcp140_atomic_wait.dll",
-        "build/netstandard1.0/CodeCoverage/vcruntime140.dll",
-        "build/netstandard1.0/InstrumentationEngine/alpine/x64/ProductionBreakpoints_x64.config",
-        "build/netstandard1.0/InstrumentationEngine/alpine/x64/libCoverageInstrumentationMethod.so",
-        "build/netstandard1.0/InstrumentationEngine/alpine/x64/libInstrumentationEngine.so",
-        "build/netstandard1.0/InstrumentationEngine/ubuntu/x64/ProductionBreakpoints_x64.config",
-        "build/netstandard1.0/InstrumentationEngine/ubuntu/x64/libCoverageInstrumentationMethod.so",
-        "build/netstandard1.0/InstrumentationEngine/ubuntu/x64/libInstrumentationEngine.so",
-        "build/netstandard1.0/InstrumentationEngine/x64/MicrosoftInstrumentationEngine_x64.dll",
-        "build/netstandard1.0/InstrumentationEngine/x86/MicrosoftInstrumentationEngine_x86.dll",
-        "build/netstandard1.0/Microsoft.CodeCoverage.props",
-        "build/netstandard1.0/Microsoft.CodeCoverage.targets",
-        "build/netstandard1.0/Microsoft.VisualStudio.Coverage.Core.dll",
-        "build/netstandard1.0/Microsoft.VisualStudio.Coverage.Instrumentation.dll",
-        "build/netstandard1.0/Microsoft.VisualStudio.Coverage.Interprocess.dll",
-        "build/netstandard1.0/Microsoft.VisualStudio.TraceDataCollector.dll",
-        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
-        "build/netstandard1.0/Mono.Cecil.dll",
-        "build/netstandard1.0/ThirdPartyNotices.txt",
-        "build/netstandard1.0/cs/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/de/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/es/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/fr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/it/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/ja/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/ko/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/pl/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/pt-BR/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/ru/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/tr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "build/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
-        "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "microsoft.codecoverage.17.0.0.nupkg.sha512",
+        "build/netstandard2.0/CodeCoverage/CodeCoverage.config",
+        "build/netstandard2.0/CodeCoverage/CodeCoverage.exe",
+        "build/netstandard2.0/CodeCoverage/VanguardInstrumentationProfiler_x86.config",
+        "build/netstandard2.0/CodeCoverage/amd64/CodeCoverage.exe",
+        "build/netstandard2.0/CodeCoverage/amd64/VanguardInstrumentationProfiler_x64.config",
+        "build/netstandard2.0/CodeCoverage/amd64/covrun64.dll",
+        "build/netstandard2.0/CodeCoverage/amd64/msdia140.dll",
+        "build/netstandard2.0/CodeCoverage/arm64/VanguardInstrumentationProfiler_arm64.config",
+        "build/netstandard2.0/CodeCoverage/arm64/covrunarm64.dll",
+        "build/netstandard2.0/CodeCoverage/arm64/msdia140.dll",
+        "build/netstandard2.0/CodeCoverage/codecoveragemessages.dll",
+        "build/netstandard2.0/CodeCoverage/coreclr/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "build/netstandard2.0/CodeCoverage/covrun32.dll",
+        "build/netstandard2.0/CodeCoverage/msdia140.dll",
+        "build/netstandard2.0/InstrumentationEngine/alpine/x64/VanguardInstrumentationProfiler_x64.config",
+        "build/netstandard2.0/InstrumentationEngine/alpine/x64/libCoverageInstrumentationMethod.so",
+        "build/netstandard2.0/InstrumentationEngine/alpine/x64/libInstrumentationEngine.so",
+        "build/netstandard2.0/InstrumentationEngine/arm64/MicrosoftInstrumentationEngine_arm64.dll",
+        "build/netstandard2.0/InstrumentationEngine/macos/x64/VanguardInstrumentationProfiler_x64.config",
+        "build/netstandard2.0/InstrumentationEngine/macos/x64/libCoverageInstrumentationMethod.dylib",
+        "build/netstandard2.0/InstrumentationEngine/macos/x64/libInstrumentationEngine.dylib",
+        "build/netstandard2.0/InstrumentationEngine/ubuntu/x64/VanguardInstrumentationProfiler_x64.config",
+        "build/netstandard2.0/InstrumentationEngine/ubuntu/x64/libCoverageInstrumentationMethod.so",
+        "build/netstandard2.0/InstrumentationEngine/ubuntu/x64/libInstrumentationEngine.so",
+        "build/netstandard2.0/InstrumentationEngine/x64/MicrosoftInstrumentationEngine_x64.dll",
+        "build/netstandard2.0/InstrumentationEngine/x86/MicrosoftInstrumentationEngine_x86.dll",
+        "build/netstandard2.0/Microsoft.CodeCoverage.Core.dll",
+        "build/netstandard2.0/Microsoft.CodeCoverage.Instrumentation.dll",
+        "build/netstandard2.0/Microsoft.CodeCoverage.Interprocess.dll",
+        "build/netstandard2.0/Microsoft.CodeCoverage.props",
+        "build/netstandard2.0/Microsoft.CodeCoverage.targets",
+        "build/netstandard2.0/Microsoft.DiaSymReader.dll",
+        "build/netstandard2.0/Microsoft.VisualStudio.TraceDataCollector.dll",
+        "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard2.0/Mono.Cecil.dll",
+        "build/netstandard2.0/ThirdPartyNotices.txt",
+        "build/netstandard2.0/cs/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/de/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/es/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/fr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/it/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/ja/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/ko/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/pl/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/pt-BR/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/ru/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/tr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/zh-Hans/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "lib/net462/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "microsoft.codecoverage.17.9.0.nupkg.sha512",
         "microsoft.codecoverage.nuspec"
       ]
     },
@@ -2394,37 +2459,26 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
-    "Microsoft.NET.Test.Sdk/17.0.0": {
-      "sha512": "fJcnMY3jX1MzJvhGvUWauRhU5eQsOaHdwlrcnI3NabBhbi8WLAkMFI8d0YnewA/+b9q/U7vbhp8Xmh1vJ05FYQ==",
+    "Microsoft.NET.Test.Sdk/17.9.0": {
+      "sha512": "7GUNAUbJYn644jzwLm5BD3a2p9C1dmP8Hr6fDPDxgItQk9hBs1Svdxzz07KQ/UphMSmgza9AbijBJGmw5D658A==",
       "type": "package",
-      "path": "microsoft.net.test.sdk/17.0.0",
+      "path": "microsoft.net.test.sdk/17.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE_NET.txt",
-        "build/net40/Microsoft.NET.Test.Sdk.props",
-        "build/net40/Microsoft.NET.Test.Sdk.targets",
-        "build/net45/Microsoft.NET.Test.Sdk.props",
-        "build/net45/Microsoft.NET.Test.Sdk.targets",
-        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.cs",
-        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.fs",
-        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.vb",
-        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.props",
-        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.targets",
-        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs",
-        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.fs",
-        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.vb",
-        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.props",
-        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.targets",
-        "build/uap10.0/Microsoft.NET.Test.Sdk.props",
+        "LICENSE_MIT.txt",
+        "build/net462/Microsoft.NET.Test.Sdk.props",
+        "build/net462/Microsoft.NET.Test.Sdk.targets",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.cs",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.fs",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.vb",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.props",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets",
         "buildMultiTargeting/Microsoft.NET.Test.Sdk.props",
-        "lib/net40/_._",
-        "lib/net45/_._",
-        "lib/netcoreapp1.0/_._",
-        "lib/netcoreapp2.1/_._",
-        "lib/uap10.0/_._",
-        "microsoft.net.test.sdk.17.0.0.nupkg.sha512",
+        "lib/net462/_._",
+        "lib/netcoreapp3.1/_._",
+        "microsoft.net.test.sdk.17.9.0.nupkg.sha512",
         "microsoft.net.test.sdk.nuspec"
       ]
     },
@@ -2458,189 +2512,73 @@
         "runtime.json"
       ]
     },
-    "Microsoft.TestPlatform.ObjectModel/17.0.0": {
-      "sha512": "WMugCdPkA8U/BsSRc+3RN+DXcaYSDvp/s0MofVld08iF1O5fek4iKecygk6NruNf1rgJsv4LK71mrwbyeqhzHA==",
+    "Microsoft.TestPlatform.ObjectModel/17.9.0": {
+      "sha512": "1ilw/8vgmjLyKU+2SKXKXaOqpYFJCQfGqGz+x0cosl981VzjrY74Sv6qAJv+neZMZ9ZMxF3ArN6kotaQ4uvEBw==",
       "type": "package",
-      "path": "microsoft.testplatform.objectmodel/17.0.0",
+      "path": "microsoft.testplatform.objectmodel/17.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE_NET.txt",
-        "lib/net45/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/net45/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/net45/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/net45/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net45/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/net451/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/net451/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/net451/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net451/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/net451/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/netcoreapp1.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/netcoreapp1.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/netcoreapp1.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp1.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/netcoreapp2.1/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/netcoreapp2.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netcoreapp2.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netcoreapp2.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/netstandard1.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/netstandard1.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/netstandard1.3/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/netstandard1.3/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/netstandard1.3/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/netstandard1.3/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/netstandard1.3/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "LICENSE_MIT.txt",
+        "lib/net462/Microsoft.TestPlatform.CoreUtilities.dll",
+        "lib/net462/Microsoft.TestPlatform.PlatformAbstractions.dll",
+        "lib/net462/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
+        "lib/net462/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll",
+        "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll",
+        "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
+        "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
         "lib/netstandard2.0/Microsoft.TestPlatform.CoreUtilities.dll",
         "lib/netstandard2.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
@@ -2670,257 +2608,77 @@
         "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/uap10.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/uap10.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/uap10.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "microsoft.testplatform.objectmodel.17.0.0.nupkg.sha512",
+        "microsoft.testplatform.objectmodel.17.9.0.nupkg.sha512",
         "microsoft.testplatform.objectmodel.nuspec"
       ]
     },
-    "Microsoft.TestPlatform.TestHost/17.0.0": {
-      "sha512": "xkKFzm0hylHF0SlDj78ACYMJC/i8fQ3i16sDDNYoKnjTsstGSQfuSBJ+QT4nqRXk/fOiYTh+iY0KIX5N7HTLuQ==",
+    "Microsoft.TestPlatform.TestHost/17.9.0": {
+      "sha512": "Spmg7Wx49Ya3SxBjyeAR+nQpjMTKZwTwpZ7KyeOTIqI/WHNPnBU4HUvl5kuHPQAwGWqMy4FGZja1HvEwvoaDiA==",
       "type": "package",
-      "path": "microsoft.testplatform.testhost/17.0.0",
+      "path": "microsoft.testplatform.testhost/17.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE_NET.txt",
+        "LICENSE_MIT.txt",
         "ThirdPartyNotices.txt",
-        "build/netcoreapp1.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "build/netcoreapp1.0/Microsoft.TestPlatform.TestHost.props",
-        "build/netcoreapp1.0/x64/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "build/netcoreapp1.0/x64/testhost.dll",
-        "build/netcoreapp1.0/x64/testhost.exe",
-        "build/netcoreapp1.0/x86/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "build/netcoreapp1.0/x86/testhost.x86.dll",
-        "build/netcoreapp1.0/x86/testhost.x86.exe",
-        "build/netcoreapp2.1/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "build/netcoreapp2.1/Microsoft.TestPlatform.TestHost.props",
-        "build/netcoreapp2.1/x64/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "build/netcoreapp2.1/x64/testhost.dll",
-        "build/netcoreapp2.1/x64/testhost.exe",
-        "build/netcoreapp2.1/x86/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "build/netcoreapp2.1/x86/testhost.x86.dll",
-        "build/netcoreapp2.1/x86/testhost.x86.exe",
-        "build/uap10.0/Microsoft.TestPlatform.TestHost.props",
-        "build/uap10.0/Microsoft.TestPlatform.TestHost.targets",
-        "build/uap10.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/cs/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/de/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/es/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/fr/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/it/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/ja/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/ko/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/pl/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/pt-BR/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/ru/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/tr/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/x64/msdia140.dll",
-        "build/uap10.0/x86/msdia140.dll",
-        "build/uap10.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/zh-Hans/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "build/uap10.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "build/uap10.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
-        "build/uap10.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "build/uap10.0/zh-Hant/Microsoft.TestPlatform.Utilities.resources.dll",
-        "build/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "build/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "lib/net45/_._",
-        "lib/netcoreapp1.0/Microsoft.TestPlatform.CommunicationUtilities.dll",
-        "lib/netcoreapp1.0/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/netcoreapp1.0/Microsoft.TestPlatform.CrossPlatEngine.dll",
-        "lib/netcoreapp1.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/netcoreapp1.0/Microsoft.TestPlatform.Utilities.dll",
-        "lib/netcoreapp1.0/Microsoft.VisualStudio.TestPlatform.Common.dll",
-        "lib/netcoreapp1.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/netcoreapp1.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/testhost.deps.json",
-        "lib/netcoreapp1.0/testhost.dll",
-        "lib/netcoreapp1.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/x64/msdia140.dll",
-        "lib/netcoreapp1.0/x86/msdia140.dll",
-        "lib/netcoreapp1.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp1.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp1.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/Microsoft.TestPlatform.CommunicationUtilities.dll",
-        "lib/netcoreapp2.1/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/netcoreapp2.1/Microsoft.TestPlatform.CrossPlatEngine.dll",
-        "lib/netcoreapp2.1/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/netcoreapp2.1/Microsoft.TestPlatform.Utilities.dll",
-        "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Common.dll",
-        "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/netcoreapp2.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/testhost.deps.json",
-        "lib/netcoreapp2.1/testhost.dll",
-        "lib/netcoreapp2.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/x64/msdia140.dll",
-        "lib/netcoreapp2.1/x86/msdia140.dll",
-        "lib/netcoreapp2.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/netcoreapp2.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
-        "lib/netcoreapp2.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
-        "lib/netcoreapp2.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "lib/uap10.0/Microsoft.TestPlatform.CommunicationUtilities.dll",
-        "lib/uap10.0/Microsoft.TestPlatform.CoreUtilities.dll",
-        "lib/uap10.0/Microsoft.TestPlatform.CrossPlatEngine.dll",
-        "lib/uap10.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
-        "lib/uap10.0/Microsoft.TestPlatform.Utilities.dll",
-        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.Common.dll",
-        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
-        "lib/uap10.0/testhost.dll",
-        "microsoft.testplatform.testhost.17.0.0.nupkg.sha512",
+        "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props",
+        "build/netcoreapp3.1/x64/testhost.dll",
+        "build/netcoreapp3.1/x64/testhost.exe",
+        "build/netcoreapp3.1/x86/testhost.x86.dll",
+        "build/netcoreapp3.1/x86/testhost.x86.exe",
+        "lib/net462/_._",
+        "lib/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll",
+        "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll",
+        "lib/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll",
+        "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll",
+        "lib/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll",
+        "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll",
+        "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
+        "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/testhost.deps.json",
+        "lib/netcoreapp3.1/testhost.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/x64/msdia140.dll",
+        "lib/netcoreapp3.1/x86/msdia140.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+        "microsoft.testplatform.testhost.17.9.0.nupkg.sha512",
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
@@ -3281,10 +3039,10 @@
         "nunit.nuspec"
       ]
     },
-    "NUnit3TestAdapter/4.4.2": {
-      "sha512": "vA/iHYcR+LYw+pRWQugckC/zW2fXHaqMr2uA82NOBt8v4YK4wMJrQ7QC8XLc7PjetEZ96cPbBTWsDDtmQiRZTA==",
+    "NUnit3TestAdapter/4.5.0": {
+      "sha512": "s8JpqTe9bI2f49Pfr3dFRfoVSuFQyraTj68c3XXjIS/MRGvvkLnrg6RLqnTjdShX+AdFUCCU/4Xex58AdUfs6A==",
       "type": "package",
-      "path": "nunit3testadapter/4.4.2",
+      "path": "nunit3testadapter/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3303,7 +3061,7 @@
         "build/netcoreapp3.1/nunit.engine.dll",
         "build/netcoreapp3.1/testcentric.engine.metadata.dll",
         "docs/README.md",
-        "nunit3testadapter.4.4.2.nupkg.sha512",
+        "nunit3testadapter.4.5.0.nupkg.sha512",
         "nunit3testadapter.nuspec",
         "nunit_256.png"
       ]
@@ -3437,39 +3195,39 @@
         "ppy.managedbass.wasapi.nuspec"
       ]
     },
-    "ppy.osu.Framework/2024.306.0": {
-      "sha512": "OAo39raYu7MFiK8bIvwT207XbtyKdK4YsoW7n5QBeORqRd4yXQlyNkZhD6okOg16bI8O1UTgSECvTTFy5sGgLg==",
+    "ppy.osu.Framework/2024.509.0": {
+      "sha512": "s1knNI6wpTaED2sVTESzPh/HdXKSAkGJqdW3p7hfM2uoW+aHJnIUmd+Tpo0eBgXEi3nIQOWhARZkwwJm+k9q3A==",
       "type": "package",
-      "path": "ppy.osu.framework/2024.306.0",
+      "path": "ppy.osu.framework/2024.509.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
         "lib/net8.0/osu.Framework.dll",
         "lib/net8.0/osu.Framework.xml",
-        "ppy.osu.framework.2024.306.0.nupkg.sha512",
+        "ppy.osu.framework.2024.509.0.nupkg.sha512",
         "ppy.osu.framework.nuspec"
       ]
     },
-    "ppy.osu.Framework.NativeLibs/2023.1225.0-nativelibs": {
-      "sha512": "hAiW9cNm3gxHE9OoXjIpTNIwzFnYHNwTo0acSQNYEoOa0Wu02cN3WVO883JNcpOnoucxpOHPZorYZbHF88EX0Q==",
+    "ppy.osu.Framework.NativeLibs/2024.326.0-nativelibs": {
+      "sha512": "h+SdpcOkEMSaMqLughyN5r/1DFJhKvUPqBADb6aMpLVUuC54vg1j+w7ah2hO4LGFH1ntugMlcvipG9tjmDRHVQ==",
       "type": "package",
-      "path": "ppy.osu.framework.nativelibs/2023.1225.0-nativelibs",
+      "path": "ppy.osu.framework.nativelibs/2024.326.0-nativelibs",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "lib/net6.0/_._",
-        "ppy.osu.framework.nativelibs.2023.1225.0-nativelibs.nupkg.sha512",
+        "lib/net8.0/_._",
+        "ppy.osu.framework.nativelibs.2024.326.0-nativelibs.nupkg.sha512",
         "ppy.osu.framework.nativelibs.nuspec",
         "runtimes/android/native/_._",
-        "runtimes/linux-x64/native/libavcodec.so",
-        "runtimes/linux-x64/native/libavformat.so",
-        "runtimes/linux-x64/native/libavutil.so",
+        "runtimes/linux-x64/native/libavcodec.so.58",
+        "runtimes/linux-x64/native/libavformat.so.58",
+        "runtimes/linux-x64/native/libavutil.so.56",
         "runtimes/linux-x64/native/libbass.so",
         "runtimes/linux-x64/native/libbass_fx.so",
         "runtimes/linux-x64/native/libbassmix.so",
-        "runtimes/linux-x64/native/libswscale.so",
+        "runtimes/linux-x64/native/libswscale.so.5",
         "runtimes/linux-x86/native/libbass.so",
         "runtimes/linux-x86/native/libbass_fx.so",
         "runtimes/linux-x86/native/libbassmix.so",
@@ -3530,36 +3288,35 @@
         "ppy.osutk.ns20.nuspec"
       ]
     },
-    "ppy.SDL2-CS/1.0.693-alpha": {
-      "sha512": "ka8haqo4vEhf1AzuOCLUk7g+ZPKWhDiN80QXndRI9kiDo3LLD7xDefNJGQnKYwitaG0J85FwJly6zjat2z3/hg==",
+    "ppy.SDL3-CS/2024.418.1": {
+      "sha512": "sQ59QByktEXxI0MHo859O373o5vfYdoIrH1Z6BwoDrXAl6MEOxn9icBQPT8FZJHqwwv6ug73086epc/vaDZZgQ==",
       "type": "package",
-      "path": "ppy.sdl2-cs/1.0.693-alpha",
+      "path": "ppy.sdl3-cs/2024.418.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "content/app.config",
-        "contentFiles/any/net6.0/app.config",
-        "lib/net6.0/SDL2-CS.dll",
-        "ppy.sdl2-cs.1.0.693-alpha.nupkg.sha512",
-        "ppy.sdl2-cs.nuspec",
-        "runtimes/ios/native/SDL2.xcframework/Info.plist",
-        "runtimes/ios/native/SDL2.xcframework/ios-arm64/SDL2.framework/Info.plist",
-        "runtimes/ios/native/SDL2.xcframework/ios-arm64/SDL2.framework/SDL2",
-        "runtimes/ios/native/SDL2.xcframework/ios-arm64_x86_64-simulator/SDL2.framework/Info.plist",
-        "runtimes/ios/native/SDL2.xcframework/ios-arm64_x86_64-simulator/SDL2.framework/SDL2",
-        "runtimes/linux-x64/native/libSDL2.so",
-        "runtimes/linux-x86/native/libSDL2.so",
-        "runtimes/osx-arm64/native/libSDL2.dylib",
-        "runtimes/osx-x64/native/libSDL2.dylib",
-        "runtimes/win-arm64/native/SDL2.dll",
-        "runtimes/win-x64/native/SDL2.dll",
-        "runtimes/win-x86/native/SDL2.dll"
+        "lib/net8.0/SDL3-CS.dll",
+        "lib/net8.0/SDL3-CS.xml",
+        "ppy.sdl3-cs.2024.418.1.nupkg.sha512",
+        "ppy.sdl3-cs.nuspec",
+        "runtimes/ios/native/SDL3.xcframework/Info.plist",
+        "runtimes/ios/native/SDL3.xcframework/ios-arm64/SDL3.framework/Info.plist",
+        "runtimes/ios/native/SDL3.xcframework/ios-arm64/SDL3.framework/SDL3",
+        "runtimes/ios/native/SDL3.xcframework/ios-arm64_x86_64-simulator/SDL3.framework/Info.plist",
+        "runtimes/ios/native/SDL3.xcframework/ios-arm64_x86_64-simulator/SDL3.framework/SDL3",
+        "runtimes/linux-x64/native/libSDL3.so",
+        "runtimes/linux-x86/native/libSDL3.so",
+        "runtimes/osx-arm64/native/libSDL3.dylib",
+        "runtimes/osx-x64/native/libSDL3.dylib",
+        "runtimes/win-arm64/native/SDL3.dll",
+        "runtimes/win-x64/native/SDL3.dll",
+        "runtimes/win-x86/native/SDL3.dll"
       ]
     },
-    "ppy.Veldrid/4.9.5-gc8dfc5ca19": {
-      "sha512": "fuEZQT2VvgCD1W5DdQYmazH47+9yWKK9GfXzwIO26fm0x/Dfn4j84pPirA1FNukRquNJ6B6KEwIYyK+abY3TMw==",
+    "ppy.Veldrid/4.9.11-ged7d28974e": {
+      "sha512": "UY7tITXBbuZI8f7wp4z2MLvUJKZKno2Euw3lh35WXXwiBavnMnVF5VGiLozlTsnrvA9ZfjvcaBBGC29L+juTuw==",
       "type": "package",
-      "path": "ppy.veldrid/4.9.5-gc8dfc5ca19",
+      "path": "ppy.veldrid/4.9.11-ged7d28974e",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3569,33 +3326,33 @@
         "lib/netstandard2.0/ppy.Veldrid.dll",
         "lib/netstandard2.0/ppy.Veldrid.pdb",
         "lib/netstandard2.0/ppy.Veldrid.xml",
-        "ppy.veldrid.4.9.5-gc8dfc5ca19.nupkg.sha512",
+        "ppy.veldrid.4.9.11-ged7d28974e.nupkg.sha512",
         "ppy.veldrid.nuspec"
       ]
     },
-    "ppy.Veldrid.MetalBindings/4.9.5-gc8dfc5ca19": {
-      "sha512": "fnABLdftFvnvT9DaJFhiMl0zIxZvrm9ELjXk6wG9qBNCvsRXV/m7RoRHKGIMPJZpNDF2tLIPS+MCakHGzMRACQ==",
+    "ppy.Veldrid.MetalBindings/4.9.11-ged7d28974e": {
+      "sha512": "BDtuVa2vGxWYxwHKlpnuVAJqdKnAv/wgs9V1n/ud3daZoLTT8VYHAI8gBfgmnYAni4r93R3KqjtmquGMhUpRoQ==",
       "type": "package",
-      "path": "ppy.veldrid.metalbindings/4.9.5-gc8dfc5ca19",
+      "path": "ppy.veldrid.metalbindings/4.9.11-ged7d28974e",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/ppy.Veldrid.MetalBindings.dll",
         "lib/netstandard2.0/ppy.Veldrid.MetalBindings.pdb",
-        "ppy.veldrid.metalbindings.4.9.5-gc8dfc5ca19.nupkg.sha512",
+        "ppy.veldrid.metalbindings.4.9.11-ged7d28974e.nupkg.sha512",
         "ppy.veldrid.metalbindings.nuspec"
       ]
     },
-    "ppy.Veldrid.OpenGLBindings/4.9.5-gc8dfc5ca19": {
-      "sha512": "d+1ci2N0Uo1lp+KcAbpQi2DRiAyBYGY9FU9YTI5LhyVj4PNIzoy1uQezDjZv0Bd7b9LPTLhKKCpUC1L3v7bpcA==",
+    "ppy.Veldrid.OpenGLBindings/4.9.11-ged7d28974e": {
+      "sha512": "Ko04jkTTKK5cQtn6KXuyMjGg5ReOM50PAxQF8n2YQ1YyJ0oY8QJMvisyJd4yrLl9mvF2QCvyXRVWT89QQNeeHw==",
       "type": "package",
-      "path": "ppy.veldrid.openglbindings/4.9.5-gc8dfc5ca19",
+      "path": "ppy.veldrid.openglbindings/4.9.11-ged7d28974e",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/ppy.Veldrid.OpenGLBindings.dll",
         "lib/netstandard2.0/ppy.Veldrid.OpenGLBindings.pdb",
-        "ppy.veldrid.openglbindings.4.9.5-gc8dfc5ca19.nupkg.sha512",
+        "ppy.veldrid.openglbindings.4.9.11-ged7d28974e.nupkg.sha512",
         "ppy.veldrid.openglbindings.nuspec"
       ]
     },
@@ -3625,6 +3382,19 @@
         "runtimes/osx/native/libveldrid-spirv.dylib",
         "runtimes/win-x64/native/libveldrid-spirv.dll",
         "runtimes/win-x86/native/libveldrid-spirv.dll"
+      ]
+    },
+    "ppy.Vk/1.0.26": {
+      "sha512": "hovUs8hPS2QUChNnaU/3IflJsVtXXMa3KSxRjA3gxBOalTYzL2jD35Dusf7bYDw+imeu56pResM7qDxvKXnvZw==",
+      "type": "package",
+      "path": "ppy.vk/1.0.26",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/vk.dll",
+        "lib/netstandard1.4/vk.dll",
+        "ppy.vk.1.0.26.nupkg.sha512",
+        "ppy.vk.nuspec"
       ]
     },
     "runtime.native.System/4.0.0": {
@@ -3696,10 +3466,10 @@
         "sharpgen.runtime.com.nuspec"
       ]
     },
-    "SixLabors.ImageSharp/3.1.3": {
-      "sha512": "wybtaqZQ1ZRZ4ZeU+9h+PaSeV14nyiGKIy7qRbDfSHzHq4ybqyOcjoifeaYbiKLO1u+PVxLBuy7MF/DMmwwbfg==",
+    "SixLabors.ImageSharp/3.1.4": {
+      "sha512": "lFIdxgGDA5iYkUMRFOze7BGLcdpoLFbR+a20kc1W7NepvzU7ejtxtWOg9RvgG7kb9tBoJ3ONYOK6kLil/dgF1w==",
       "type": "package",
-      "path": "sixlabors.imagesharp/3.1.3",
+      "path": "sixlabors.imagesharp/3.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3708,7 +3478,7 @@
         "lib/net6.0/SixLabors.ImageSharp.dll",
         "lib/net6.0/SixLabors.ImageSharp.xml",
         "sixlabors.imagesharp.128.png",
-        "sixlabors.imagesharp.3.1.3.nupkg.sha512",
+        "sixlabors.imagesharp.3.1.4.nupkg.sha512",
         "sixlabors.imagesharp.nuspec"
       ]
     },
@@ -5832,19 +5602,6 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "Vk/1.0.25": {
-      "sha512": "n1tpY/n9YV7j+wViUD31yc6TQMK3tkcdUXUbJUr3vIVifrRySzq5hpdxUnvC0SvBp8WrbAgowwd1YDvtc+u67A==",
-      "type": "package",
-      "path": "vk/1.0.25",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net5.0/vk.dll",
-        "lib/netstandard1.4/vk.dll",
-        "vk.1.0.25.nupkg.sha512",
-        "vk.nuspec"
-      ]
-    },
     "Vortice.D3DCompiler/2.4.2": {
       "sha512": "F/758/PioamTyLaVHY8qXK6lt1jKPDNa1VSRf/LGGhMYywVAAydK0xxhlGTrvfj3z+Amzk2fwliCNWTcvpD3Lw==",
       "type": "package",
@@ -5965,8 +5722,9 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.NET.Test.Sdk >= 17.0.0",
-      "NUnit3TestAdapter >= 4.4.2",
+      "AssimpNet >= 4.1.0",
+      "Microsoft.NET.Test.Sdk >= 17.9.0",
+      "NUnit3TestAdapter >= 4.5.0",
       "TestTest123.Game >= 1.0.0"
     ]
   },
@@ -6024,13 +5782,17 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AssimpNet": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "[17.0.0, )"
+            "version": "[17.9.0, )"
           },
           "NUnit3TestAdapter": {
             "target": "Package",
-            "version": "[4.4.2, )"
+            "version": "[4.5.0, )"
           }
         },
         "imports": [
