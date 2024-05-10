@@ -48,11 +48,8 @@ namespace TestTest123.Game
                 {
                     Child = new Note().GetChild()
                 },
-                new Speaker(text
-                )
-
             };
-            camera = new Camera(mainStage, new Vector3(0,0,5), text);
+            camera = new Camera(mainStage, text);
 
         }
 

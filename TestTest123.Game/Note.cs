@@ -26,7 +26,7 @@ namespace TestTest123.Game
             Colour = Color4.DodgerBlue.Opacity(0.5f);
 
 
-            Box3D box = new Box3D(new Vector3(0, 0, 0));
+            Box3D box = new Box3D();
 
             Box = box;
         }

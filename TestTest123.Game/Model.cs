@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Assimp;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
@@ -9,16 +10,21 @@ namespace TestTest123.Game
 {
     public abstract partial class Model : Drawable, ITexturedShaderDrawable
     {
-        private int[][] indices = [];
-        private List<Vector3D> vertices = [];
-        protected Vector3 Pos;
         protected Vector3 Scale3D = Vector3.One;
+        protected List<Mesh> Meshes;
+        protected new Vector3 Position = Vector3.Zero;
+        protected AssimpContext Importer;
 
-        public Model(Vector3 pos)
+        public Model(string filepath = null)
         {
-            SetPosition(pos);
-            
-            Init();
+            Importer = new AssimpContext();
+            if (filepath != null)
+            {
+                Scene scene = Importer.ImportFile(filepath, PostProcessSteps.Triangulate | PostProcessSteps.MakeLeftHanded);
+                Meshes = scene.Meshes;
+            }
+
+
         }
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders)
@@ -36,44 +42,29 @@ namespace TestTest123.Game
         }
         public Matrix4 GetMatrix()
         {
-            Matrix4 matrix = Matrix4.CreateTranslation(Pos);
+
+            Vector3 temp = new Vector3(Position.X, Position.Y, Position.Z);
+            Matrix4 matrix = Matrix4.CreateTranslation(temp);
             Matrix4 scale = Matrix4.CreateScale(Scale3D);
 
             return (matrix * scale);
         }
 
-        protected void SetIndices(int[][] indices)
-        {
-            this.indices = indices;
-        }
-
-        public int[][] GetIndices()
-        {
-            return indices;
-        }
 
         public void SetPosition(Vector3 pos)
         {
-            Pos = pos;
+           Position = pos;
         }
 
         public Vector3 GetPosition() {
 
-            return Pos;
+            return Position;
         }
 
-        public List<Vector3D> GetVertices()
+        public List<Mesh> GetMeshes()
         {
-            return vertices;
+            return Meshes;
         }
-        public void SetVertices(List<Vector3D> vertices)
-        {
-            this.vertices = vertices;
-        }
-
-
-        protected abstract void Init();
-
 
     }
 }
