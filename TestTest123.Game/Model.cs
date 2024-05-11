@@ -14,6 +14,9 @@ namespace TestTest123.Game
         protected List<Mesh> Meshes;
         protected new Vector3 Position = Vector3.Zero;
         protected AssimpContext Importer;
+        protected float Yaw = 0;
+        protected float Pitch = 0;
+        protected float Roll = 0;
 
         public Model(string filepath = null)
         {
@@ -40,14 +43,15 @@ namespace TestTest123.Game
         {
             Scale3D = scale;
         }
+
+
         public Matrix4 GetMatrix()
         {
 
-            Vector3 temp = new Vector3(Position.X, Position.Y, Position.Z);
-            Matrix4 matrix = Matrix4.CreateTranslation(temp);
+            Matrix4 translation = Matrix4.CreateTranslation(Position);
             Matrix4 scale = Matrix4.CreateScale(Scale3D);
 
-            return (matrix * scale);
+            return (scale * translation);
         }
 
 

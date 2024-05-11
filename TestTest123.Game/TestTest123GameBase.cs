@@ -29,7 +29,7 @@ namespace TestTest123.Game
         {
             if (e.Key == osuTK.Input.Key.Escape)
             {
-                this.Dispose();
+                this.RequestExit();
             }
 
             return base.OnKeyDown(e);

@@ -21,23 +21,18 @@ namespace TestTest123.Game
     {
         private Stage stage;
 
-        private float yaw;
-        private float pitch;
-
         private SpriteText spriteText;
+        private Vector3 viewDirecion;
 
         private float yFov = 50;
         public float FarPlane { get; }
-        private Assimp.Camera camera;
 
         public Camera(Stage stage, SpriteText debug)
         {
-            camera = new Assimp.Camera();
-
 
             stage.Add(this);
             this.stage = stage;
-
+            spriteText = debug;
             FarPlane = 5000f;
 
             RelativeSizeAxes = Axes.Both;
@@ -46,28 +41,35 @@ namespace TestTest123.Game
             Anchor = Anchor.Centre;
             Origin = Anchor.Centre;
 
-            pitch = 0;
-            yaw = 0;
-
         }
 
         public void HandleMouseEvent(MouseMoveEvent e)
         {
             Vector2 delta = e.Delta * 0.25f;
 
-            yaw += delta.X;
-            pitch += -delta.Y;
+            Yaw += delta.X;
+            Pitch += -delta.Y;
 
-            pitch = MathHelper.Clamp(pitch, -89, 89);
-
+            Pitch = MathHelper.Clamp(Pitch, -89, 89);
+            spriteText.Text = (Yaw +"/"+ Pitch);
             UpdateViewDirection();
         }
+        public Matrix4 GetRotationMatrix()
+        {
+            Matrix4 yaw = Matrix4.CreateRotationX(Yaw);
+            Matrix4 pitch = Matrix4.CreateRotationY(Pitch);
+            Matrix4 roll = Matrix4.CreateRotationZ(Roll);
 
+            return (yaw * pitch * roll);
+        }
         public void MoveBy(Vector3 offset)
         {
+            
+            Vector3 temp = Vector3.TransformPosition(offset.Normalized(), GetRotationMatrix());
 
-
-            Position += offset;
+            
+            Logger.LogPrint(temp.ToString());
+            Position += temp;
         }
 
 
@@ -79,14 +81,11 @@ namespace TestTest123.Game
         public void UpdateViewDirection()
         {
 
+            viewDirecion.X  = MathF.Cos(MathHelper.DegreesToRadians(Yaw)) * MathF.Cos(MathHelper.DegreesToRadians(Pitch));
+            viewDirecion.Y = MathF.Sin(MathHelper.DegreesToRadians(Pitch));
+            viewDirecion.Z = MathF.Sin(MathHelper.DegreesToRadians(Yaw)) * MathF.Cos(MathHelper.DegreesToRadians(Pitch));
 
-            Vector3D temp = camera.Direction; 
-
-            temp.X  = MathF.Cos(MathHelper.DegreesToRadians(yaw)) * MathF.Cos(MathHelper.DegreesToRadians(pitch));
-            temp.Y = MathF.Sin(MathHelper.DegreesToRadians(pitch));
-            temp.Z = MathF.Sin(MathHelper.DegreesToRadians(yaw)) * MathF.Cos(MathHelper.DegreesToRadians(pitch));
-
-            temp.Normalize();
+            viewDirecion.Normalize();
         }
 
         protected override bool OnMouseMove(MouseMoveEvent e)
@@ -100,15 +99,7 @@ namespace TestTest123.Game
 
         public Matrix4 GetViewMatrix()
         {
-            
-            Vector3 vec = Position;
-            Vector3 temp = Vector3.Normalize(Position - a(camera.Direction));
-
-            return Matrix4.LookAt(vec, vec + temp, Vector3.UnitY);
-        }
-        private  Vector3 a(Vector3D value)
-        {
-            return (new Vector3(value.X, value.Y, value.Z));
+            return Matrix4.LookAt(Position, Position + viewDirecion, Vector3.UnitY);
         }
         public Matrix4 GetProjectionMatrix()
         {

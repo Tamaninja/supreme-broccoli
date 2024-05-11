@@ -1,0 +1,6 @@
+C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.csproj.AssemblyReference.cache
+C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.AssemblyInfoInputs.cache
+C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.AssemblyInfo.cs
+C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.csproj.CoreCompileInputs.cache
+C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.sourcelink.json
