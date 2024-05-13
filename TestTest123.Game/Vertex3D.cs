@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Runtime.InteropServices;
+using Assimp;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Rendering.Vertices;
 using osuTK;
@@ -10,36 +11,25 @@ using osuTK.Graphics.ES30;
 namespace TestTest123.Game
 {
 
-    [StructLayout(LayoutKind.Sequential)]
-    public struct Vertex3D : IEquatable<Vertex3D>, IVertex
+    public struct TexturedVertex3D : IEquatable<TexturedVertex3D>, IVertex
     {
-
         [VertexMember(3, VertexAttribPointerType.Float)]
-        public Vector3 Position;
+        public Vector3D Position;
 
         [VertexMember(4, VertexAttribPointerType.Float)]
-        public Color4 Color;
+        public Color4D Colour;
 
-
-        [Obsolete("Initialise this type with an IRenderer instead", true)]
-        public Vertex3D()
+        [VertexMember(2, VertexAttribPointerType.Float)]
+        public Vector2D TexturePosition;
+        
+        public readonly bool Equals(TexturedVertex3D other)
         {
-            this = default; // explicitly initialise all members to default values
-        }
+            if (Position.Equals(other.Position) && TexturePosition.Equals(other.TexturePosition))
+            {
+                return Colour.Equals(other.Colour);
+            }
 
-        public Vertex3D(IRenderer renderer)
-        {
-            this = default; // explicitly initialise all members to default values
-
-
-        }
-
-        public bool Equals(Vertex3D other)
-        {
-            return(
-                Position.Equals(other.Position)
-                && Color.Equals(other.Color)
-                );
+            return false;
         }
     }
 }

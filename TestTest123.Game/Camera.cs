@@ -12,6 +12,9 @@ using osuTK.Input;
 using Assimp;
 using Assimp.Unmanaged;
 using osu.Framework.Logging;
+using osu.Framework.Graphics.Textures;
+using osu.Framework.Platform;
+using osu.Framework;
 
 
 
@@ -22,19 +25,21 @@ namespace TestTest123.Game
         private Stage stage;
 
         private SpriteText spriteText;
-        private Vector3 viewDirecion;
 
         private float yFov = 50;
         public float FarPlane { get; }
+        public float NearPlane { get; }
+
+        public float AspectRatio { get; }
 
         public Camera(Stage stage, SpriteText debug)
         {
-
+            AspectRatio = 16 / 9;
             stage.Add(this);
             this.stage = stage;
             spriteText = debug;
             FarPlane = 5000f;
-
+            NearPlane = 1f;
             RelativeSizeAxes = Axes.Both;
             RelativePositionAxes = Axes.Both;
 
@@ -51,25 +56,15 @@ namespace TestTest123.Game
             Pitch += -delta.Y;
 
             Pitch = MathHelper.Clamp(Pitch, -89, 89);
-            spriteText.Text = (Yaw +"/"+ Pitch);
+            spriteText.Text = (Forward.ToString());
             UpdateViewDirection();
-        }
-        public Matrix4 GetRotationMatrix()
-        {
-            Matrix4 yaw = Matrix4.CreateRotationX(Yaw);
-            Matrix4 pitch = Matrix4.CreateRotationY(Pitch);
-            Matrix4 roll = Matrix4.CreateRotationZ(Roll);
-
-            return (yaw * pitch * roll);
         }
         public void MoveBy(Vector3 offset)
         {
-            
-            Vector3 temp = Vector3.TransformPosition(offset.Normalized(), GetRotationMatrix());
 
-            
-            Logger.LogPrint(temp.ToString());
-            Position += temp;
+            Vector3 temp1 = (Matrix4.CreateTranslation(offset) * GetViewMatrix().Inverted()).ExtractTranslation();
+
+            Position = temp1;
         }
 
 
@@ -81,29 +76,26 @@ namespace TestTest123.Game
         public void UpdateViewDirection()
         {
 
-            viewDirecion.X  = MathF.Cos(MathHelper.DegreesToRadians(Yaw)) * MathF.Cos(MathHelper.DegreesToRadians(Pitch));
-            viewDirecion.Y = MathF.Sin(MathHelper.DegreesToRadians(Pitch));
-            viewDirecion.Z = MathF.Sin(MathHelper.DegreesToRadians(Yaw)) * MathF.Cos(MathHelper.DegreesToRadians(Pitch));
 
-            viewDirecion.Normalize();
+            Forward.X = MathF.Cos(MathHelper.DegreesToRadians(Yaw)) * MathF.Cos(MathHelper.DegreesToRadians(Pitch));
+            Forward.Y = MathF.Sin(MathHelper.DegreesToRadians(Pitch));
+            Forward.Z = MathF.Sin(MathHelper.DegreesToRadians(Yaw)) * MathF.Cos(MathHelper.DegreesToRadians(Pitch));
+
         }
 
         protected override bool OnMouseMove(MouseMoveEvent e)
         {
-           HandleMouseEvent(e);
-           
+            HandleMouseEvent(e);
 
-           return true;
+
+            return true;
         }
 
 
-        public Matrix4 GetViewMatrix()
-        {
-            return Matrix4.LookAt(Position, Position + viewDirecion, Vector3.UnitY);
-        }
+
         public Matrix4 GetProjectionMatrix()
         {
-            return Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), 16 / 9, 1, 50);
+            return Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), AspectRatio, NearPlane, FarPlane);
         }
 
 
@@ -124,30 +116,25 @@ namespace TestTest123.Game
                     return true;
 
                 case Key.A:
-                    MoveBy(new Vector3(100f, 0, 0));
-                    return true;
-
-                case Key.D:
                     MoveBy(new Vector3(-100f, 0, 0));
                     return true;
 
+                case Key.D:
+                    MoveBy(new Vector3(100f, 0, 0));
+                    return true;
+
                 case Key.S:
-                    MoveBy(new Vector3(0, 0, -100f));
+                    MoveBy(new Vector3(0, 0, 100f));
                     return true;
 
                 case Key.W:
-                    MoveBy(new Vector3(0, 0, 100f));
+                    MoveBy(new Vector3(0, 0, -100f));
                     return true;
             }
-            
+
 
             return base.OnKeyDown(e);
         }
-
-
-        public override DrawColourInfo DrawColourInfo => new DrawColourInfo(Color4.White, base.DrawColourInfo.Blending);
-
-
 
         protected override DrawNode CreateDrawNode() => new CameraDrawNode(this);
 
@@ -155,56 +142,53 @@ namespace TestTest123.Game
         protected class CameraDrawNode : TexturedShaderDrawNode
         {
             private Camera camera;
-            private IRenderer renderer;
             public CameraDrawNode(Camera source) : base(source)
             {
                 camera = source;
-                
+
             }
 
 
-            private void drawMeshes(List<Mesh> meshes, IRenderer renderer)
+            private void drawMeshes(Model model, IRenderer renderer)
             {
-                foreach (Mesh mesh in meshes)
+
+                renderer.BindTexture(model.Textures[0]);
+                foreach (Mesh mesh in model.SceneInfo.Meshes)
                 {
-                    List<Vector3D> vertices = mesh.Vertices;
-                    IVertexBatch<TexturedVertex3D> batch = renderer.CreateLinearBatch<TexturedVertex3D>(mesh.FaceCount, 1, PrimitiveTopology.Triangles);
-                    foreach (Face face in mesh.Faces)
+                    IVertexBatch<TexturedVertex3D> batch = renderer.CreateLinearBatch<TexturedVertex3D>(mesh.FaceCount * 4, mesh.FaceCount, PrimitiveTopology.Triangles);
+
+                    int[] indices = mesh.GetIndices();
+                    for (int i = 0; i < indices.Length; i++)
                     {
-                        
-                        foreach (int index in face.Indices)
+                        batch.AddAction(new TexturedVertex3D()
                         {
-                            Vector3D vec = vertices[index];
-                            batch.AddAction(new TexturedVertex3D()
-                            {
-                                Position = new Vector3(vec.X, vec.Y, vec.Z),
-                                Colour = DrawColourInfo.Colour,
-                                TexturePosition = Vector2.Zero
-                            });
-                        }
+                            Position = mesh.Vertices[indices[i]],
+                            Colour = new Color4D(1, 1, 1, 1),
+                            TexturePosition = new Vector2D(mesh.TextureCoordinateChannels[0][indices[i]].X, mesh.TextureCoordinateChannels[0][indices[i]].Y)
+
+                        }) ;
 
                     }
                 }
-
             }
             protected override void Draw(IRenderer renderer)
             {
+                
                 BindTextureShader(renderer);
                 renderer.PushProjectionMatrix(camera.GetViewMatrix() * camera.GetProjectionMatrix());
 
-
                 foreach (Model model in camera.GetModels())
                 {
-                    List<Mesh> meshes = model.GetMeshes();
-                    if (meshes == null) continue;
+
+                    if (model.SceneInfo == null) continue;
 
 
 
-                    renderer.PushLocalMatrix(model.GetMatrix());
+                    renderer.PushProjectionMatrix(model.GetLocalMatrix() * renderer.ProjectionMatrix);
 
-                        drawMeshes(meshes, renderer);
+                        drawMeshes(model, renderer);
 
-                    renderer.PopLocalMatrix();
+                    renderer.PopProjectionMatrix();
                 }
 
                 renderer.PopProjectionMatrix();

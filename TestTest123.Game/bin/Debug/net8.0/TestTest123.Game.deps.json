@@ -1264,7 +1264,8 @@
       },
       "TestTest123.Resources/1.0.0": {
         "dependencies": {
-          "AssimpNet": "4.1.0"
+          "AssimpNet": "4.1.0",
+          "ppy.osu.Framework": "2024.509.0"
         },
         "runtime": {
           "TestTest123.Resources.dll": {}

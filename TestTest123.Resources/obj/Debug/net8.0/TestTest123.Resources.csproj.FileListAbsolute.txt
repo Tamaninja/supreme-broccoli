@@ -26,3 +26,5 @@ C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Resources\obj\Debug
 C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.xml
 C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.pdb
 C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Resources\obj\Debug\net8.0\ref\TestTest123.Resources.dll
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.csproj.AssemblyReference.cache
+D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\obj\Debug\net8.0\TestTest123.Resources.sourcelink.json
