@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Tamaninja\\Documents\\TestTest123\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.resources\\testtest123.resources.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\testtest123.resources.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.resources\\shaders\\sh_nino.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
       "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\sh_nino.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.resources\\shaders\\sh_nino.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\sh_nino.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.resources\\testtest123.resources.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\testtest123.resources.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|d:\\tamaninja\\documents\\testtest123\\testtest123.game\\vertex3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,17 +130,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "sh_nino.vs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\Shaders\\sh_nino.vs",
               "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_nino.vs",
               "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\Shaders\\sh_nino.vs",
               "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_nino.vs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-13T05:18:17.93Z",
               "EditorCaption": ""
@@ -155,8 +155,7 @@
               "RelativeToolTip": "TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.mtl",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-13T03:52:35.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T03:52:35.036Z"
             },
             {
               "$type": "Document",
@@ -172,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "TestTest123.Resources.csproj",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj",
               "RelativeDocumentMoniker": "TestTest123.Resources\\TestTest123.Resources.csproj",
@@ -180,8 +179,7 @@
               "RelativeToolTip": "TestTest123.Resources\\TestTest123.Resources.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-09T20:51:58.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T20:51:58.852Z"
             },
             {
               "$type": "Document",
@@ -191,7 +189,7 @@
               "RelativeDocumentMoniker": "TestTest123.Game\\Camera.cs",
               "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Camera.cs",
               "RelativeToolTip": "TestTest123.Game\\Camera.cs",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAiwKgAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T20:52:11.213Z",
               "EditorCaption": ""
@@ -218,8 +216,7 @@
               "RelativeToolTip": "TestTest123.Game\\Vertex3D.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T20:52:06.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T20:52:06.623Z"
             },
             {
               "$type": "Document",
@@ -231,8 +228,7 @@
               "RelativeToolTip": "TestTest123.iOS\\TestTest123.iOS.csproj",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-09T20:52:04.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T20:52:04.114Z"
             },
             {
               "$type": "Document",
@@ -244,8 +240,7 @@
               "RelativeToolTip": "TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-09T20:52:04.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T20:52:04.883Z"
             },
             {
               "$type": "Document",
@@ -257,31 +252,30 @@
               "RelativeToolTip": "TestTest123.Game\\Box3D.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T21:01:40.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T21:01:40.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Model.cs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Model.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\Model.cs",
               "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\Model.cs",
               "RelativeToolTip": "TestTest123.Game\\Model.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAiwC8AAAAMAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAiwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T21:06:28.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "sh_nino.fs",
               "DocumentMoniker": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\Shaders\\sh_nino.fs",
               "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_nino.fs",
               "ToolTip": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\Shaders\\sh_nino.fs",
               "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_nino.fs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-13T05:36:46.111Z",
               "EditorCaption": ""
@@ -296,8 +290,7 @@
               "RelativeToolTip": "TestTest123.Game\\MainScreen.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T00:54:11.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T00:54:11.24Z"
             },
             {
               "$type": "Document",
@@ -309,8 +302,7 @@
               "RelativeToolTip": "TestTest123.Game\\TestTest123.Game.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-11T00:57:15.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T00:57:15.2Z"
             },
             {
               "$type": "Document",
@@ -322,8 +314,7 @@
               "RelativeToolTip": "TestTest123.Desktop\\TestTest123.Desktop.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-11T00:57:17.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T00:57:17.085Z"
             },
             {
               "$type": "Document",
@@ -347,8 +338,7 @@
               "RelativeToolTip": "TestTest123.Game\\MouseController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T05:00:52.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T05:00:52.825Z"
             },
             {
               "$type": "Document",
@@ -360,8 +350,7 @@
               "RelativeToolTip": "TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAKMAAAAeAAAA",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|",
-              "WhenOpened": "2024-05-13T03:52:16.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T03:52:16.205Z"
             },
             {
               "$type": "Document",

@@ -1,19 +1,21 @@
-#version 330 core
+#ifndef TEXTURE_FS
+#define TEXTURE_FS
 
-// Input from vertex shader
-layout(location = 0) in vec4 v_Colour;
-layout(location = 1) in vec2 v_TexCoord;
+#include "sh_Utils.h"
+#include "sh_Masking.h"
+#include "sh_TextureWrapping.h"
 
-// Uniform for texture sampler
-uniform sampler2D m_Texture;
+layout(location = 2) in mediump vec2 v_TexCoord;
 
-// Output color
-out vec4 finalColor;
+layout(set = 0, binding = 0) uniform lowp texture2D m_Texture;
+layout(set = 0, binding = 1) uniform lowp sampler m_Sampler;
 
-void main() {
-  // Sample the texture based on the interpolated texture coordinate
-  vec4 textureColor = texture(m_Texture, v_TexCoord);
-  
-  // Combine vertex color and texture color (multiply for basic blending)
-  finalColor = v_Colour * textureColor;
+layout(location = 0) out vec4 o_Colour;
+
+void main(void) 
+{
+    vec2 wrappedCoord = wrap(v_TexCoord, v_TexRect);
+    o_Colour = getRoundedColor(wrappedSampler(wrappedCoord, v_TexRect, m_Texture, m_Sampler, -0.9), wrappedCoord);
 }
+
+#endif
