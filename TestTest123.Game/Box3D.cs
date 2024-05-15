@@ -9,10 +9,9 @@ namespace TestTest123.Game
 {
     public partial class Box3D : Model
     {
-        public Box3D() : base("D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj") 
+        public Box3D() : base("C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj") 
         {
-
-            Scale = new Vector3(100, 100, 100);
+            Scale = new Vector3(10);
         }
     }
 }

@@ -52,10 +52,16 @@ namespace TestTest123.Game
             {
                 for (int i = 0; i < SceneInfo.MaterialCount; i++)
                 {
-                    SceneInfo.Materials[i].GetAllMaterialTextures().ForEach(s => Textures.Add(textureStore.Get(s.FilePath)));
-                }
-            }
 
+                    SceneInfo.Materials[i].GetAllMaterialTextures().ForEach(s =>
+                    {
+
+                        Textures.Add(textureStore.Get(s.FilePath, WrapMode.None, WrapMode.None));
+                        Logger.LogPrint(s.WrapModeU.ToString() + " " + s.WrapModeV.ToString());
+                    });
+                }
+
+            }
         }
 
         

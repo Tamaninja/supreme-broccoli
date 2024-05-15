@@ -15,6 +15,7 @@ using osu.Framework.Logging;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Platform;
 using osu.Framework;
+using osu.Framework.Graphics.Shaders;
 
 
 
@@ -108,27 +109,27 @@ namespace TestTest123.Game
             {
 
                 case Key.Space:
-                    MoveBy(new Vector3(0, 100, 0));
+                    MoveBy(new Vector3(0, 10, 0));
                     return true;
 
                 case Key.LShift:
-                    MoveBy(new Vector3(0, -100, 0));
+                    MoveBy(new Vector3(0, -10, 0));
                     return true;
 
                 case Key.A:
-                    MoveBy(new Vector3(-100f, 0, 0));
+                    MoveBy(new Vector3(-10f, 0, 0));
                     return true;
 
                 case Key.D:
-                    MoveBy(new Vector3(100f, 0, 0));
+                    MoveBy(new Vector3(10f, 0, 0));
                     return true;
 
                 case Key.S:
-                    MoveBy(new Vector3(0, 0, 100f));
+                    MoveBy(new Vector3(0, 0, 10f));
                     return true;
 
                 case Key.W:
-                    MoveBy(new Vector3(0, 0, -100f));
+                    MoveBy(new Vector3(0, 0, -10f));
                     return true;
             }
 
@@ -151,12 +152,13 @@ namespace TestTest123.Game
 
             private void drawMeshes(Model model, IRenderer renderer)
             {
+                
 
                 renderer.BindTexture(model.Textures[0]);
+                
                 foreach (Mesh mesh in model.SceneInfo.Meshes)
                 {
                     IVertexBatch<TexturedVertex3D> batch = renderer.CreateLinearBatch<TexturedVertex3D>(mesh.FaceCount * 4, mesh.FaceCount, PrimitiveTopology.Triangles);
-
                     int[] indices = mesh.GetIndices();
                     for (int i = 0; i < indices.Length; i++)
                     {
@@ -173,7 +175,7 @@ namespace TestTest123.Game
             }
             protected override void Draw(IRenderer renderer)
             {
-                
+
                 BindTextureShader(renderer);
                 renderer.PushProjectionMatrix(camera.GetViewMatrix() * camera.GetProjectionMatrix());
 
