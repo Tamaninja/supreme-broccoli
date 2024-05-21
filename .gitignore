@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/TestTest123/FileContentIndex/*
+*.dll
+/TestTest123.Desktop/bin/Debug/net8.0/TestTest123.exe
