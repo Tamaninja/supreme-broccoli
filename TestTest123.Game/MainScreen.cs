@@ -1,17 +1,12 @@
-using System.Text;
-using ManagedBass;
 using osu.Framework.Allocation;
 using osu.Framework.Extensions.Color4Extensions;
 using osu.Framework.Graphics;
-using osu.Framework.Graphics.Containers;
+using osu.Framework.Graphics.Pooling;
 using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
-using osu.Framework.Input.Events;
-using osu.Framework.Logging;
 using osu.Framework.Screens;
 using osuTK;
 using osuTK.Graphics;
-using TestTest123.Game.Audio;
 
 namespace TestTest123.Game
 {
@@ -24,6 +19,7 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load()
         {
+
 
             InternalChildren = new Drawable[]
             {
@@ -44,13 +40,8 @@ namespace TestTest123.Game
                     Font = FontUsage.Default.With(size: 30),
                     AllowMultiline = true
                 },
-                mainStage = new Stage
-                {
-                    Child = new Note().GetChild()
-                },
-            };
-            camera = new Camera(mainStage, text);
-
+                mainStage = new Stage(),
+        };
         }
 
 

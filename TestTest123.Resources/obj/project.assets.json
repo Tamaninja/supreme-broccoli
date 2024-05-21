@@ -5115,23 +5115,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lielk\\.nuget\\packages\\": {},
+    "C:\\Users\\Tamaninja\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
+      "projectUniqueName": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj",
       "projectName": "TestTest123.Resources",
-      "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
-      "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\obj\\",
+      "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj",
+      "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
+      "outputPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5189,7 +5189,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

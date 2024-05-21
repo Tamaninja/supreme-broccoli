@@ -1,11 +1,11 @@
-#ifndef TEXTURE3D_VS
-#define TEXTURE3D_VS
+#ifndef NINO_VS
+#define NINO_VS
 
 layout(location = 0) in highp vec3 m_Position;
 layout(location = 1) in lowp vec4 m_Colour;
-layout(location = 2) in vec2 m_TexCoord;
+layout(location = 2) in vec3 m_TexCoord;
 
-layout(location = 0) out highp vec2 v_TexCoord;
+layout(location = 0) out highp vec3 v_TexCoord;
 layout(location = 1) out lowp vec4 v_Colour;
 
 

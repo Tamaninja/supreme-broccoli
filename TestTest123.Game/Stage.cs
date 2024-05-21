@@ -1,23 +1,45 @@
 ﻿
-using System.Collections.Generic;
+using System.Threading;
+using Assimp;
+using osu.Framework.Allocation;
+using osu.Framework.Extensions.Color4Extensions;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
+using osu.Framework.Graphics.Rendering;
+using osu.Framework.Graphics.Shaders;
+using osu.Framework.Graphics.Textures;
+using osu.Framework.Logging;
 using osuTK;
+using osuTK.Graphics;
+using osuTK.Graphics.OpenGL;
+
 
 namespace TestTest123.Game
 {
-    public partial class Stage : Container<Model>
+    public partial class Stage : Container<ThreeDimensionalDrawable>
     {
-        private List<Camera> cameras = new List<Camera>();
-        public Stage() {
+        public Camera Camera;
+        public Stage()
+        {
 
             RelativeSizeAxes = Axes.Both;
+            Colour = Color4.AliceBlue.Opacity(0f);
+            
+        }
+
+
+        [BackgroundDependencyLoader]
+        private void load(ShaderManager shaders, IRenderer renderer, TextureStore textureStore)
+        {
+
+            Camera = new Camera();
+            AddInternal(Camera);
+
+            Box3D box = new Box3D(Camera);
+            AddInternal(box);
+
 
         }
-        public void Add(Camera camera)
-        {
-            base.Add(camera);
-            cameras.Add(camera);
-        }
+
     }
 }

@@ -13,17 +13,13 @@
 
   </ItemGroup>
   <ItemGroup>
+    <None Remove="models\.gitignore" />
     <None Remove="Models\legendary-helmet-league-of-legends.zip" />
+    <None Remove="Shaders\sh_textureless.fs" />
+    <None Remove="shaders\sh_textureless.vs" />
     <None Remove="Textures\Character_Eyes_TEX.png" />
     <None Remove="Textures\Character_Mcqueen_Body_Decal_OpeningRace.png" />
-    <None Remove="Textures\Character_Mcqueen_Body_Glow_09_TEX.png" />
-    <None Remove="Textures\Character_Mcqueen_Body_Masks_02_TEX_B.png" />
-    <None Remove="Textures\Character_Mcqueen_Body_Masks_02_TEX_G.png" />
-    <None Remove="Textures\Character_Mcqueen_Body_Masks_02_TEX_R.png" />
     <None Remove="Textures\Character_Mcqueen_Tire_Decal_01_TEX.png" />
-    <None Remove="Textures\Character_Mcqueen_Tire_Masks_01_TEX_B.png" />
-    <None Remove="Textures\Character_Mcqueen_Tire_Masks_01_TEX_G.png" />
-    <None Remove="Textures\Character_Mcqueen_Tire_Masks_01_TEX_R.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AssimpNet" Version="4.1.0" />

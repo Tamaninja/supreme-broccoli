@@ -1,17 +1,18 @@
-﻿using osuTK;
-using osuTK.Graphics;
-using osu.Framework.Extensions.Color4Extensions;
-using Assimp;
-using System.Collections.Generic;
+﻿
 using osu.Framework.Logging;
+using osuTK;
 
 namespace TestTest123.Game
 {
-    public partial class Box3D : Model
+    public partial class Box3D : ModelDrawable
     {
-        public Box3D() : base("C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj") 
+        public Box3D(Camera camera) : base ("D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\Models\\Trashcan_Small1.fbx", camera)
         {
-            Scale = new Vector3(10);
+            Logger.LogPrint("tesxt");
+
+            Scale3D = (new Vector3(100));
+
         }
+
     }
 }

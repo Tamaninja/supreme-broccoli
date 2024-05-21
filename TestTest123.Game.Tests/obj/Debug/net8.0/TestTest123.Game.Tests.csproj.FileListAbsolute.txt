@@ -4,3 +4,9 @@ C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debu
 C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.AssemblyInfo.cs
 C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.csproj.CoreCompileInputs.cache
 C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.sourcelink.json
+D:\Tamaninja\Documents\TestTest123\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.csproj.AssemblyReference.cache
+D:\Tamaninja\Documents\TestTest123\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tamaninja\Documents\TestTest123\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.AssemblyInfoInputs.cache
+D:\Tamaninja\Documents\TestTest123\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.AssemblyInfo.cs
+D:\Tamaninja\Documents\TestTest123\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.csproj.CoreCompileInputs.cache
+D:\Tamaninja\Documents\TestTest123\TestTest123.Game.Tests\obj\Debug\net8.0\TestTest123.Game.Tests.sourcelink.json

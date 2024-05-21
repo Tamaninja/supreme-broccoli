@@ -19,12 +19,32 @@ namespace TestTest123.Game
         [VertexMember(4, VertexAttribPointerType.Float)]
         public Color4D Colour;
 
-        [VertexMember(2, VertexAttribPointerType.Float)]
-        public Vector2D TexturePosition;
+        [VertexMember(3, VertexAttribPointerType.Float)]
+        public Vector3D TexturePosition;
         
         public readonly bool Equals(TexturedVertex3D other)
         {
             if (Position.Equals(other.Position) && TexturePosition.Equals(other.TexturePosition))
+            {
+                return Colour.Equals(other.Colour);
+            }
+
+            return false;
+        }
+    }
+
+    public struct TexturelessVertex3D : IEquatable<TexturelessVertex3D>, IVertex
+    {
+        [VertexMember(3, VertexAttribPointerType.Float)]
+        public Vector3D Position;
+
+        [VertexMember(4, VertexAttribPointerType.Float)]
+        public Color4D Colour;
+
+
+        public readonly bool Equals(TexturelessVertex3D other)
+        {
+            if (Position.Equals(other.Position))
             {
                 return Colour.Equals(other.Colour);
             }
