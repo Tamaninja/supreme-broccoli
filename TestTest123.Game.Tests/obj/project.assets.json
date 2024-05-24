@@ -5731,23 +5731,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lielk\\.nuget\\packages\\": {},
+    "C:\\Users\\Tamaninja\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
+      "projectUniqueName": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
       "projectName": "TestTest123.Game.Tests",
-      "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
-      "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game.Tests\\obj\\",
+      "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
+      "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
+      "outputPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5763,8 +5763,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
-              "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj"
+            "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj": {
+              "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj"
             }
           }
         }
@@ -5773,11 +5773,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5817,7 +5812,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

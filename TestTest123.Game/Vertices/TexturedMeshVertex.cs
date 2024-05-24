@@ -26,16 +26,19 @@ namespace TestTest123.Game.Vertices
             return (new TexturedMeshVertex()
             {
                 Position = mesh.Vertices[index],
-                Colour = new Color4(1,1,1,1),
+                Colour = mesh.Colour,
                 TexturePosition = mesh.TextureCoords[0][index]
             });
         }
 
-        public readonly bool Equals(TexturedMeshVertex other)
+        public bool Equals(TexturedMeshVertex other)
         {
-            if (Position.Equals(other.Position) && TexturePosition.Equals(other.TexturePosition))
+            if (Position.Equals(other.Position))
             {
-                return Colour.Equals(other.Colour);
+                if (TexturePosition.Equals(other.TexturePosition))
+                {
+                    return Colour.Equals(other.Colour);
+                }
             }
 
             return false;

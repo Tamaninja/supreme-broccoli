@@ -18,7 +18,6 @@ namespace TestTest123.Game
 {
     public partial class Camera : ThreeDimensionalDrawable
     {
-
         public Vector3 Forward;
         private float yFov = 50;
         public float FarPlane { get; }
@@ -28,8 +27,6 @@ namespace TestTest123.Game
 
         public Camera()
         {
-
-
             AspectRatio = 16 / 9;
             FarPlane = 5000f;
             NearPlane = 1f;
@@ -40,8 +37,6 @@ namespace TestTest123.Game
             RelativeSizeAxes = Axes.Both;
             RelativePositionAxes = Axes.Both;
         }
-
-
 
         protected override bool OnMouseMove(MouseMoveEvent e)
         {
@@ -58,9 +53,9 @@ namespace TestTest123.Game
 
             return (base.OnMouseMove(e));
         }
+
         public void MoveBy(Vector3 offset)
         {
-
             Vector3 temp1 = (Matrix4.CreateTranslation(offset) * GetViewMatrix().Inverted()).ExtractTranslation();
 
             Position3D = temp1;
@@ -70,18 +65,16 @@ namespace TestTest123.Game
         {
             return Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), AspectRatio, NearPlane, FarPlane);
         }
+
         public Matrix4 GetViewMatrix()
         {
             return Matrix4.LookAt(Position3D, Position3D + Forward, Vector3.UnitY);
         }
 
-
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders, IRenderer renderer, TextureStore textureStore)
         {
             AddInternal(new MouseController(this));
-
         }
     }
-    
 }

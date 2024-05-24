@@ -20,23 +20,19 @@ namespace TestTest123.Game
 {
     public partial class ThreeDimensionalDrawable : CompositeDrawable
     {
-
         public Vector3 Scale3D;
         public Vector3 Position3D;
         public Vector3 Rotation3D;
 
-        public ThreeDimensionalDrawable() {
+        public ThreeDimensionalDrawable()
+        {
             RelativeSizeAxes = Axes.Both;
             Size = Vector2.One;
-            
             Scale3D = Vector3.One;
             Position3D = Vector3.Zero;
             Rotation3D = Vector3.Zero;
-            
         }
-        
-        
-        
+
         public Matrix4 GetLocalMatrix()
         {
             Matrix4 scale = Matrix4.CreateScale(Scale3D);
@@ -47,11 +43,9 @@ namespace TestTest123.Game
             return (scale * translation);
         }
 
-
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders, IRenderer renderer, TextureStore textureStore)
         {
         }
-
     }
 }

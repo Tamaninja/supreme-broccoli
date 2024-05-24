@@ -10,7 +10,6 @@ using osuTK.Graphics.ES30;
 
 namespace TestTest123.Game.Vertices
 {
-
     public struct TexturelessMeshVertex : IMeshVertex<TexturelessMeshVertex>
     {
         [VertexMember(3, VertexAttribPointerType.Float)]
@@ -23,8 +22,8 @@ namespace TestTest123.Game.Vertices
         {
             return new TexturelessMeshVertex
             {
-                Colour = mesh.Colour,
-                Position = mesh.Vertices[index]
+                Position = mesh.Vertices[index],
+                Colour = mesh.Colour
             };
         }
 
