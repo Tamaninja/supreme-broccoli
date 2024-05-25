@@ -29,27 +29,25 @@ namespace TestTest123.Game
             {
 
                 case Key.Space:
-                    camera.MoveBy(new Vector3(0, 10, 0));
+                    camera.MoveToOffset(Vector3.UnitY, 100, Easing.None);
                     return true;
 
                 case Key.LShift:
-                    camera.MoveBy(new Vector3(0, -10, 0));
+                    camera.MoveToOffset(-Vector3.UnitY, 100, Easing.None);
                     return true;
 
                 case Key.A:
-                    camera.MoveBy(new Vector3(-10f, 0, 0));
                     return true;
 
                 case Key.D:
-                    camera.MoveBy(new Vector3(10f, 0, 0));
                     return true;
 
                 case Key.S:
-                    camera.MoveBy(new Vector3(0, 0, 10f));
+                    camera.MoveToOffset(-camera.Forward, 100, Easing.None);
                     return true;
 
                 case Key.W:
-                    camera.MoveBy(new Vector3(0, 0, -10f));
+                    camera.MoveToOffset(camera.Forward, 100, Easing.None);
                     return true;
             }
 

@@ -18,8 +18,6 @@ namespace TestTest123.Game
 
         public MeshDrawable(Mesh mesh, Material material)
         {
-            Logger.LogPrint("d" + " d");
-
             Colour = material.Colour;
             TextureCoords = mesh.TextureCoordinateChannels;
             Material = material;

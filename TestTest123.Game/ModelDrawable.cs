@@ -97,39 +97,31 @@ namespace TestTest123.Game
 
         protected override DrawNode CreateDrawNode()
         {
-            if (IsTextured)
-            {
-                return (new ModelDrawNode<TexturedMeshVertex>(this));
-            }
-            else
-            {
-                return (new ModelDrawNode<TexturelessMeshVertex>(this));
-            }
+            return (new ModelDrawNode(this));
         }
 
-        protected class ModelDrawNode<T> : CompositeDrawableDrawNode where T : unmanaged, IMeshVertex<T>
+        protected class ModelDrawNode : CompositeDrawableDrawNode
         {
-            private IVertexBatch<T> vertexBatch;
 
-            private ModelDrawable model;
-
-            public ModelDrawNode(ModelDrawable source)
-                : base(source)
+            public ModelDrawNode(ModelDrawable source) : base(source)
             {
-                model = source;
+
             }
+
+            protected new ModelDrawable Source => (ModelDrawable)base.Source;
 
             protected override void Draw(IRenderer renderer)
             {
-                vertexBatch ??= renderer.CreateLinearBatch<T>(10000, 3, PrimitiveTopology.Triangles);
 
-                model.TextureShader!.Bind();
+                Source.TextureShader!.Bind();
                 renderer.PushDepthInfo(DepthInfo.Default);
-                renderer.PushProjectionMatrix(model.GetLocalMatrix() * model.Camera.GetViewMatrix() * model.Camera.GetProjectionMatrix());
+                renderer.PushProjectionMatrix(Source.GetLocalMatrix() * Source.Camera.PVMatrix);
+
+                base.Draw(renderer);
 
                 renderer.PopDepthInfo();
                 renderer.PopProjectionMatrix();
-                model.TextureShader.Unbind();
+                Source.TextureShader!.Unbind();
             }
         }
     }

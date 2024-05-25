@@ -18,8 +18,35 @@ namespace TestTest123.Game
 {
     public partial class Camera : ThreeDimensionalDrawable
     {
-        public Vector3 Forward;
-        private float yFov = 50;
+        private Matrix4 projectionMatrix;
+        private Matrix4 viewMatrix;
+        private Matrix4 pvMatrix;
+        private bool recalcMatrix;
+        public virtual Matrix4 ProjectionMatrix
+        {
+            get
+            {
+                if (recalcMatrix) recalculateMatrix();
+                return projectionMatrix;
+            }
+        }
+        public virtual Matrix4 PVMatrix
+        {
+            get
+            {
+                if (recalcMatrix) recalculateMatrix();
+                return (pvMatrix);
+            }
+        }
+        public virtual Matrix4 ViewMatrix
+        {
+            get
+            {
+                if (recalcMatrix) recalculateMatrix();
+                return viewMatrix;
+            }
+        }
+        private float yFov;
         public float FarPlane { get; }
         public float NearPlane { get; }
 
@@ -27,6 +54,8 @@ namespace TestTest123.Game
 
         public Camera()
         {
+            recalcMatrix = true;
+            yFov = 50;
             AspectRatio = 16 / 9;
             FarPlane = 5000f;
             NearPlane = 1f;
@@ -36,6 +65,23 @@ namespace TestTest123.Game
             Origin = Anchor.Centre;
             RelativeSizeAxes = Axes.Both;
             RelativePositionAxes = Axes.Both;
+            
+        }
+
+        public override Vector3 Forward {
+            get => base.Forward;
+            set {
+                base.Forward = value;
+                recalcMatrix = true;
+            }
+        }
+        public override Vector3 Position3D {
+            get => base.Position3D;
+            set
+            {
+                base.Position3D = value;
+                recalcMatrix = true;
+            }
         }
 
         protected override bool OnMouseMove(MouseMoveEvent e)
@@ -54,21 +100,11 @@ namespace TestTest123.Game
             return (base.OnMouseMove(e));
         }
 
-        public void MoveBy(Vector3 offset)
+        private void recalculateMatrix()
         {
-            Vector3 temp1 = (Matrix4.CreateTranslation(offset) * GetViewMatrix().Inverted()).ExtractTranslation();
-
-            Position3D = temp1;
-        }
-
-        public Matrix4 GetProjectionMatrix()
-        {
-            return Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), AspectRatio, NearPlane, FarPlane);
-        }
-
-        public Matrix4 GetViewMatrix()
-        {
-            return Matrix4.LookAt(Position3D, Position3D + Forward, Vector3.UnitY);
+            projectionMatrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), AspectRatio, NearPlane, FarPlane);
+            viewMatrix = Matrix4.LookAt(Position3D, Position3D + Forward, Vector3.UnitY);
+            pvMatrix = viewMatrix * projectionMatrix;
         }
 
         [BackgroundDependencyLoader]

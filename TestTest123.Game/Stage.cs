@@ -37,8 +37,8 @@ namespace TestTest123.Game
 
             Box3D box = new Box3D(Camera);
             AddInternal(box);
-
-
+/*            box.MoveTo(new Vector3(0,0,150), 15000, Easing.None);
+            box.RotateTo(new Vector3(0, 0, 360), 15000, Easing.None);*/
         }
 
     }

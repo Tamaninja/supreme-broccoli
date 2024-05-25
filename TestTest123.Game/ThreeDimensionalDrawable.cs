@@ -20,8 +20,10 @@ namespace TestTest123.Game
 {
     public partial class ThreeDimensionalDrawable : CompositeDrawable
     {
+        public virtual Vector3 Forward {  get; set; }
+
         public Vector3 Scale3D;
-        public Vector3 Position3D;
+        public virtual Vector3 Position3D {  get; set; }
         public Vector3 Rotation3D;
 
         public ThreeDimensionalDrawable()
@@ -38,9 +40,12 @@ namespace TestTest123.Game
             Matrix4 scale = Matrix4.CreateScale(Scale3D);
 
             Matrix4 translation = Matrix4.CreateTranslation(Position3D);
-            // add rotation
 
-            return (scale * translation);
+            Matrix4 rotationX = Matrix4.CreateRotationX(Rotation3D.X);
+            Matrix4 rotationY = Matrix4.CreateRotationY(Rotation3D.Y);
+            Matrix4 rotationZ = Matrix4.CreateRotationZ(Rotation3D.Z);
+
+            return (scale * (rotationX * rotationY * rotationZ) * translation);
         }
 
         [BackgroundDependencyLoader]
