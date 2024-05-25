@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using Assimp;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
@@ -20,24 +15,71 @@ namespace TestTest123.Game
 {
     public partial class ThreeDimensionalDrawable : CompositeDrawable
     {
-        public virtual Vector3 Forward {  get; set; }
+        private Vector3 forward;
+        private Vector3 position;
+        private Vector3 rotation;
+        private Vector3 scale;
+        protected bool RequiresRecalculation;
 
-        public Vector3 Scale3D;
-        public virtual Vector3 Position3D {  get; set; }
-        public Vector3 Rotation3D;
+        public virtual Vector3 Forward
+        {
+            get => forward;
+            set
+            {
+                forward = value;
+                RequiresRecalculation = true;
+            }
+        }
+
+        public virtual Vector3 Right => Vector3.Normalize(Vector3.Cross(Vector3.UnitY, Forward));
+        public virtual Vector3 Up => Vector3.Cross(Forward, Right);
+
+        public virtual Vector3 Scale3D
+        {
+            get => scale;
+            set
+            {
+                scale = value;
+                RequiresRecalculation = true;
+            }
+        }
+
+        public virtual Vector3 Position3D
+        {
+            get => position;
+            set
+            {
+                position = value;
+                RequiresRecalculation = true;
+            }
+        }
+
+        public virtual Vector3 Rotation3D
+        {
+            get => rotation;
+            set
+            {
+                rotation = value;
+                RequiresRecalculation = true;
+            }
+        }
 
         public ThreeDimensionalDrawable()
         {
             RelativeSizeAxes = Axes.Both;
             Size = Vector2.One;
-            Scale3D = Vector3.One;
-            Position3D = Vector3.Zero;
-            Rotation3D = Vector3.Zero;
+
+            scale = Vector3.One;
+            position = Vector3.Zero;
+            rotation = Vector3.Zero;
+            forward = Vector3.UnitZ;
+
+            RequiresRecalculation = true;
         }
 
         public Matrix4 GetLocalMatrix()
         {
-            Matrix4 scale = Matrix4.CreateScale(Scale3D);
+            Matrix4 scaleMatrix = Matrix4.CreateScale(Scale3D);
 
             Matrix4 translation = Matrix4.CreateTranslation(Position3D);
 
@@ -45,7 +87,7 @@ namespace TestTest123.Game
             Matrix4 rotationY = Matrix4.CreateRotationY(Rotation3D.Y);
             Matrix4 rotationZ = Matrix4.CreateRotationZ(Rotation3D.Z);
 
-            return (scale * (rotationX * rotationY * rotationZ) * translation);
+            return (scaleMatrix * (rotationX * rotationY * rotationZ) * translation);
         }
 
         [BackgroundDependencyLoader]

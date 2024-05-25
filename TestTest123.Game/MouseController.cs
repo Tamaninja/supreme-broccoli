@@ -21,13 +21,10 @@ namespace TestTest123.Game
             this.camera = camera;
         }
 
-
-
         protected override bool OnKeyDown(KeyDownEvent e)
         {
             switch (e.Key)
             {
-
                 case Key.Space:
                     camera.MoveToOffset(Vector3.UnitY, 100, Easing.None);
                     return true;
@@ -37,9 +34,11 @@ namespace TestTest123.Game
                     return true;
 
                 case Key.A:
+                    camera.MoveToOffset(camera.Right, 100, Easing.None);
                     return true;
 
                 case Key.D:
+                    camera.MoveToOffset(-camera.Right, 100, Easing.None);
                     return true;
 
                 case Key.S:
@@ -50,7 +49,6 @@ namespace TestTest123.Game
                     camera.MoveToOffset(camera.Forward, 100, Easing.None);
                     return true;
             }
-
 
             return base.OnKeyDown(e);
         }

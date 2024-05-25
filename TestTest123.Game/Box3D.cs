@@ -6,7 +6,7 @@ namespace TestTest123.Game
     public partial class Box3D : ModelDrawable
     {
         public Box3D(Camera camera)
-            : base("C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj", camera)
+            : base("D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\Models\\source\\SussyImposter.fbx", camera)
         {
         }
     }

@@ -19,27 +19,23 @@ namespace TestTest123.Game
     public partial class Stage : Container<ThreeDimensionalDrawable>
     {
         public Camera Camera;
+
         public Stage()
         {
-
             RelativeSizeAxes = Axes.Both;
             Colour = Color4.AliceBlue.Opacity(0f);
-            
         }
-
 
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders, IRenderer renderer, TextureStore textureStore)
         {
-
             Camera = new Camera();
             AddInternal(Camera);
 
             Box3D box = new Box3D(Camera);
             AddInternal(box);
-/*            box.MoveTo(new Vector3(0,0,150), 15000, Easing.None);
-            box.RotateTo(new Vector3(0, 0, 360), 15000, Easing.None);*/
+            box.MoveTo(new Vector3(0,0,15), 15000, Easing.None);
+            box.RotateTo(new Vector3(0, 0, MathHelper.DegreesToRadians(360)), 15000, Easing.None);
         }
-
     }
 }

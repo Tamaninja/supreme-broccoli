@@ -112,7 +112,6 @@ namespace TestTest123.Game
 
             protected override void Draw(IRenderer renderer)
             {
-
                 Source.TextureShader!.Bind();
                 renderer.PushDepthInfo(DepthInfo.Default);
                 renderer.PushProjectionMatrix(Source.GetLocalMatrix() * Source.Camera.PVMatrix);
