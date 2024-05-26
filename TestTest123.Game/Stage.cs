@@ -1,10 +1,12 @@
 ﻿
+using System;
 using System.Threading;
 using Assimp;
 using osu.Framework.Allocation;
 using osu.Framework.Extensions.Color4Extensions;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
+using osu.Framework.Graphics.Pooling;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
@@ -16,9 +18,9 @@ using osuTK.Graphics.OpenGL;
 
 namespace TestTest123.Game
 {
-    public partial class Stage : Container<ThreeDimensionalDrawable>
+    public partial class Stage : Container
     {
-        public Camera Camera;
+        private Camera camera;
 
         public Stage()
         {
@@ -29,13 +31,27 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders, IRenderer renderer, TextureStore textureStore)
         {
-            Camera = new Camera();
-            AddInternal(Camera);
+            camera = new Camera();
+            AddInternal(camera);
+            DrawablePool<Box3D> notepool = new DrawablePool<Box3D>(1);
+            AddInternal(notepool);
 
-            Box3D box = new Box3D(Camera);
-            AddInternal(box);
-            box.MoveTo(new Vector3(0,0,15), 15000, Easing.None);
-            box.RotateTo(new Vector3(0, 0, MathHelper.DegreesToRadians(360)), 15000, Easing.None);
+            for (int i = 0;  i < 10; i++)
+            {
+                
+                notepool.Get((s) =>
+                {
+                    AddInternal(s);
+                    s.Colour = Color4.DarkOrange;
+                    s.Camera = camera;
+                    s.Scale3D = new Vector3(10);
+                    s.MoveTo(new Vector3(10, 10, 10), new Random().Next(), Easing.None);
+                    s.RotateTo(new Vector3(0, 0, MathHelper.DegreesToRadians(new Random().Next(130, 1000))), 15000, Easing.None);
+
+                });
+            }
+
+
         }
     }
 }

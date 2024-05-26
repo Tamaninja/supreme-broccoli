@@ -1,7 +1,7 @@
-﻿using System;
-using osu.Framework.Graphics;
+﻿using osu.Framework.Graphics;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Input.Events;
+using osu.Framework.Layout;
 using osu.Framework.Logging;
 using osuTK;
 using osuTK.Input;
@@ -23,8 +23,12 @@ namespace TestTest123.Game
 
         protected override bool OnKeyDown(KeyDownEvent e)
         {
+            camera.RecalcMatrices();
+
+
             switch (e.Key)
             {
+
                 case Key.Space:
                     camera.MoveToOffset(Vector3.UnitY, 100, Easing.None);
                     return true;

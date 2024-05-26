@@ -5,6 +5,7 @@ using osu.Framework.Graphics;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Logging;
+using osuTK.Graphics;
 using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
@@ -18,7 +19,7 @@ namespace TestTest123.Game
 
         public MeshDrawable(Mesh mesh, Material material)
         {
-            Colour = material.Colour;
+            Colour = Color4.Green;
             TextureCoords = mesh.TextureCoordinateChannels;
             Material = material;
             Indices = mesh.GetIndices();
@@ -28,7 +29,7 @@ namespace TestTest123.Game
 
         protected override DrawNode CreateDrawNode()
         {
-            return (new MeshDrawNode<TexturedMeshVertex>(this));
+            return (new MeshDrawNode<TexturelessMeshVertex>(this));
         }
 
         protected class MeshDrawNode<T>(MeshDrawable source) : DrawNode(source)

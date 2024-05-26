@@ -1,24 +1,28 @@
 ﻿
 using Assimp;
 using osu.Framework.Allocation;
+using osu.Framework.Bindables;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
+using osu.Framework.Graphics.Pooling;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Graphics.Transforms;
+using osu.Framework.Layout;
 using osu.Framework.Logging;
 using osuTK;
 using osuTK.Graphics.OpenGL;
 
 namespace TestTest123.Game
 {
-    public partial class ThreeDimensionalDrawable : CompositeDrawable
+    public partial class ThreeDimensionalDrawable : PoolableDrawable
     {
         private Vector3 forward;
         private Vector3 position;
         private Vector3 rotation;
         private Vector3 scale;
+
         protected bool RequiresRecalculation;
 
         public virtual Vector3 Forward
@@ -74,6 +78,7 @@ namespace TestTest123.Game
             rotation = Vector3.Zero;
             forward = Vector3.UnitZ;
 
+            
             RequiresRecalculation = true;
         }
 

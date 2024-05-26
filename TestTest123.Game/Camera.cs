@@ -2,11 +2,15 @@
 using osuTK;
 using osu.Framework.Input.Events;
 using osu.Framework.Graphics.Rendering;
-using System;
 using JetBrains.Annotations;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
+using System;
+using osu.Framework.Bindables;
+using Assimp;
+using osu.Framework.Layout;
+using osu.Framework.Logging;
 
 
 
@@ -16,32 +20,33 @@ namespace TestTest123.Game
     {
         private Matrix4 projectionMatrix;
         private Matrix4 viewMatrix;
-        private Matrix4 pvMatrix;
-
-        public virtual Matrix4 ProjectionMatrix
+        private Matrix4 vpMatrix;
+        public Matrix4 VPMatrix
         {
-            get
+            get => vpMatrix;
+            private set
             {
-                if (RequiresRecalculation) recalculateMatrix();
-                return projectionMatrix;
+
+                vpMatrix = value;
+                Parent?.Invalidate(Invalidation.MiscGeometry);
             }
         }
-
-        public virtual Matrix4 PVMatrix
+        public Matrix4 ViewMatrix
         {
-            get
+            get => viewMatrix;
+            private set
             {
-                if (RequiresRecalculation) recalculateMatrix();
-                return (pvMatrix);
+                viewMatrix = value;
+                VPMatrix = viewMatrix * projectionMatrix;
             }
         }
-
-        public virtual Matrix4 ViewMatrix
+        public Matrix4 ProjectionMatrix
         {
-            get
+            get => projectionMatrix;
+            private set
             {
-                if (RequiresRecalculation) recalculateMatrix();
-                return viewMatrix;
+                projectionMatrix = value;
+                VPMatrix = viewMatrix * projectionMatrix;
             }
         }
 
@@ -75,14 +80,17 @@ namespace TestTest123.Game
                 Z = MathF.Sin(MathHelper.DegreesToRadians(Rotation3D.X)) * MathF.Cos(MathHelper.DegreesToRadians(Rotation3D.Y))
             };
             Forward = forward;
+
+            RecalcMatrices();
+
             return (base.OnMouseMove(e));
         }
 
-        private void recalculateMatrix()
+        public void RecalcMatrices()
         {
-            projectionMatrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), AspectRatio, NearPlane, FarPlane);
-            viewMatrix = Matrix4.LookAt(Position3D, Position3D + Forward, Vector3.UnitY);
-            pvMatrix = viewMatrix * projectionMatrix;
+            ProjectionMatrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), AspectRatio, NearPlane, FarPlane);
+            ViewMatrix = Matrix4.LookAt(Position3D, Position3D + Forward, Vector3.UnitY);
+
         }
 
         [BackgroundDependencyLoader]

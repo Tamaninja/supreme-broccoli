@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using Assimp;
 using HidSharp.Reports;
 using osu.Framework.Allocation;
+using osu.Framework.Bindables;
 using osu.Framework.Extensions.IEnumerableExtensions;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
@@ -26,11 +27,10 @@ namespace TestTest123.Game
         public List<Material> Materials = new List<Material>();
         public bool IsTextured { get; private set; } = false;
         public readonly string FilePath;
+        public Matrix4 VPMatrix = Matrix4.Identity;
         public Camera Camera;
-
-        public ModelDrawable(string filepath, Camera camera)
+        public ModelDrawable(string filepath)
         {
-            Camera = camera;
             RelativeSizeAxes = Axes.Both;
             Size = Vector2.One;
 
@@ -102,7 +102,7 @@ namespace TestTest123.Game
 
         protected class ModelDrawNode : CompositeDrawableDrawNode
         {
-
+            private Matrix4 vpMatrix;
             public ModelDrawNode(ModelDrawable source) : base(source)
             {
 
@@ -110,11 +110,18 @@ namespace TestTest123.Game
 
             protected new ModelDrawable Source => (ModelDrawable)base.Source;
 
+            public override void ApplyState()
+            {
+                vpMatrix = Source.Camera.VPMatrix;
+                base.ApplyState();
+            }
+
             protected override void Draw(IRenderer renderer)
             {
+
                 Source.TextureShader!.Bind();
                 renderer.PushDepthInfo(DepthInfo.Default);
-                renderer.PushProjectionMatrix(Source.GetLocalMatrix() * Source.Camera.PVMatrix);
+                renderer.PushProjectionMatrix(Source.GetLocalMatrix() * vpMatrix);
 
                 base.Draw(renderer);
 
