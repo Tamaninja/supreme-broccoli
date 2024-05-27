@@ -28,7 +28,7 @@ namespace TestTest123.Game
             {
 
                 vpMatrix = value;
-                Parent?.Invalidate(Invalidation.MiscGeometry);
+                Parent?.Invalidate(Invalidation.MiscGeometry, InvalidationSource.Self);
             }
         }
         public Matrix4 ViewMatrix
@@ -71,6 +71,7 @@ namespace TestTest123.Game
 
         protected override bool OnMouseMove(MouseMoveEvent e)
         {
+
             Vector2 delta = e.Delta * 0.25f;
             Rotation3D = new Vector3(Rotation3D.X + delta.X, MathHelper.Clamp(Rotation3D.Y - delta.Y, -89, 89), 0);
             Vector3 forward = new Vector3

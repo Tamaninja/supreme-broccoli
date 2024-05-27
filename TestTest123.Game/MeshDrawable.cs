@@ -3,6 +3,7 @@ using Assimp;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Rendering;
+using osu.Framework.Graphics.Rendering.Vertices;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Logging;
 using osuTK.Graphics;
@@ -19,7 +20,6 @@ namespace TestTest123.Game
 
         public MeshDrawable(Mesh mesh, Material material)
         {
-            Colour = Color4.Green;
             TextureCoords = mesh.TextureCoordinateChannels;
             Material = material;
             Indices = mesh.GetIndices();
@@ -27,26 +27,34 @@ namespace TestTest123.Game
             Name = mesh.Name;
         }
 
+
+
         protected override DrawNode CreateDrawNode()
         {
             return (new MeshDrawNode<TexturelessMeshVertex>(this));
         }
 
-        protected class MeshDrawNode<T>(MeshDrawable source) : DrawNode(source)
+        protected class MeshDrawNode<T> : DrawNode
             where T : unmanaged, IMeshVertex<T>
         {
             private IVertexBatch<T> vertexBatch;
+            protected new MeshDrawable Source => (MeshDrawable)base.Source;
 
-            private MeshDrawable mesh = source;
+
+            public MeshDrawNode(MeshDrawable source) : base(source)
+            {
+            }
+
+
+
 
             protected override void Draw(IRenderer renderer)
             {
-                vertexBatch ??= renderer.CreateLinearBatch<T>(mesh.Indices.Length * 3, 3, PrimitiveTopology.Triangles);
-                mesh.Material.Texture?.Bind();
-
-                for (int i = 0; i < mesh.Indices.Length; i++)
+                vertexBatch ??= renderer.CreateLinearBatch<T>(Source.Indices.Length * 3, 3, PrimitiveTopology.Triangles);
+                renderer.BindTexture(renderer.WhitePixel);
+                for (int i = 0; i < Source.Indices.Length; i++)
                 {
-                    vertexBatch.AddAction(T.FromMesh(mesh, mesh.Indices[i]));
+                    vertexBatch.AddAction(T.FromMesh(Source, Source.Indices[i]));
                 }
             }
         }

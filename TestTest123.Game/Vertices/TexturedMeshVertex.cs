@@ -26,7 +26,7 @@ namespace TestTest123.Game.Vertices
             return (new TexturedMeshVertex()
             {
                 Position = mesh.Vertices[index],
-                Colour = mesh.Colour,
+                Colour = mesh.DrawColourInfo.Colour,
                 TexturePosition = mesh.TextureCoords[0][index]
             });
         }
