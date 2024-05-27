@@ -6,7 +6,6 @@ layout(location = 1) in lowp vec4 m_Colour;
 
 layout(location = 0) out lowp vec4 v_Colour;
 
-
 void main(void)
 {
 

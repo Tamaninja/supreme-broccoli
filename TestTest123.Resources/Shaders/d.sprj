@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project version="2">
+	<pipeline>
+		<pass name="ddd" type="shader" active="true" patchverts="1">
+			<shader type="vs" path="shaders\d_dddVS.glsl" entry="main" />
+			<shader type="ps" path="shaders\d_dddPS.glsl" entry="main" />
+			<inputlayout>
+				<item value="Position" semantic="POSITION" />
+				<item value="Color" semantic="NORMAL" />
+				<item value="Texcoord" semantic="TEXCOORD0" />
+			</inputlayout>
+			<rendertexture />
+			<items>
+				<item name="ewd" type="model">
+					<filepath>..\Models\Lighting Mcqueen\LightingMcqueen.obj</filepath>
+					<grouponly>false</grouponly>
+				</item>
+			</items>
+			<itemvalues />
+			<variables>
+				<variable type="float4x4" name="g_ProjMatrix" system="ViewProjection" />
+				<variable type="int" name="m_Texture">
+					<row>
+						<value>0</value>
+					</row>
+				</variable>
+			</variables>
+			<macros />
+		</pass>
+	</pipeline>
+	<objects>
+		<object type="texture" path="..\Models\Lighting Mcqueen\Character_Mcqueen_Body_Decal_OpeningRace.png" vflip="false" min_filter="Linear" mag_filter="Nearest" wrap_s="Repeat" wrap_t="Repeat">
+			<bind slot="0" name="ddd" />
+		</object>
+	</objects>
+	<cameras />
+	<settings>
+		<entry type="property" name="ddd" item="pipe" />
+		<entry type="file" name="ddd" shader="vs" />
+		<entry type="file" name="ddd" shader="ps" />
+		<entry type="camera" fp="true">
+			<positionX>0</positionX>
+			<positionY>0</positionY>
+			<positionZ>7</positionZ>
+			<yaw>0</yaw>
+			<pitch>0</pitch>
+		</entry>
+		<entry type="clearcolor" r="0" g="0" b="0" a="0" />
+		<entry type="usealpha" val="false" />
+	</settings>
+	<plugindata />
+</project>

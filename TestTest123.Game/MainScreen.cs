@@ -13,7 +13,7 @@ namespace TestTest123.Game
     {
         private Camera camera;
         private SpriteText text;
-        private Stage mainStage;
+        private ThreeDimensionalStageDrawable mainStage;
 
         [BackgroundDependencyLoader]
         private void load()
@@ -37,7 +37,7 @@ namespace TestTest123.Game
                     Font = FontUsage.Default.With(size: 30),
                     AllowMultiline = true
                 },
-                mainStage = new Stage(),
+                mainStage = new ThreeDimensionalStageDrawable(),
             };
         }
     }

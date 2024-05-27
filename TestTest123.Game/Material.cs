@@ -1,11 +1,17 @@
 ﻿
+using System.Runtime.InteropServices;
 using Assimp;
 using osu.Framework.Allocation;
+using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Rendering;
+using osu.Framework.Graphics.Shaders;
+using osu.Framework.Graphics.Shaders.Types;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.IO.Stores;
+
 using osu.Framework.Platform;
+using osuTK;
 
 namespace TestTest123.Game
 {
@@ -14,12 +20,16 @@ namespace TestTest123.Game
         public Texture Texture { get; set; }
         public Assimp.Material material; //d
 
+
         public Material(Assimp.Material material)
         {
             this.material = material;
             Colour = material.ColorDiffuse.FromAssimp();
             Name = material.Name;
+            Alpha = 0;
         }
+
+
 
         [BackgroundDependencyLoader]
         private void load(IRenderer renderer, GameHost host, osu.Framework.Game game)
@@ -33,5 +43,7 @@ namespace TestTest123.Game
                 Texture = textureStore.Get(texture.FilePath);
             }
         }
+
+
     }
 }

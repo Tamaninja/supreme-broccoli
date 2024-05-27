@@ -70,8 +70,6 @@ namespace TestTest123.Game
 
         public ThreeDimensionalDrawable()
         {
-            RelativeSizeAxes = Axes.Both;
-            Size = Vector2.One;
 
             scale = Vector3.One;
             position = Vector3.Zero;
