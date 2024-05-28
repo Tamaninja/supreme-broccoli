@@ -27,20 +27,18 @@ using osuTK.Graphics;
 using TestTest123.Game.Vertices;
 namespace TestTest123.Game
 {
-    public partial class ModelDrawable : ThreeDimensionalDrawable, ITexturedShaderDrawable
+    public partial class ModelDrawable : ThreeDimensionalDrawable
     {
-        public IShader TextureShader { get; private set; }
 
         public List<Material> Materials = new List<Material>();
         public List<MeshDrawable> Meshes = new List<MeshDrawable>();
-
-        public bool IsTextured { get; private set; } = false;
         public readonly string FilePath;
         public ThreeDimensionalStageDrawable Stage;
 
         public override DrawColourInfo DrawColourInfo => new DrawColourInfo(Colour.AverageColour);
         public ModelDrawable(string filepath, ThreeDimensionalStageDrawable stage)
         {
+
             Stage = stage;
             FilePath = filepath;
         }
@@ -60,7 +58,7 @@ namespace TestTest123.Game
         }
 
         [BackgroundDependencyLoader]
-        private void load(ShaderManager shaders, TextureStore textureStore)
+        private void load(TextureStore textureStore)
         {
             
             AssimpContext importer = new AssimpContext();
@@ -69,13 +67,6 @@ namespace TestTest123.Game
             {
                 Scene sceneInfo = importer.ImportFile(FilePath, PostProcessSteps.Triangulate | PostProcessSteps.FlipUVs);
                 loadMaterials(sceneInfo);
-            }
-
-            TextureShader = shaders.Load("textureless", "textureless");
-
-            if (IsTextured)
-            {
-                TextureShader = shaders.Load("nino", "nino");
             }
         }
 
@@ -92,15 +83,11 @@ namespace TestTest123.Game
 
         private void generateNewMesh(Mesh mesh)
         {
-            MeshDrawable meshDrawable = new MeshDrawable(mesh, Materials[mesh.MaterialIndex]);
+            MeshDrawable meshDrawable = new MeshDrawable(this, mesh);
             meshDrawable.Colour = Colour;
-            AddInternal(meshDrawable);
+            Meshes.Add(meshDrawable);
         }
-        protected virtual void AddInternal(MeshDrawable mesh)
-        {
-            base.AddInternal(mesh);
-            Meshes.Add(mesh);
-        }
+
 
         private void loadMaterials(Scene sceneInfo)
         {
@@ -109,75 +96,10 @@ namespace TestTest123.Game
             {
                 Material material = Stage.GetMaterial(GetType(), assimp);
                 Materials.Add(material);
-
-                if (assimp.GetAllMaterialTextures().Length > 0)
-                {
-                    IsTextured = true;
-                }
             }
 
 
             loadMeshes(sceneInfo);
-        }
-
-        protected override DrawNode CreateDrawNode()
-        {
-            return (new ModelDrawNode(this));
-        }
-
-        protected class ModelDrawNode : CompositeDrawableDrawNode
-        {
-            private Matrix4 vpMatrix = Matrix4.Identity;
-            private Matrix4 modelMatrix = Matrix4.Identity;
-            private IUniformBuffer<MaterialUniform> colorUniform;
-            private IShader shader;
-            private Vector4 color;
-
-            public ModelDrawNode(ModelDrawable source) : base(source)
-            {
-            }
-
-            protected new ModelDrawable Source => (ModelDrawable)base.Source;
-
-            
-            public void BindUniform(IShader shader, IRenderer renderer)
-            {
-
-                colorUniform ??= renderer.CreateUniformBuffer<MaterialUniform>();
-                colorUniform.Data = new MaterialUniform() { Color = color};
-                shader.BindUniformBlock("u_Colour", colorUniform);
-                
-            }
-
-            public override void ApplyState()
-            {
-                base.ApplyState();
-
-                vpMatrix = Source.Stage.Camera.VPMatrix;
-                shader = Source.TextureShader;
-                color = DrawColourInfo.Colour.TopLeft.ToVector();
-                modelMatrix = Source.GetLocalMatrix();
-            }
-
-            protected override void Draw(IRenderer renderer)
-            {
-
-                Source.TextureShader?.Bind();
-                /*                BindUniform(shader, renderer);
-                */
-
-
-                base.Draw(renderer);
-
-
-                Source.TextureShader.Unbind();
-            }
-
-            [StructLayout(LayoutKind.Sequential, Pack = 1)]
-            private record struct MaterialUniform
-            {
-                public UniformVector4 Color;
-            }
         }
     }
 }

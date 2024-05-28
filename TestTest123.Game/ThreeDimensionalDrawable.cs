@@ -23,6 +23,24 @@ namespace TestTest123.Game
         private Vector3 rotation;
         private Vector3 scale;
 
+        private Bindable<Matrix4> localMatrix { get; set; } = new Bindable<Matrix4>(Matrix4.Identity);
+
+        public Matrix4 LocalMatrix
+        {
+            get
+            {
+                updateMatrix();
+                return (localMatrix.Value);
+            }
+            set
+            {
+
+                localMatrix.Value = value;
+                RequiresRecalculation = true;
+
+            }
+        }
+
         protected bool RequiresRecalculation;
 
         public virtual Vector3 Forward
@@ -70,7 +88,10 @@ namespace TestTest123.Game
 
         public ThreeDimensionalDrawable()
         {
+            
 
+            RelativeSizeAxes = Axes.Both;
+            
             scale = Vector3.One;
             position = Vector3.Zero;
             rotation = Vector3.Zero;
@@ -80,8 +101,10 @@ namespace TestTest123.Game
             RequiresRecalculation = true;
         }
 
-        public Matrix4 GetLocalMatrix()
+        private void updateMatrix()
         {
+            if (!RequiresRecalculation) return;
+
             Matrix4 scaleMatrix = Matrix4.CreateScale(Scale3D);
 
             Matrix4 translation = Matrix4.CreateTranslation(Position3D);
@@ -90,7 +113,7 @@ namespace TestTest123.Game
             Matrix4 rotationY = Matrix4.CreateRotationY(Rotation3D.Y);
             Matrix4 rotationZ = Matrix4.CreateRotationZ(Rotation3D.Z);
 
-            return (scaleMatrix * (rotationX * rotationY * rotationZ) * translation);
+            localMatrix.Value = (scaleMatrix * (rotationX * rotationY * rotationZ) * translation);
         }
 
         [BackgroundDependencyLoader]

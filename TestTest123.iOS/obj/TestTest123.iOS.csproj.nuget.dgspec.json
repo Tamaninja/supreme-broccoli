@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.iOS\\TestTest123.iOS.csproj": {}
+    "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj": {}
   },
   "projects": {
-    "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj": {
+    "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj",
+        "projectUniqueName": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
         "projectName": "TestTest123.Game",
-        "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj",
-        "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-        "outputPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\obj\\",
+        "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+        "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj": {
-                "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj"
+              "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+                "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
               }
             }
           }
@@ -79,24 +79,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.iOS\\TestTest123.iOS.csproj": {
+    "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.iOS\\TestTest123.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
         "projectName": "TestTest123.iOS",
-        "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.iOS\\TestTest123.iOS.csproj",
-        "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-        "outputPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.iOS\\obj\\",
+        "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
+        "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -112,11 +112,11 @@
           "net8.0-ios17.2": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {
-              "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj": {
-                "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj"
+              "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
+                "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj"
               },
-              "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj": {
-                "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj"
+              "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+                "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
               }
             }
           }
@@ -143,7 +143,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )",
+              "version": "[8.0.4, )",
               "autoReferenced": true
             },
             "ppy.osu.Framework": {
@@ -174,7 +174,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -183,20 +183,20 @@
         }
       }
     },
-    "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+    "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj",
+        "projectUniqueName": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
         "projectName": "TestTest123.Resources",
-        "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj",
-        "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-        "outputPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\obj\\",
+        "projectPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
+        "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -254,7 +254,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

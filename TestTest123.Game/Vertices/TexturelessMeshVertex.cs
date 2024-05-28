@@ -23,7 +23,7 @@ namespace TestTest123.Game.Vertices
             return new TexturelessMeshVertex
             {
                 Position = mesh.Vertices[index],
-                Colour = new Color4(1,0,1,1),
+                Colour = mesh.Colour,
             };
         }
 
