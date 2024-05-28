@@ -1,5 +1,9 @@
 ﻿
+<<<<<<< HEAD
 
+=======
+using System.Runtime.InteropServices;
+>>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
 using Assimp;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
@@ -7,10 +11,16 @@ using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Shaders.Types;
+<<<<<<< HEAD
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.IO.Stores;
 using osu.Framework.Logging;
+=======
+using osu.Framework.Graphics.Textures;
+using osu.Framework.IO.Stores;
+
+>>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
 using osu.Framework.Platform;
 using osuTK;
 
@@ -19,6 +29,7 @@ namespace TestTest123.Game
     public partial class Material : Container, ITexturedShaderDrawable
     {
 
+<<<<<<< HEAD
         public IShader TextureShader { get; protected set; }
         public string Texture { get; protected set; }
         public ThreeDimensionalStageDrawable Stage { get; protected set; }
@@ -26,10 +37,15 @@ namespace TestTest123.Game
         public bool IsTextured => Texture != null;
 
         public Material(ThreeDimensionalStageDrawable stage, Assimp.Material material)
+=======
+
+        public Material(Assimp.Material material)
+>>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
         {
             Stage = stage;
             Colour = material.ColorDiffuse.FromAssimp();
             Name = material.Name;
+<<<<<<< HEAD
 
             if (material.HasTextureDiffuse)
             {
@@ -37,6 +53,19 @@ namespace TestTest123.Game
             }
         }
 
+=======
+            Alpha = 0;
+        }
+
+
+
+        [BackgroundDependencyLoader]
+        private void load(IRenderer renderer, GameHost host, osu.Framework.Game game)
+        {
+            IResourceStore<TextureUpload> textureLoaderStore = null!;
+            textureLoaderStore = host.CreateTextureLoaderStore(new NamespacedResourceStore<byte[]>(game.Resources, @"Textures"));
+            TextureStore textureStore = new TextureStore(renderer, textureLoaderStore, false, TextureFilteringMode.Linear, true);
+>>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
 
 
         [BackgroundDependencyLoader]
@@ -85,5 +114,7 @@ namespace TestTest123.Game
                 shader.Unbind();
             }
         }
+
+
     }
 }
