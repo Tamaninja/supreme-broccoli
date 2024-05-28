@@ -34,11 +34,11 @@ namespace TestTest123.Game
 
             protected override void Draw(IRenderer renderer)
             {
+                Source.Material.Bind();
                 renderer.PushDepthInfo(DepthInfo.Default);
                 renderer.PushProjectionMatrix(modelMatrix * vpMatrix);
 
                 vertexBatch ??= renderer.CreateLinearBatch<T>(Source.Indices.Length * 3, 3, PrimitiveTopology.Triangles);
-                renderer.BindTexture(renderer.WhitePixel);
                 for (int i = 0; i < Source.Indices.Length; i++)
                 {
                     vertexBatch.AddAction(T.FromMesh(Source, Source.Indices[i]));
@@ -46,6 +46,9 @@ namespace TestTest123.Game
 
                 renderer.PopProjectionMatrix();
                 renderer.PopDepthInfo();
+                Source.Material.Unbind();
+
+
             }
         }
     }

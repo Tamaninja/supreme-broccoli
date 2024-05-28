@@ -4,10 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Threading;
 using Assimp;
-<<<<<<< HEAD
 using osu.Framework;
-=======
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
 using osu.Framework.Allocation;
 using osu.Framework.Extensions.Color4Extensions;
 using osu.Framework.Graphics;
@@ -17,13 +14,9 @@ using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Shaders.Types;
 using osu.Framework.Graphics.Textures;
-<<<<<<< HEAD
 using osu.Framework.IO.Stores;
 using osu.Framework.Logging;
 using osu.Framework.Platform;
-=======
-using osu.Framework.Logging;
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
 using osuTK;
 using osuTK.Graphics;
 using osuTK.Graphics.OpenGL;
@@ -36,32 +29,20 @@ namespace TestTest123.Game
     {
         public Dictionary<Type, Dictionary<string, Material>> Materials = new Dictionary<Type, Dictionary<string, Material>>();
         public Camera Camera;
-<<<<<<< HEAD
         private TextureStore textureStore;
-=======
-        public IShader TextureShader;
-
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
         public ThreeDimensionalStageDrawable()
         {
             RelativeSizeAxes = Axes.Both;
             Colour = Color4.AliceBlue.Opacity(0f);
         }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
         public Material GetMaterial(Type type, Assimp.Material assimp)
         {
             Material material;
             if (!Materials.TryGetValue(type, out var materialList)) //type not already in dictionary
             {
-<<<<<<< HEAD
                 material = new Material(this, assimp);
-=======
-                material = new Material(assimp);
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
                 materialList = new Dictionary<string, Material>
                 {
                     { assimp.Name, material}
@@ -72,11 +53,7 @@ namespace TestTest123.Game
             }
             if (!materialList.TryGetValue(assimp.Name, out material)) //new material, exisiting object
             {
-<<<<<<< HEAD
                 material = new Material(this, assimp);
-=======
-                material = new Material(assimp);
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
                 materialList.Add(assimp.Name, material);
                 AddInternal(material);
             }
@@ -85,7 +62,6 @@ namespace TestTest123.Game
         }
 
 
-<<<<<<< HEAD
         public Texture GetTextureBypassAtlas(string key)
         {
             return (textureStore.Get(key));
@@ -97,13 +73,6 @@ namespace TestTest123.Game
             IResourceStore<TextureUpload> textureLoaderStore = null!;
             textureLoaderStore = host.CreateTextureLoaderStore(new NamespacedResourceStore<byte[]>(game.Resources, @"Textures"));
             textureStore = new TextureStore(renderer, textureLoaderStore, false, TextureFilteringMode.Linear, true);
-=======
-        [BackgroundDependencyLoader]
-        private void load(ShaderManager shaders, IRenderer renderer, TextureStore textureStore)
-        {
-
-            TextureShader = shaders.Load("textureless", "textureless");
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
 
             Camera = new Camera();
             AddInternal(Camera);
@@ -142,11 +111,7 @@ namespace TestTest123.Game
 
             protected override void Draw(IRenderer renderer)
             {
-<<<<<<< HEAD
                 renderer.PushDepthInfo(DepthInfo.Default);
-=======
-                renderer.PushDepthInfo(new DepthInfo(function: BufferTestFunction.Always));
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
                 renderer.PushProjectionMatrix(vpMatrix);
                     base.Draw(renderer);
                 renderer.PopProjectionMatrix();

@@ -88,10 +88,7 @@ namespace TestTest123.Game
 
         public ThreeDimensionalDrawable()
         {
-<<<<<<< HEAD
             
-=======
->>>>>>> ad17a7ae5f5d05e67d0e57ed89f30e09932fffb8
 
             RelativeSizeAxes = Axes.Both;
             
