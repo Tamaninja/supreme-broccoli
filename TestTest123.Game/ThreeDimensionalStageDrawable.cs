@@ -27,38 +27,12 @@ namespace TestTest123.Game
 {
     public partial class ThreeDimensionalStageDrawable : Container
     {
-        public Dictionary<Type, Dictionary<string, Material>> Materials = new Dictionary<Type, Dictionary<string, Material>>();
         public Camera Camera;
         private TextureStore textureStore;
         public ThreeDimensionalStageDrawable()
         {
             RelativeSizeAxes = Axes.Both;
             Colour = Color4.AliceBlue.Opacity(0f);
-        }
-
-
-        public Material GetMaterial(Type type, Assimp.Material assimp)
-        {
-            Material material;
-            if (!Materials.TryGetValue(type, out var materialList)) //type not already in dictionary
-            {
-                material = new Material(this, assimp);
-                materialList = new Dictionary<string, Material>
-                {
-                    { assimp.Name, material}
-                };
-                Materials.Add(type, materialList);
-                AddInternal(material);
-                return (material);
-            }
-            if (!materialList.TryGetValue(assimp.Name, out material)) //new material, exisiting object
-            {
-                material = new Material(this, assimp);
-                materialList.Add(assimp.Name, material);
-                AddInternal(material);
-            }
-            return (material);
-
         }
 
 
@@ -77,7 +51,7 @@ namespace TestTest123.Game
             Camera = new Camera();
             AddInternal(Camera);
 
-            for (int i = 0;  i < 33; i++)
+            for (int i = 0;  i < 13; i++)
             {
                 Box3D box3d = new Box3D(this);
                 AddInternal(box3d);
@@ -88,35 +62,6 @@ namespace TestTest123.Game
             }
 
 
-        }
-
-        protected override DrawNode CreateDrawNode()
-        {
-            return new StageDrawNode(this);
-        }
-
-
-        protected class StageDrawNode(ThreeDimensionalStageDrawable source) : CompositeDrawableDrawNode(source)
-        {
-            private Matrix4 vpMatrix = Matrix4.Identity;
-            protected new ThreeDimensionalStageDrawable Source => (ThreeDimensionalStageDrawable)base.Source;
-
-            public override void ApplyState()
-            {
-                base.ApplyState();
-
-                vpMatrix = Source.Camera.VPMatrix;
-
-            }
-
-            protected override void Draw(IRenderer renderer)
-            {
-                renderer.PushDepthInfo(DepthInfo.Default);
-                renderer.PushProjectionMatrix(vpMatrix);
-                    base.Draw(renderer);
-                renderer.PopProjectionMatrix();
-                renderer.PopDepthInfo();
-            }
         }
     }
 }

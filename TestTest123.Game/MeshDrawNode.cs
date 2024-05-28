@@ -7,49 +7,40 @@ using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
 {
-    public partial class MeshDrawable
+    public class MeshDrawNode : DrawNode
     {
-        protected class MeshDrawNode<T> : DrawNode
-            where T : unmanaged, IMeshVertex<T>
+
+        protected new MeshDrawable Source => (MeshDrawable)base.Source;
+        private Matrix4 vpMatrix = Matrix4.Identity;
+        private Matrix4 modelMatrix = Matrix4.Identity;
+        public MeshDrawNode(MeshDrawable source) : base(source)
         {
 
-            private IVertexBatch<T> vertexBatch;
-            protected new MeshDrawable Source => (MeshDrawable)base.Source;
-            private Matrix4 vpMatrix = Matrix4.Identity;
-            private Matrix4 modelMatrix = Matrix4.Identity;
-            public MeshDrawNode(MeshDrawable source) : base(source)
-            {
-                
-            }
+        }
 
 
 
-            public override void ApplyState()
-            {
-                base.ApplyState();
+        public override void ApplyState()
+        {
+            base.ApplyState();
 
-                modelMatrix = Source.Model.LocalMatrix;
-                vpMatrix = Source.Model.Stage.Camera.VPMatrix;
-            }
+            modelMatrix = Source.LocalMatrix * Source.Model.LocalMatrix;
+            vpMatrix = Source.Model.Stage.Camera.VPMatrix;
+        }
 
-            protected override void Draw(IRenderer renderer)
-            {
-                Source.Material.Bind();
-                renderer.PushDepthInfo(DepthInfo.Default);
-                renderer.PushProjectionMatrix(modelMatrix * vpMatrix);
+        protected override void Draw(IRenderer renderer)
+        {
+            Source.TextureShader.Bind();
+            renderer.PushDepthInfo(DepthInfo.Default);
+            renderer.PushProjectionMatrix(modelMatrix * vpMatrix);
 
-                vertexBatch ??= renderer.CreateLinearBatch<T>(Source.Indices.Length * 3, 3, PrimitiveTopology.Triangles);
-                for (int i = 0; i < Source.Indices.Length; i++)
-                {
-                    vertexBatch.AddAction(T.FromMesh(Source, Source.Indices[i]));
-                }
+                Source.Mesh.Draw(renderer);
 
-                renderer.PopProjectionMatrix();
-                renderer.PopDepthInfo();
-                Source.Material.Unbind();
+            renderer.PopProjectionMatrix();
+            renderer.PopDepthInfo();
+            Source.TextureShader.Unbind();
 
 
-            }
         }
     }
 }

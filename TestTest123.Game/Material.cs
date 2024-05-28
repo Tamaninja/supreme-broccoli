@@ -16,19 +16,15 @@ using osuTK;
 
 namespace TestTest123.Game
 {
-    public partial class Material : Component, ITexturedShaderDrawable
+    public partial class Material : Component
     {
 
-        public IShader TextureShader { get; protected set; }
-        public Texture Texture { get; protected set; }
         public string TextureKey {  get; protected set; }
-        public ThreeDimensionalStageDrawable Stage { get; protected set; }
-
+        public string ShaderKey { get; protected set; }
         public bool IsTextured => TextureKey != null;
 
-        public Material(ThreeDimensionalStageDrawable stage, Assimp.Material material)
+        public Material(Assimp.Material material)
         {
-            Stage = stage;
             Colour = material.ColorDiffuse.FromAssimp();
             Name = material.Name;
 
@@ -36,38 +32,11 @@ namespace TestTest123.Game
             {
                 TextureKey = material.TextureDiffuse.FilePath;
             }
-        }
-
-
-
-        [BackgroundDependencyLoader]
-        private void load(ShaderManager shaders, IRenderer renderer)
-        {
-            TextureShader = shaders.Load("textureless", "textureless");
+            ShaderKey = "textureless";
             if (IsTextured)
             {
-                TextureShader = shaders.Load("nino", "nino");
-                Texture = Stage.GetTextureBypassAtlas(TextureKey);
-            } else
-            {
-                Texture = renderer.WhitePixel;
+                ShaderKey = "nino";
             }
-        }
-
-
-        public void Bind()
-        {
-            if (!TextureShader.IsBound)
-            {
-                TextureShader.Bind();
-            }
-            Texture?.Bind();
-            
-        }
-
-        public void Unbind()
-        {
-            TextureShader?.Unbind();
         }
 
     }

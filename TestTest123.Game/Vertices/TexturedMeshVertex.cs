@@ -21,12 +21,12 @@ namespace TestTest123.Game.Vertices
         [VertexMember(3, VertexAttribPointerType.Float)]
         public Vector3D TexturePosition;
 
-        public static TexturedMeshVertex FromMesh(MeshDrawable mesh, int index)
+        public static TexturedMeshVertex FromMesh(Mesh<TexturedMeshVertex> mesh, int index)
         {
             return (new TexturedMeshVertex()
             {
                 Position = mesh.Vertices[index],
-                Colour = mesh.Colour,
+                Colour = new Color4(1, 0, 1, 1),
                 TexturePosition = mesh.TextureCoords[0][index]
             });
         }

@@ -30,30 +30,15 @@ namespace TestTest123.Game
     public partial class ModelDrawable : ThreeDimensionalDrawable
     {
 
-        public List<Material> Materials = new List<Material>();
-        public List<MeshDrawable> Meshes = new List<MeshDrawable>();
+        
+        public Model Model { get; set; }
         public readonly string FilePath;
         public ThreeDimensionalStageDrawable Stage;
 
         public ModelDrawable(string filepath, ThreeDimensionalStageDrawable stage)
         {
-
             Stage = stage;
             FilePath = filepath;
-        }
-
-        protected override bool OnInvalidate(Invalidation invalidation, InvalidationSource source)
-        {
-            if (invalidation.HasFlagFast(Invalidation.Colour))
-            {
-                foreach (MeshDrawable mesh in Meshes)
-                {
-
-                    mesh.Colour = Colour;
-                }
-            }
-
-            return base.OnInvalidate(invalidation, source);
         }
 
         [BackgroundDependencyLoader]
@@ -65,41 +50,13 @@ namespace TestTest123.Game
             if (FilePath != null)
             {
                 Scene sceneInfo = importer.ImportFile(FilePath, PostProcessSteps.Triangulate | PostProcessSteps.FlipUVs);
-                loadMaterials(sceneInfo);
+                Model = new Model(sceneInfo);
+
+                foreach (Mesh mesh in Model.Meshes)
+                {
+                    AddInternal(new MeshDrawable(mesh, this));
+                }
             }
-        }
-
-        private void loadMeshes(Scene sceneInfo)
-        {
-            if (!sceneInfo.HasMeshes) { return; }
-
-
-            foreach (Mesh mesh in sceneInfo.Meshes)
-            {
-                generateNewMesh(mesh);
-            }
-       }
-
-        private void generateNewMesh(Mesh mesh)
-        {
-            MeshDrawable meshDrawable = new MeshDrawable(this, mesh);
-            meshDrawable.Colour = Colour;
-            Meshes.Add(meshDrawable);
-            AddInternal(meshDrawable);
-        }
-
-
-        private void loadMaterials(Scene sceneInfo)
-        {
-
-            foreach (Assimp.Material assimp in sceneInfo.Materials)
-            {
-                Material material = Stage.GetMaterial(GetType(), assimp);
-                Materials.Add(material);
-            }
-
-
-            loadMeshes(sceneInfo);
         }
     }
 }
