@@ -6,43 +6,49 @@ using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Rendering.Vertices;
+using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Logging;
 using osuTK;
 using osuTK.Graphics;
+using osuTK.Graphics.OpenGL;
 using TestTest123.Game.Vertices;
 using Vortice;
+using static osuTK.Graphics.OpenGL.GL;
 
 namespace TestTest123.Game
 {
-    public partial class Mesh<T> where T : unmanaged, IMeshVertex<T>
+    public record class Mesh
     {
 
-        private IVertexBatch<T> vertexBatch;
-
-        public Material Material;
+        private IVertexBatch<TexturedMeshVertex> vertexBatch {  get; set; }
+        public int MaterialIndex { get; private set; }
         public int[] Indices;
-        public Vector3D[] Vertices;
+        public List<Vector3D> Vertices;
         public List<Vector3D>[] TextureCoords;
+        public Model Parent {  get; private set; }
 
-        
-        public Mesh(Assimp.Mesh assimpMesh, Material material){
-            Material = material;
-            TextureCoords = assimpMesh.TextureCoordinateChannels;
-            Indices = assimpMesh.GetIndices();
-            Vertices = assimpMesh.Vertices.ToArray();
+        public Mesh(Model parent, Assimp.Mesh mesh){
+
+            Parent = parent;
+            MaterialIndex = mesh.MaterialIndex;
+            Vertices = mesh.Vertices;
+            Indices = mesh.GetIndices();
+            TextureCoords = mesh.TextureCoordinateChannels;
+
+
         }
 
-        public void Draw(IRenderer renderer)
+        public void DrawVBO(IRenderer renderer)
         {
-            
+            vertexBatch ??= renderer.CreateLinearBatch<TexturedMeshVertex>(Indices.Length, 3, PrimitiveTopology.Triangles);
 
-            vertexBatch ??= renderer.CreateLinearBatch<T>(Indices.Length * 3, 3, PrimitiveTopology.Triangles);
             for (int i = 0; i < Indices.Length; i++)
             {
-                vertexBatch.AddAction(T.FromMesh(this, Indices[i]));
+                vertexBatch.AddAction(TexturedMeshVertex.FromMesh(this, i));
             }
         }
+
     }
 }

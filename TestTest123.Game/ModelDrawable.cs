@@ -1,23 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
+﻿using System.Collections.Generic;
 using Assimp;
-using HidSharp.Reports;
-using NuGet.Protocol;
+using NUnit.Framework;
 using osu.Framework.Allocation;
-using osu.Framework.Bindables;
-using osu.Framework.Extensions.Color4Extensions;
-using osu.Framework.Extensions.EnumExtensions;
-using osu.Framework.Extensions.IEnumerableExtensions;
 using osu.Framework.Graphics;
-using osu.Framework.Graphics.Colour;
-using osu.Framework.Graphics.Containers;
-using osu.Framework.Graphics.Pooling;
 using osu.Framework.Graphics.Rendering;
-using osu.Framework.Graphics.Rendering.Vertices;
-using osu.Framework.Graphics.Shaders;
-using osu.Framework.Graphics.Shaders.Types;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Layout;
 using osu.Framework.Logging;
@@ -30,33 +16,47 @@ namespace TestTest123.Game
     public partial class ModelDrawable : ThreeDimensionalDrawable
     {
 
-        
-        public Model Model { get; set; }
-        public readonly string FilePath;
-        public ThreeDimensionalStageDrawable Stage;
 
-        public ModelDrawable(string filepath, ThreeDimensionalStageDrawable stage)
+        public Model Model { get; private set; }
+        public ThreeDimensionalStageDrawable Stage;
+        public List<MaterialDrawable> Materials { get; set; } = [];
+
+        public ModelDrawable(Model model, ThreeDimensionalStageDrawable stage)
         {
             Stage = stage;
-            FilePath = filepath;
+            Model = model;
         }
 
         [BackgroundDependencyLoader]
-        private void load(TextureStore textureStore)
+        private void load(IRenderer renderer, TextureStore textureStore)
+        {
+            loadMaterials();
+
+
+        }
+
+        public void AddInternal(MaterialDrawable material)
         {
             
-            AssimpContext importer = new AssimpContext();
-
-            if (FilePath != null)
+            base.AddInternal(material);
+            Materials.Add(material);
+        }
+        private void loadMaterials()
+        {
+            for (int i = 0; i < Model.Materials.Count; i++)
             {
-                Scene sceneInfo = importer.ImportFile(FilePath, PostProcessSteps.Triangulate | PostProcessSteps.FlipUVs);
-                Model = new Model(sceneInfo);
+                AddInternal(new MaterialDrawable(Model.Materials[i]));
+            }
 
-                foreach (Mesh mesh in Model.Meshes)
-                {
-                    AddInternal(new MeshDrawable(mesh, this));
-                }
+            loadMeshes();
+        }
+        private void loadMeshes()
+        {
+            foreach (Mesh mesh in Model.Meshes)
+            {
+                Materials[mesh.MaterialIndex].Add(new MeshDrawable(this, mesh));
             }
         }
+
     }
 }

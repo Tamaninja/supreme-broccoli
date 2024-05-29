@@ -15,19 +15,18 @@ using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
 {
-    public partial class MeshDrawable : Component, ITexturedShaderDrawable
+    public partial class MeshDrawable : Drawable
     {
         
         public Mesh Mesh;
         public Matrix4 LocalMatrix;
-        public Texture Texture;
-        public IShader TextureShader { get; set; }
+        public MaterialDrawable Material;
         public ModelDrawable Model { get; set; }
 
 
-        public MeshDrawable(Mesh mesh, ModelDrawable parent){
+        public MeshDrawable(ModelDrawable parent, Mesh mesh){
             Model = parent;
-            Colour = mesh.Material.Colour;
+            Material = parent.Materials[mesh.MaterialIndex];
             Mesh = mesh;
             LocalMatrix = Matrix4.Identity;
         }
@@ -36,16 +35,7 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders, IRenderer renderer, TextureStore textureStore)
         {
-            TextureShader = shaders.Load("textureless", "textureless");
-            if (Mesh.Material.IsTextured)
-            {
-                TextureShader = shaders.Load("nino", "nino");
-                Texture = textureStore.Get(Mesh.Material.TextureKey);
-            }
-            else
-            {
-                Texture = renderer.WhitePixel;
-            }
+
         }
         protected override DrawNode CreateDrawNode()
         {

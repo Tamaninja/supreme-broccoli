@@ -18,14 +18,15 @@ namespace TestTest123.Game.Vertices
         [VertexMember(4, VertexAttribPointerType.Float)]
         public Color4 Colour;
 
-        public static TexturelessMeshVertex FromMesh(Mesh<TexturelessMeshVertex> mesh, int index)
+        public static TexturelessMeshVertex FromMesh(Mesh mesh, int index)
         {
             return new TexturelessMeshVertex
             {
                 Position = mesh.Vertices[index],
-                Colour = new Color4(1,0,1, 1),
+                Colour = new Color4(1, 0, 1, 1),
             };
         }
+
 
         public readonly bool Equals(TexturelessMeshVertex other)
         {

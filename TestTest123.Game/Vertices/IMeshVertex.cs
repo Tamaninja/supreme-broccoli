@@ -9,6 +9,7 @@ namespace TestTest123.Game.Vertices
 {
     public interface IMeshVertex<T> : IVertex, IEquatable<T> where T : IMeshVertex<T>
     {
-        public abstract static T FromMesh(Mesh<T> mesh, int index);
+
+        public abstract static T FromMesh(Mesh mesh, int index);
     }
 }

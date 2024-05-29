@@ -41,25 +41,23 @@ namespace TestTest123.Game
             return (textureStore.Get(key));
         }
         [BackgroundDependencyLoader]
-        private void load(IRenderer renderer, GameHost host, osu.Framework.Game game)
+        private void load(IRenderer renderer)
         {
-
-            IResourceStore<TextureUpload> textureLoaderStore = null!;
-            textureLoaderStore = host.CreateTextureLoaderStore(new NamespacedResourceStore<byte[]>(game.Resources, @"Textures"));
-            textureStore = new TextureStore(renderer, textureLoaderStore, false, TextureFilteringMode.Linear, true);
-
             Camera = new Camera();
             AddInternal(Camera);
 
+            Model box = Model.BOX_3D();
+
+
             for (int i = 0;  i < 13; i++)
             {
-                Box3D box3d = new Box3D(this);
+                ModelDrawable box3d = new ModelDrawable(box, this);
                 AddInternal(box3d);
 
                 box3d.Colour = Color4.DarkOrange;
-                box3d.Position3D = new Vector3(new Random().Next(1,24), new Random().Next(1, 4), 100);
-                box3d.Delay(i * 500).MoveToZ(0, 50000, Easing.None).Then().Expire();
-            }
+/*                box3d.Position3D = new Vector3(new Random().Next(1,24), new Random().Next(1, 4), 100);
+*//*                box3d.Delay(i * 500).MoveToZ(0, 50000, Easing.None).Then().Expire();
+*/            }
 
 
         }

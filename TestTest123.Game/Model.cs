@@ -4,43 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Assimp;
+using osu.Framework.Graphics;
+using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Textures;
+using SixLabors.ImageSharp.Metadata;
+using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
 {
-    public class Model : IDisposable
+    public record class Model
     {
         public List<Material> Materials;
         public List<Mesh> Meshes;
+        public Model(string filepath) {
 
-        public Model(Scene sceneInfo) {
-            Materials = loadMaterials(sceneInfo.Materials);
+            AssimpContext importer = new AssimpContext();
+            Scene sceneInfo = importer.ImportFile(filepath, PostProcessSteps.Triangulate | PostProcessSteps.FlipUVs);
+            Materials = sceneInfo.Materials;
             Meshes = createMesh(sceneInfo.Meshes);
         }
 
+        public static Model BOX_3D()
+        {
+            return (new Model(@"C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Resources\Models\Lighting Mcqueen\LightingMcqueen.obj"));
+        }
         private List<Mesh> createMesh(List<Assimp.Mesh> assimpMeshes)
         {
             List<Mesh> meshes = [];
             foreach (Assimp.Mesh mesh in assimpMeshes)
             {
-                meshes.Add(new Mesh(mesh, Materials[mesh.MaterialIndex]));
+                meshes.Add(new Mesh(this, mesh));
             }
             return (meshes);
-        }
-
-        private List<Material> loadMaterials(List<Assimp.Material> assimpMaterials)
-        {
-            List<Material> materials = [];
-            foreach (Assimp.Material material in assimpMaterials)
-            {
-                materials.Add(new Material(material));
-            }
-            return(materials);
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
         }
     }
 }

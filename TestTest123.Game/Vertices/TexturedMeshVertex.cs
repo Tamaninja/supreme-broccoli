@@ -15,33 +15,25 @@ namespace TestTest123.Game.Vertices
         [VertexMember(3, VertexAttribPointerType.Float)]
         public Vector3D Position;
 
-        [VertexMember(4, VertexAttribPointerType.Float)]
-        public Color4 Colour;
-
         [VertexMember(3, VertexAttribPointerType.Float)]
         public Vector3D TexturePosition;
 
-        public static TexturedMeshVertex FromMesh(Mesh<TexturedMeshVertex> mesh, int index)
+        public static TexturedMeshVertex FromMesh(Mesh mesh, int index)
         {
-            return (new TexturedMeshVertex()
+            return (new TexturedMeshVertex
             {
                 Position = mesh.Vertices[index],
-                Colour = new Color4(1, 0, 1, 1),
-                TexturePosition = mesh.TextureCoords[0][index]
+                TexturePosition = mesh.TextureCoords[0][index],
             });
         }
 
         public bool Equals(TexturedMeshVertex other)
         {
-            if (Position.Equals(other.Position))
-            {
-                if (TexturePosition.Equals(other.TexturePosition))
-                {
-                    return Colour.Equals(other.Colour);
-                }
-            }
 
-            return false;
+            
+            return (Position == other.Position)
+                && (TexturePosition == other.TexturePosition);
+
         }
     }
 }

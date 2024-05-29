@@ -24,7 +24,6 @@ namespace TestTest123.Game
             base.LoadComplete();
 
             screenStack.Push(new MainScreen());
-            Window.CursorState = CursorState.Confined;
             
         }
 

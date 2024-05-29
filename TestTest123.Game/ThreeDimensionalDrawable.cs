@@ -16,7 +16,7 @@ using osuTK.Graphics.OpenGL;
 
 namespace TestTest123.Game
 {
-    public partial class ThreeDimensionalDrawable : PoolableDrawable
+    public partial class ThreeDimensionalDrawable : CompositeDrawable
     {
         private Vector3 forward;
         private Vector3 position;
