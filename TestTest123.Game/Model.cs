@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Assimp;
@@ -16,8 +17,10 @@ namespace TestTest123.Game
     {
         public List<Material> Materials;
         public List<Mesh> Meshes;
+        public readonly string Filepath;
         public Model(string filepath) {
 
+            Filepath = filepath;
             AssimpContext importer = new AssimpContext();
             Scene sceneInfo = importer.ImportFile(filepath, PostProcessSteps.Triangulate | PostProcessSteps.FlipUVs);
             Materials = sceneInfo.Materials;

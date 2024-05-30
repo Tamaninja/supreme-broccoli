@@ -19,6 +19,8 @@ namespace TestTest123.Game
         // the screen scaling for all components including the test browser and framework overlays.
 
         protected override Container<Drawable> Content { get; }
+        private DependencyContainer dependencies = null!;
+
 
         protected TestTest123GameBase()
         {
@@ -46,10 +48,12 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load(IRenderer renderer)
         {
-
+            dependencies.CacheAs(new LargeTextureStore(renderer, Host.CreateTextureLoaderStore(new NamespacedResourceStore<byte[]>(Resources, "Textures"))));
             
             Resources.AddStore(new DllResourceStore(typeof(TestTest123Resources).Assembly));
         }
 
+        protected override IReadOnlyDependencyContainer CreateChildDependencies(IReadOnlyDependencyContainer parent)
+            => dependencies = new DependencyContainer(base.CreateChildDependencies(parent));
     }
 }

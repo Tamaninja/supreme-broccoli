@@ -15,20 +15,22 @@ using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
 {
-    public partial class MeshDrawable : Drawable
+    public partial class MeshDrawable : ThreeDimensionalDrawable
     {
-        
-        public Mesh Mesh;
-        public Matrix4 LocalMatrix;
-        public MaterialDrawable Material;
         public ModelDrawable Model { get; set; }
 
 
+        public Mesh Mesh;
+        public MaterialDrawable Material;
+
         public MeshDrawable(ModelDrawable parent, Mesh mesh){
+
+            Mesh = mesh;
             Model = parent;
             Material = parent.Materials[mesh.MaterialIndex];
-            Mesh = mesh;
-            LocalMatrix = Matrix4.Identity;
+            Colour = Material.Colour;
+
+            Material.Add(CreateProxy());
         }
 
 
@@ -39,6 +41,7 @@ namespace TestTest123.Game
         }
         protected override DrawNode CreateDrawNode()
         {
+           
             return (new MeshDrawNode(this));
 
         }

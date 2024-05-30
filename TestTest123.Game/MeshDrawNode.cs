@@ -2,6 +2,7 @@
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Rendering;
+using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Logging;
 using osuTK;
@@ -9,47 +10,45 @@ using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
 {
-    public class MeshDrawNode : DrawNode
+    public partial class MeshDrawable
     {
-
-        protected new MeshDrawable Source => (MeshDrawable)base.Source;
-        private Matrix4 vpMatrix = Matrix4.Identity;
-        private Matrix4 modelMatrix = Matrix4.Identity;
-        private Texture texture;
-        private Mesh mesh;
-        private MaterialDrawable material;
-        public MeshDrawNode(MeshDrawable source) : base(source)
-        {
-            mesh = source.Mesh;
-        }
-
-
-
-        public override void ApplyState()
-        {
-            base.ApplyState();
-            mesh = Source.Mesh;
-            material = Source.Material;
-            
-            modelMatrix = Source.LocalMatrix * Source.Model.LocalMatrix;
-            vpMatrix = Source.Model.Stage.Camera.VPMatrix;
-        }
-
-        protected override void Draw(IRenderer renderer)
+        protected class MeshDrawNode : CompositeDrawableDrawNode
         {
 
-            Source.Material.TextureShader.Bind();
-            Source.Material.Texture?.Bind();
-            renderer.PushDepthInfo(DepthInfo.Default);
-            renderer.PushProjectionMatrix(modelMatrix * vpMatrix);
+            protected new MeshDrawable Source => (MeshDrawable)base.Source;
+            private Matrix4 localMatrix = Matrix4.Identity;
+            private Matrix4 vpMatrix = Matrix4.Identity;
+            private Mesh mesh;
+            public MeshDrawNode(MeshDrawable source) : base(source)
+            {
+                mesh = source.Mesh;
+            }
 
 
-            mesh.DrawVBO(renderer);
 
-            renderer.PopDepthInfo();
-            renderer.PopProjectionMatrix();
+            public override void ApplyState()
+            {
+                base.ApplyState();
+                mesh = Source.Mesh;
 
-            Source.Material.TextureShader.Unbind();
+                localMatrix = Source.Model.GetMatrix();
+                vpMatrix = Source.Model.Stage.Camera.VPMatrix;
+            }
+
+            protected override void Draw(IRenderer renderer)
+            {
+
+                renderer.PushDepthInfo(DepthInfo.Default);
+                renderer.PushProjectionMatrix(localMatrix * vpMatrix);
+
+                mesh.DrawVBO(renderer);
+
+                renderer.PopProjectionMatrix();
+                renderer.PopDepthInfo();
+
+
+            }
         }
     }
+
 }

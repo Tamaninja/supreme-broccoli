@@ -10,6 +10,7 @@ using osu.Framework.Logging;
 using osu.Framework.Testing;
 using osuTK;
 using osuTK.Graphics;
+using SharpGen.Runtime.Win32;
 using TestTest123.Game.Vertices;
 namespace TestTest123.Game
 {
@@ -20,9 +21,12 @@ namespace TestTest123.Game
         public Model Model { get; private set; }
         public ThreeDimensionalStageDrawable Stage;
         public List<MaterialDrawable> Materials { get; set; } = [];
+        public List<MeshDrawable> Meshes { get; set; } = [];
+
 
         public ModelDrawable(Model model, ThreeDimensionalStageDrawable stage)
         {
+            Logger.LogPrint("13");
             Stage = stage;
             Model = model;
         }
@@ -31,32 +35,41 @@ namespace TestTest123.Game
         private void load(IRenderer renderer, TextureStore textureStore)
         {
             loadMaterials();
+            loadMeshes();
 
 
         }
 
-        public void AddInternal(MaterialDrawable material)
-        {
-            
-            base.AddInternal(material);
-            Materials.Add(material);
-        }
         private void loadMaterials()
         {
-            for (int i = 0; i < Model.Materials.Count; i++)
+            if (!Stage.Materials.TryGetValue(Model, out var materials))
             {
-                AddInternal(new MaterialDrawable(Model.Materials[i]));
+                materials = new List<MaterialDrawable>();
+                for (int i = 0; i < Model.Materials.Count; i++)
+                {
+                    materials.Add(new MaterialDrawable(Model.Materials[i]));
+                    
+                }
+                
+                Stage.Materials.TryAdd(Model, materials);
+                Stage.AddRange(materials);
             }
 
-            loadMeshes();
+            Materials = materials;
+        }
+
+        public void AddInternal(MeshDrawable mesh)
+        {
+            base.AddInternal(mesh);
+            Meshes.Add(mesh);
         }
         private void loadMeshes()
         {
             foreach (Mesh mesh in Model.Meshes)
             {
-                Materials[mesh.MaterialIndex].Add(new MeshDrawable(this, mesh));
+                AddInternal(new MeshDrawable(this, mesh));
             }
         }
-
+        
     }
 }

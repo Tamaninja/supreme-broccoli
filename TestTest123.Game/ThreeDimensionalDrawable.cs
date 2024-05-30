@@ -8,7 +8,6 @@ using osu.Framework.Graphics.Pooling;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
-using osu.Framework.Graphics.Transforms;
 using osu.Framework.Layout;
 using osu.Framework.Logging;
 using osuTK;
@@ -16,45 +15,37 @@ using osuTK.Graphics.OpenGL;
 
 namespace TestTest123.Game
 {
-    public partial class ThreeDimensionalDrawable : CompositeDrawable
+    public partial class ThreeDimensionalDrawable : PoolableDrawable
     {
-        private Vector3 forward;
-        private Vector3 position;
-        private Vector3 rotation;
-        private Vector3 scale;
+        public static Vector3 WORLD_UP => Vector3.UnitY;
+        public static Vector3 WORLD_FORWARD => Vector3.UnitZ;
+        public static Vector3 WORLD_RIGHT => Vector3.UnitX;
 
-        private Bindable<Matrix4> localMatrix { get; set; } = new Bindable<Matrix4>(Matrix4.Identity);
+        private Vector3 relativeForward = WORLD_FORWARD;
+        private Vector3 relativeRight = WORLD_RIGHT;
+        private Vector3 relativeUp = WORLD_UP;
 
-        public Matrix4 LocalMatrix
-        {
-            get
-            {
-                updateMatrix();
-                return (localMatrix.Value);
-            }
-            set
-            {
+        private Vector3 position = Vector3.Zero;
+        private Vector3 rotation = Vector3.Zero;
+        private Vector3 scale = Vector3.One;
 
-                localMatrix.Value = value;
-                RequiresRecalculation = true;
+        private Bindable<Matrix4> localMatrix;
 
-            }
-        }
-
-        protected bool RequiresRecalculation;
+        public virtual Matrix4 GetMatrix() => localMatrix.Value;
+        public virtual Bindable<Matrix4> GetMatrixBindable => localMatrix;
 
         public virtual Vector3 Forward
         {
-            get => forward;
+            get => relativeForward;
             set
             {
-                forward = value;
-                RequiresRecalculation = true;
+                relativeForward = value;
+                Invalidate(Invalidation.MiscGeometry);
             }
         }
 
-        public virtual Vector3 Right => Vector3.Normalize(Vector3.Cross(Vector3.UnitY, Forward));
-        public virtual Vector3 Up => Vector3.Cross(Forward, Right);
+        public virtual Vector3 Right => relativeRight;
+        public virtual Vector3 Up => relativeUp;
 
         public virtual Vector3 Scale3D
         {
@@ -62,7 +53,7 @@ namespace TestTest123.Game
             set
             {
                 scale = value;
-                RequiresRecalculation = true;
+                Invalidate(Invalidation.MiscGeometry);
             }
         }
 
@@ -72,7 +63,7 @@ namespace TestTest123.Game
             set
             {
                 position = value;
-                RequiresRecalculation = true;
+                Invalidate(Invalidation.MiscGeometry);
             }
         }
 
@@ -82,38 +73,38 @@ namespace TestTest123.Game
             set
             {
                 rotation = value;
-                RequiresRecalculation = true;
+                Invalidate(Invalidation.MiscGeometry);
             }
         }
 
         public ThreeDimensionalDrawable()
         {
-            
-
+            localMatrix = new Bindable<Matrix4>(Matrix4.Identity);
             RelativeSizeAxes = Axes.Both;
-            
-            scale = Vector3.One;
-            position = Vector3.Zero;
-            rotation = Vector3.Zero;
-            forward = Vector3.UnitZ;
-
-            
-            RequiresRecalculation = true;
         }
 
-        private void updateMatrix()
+
+        protected override bool OnInvalidate(Invalidation invalidation, InvalidationSource source)
         {
-            if (!RequiresRecalculation) return;
 
-            Matrix4 scaleMatrix = Matrix4.CreateScale(Scale3D);
+            if (invalidation.HasFlag(Invalidation.MiscGeometry))
+            {
+                relativeRight = Vector3.Normalize(Vector3.Cross(WORLD_UP, relativeForward));
+                relativeUp = Vector3.Cross(relativeForward, relativeRight);
 
-            Matrix4 translation = Matrix4.CreateTranslation(Position3D);
 
-            Matrix4 rotationX = Matrix4.CreateRotationX(Rotation3D.X);
-            Matrix4 rotationY = Matrix4.CreateRotationY(Rotation3D.Y);
-            Matrix4 rotationZ = Matrix4.CreateRotationZ(Rotation3D.Z);
+                Matrix4 scaleMatrix = Matrix4.CreateScale(scale);
+                Matrix4 translation = Matrix4.CreateTranslation(position);
+                Matrix4 rotationX = Matrix4.CreateRotationX(rotation.X);
+                Matrix4 rotationY = Matrix4.CreateRotationY(rotation.Y);
+                Matrix4 rotationZ = Matrix4.CreateRotationZ(rotation.Z);
 
-            localMatrix.Value = (scaleMatrix * (rotationX * rotationY * rotationZ) * translation);
+                localMatrix.Value = (scaleMatrix * (rotationX * rotationY * rotationZ) * translation);
+            }
+
+
+
+            return(base.OnInvalidate(invalidation, source));
         }
 
         [BackgroundDependencyLoader]

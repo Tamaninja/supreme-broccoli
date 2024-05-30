@@ -32,8 +32,11 @@ namespace TestTest123.Game
 
         public Type VertexType = typeof(TexturedMeshVertex);
 
-        public MaterialDrawable(Assimp.Material material)
+        public MaterialDrawable(Material material)
         {
+            Name = material.Name;
+            Colour = material.ColorDiffuse.FromAssimp();
+            RelativeSizeAxes = Axes.Both;
 
             if (material.HasTextureDiffuse)
             {
@@ -45,9 +48,9 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders, IRenderer renderer, LargeTextureStore textureStore)
         {
-            
 
-            TextureShader = shaders.Load("textureless", "textureless");
+
+            TextureShader = shaders.Load("nino", "nino");
             if (IsTextured)
             {
                 TextureShader = shaders.Load("nino", "nino");
@@ -68,8 +71,10 @@ namespace TestTest123.Game
         {
             protected new MaterialDrawable Source => (MaterialDrawable)base.Source;
             private Texture texture;
+            private IShader shader;
             public MaterialDrawNode(MaterialDrawable source) : base(source)
             {
+                
                 texture = source.Texture;
             }
 
@@ -77,12 +82,20 @@ namespace TestTest123.Game
             {
                 base.ApplyState();
                 texture = Source.Texture;
+                shader = Source.TextureShader;
             }
 
             protected override void Draw(IRenderer renderer)
             {
+                texture ??= renderer.WhitePixel;
 
-                base.Draw(renderer);
+                texture.Bind();
+                shader.Bind();
+
+                    base.Draw(renderer);
+
+                shader.Unbind();
+
             }
         }
 

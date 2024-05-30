@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Threading;
 using Assimp;
+using NUnit.Framework;
 using osu.Framework;
 using osu.Framework.Allocation;
 using osu.Framework.Extensions.Color4Extensions;
@@ -27,8 +28,8 @@ namespace TestTest123.Game
 {
     public partial class ThreeDimensionalStageDrawable : Container
     {
+        public Dictionary<Model, List<MaterialDrawable>> Materials = [];
         public Camera Camera;
-        private TextureStore textureStore;
         public ThreeDimensionalStageDrawable()
         {
             RelativeSizeAxes = Axes.Both;
@@ -36,10 +37,7 @@ namespace TestTest123.Game
         }
 
 
-        public Texture GetTextureBypassAtlas(string key)
-        {
-            return (textureStore.Get(key));
-        }
+
         [BackgroundDependencyLoader]
         private void load(IRenderer renderer)
         {
@@ -49,15 +47,15 @@ namespace TestTest123.Game
             Model box = Model.BOX_3D();
 
 
-            for (int i = 0;  i < 13; i++)
+            for (int i = 0; i < 13; i++)
             {
                 ModelDrawable box3d = new ModelDrawable(box, this);
                 AddInternal(box3d);
 
                 box3d.Colour = Color4.DarkOrange;
-/*                box3d.Position3D = new Vector3(new Random().Next(1,24), new Random().Next(1, 4), 100);
-*//*                box3d.Delay(i * 500).MoveToZ(0, 50000, Easing.None).Then().Expire();
-*/            }
+/*                box3d.Position3D = new Vector3(new Random().Next(1, 24), new Random().Next(1, 4), 100);
+                box3d.Delay(i * 500).MoveToZ(0, 50000, Easing.None).Then().Expire();*/
+            }
 
 
         }
