@@ -18,9 +18,12 @@ namespace TestTest123.Game
             protected new MeshDrawable Source => (MeshDrawable)base.Source;
             private Matrix4 localMatrix = Matrix4.Identity;
             private Matrix4 vpMatrix = Matrix4.Identity;
+            private Matrix4 premultiplied = Matrix4.Identity;
+
             private Mesh mesh;
             public MeshDrawNode(MeshDrawable source) : base(source)
             {
+
                 mesh = source.Mesh;
             }
 
@@ -31,15 +34,16 @@ namespace TestTest123.Game
                 base.ApplyState();
                 mesh = Source.Mesh;
 
-                localMatrix = Source.Model.GetMatrix();
-                vpMatrix = Source.Model.Stage.Camera.VPMatrix;
+                localMatrix = Source.GetMatrix();
+                vpMatrix = Source.CameraViewProjection.Value;
+                premultiplied = localMatrix * vpMatrix;
             }
 
             protected override void Draw(IRenderer renderer)
             {
 
                 renderer.PushDepthInfo(DepthInfo.Default);
-                renderer.PushProjectionMatrix(localMatrix * vpMatrix);
+                renderer.PushProjectionMatrix(premultiplied);
 
                 mesh.DrawVBO(renderer);
 

@@ -41,7 +41,7 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load(IRenderer renderer)
         {
-            Camera = new Camera();
+            Camera = new Camera(50, 16/9, 1, 5000);
             AddInternal(Camera);
 
             Model box = Model.BOX_3D();
@@ -51,10 +51,10 @@ namespace TestTest123.Game
             {
                 ModelDrawable box3d = new ModelDrawable(box, this);
                 AddInternal(box3d);
-
+                box3d.BindCamera(Camera);
                 box3d.Colour = Color4.DarkOrange;
-/*                box3d.Position3D = new Vector3(new Random().Next(1, 24), new Random().Next(1, 4), 100);
-                box3d.Delay(i * 500).MoveToZ(0, 50000, Easing.None).Then().Expire();*/
+                box3d.Position3D = new Vector3(new Random().Next(1, 24), new Random().Next(1, 4), 100);
+                box3d.MoveTo(new Vector3(0, 0, 0), 20000, Easing.In);
             }
 
 

@@ -15,7 +15,7 @@ namespace TestTest123.Game
         public static TransformSequence<T> MoveToOffset<T>(this T drawable, Vector3 offset, double duration = 0, Easing easing = Easing.None)
 where T : ThreeDimensionalDrawable
         {
-            return (drawable.TransformTo(nameof(drawable.Position3D), drawable.Position3D + offset, duration, easing));
+            return drawable.TransformTo(nameof(drawable.Position3D), drawable.Position3D + offset, duration, easing);
         }
         public static TransformSequence<T> MoveToOffset<T>(this TransformSequence<T> t, Vector3 offset, double duration = 0, Easing easing = Easing.None)
 where T : ThreeDimensionalDrawable

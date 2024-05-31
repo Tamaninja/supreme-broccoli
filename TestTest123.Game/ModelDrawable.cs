@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Assimp;
 using NUnit.Framework;
 using osu.Framework.Allocation;
@@ -36,8 +37,6 @@ namespace TestTest123.Game
         {
             loadMaterials();
             loadMeshes();
-
-
         }
 
         private void loadMaterials()
@@ -67,7 +66,8 @@ namespace TestTest123.Game
         {
             foreach (Mesh mesh in Model.Meshes)
             {
-                AddInternal(new MeshDrawable(this, mesh));
+                MeshDrawable test = new MeshDrawable(this, mesh);
+                AddInternal(test);
             }
         }
         

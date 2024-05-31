@@ -3,40 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\meshdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\meshdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\meshdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\meshdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\threedimensionalstagedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\threedimensionalstagedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\modeldrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\modeldrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\materialdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\materialdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\meshdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\meshdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\threedimensionalstagedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\threedimensionalstagedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|solutionrelative:testtest123.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\mesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\meshdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\meshdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\threedimensionaldrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\threedimensionaldrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\threedimensionalextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,16 +39,28 @@
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\audio\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\audio\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\materialdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\materialdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\mesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\vertices\\texturelessmeshvertex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\vertices\\texturelessmeshvertex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEB3FC89-DC3E-4BC9-9EC7-03B72FC5D849}|TestTest123.Desktop\\TestTest123.Desktop.csproj|solutionrelative:testtest123.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\audio\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\audio\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|c:\\users\\lielk\\documents\\github\\supreme-broccoli\\testtest123.resources\\shaders\\sh_nino.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
@@ -106,219 +106,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MeshDrawNode.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MeshDrawNode.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\MeshDrawNode.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MeshDrawNode.cs*",
-              "RelativeToolTip": "TestTest123.Game\\MeshDrawNode.cs*",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAACwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T21:52:16.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ThreeDimensionalStageDrawable.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalStageDrawable.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalStageDrawable.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalStageDrawable.cs",
-              "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalStageDrawable.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAswB4AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T22:12:32.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ModelDrawable.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ModelDrawable.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\ModelDrawable.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ModelDrawable.cs",
-              "RelativeToolTip": "TestTest123.Game\\ModelDrawable.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAEUAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T21:56:44.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MaterialDrawable.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MaterialDrawable.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\MaterialDrawable.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MaterialDrawable.cs",
-              "RelativeToolTip": "TestTest123.Game\\MaterialDrawable.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAA8wCQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T21:59:40.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MeshDrawable.cs",
               "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MeshDrawable.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\MeshDrawable.cs",
               "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MeshDrawable.cs",
               "RelativeToolTip": "TestTest123.Game\\MeshDrawable.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAApwB0AAAAyAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAD4vxQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T21:50:13.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Model.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Model.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Model.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Model.cs",
-              "RelativeToolTip": "TestTest123.Game\\Model.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAxwBYAAAAXAAAA",
+              "DocumentIndex": 3,
+              "Title": "MeshDrawNode.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MeshDrawNode.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\MeshDrawNode.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MeshDrawNode.cs",
+              "RelativeToolTip": "TestTest123.Game\\MeshDrawNode.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAUwCQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T21:54:55.471Z",
+              "WhenOpened": "2024-05-28T21:52:16.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Desktop\\Program.cs",
-              "RelativeDocumentMoniker": "TestTest123.Desktop\\Program.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Desktop\\Program.cs",
-              "RelativeToolTip": "TestTest123.Desktop\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAwAAAANAAAA",
+              "DocumentIndex": 1,
+              "Title": "ModelDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ModelDrawable.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\ModelDrawable.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ModelDrawable.cs",
+              "RelativeToolTip": "TestTest123.Game\\ModelDrawable.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAUwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T16:47:07.66Z",
+              "WhenOpened": "2024-05-28T21:56:44.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Mesh.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Mesh.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Mesh.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Mesh.cs",
-              "RelativeToolTip": "TestTest123.Game\\Mesh.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAlwDAAAAAQAAAA",
+              "DocumentIndex": 0,
+              "Title": "ThreeDimensionalStageDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalStageDrawable.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalStageDrawable.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalStageDrawable.cs",
+              "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalStageDrawable.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAA2wDEAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T21:53:09.144Z",
+              "WhenOpened": "2024-05-28T22:12:32.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "ThreeDimensionalDrawable.cs",
               "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalDrawable.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalDrawable.cs",
               "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalDrawable.cs",
               "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalDrawable.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAlwBEAAABEAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAUwGgAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T15:27:32.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ThreeDimensionalExtentions.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalExtentions.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalExtentions.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalExtentions.cs",
-              "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalExtentions.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAswAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T15:27:29.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Camera.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Camera.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Camera.cs",
-              "RelativeToolTip": "TestTest123.Game\\Camera.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAADgvx4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T15:03:32.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "MouseController.cs",
               "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MouseController.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\MouseController.cs",
               "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MouseController.cs",
               "RelativeToolTip": "TestTest123.Game\\MouseController.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAawA4AAAAWAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAD4vx4AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T16:04:47.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Speaker.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Audio\\Speaker.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Audio\\Speaker.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Audio\\Speaker.cs",
-              "RelativeToolTip": "TestTest123.Game\\Audio\\Speaker.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAADgvxsAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T23:05:43.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TexturelessMeshVertex.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Vertices\\TexturelessMeshVertex.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Vertices\\TexturelessMeshVertex.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Vertices\\TexturelessMeshVertex.cs",
-              "RelativeToolTip": "TestTest123.Game\\Vertices\\TexturelessMeshVertex.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T22:51:50.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainScreen.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MainScreen.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\MainScreen.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MainScreen.cs",
-              "RelativeToolTip": "TestTest123.Game\\MainScreen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T15:09:54.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TestTest123GameBase.cs",
-              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123GameBase.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123GameBase.cs",
-              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123GameBase.cs",
-              "RelativeToolTip": "TestTest123.Game\\TestTest123GameBase.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwDcAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T16:41:36.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "TestTest123Game.cs",
               "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123Game.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123Game.cs",
@@ -326,7 +196,134 @@
               "RelativeToolTip": "TestTest123.Game\\TestTest123Game.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAYwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T22:00:36.543Z"
+              "WhenOpened": "2024-05-28T22:00:36.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ThreeDimensionalExtentions.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalExtentions.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalExtentions.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalExtentions.cs",
+              "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalExtentions.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAvwDIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:27:29.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Camera.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Camera.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Camera.cs",
+              "RelativeToolTip": "TestTest123.Game\\Camera.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAIAzwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:03:32.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Model.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Model.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Model.cs",
+              "RelativeToolTip": "TestTest123.Game\\Model.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T21:54:55.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MaterialDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MaterialDrawable.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\MaterialDrawable.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MaterialDrawable.cs",
+              "RelativeToolTip": "TestTest123.Game\\MaterialDrawable.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T21:59:40.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Mesh.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Mesh.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Mesh.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Mesh.cs",
+              "RelativeToolTip": "TestTest123.Game\\Mesh.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAewCYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T21:53:09.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TexturelessMeshVertex.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Vertices\\TexturelessMeshVertex.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Vertices\\TexturelessMeshVertex.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Vertices\\TexturelessMeshVertex.cs",
+              "RelativeToolTip": "TestTest123.Game\\Vertices\\TexturelessMeshVertex.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAswBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T22:51:50.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Desktop\\Program.cs",
+              "RelativeDocumentMoniker": "TestTest123.Desktop\\Program.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Desktop\\Program.cs",
+              "RelativeToolTip": "TestTest123.Desktop\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:47:07.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Speaker.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Audio\\Speaker.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Audio\\Speaker.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\Audio\\Speaker.cs",
+              "RelativeToolTip": "TestTest123.Game\\Audio\\Speaker.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADgvxsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T23:05:43.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainScreen.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MainScreen.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\MainScreen.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\MainScreen.cs",
+              "RelativeToolTip": "TestTest123.Game\\MainScreen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:09:54.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TestTest123GameBase.cs",
+              "DocumentMoniker": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123GameBase.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123GameBase.cs",
+              "ToolTip": "C:\\Users\\lielk\\Documents\\GitHub\\supreme-broccoli\\TestTest123.Game\\TestTest123GameBase.cs",
+              "RelativeToolTip": "TestTest123.Game\\TestTest123GameBase.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwDcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:41:36.314Z"
             },
             {
               "$type": "Document",

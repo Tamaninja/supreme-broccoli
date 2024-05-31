@@ -23,8 +23,6 @@ namespace TestTest123.Game
 
         protected override bool OnKeyDown(KeyDownEvent e)
         {
-            camera.RecalcMatrices();
-
 
             switch (e.Key)
             {

@@ -23,12 +23,24 @@ namespace TestTest123.Game
         public Mesh Mesh;
         public MaterialDrawable Material;
 
-        public MeshDrawable(ModelDrawable parent, Mesh mesh){
+        public override Matrix4 GetMatrix()
+        {
+            return Model.GetMatrix() * base.GetMatrix();
+        }
 
+
+        public MeshDrawable(ModelDrawable parent, Mesh mesh) {
+
+            CameraViewProjection.BindTo(parent.CameraViewProjection);
+            
+
+            Name = mesh.Name;
             Mesh = mesh;
             Model = parent;
             Material = parent.Materials[mesh.MaterialIndex];
             Colour = Material.Colour;
+
+
 
             Material.Add(CreateProxy());
         }

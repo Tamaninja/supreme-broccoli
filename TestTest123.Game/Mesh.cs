@@ -23,17 +23,20 @@ namespace TestTest123.Game
     {
 
         private IVertexBatch<TexturedMeshVertex> vertexBatch {  get; set; }
-        public int MaterialIndex { get; private set; }
+        public int MaterialIndex;
         public int[] Indices;
-        public List<Vector3D> Vertices;
+        public string Name;
+        public Vector3D[] Vertices;
         public List<Vector3D>[] TextureCoords;
-        public Model Parent {  get; private set; }
+        public Model Parent { get; private set; }
 
         public Mesh(Model parent, Assimp.Mesh mesh){
 
             Parent = parent;
+            Name = mesh.Name;
             MaterialIndex = mesh.MaterialIndex;
-            Vertices = mesh.Vertices;
+            Vertices = mesh.Vertices.ToArray();
+            
             Indices = mesh.GetIndices();
             TextureCoords = mesh.TextureCoordinateChannels;
 

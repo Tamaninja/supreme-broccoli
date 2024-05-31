@@ -20,53 +20,32 @@ namespace TestTest123.Game
     {
         private Matrix4 projectionMatrix;
         private Matrix4 viewMatrix;
-        private Matrix4 vpMatrix;
-        public Matrix4 VPMatrix
+
+
+
+        public float VerticalFOV {  get; set; }
+        public float FarPlane { get; set; }
+        public float NearPlane { get; set; }
+
+        public float AspectRatio { get; set; }
+
+        public Vector3 Right => Vector3.Normalize(Vector3.Cross(WORLD_UP, Forward));
+        public Vector3 Up => Vector3.Cross(Forward, Right);
+
+
+        
+
+
+        public Camera(float verticalFOV, float aspectRatio, float nearPlane, float farPlane)
         {
-            get => vpMatrix;
-            private set
-            {
+            VerticalFOV = verticalFOV;
+            AspectRatio = aspectRatio;
+            NearPlane = nearPlane;
+            FarPlane = farPlane;
 
-                vpMatrix = value;
-                Parent?.Invalidate(Invalidation.MiscGeometry, InvalidationSource.Self);
-            }
-        }
-        public Matrix4 ViewMatrix
-        {
-            get => viewMatrix;
-            private set
-            {
-                viewMatrix = value;
-                VPMatrix = viewMatrix * projectionMatrix;
-            }
-        }
-        public Matrix4 ProjectionMatrix
-        {
-            get => projectionMatrix;
-            private set
-            {
-                projectionMatrix = value;
-                VPMatrix = viewMatrix * projectionMatrix;
-            }
-        }
+            projectionMatrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(VerticalFOV), AspectRatio, NearPlane, FarPlane);
 
-        private float yFov;
-        public float FarPlane { get; }
-        public float NearPlane { get; }
 
-        public float AspectRatio { get; }
-
-        public Camera()
-        {
-            yFov = 50;
-            AspectRatio = 16 / 9;
-            FarPlane = 5000f;
-            NearPlane = 1f;
-
-            Anchor = Anchor.Centre;
-            Origin = Anchor.Centre;
-            RelativeSizeAxes = Axes.Both;
-            RelativePositionAxes = Axes.Both;
         }
 
         protected override bool OnMouseMove(MouseMoveEvent e)
@@ -74,23 +53,22 @@ namespace TestTest123.Game
 
             Vector2 delta = e.Delta * 0.25f;
             Rotation3D = new Vector3(Rotation3D.X + delta.X, MathHelper.Clamp(Rotation3D.Y - delta.Y, -89, 89), 0);
-            Vector3 forward = new Vector3
+            Forward = new Vector3
             {
                 X = MathF.Cos(MathHelper.DegreesToRadians(Rotation3D.X)) * MathF.Cos(MathHelper.DegreesToRadians(Rotation3D.Y)),
                 Y = MathF.Sin(MathHelper.DegreesToRadians(Rotation3D.Y)),
                 Z = MathF.Sin(MathHelper.DegreesToRadians(Rotation3D.X)) * MathF.Cos(MathHelper.DegreesToRadians(Rotation3D.Y))
             };
-            Forward = forward;
 
-            RecalcMatrices();
-
-            return (base.OnMouseMove(e));
+            return base.OnMouseMove(e);
         }
 
-        public void RecalcMatrices()
+        
+        public override void UpdateMatrix()
         {
-            ProjectionMatrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(yFov), AspectRatio, NearPlane, FarPlane);
-            ViewMatrix = Matrix4.LookAt(Position3D, Position3D + Forward, Vector3.UnitY);
+            
+            viewMatrix = Matrix4.LookAt(Position3D, Position3D + Forward, WORLD_UP);
+            CameraViewProjection.Value = viewMatrix * projectionMatrix;
 
         }
 
