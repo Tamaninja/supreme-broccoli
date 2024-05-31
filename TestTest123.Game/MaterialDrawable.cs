@@ -1,6 +1,7 @@
 ﻿
 
 using System;
+using System.Runtime.InteropServices;
 using Assimp;
 using osu.Framework;
 using osu.Framework.Allocation;
@@ -30,12 +31,13 @@ namespace TestTest123.Game
         public IShader TextureShader {  get; private set; }
         public Texture Texture { get; private set; }
 
-        public Type VertexType = typeof(TexturedMeshVertex);
+        private IUniformBuffer<MaterialData> data;
+
 
         public MaterialDrawable(Material material)
         {
             Name = material.Name;
-            Colour = material.ColorDiffuse.FromAssimp();
+            Colour = new Colour4(1f, 0f, 1, 1f);
             RelativeSizeAxes = Axes.Both;
 
             if (material.HasTextureDiffuse)
@@ -48,6 +50,8 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders, IRenderer renderer, LargeTextureStore textureStore)
         {
+            data = renderer.CreateUniformBuffer<MaterialData>();
+            data.Data = new MaterialData { Color = Colour.TopLeft.ToVector() };
 
 
             TextureShader = shaders.Load("nino", "nino");
@@ -60,6 +64,13 @@ namespace TestTest123.Game
                 shaders.Load("textureless", "textureless");
 
             }
+            TextureShader.BindUniformBlock("u_Colour", data);
+
+        }
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        private record struct MaterialData
+        {
+            public UniformVector4 Color;
         }
 
         protected override DrawNode CreateDrawNode()
@@ -83,11 +94,15 @@ namespace TestTest123.Game
                 base.ApplyState();
                 texture = Source.Texture;
                 shader = Source.TextureShader;
+
             }
 
             protected override void Draw(IRenderer renderer)
             {
+
+
                 texture ??= renderer.WhitePixel;
+
 
                 texture.Bind();
                 shader.Bind();
@@ -98,6 +113,8 @@ namespace TestTest123.Game
 
             }
         }
+
+
 
     }
 }

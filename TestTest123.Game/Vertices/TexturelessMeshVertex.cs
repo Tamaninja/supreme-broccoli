@@ -15,27 +15,18 @@ namespace TestTest123.Game.Vertices
         [VertexMember(3, VertexAttribPointerType.Float)]
         public Vector3D Position;
 
-        [VertexMember(4, VertexAttribPointerType.Float)]
-        public Color4 Colour;
 
         public static TexturelessMeshVertex FromMesh(Mesh mesh, int index)
         {
             return new TexturelessMeshVertex
             {
                 Position = mesh.Vertices[index],
-                Colour = new Color4(1, 0, 1, 1),
             };
         }
 
-
-        public readonly bool Equals(TexturelessMeshVertex other)
+        public bool Equals(TexturelessMeshVertex other)
         {
-            if (Position.Equals(other.Position))
-            {
-                return Colour.Equals(other.Colour);
-            }
-
-            return false;
+            return Position == other.Position;
         }
     }
 }

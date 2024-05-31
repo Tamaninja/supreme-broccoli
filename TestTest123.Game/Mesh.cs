@@ -45,7 +45,7 @@ namespace TestTest123.Game
 
         public void DrawVBO(IRenderer renderer)
         {
-            vertexBatch ??= renderer.CreateLinearBatch<TexturedMeshVertex>(Indices.Length, 3, PrimitiveTopology.Triangles);
+            vertexBatch ??= renderer.CreateLinearBatch<TexturedMeshVertex>(Indices.Length * 3, 3, PrimitiveTopology.Triangles);
 
             for (int i = 0; i < Indices.Length; i++)
             {

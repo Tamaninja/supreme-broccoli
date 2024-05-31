@@ -53,8 +53,8 @@ namespace TestTest123.Game
                 AddInternal(box3d);
                 box3d.BindCamera(Camera);
                 box3d.Colour = Color4.DarkOrange;
-                box3d.Position3D = new Vector3(new Random().Next(1, 24), new Random().Next(1, 4), 100);
-                box3d.MoveTo(new Vector3(0, 0, 0), 20000, Easing.In);
+/*                box3d.Position3D = new Vector3(new Random().Next(1, 24), new Random().Next(1, 4), 100);
+                box3d.MoveToZ(0, 20000, Easing.In);*/
             }
 
 

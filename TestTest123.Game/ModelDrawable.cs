@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Assimp;
-using NUnit.Framework;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Rendering;
