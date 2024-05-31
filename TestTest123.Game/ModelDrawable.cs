@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Assimp;
 using osu.Framework.Allocation;
+using osu.Framework.Extensions.EnumExtensions;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Textures;
@@ -26,9 +27,10 @@ namespace TestTest123.Game
 
         public ModelDrawable(Model model, ThreeDimensionalStageDrawable stage)
         {
-            Logger.LogPrint("13");
             Stage = stage;
             Model = model;
+
+            
         }
 
         [BackgroundDependencyLoader]
@@ -54,6 +56,20 @@ namespace TestTest123.Game
             }
 
             Materials = materials;
+        }
+
+        protected override bool OnInvalidate(Invalidation invalidation, InvalidationSource source)
+        {
+
+            if (invalidation.HasFlagFast(Invalidation.Colour))
+            {
+                for (int i = 0;i < InternalChildren.Count ;i++)
+                {
+                    InternalChildren[i].Colour = Colour;
+                }
+            }
+
+            return base.OnInvalidate(invalidation, source);
         }
 
         public void AddInternal(MeshDrawable mesh)

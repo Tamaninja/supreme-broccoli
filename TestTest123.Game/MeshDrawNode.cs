@@ -14,6 +14,8 @@ namespace TestTest123.Game
     {
         protected class MeshDrawNode : CompositeDrawableDrawNode
         {
+            private IUniformBuffer<UniformMaterial> uniformBuffer;
+            private UniformMaterial material;
 
             protected new MeshDrawable Source => (MeshDrawable)base.Source;
             private Matrix4 localMatrix = Matrix4.Identity;
@@ -25,6 +27,8 @@ namespace TestTest123.Game
             {
 
                 mesh = source.Mesh;
+                material = new UniformMaterial { Colour = source.Colour.TopLeft.ToVector() };
+
             }
 
 
@@ -37,10 +41,17 @@ namespace TestTest123.Game
                 localMatrix = Source.GetMatrix();
                 vpMatrix = Source.CameraViewProjection.Value;
                 premultiplied = localMatrix * vpMatrix;
+                material.Colour = Source.Colour.TopLeft.ToVector();
+
             }
 
             protected override void Draw(IRenderer renderer)
             {
+                uniformBuffer ??= renderer.CreateUniformBuffer<UniformMaterial>();
+                uniformBuffer.Data = material;
+
+                Source.Material.TextureShader.BindUniformBlock("u_Colour", uniformBuffer);
+
 
                 renderer.PushDepthInfo(DepthInfo.Default);
                 renderer.PushProjectionMatrix(premultiplied);

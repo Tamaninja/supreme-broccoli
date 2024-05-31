@@ -46,15 +46,18 @@ namespace TestTest123.Game
 
             Model box = Model.BOX_3D();
 
+            Random rand = new Random();
 
             for (int i = 0; i < 13; i++)
             {
+                int str = rand.Next(1, 4);
                 ModelDrawable box3d = new ModelDrawable(box, this);
                 AddInternal(box3d);
                 box3d.BindCamera(Camera);
-                box3d.Colour = Color4.DarkOrange;
-/*                box3d.Position3D = new Vector3(new Random().Next(1, 24), new Random().Next(1, 4), 100);
-                box3d.MoveToZ(0, 20000, Easing.In);*/
+
+                box3d.Colour = Utils.StringColors(str);
+                box3d.Position3D = new Vector3(new Random().Next(1, 24), str, 100);
+                box3d.MoveToZ(0, 20000, Easing.In);
             }
 
 

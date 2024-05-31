@@ -31,13 +31,12 @@ namespace TestTest123.Game
         public IShader TextureShader {  get; private set; }
         public Texture Texture { get; private set; }
 
-        private IUniformBuffer<MaterialData> data;
 
 
         public MaterialDrawable(Material material)
         {
             Name = material.Name;
-            Colour = new Colour4(1f, 0f, 1, 1f);
+            Colour = material.ColorDiffuse.FromAssimp();
             RelativeSizeAxes = Axes.Both;
 
             if (material.HasTextureDiffuse)
@@ -50,8 +49,6 @@ namespace TestTest123.Game
         [BackgroundDependencyLoader]
         private void load(ShaderManager shaders, IRenderer renderer, LargeTextureStore textureStore)
         {
-            data = renderer.CreateUniformBuffer<MaterialData>();
-            data.Data = new MaterialData { Color = Colour.TopLeft.ToVector() };
 
 
             TextureShader = shaders.Load("nino", "nino");
@@ -64,14 +61,9 @@ namespace TestTest123.Game
                 shaders.Load("textureless", "textureless");
 
             }
-            TextureShader.BindUniformBlock("u_Colour", data);
 
         }
-        [StructLayout(LayoutKind.Sequential, Pack = 1)]
-        private record struct MaterialData
-        {
-            public UniformVector4 Color;
-        }
+
 
         protected override DrawNode CreateDrawNode()
         {
@@ -81,7 +73,10 @@ namespace TestTest123.Game
         protected class MaterialDrawNode : CompositeDrawableDrawNode
         {
             protected new MaterialDrawable Source => (MaterialDrawable)base.Source;
-            private Texture texture;
+
+
+
+        private Texture texture;
             private IShader shader;
             public MaterialDrawNode(MaterialDrawable source) : base(source)
             {
@@ -92,9 +87,8 @@ namespace TestTest123.Game
             public override void ApplyState()
             {
                 base.ApplyState();
-                texture = Source.Texture;
-                shader = Source.TextureShader;
-
+/*                texture = Source.Texture;
+*/                shader = Source.TextureShader;
             }
 
             protected override void Draw(IRenderer renderer)

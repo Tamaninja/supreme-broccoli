@@ -8,6 +8,18 @@ namespace TestTest123.Game
 {
     public static class Utils
     {
+
+        public static Color4 StringColors(int i)
+        {
+            switch (i)
+            {
+                case 4: return Color4.Orange;
+                case 3: return Color4.Blue;
+                case 2: return Color4.Yellow;
+                case 1: return Color4.Red;
+                    default: return Color4.White;
+            }
+        }
         public static Color4 FromAssimp(this Color4D assimp)
         {
 
