@@ -56,7 +56,7 @@ namespace TestTest123.Game
                 renderer.PushDepthInfo(DepthInfo.Default);
                 renderer.PushProjectionMatrix(premultiplied);
 
-                mesh.DrawVBO(renderer);
+                mesh.Stream(renderer);
 
                 renderer.PopProjectionMatrix();
                 renderer.PopDepthInfo();

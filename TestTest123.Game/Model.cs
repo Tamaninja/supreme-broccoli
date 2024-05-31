@@ -29,7 +29,7 @@ namespace TestTest123.Game
 
         public static Model BOX_3D()
         {
-            return (new Model(@"C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Resources\Models\Lighting Mcqueen\LightingMcqueen.obj"));
+            return (new Model(@"C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Resources\Models\Trashcan_Small1.fbx"));
         }
         private List<Mesh> createMesh(List<Assimp.Mesh> assimpMeshes)
         {

@@ -31,6 +31,7 @@ namespace TestTest123.Game
         public IShader TextureShader {  get; private set; }
         public Texture Texture { get; private set; }
 
+        public Type VertexType = typeof(TexturelessMeshVertex);
 
 
         public MaterialDrawable(Material material)
@@ -39,10 +40,11 @@ namespace TestTest123.Game
             Colour = material.ColorDiffuse.FromAssimp();
             RelativeSizeAxes = Axes.Both;
 
+
             if (material.HasTextureDiffuse)
             {
                 textureKey = material.TextureDiffuse.FilePath;
-
+                VertexType = typeof(TexturedMeshVertex);
             }
         }
 
@@ -50,16 +52,13 @@ namespace TestTest123.Game
         private void load(ShaderManager shaders, IRenderer renderer, LargeTextureStore textureStore)
         {
 
+            Texture = renderer.WhitePixel;
+            TextureShader = shaders.Load("textureless", "textureless");
 
-            TextureShader = shaders.Load("nino", "nino");
             if (IsTextured)
             {
                 TextureShader = shaders.Load("nino", "nino");
                 Texture = textureStore.Get(textureKey);
-            } else
-            {
-                shaders.Load("textureless", "textureless");
-
             }
 
         }
@@ -87,16 +86,12 @@ namespace TestTest123.Game
             public override void ApplyState()
             {
                 base.ApplyState();
-/*                texture = Source.Texture;
-*/                shader = Source.TextureShader;
+                texture = Source.Texture;
+                shader = Source.TextureShader;
             }
 
             protected override void Draw(IRenderer renderer)
             {
-
-
-                texture ??= renderer.WhitePixel;
-
 
                 texture.Bind();
                 shader.Bind();

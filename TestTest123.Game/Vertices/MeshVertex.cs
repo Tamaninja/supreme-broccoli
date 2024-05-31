@@ -9,7 +9,7 @@ using osuTK.Graphics.ES30;
 
 namespace TestTest123.Game.Vertices
 {
-    public interface IMeshVertex<T> : IVertex, IEquatable<T> where T : unmanaged, IVertex
+    public interface IMeshVertex<T> : IVertex, IEquatable<T> where T : IVertex
     {
         public abstract static T FromMesh(Mesh mesh, int index);
 

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Assimp;
 using osu.Framework.Allocation;
 using osu.Framework.Bindables;
@@ -21,17 +22,15 @@ namespace TestTest123.Game
 {
     public record class Mesh
     {
-
-        private IVertexBatch<TexturedMeshVertex> vertexBatch {  get; set; }
         public int MaterialIndex;
         public int[] Indices;
         public string Name;
         public Vector3D[] Vertices;
+        private IVertexBatch<TexturelessMeshVertex> defaultBatch; 
         public List<Vector3D>[] TextureCoords;
         public Model Parent { get; private set; }
 
         public Mesh(Model parent, Assimp.Mesh mesh){
-
             Parent = parent;
             Name = mesh.Name;
             MaterialIndex = mesh.MaterialIndex;
@@ -40,18 +39,24 @@ namespace TestTest123.Game
             Indices = mesh.GetIndices();
             TextureCoords = mesh.TextureCoordinateChannels;
 
-
         }
 
-        public void DrawVBO(IRenderer renderer)
+        public void Stream(IRenderer renderer)
         {
-            vertexBatch ??= renderer.CreateLinearBatch<TexturedMeshVertex>(Indices.Length * 3, 3, PrimitiveTopology.Triangles);
-
+            defaultBatch ??= renderer.CreateLinearBatch<TexturelessMeshVertex>(Indices.Length * 3, 3, PrimitiveTopology.Triangles);
             for (int i = 0; i < Indices.Length; i++)
             {
-                vertexBatch.AddAction(TexturedMeshVertex.FromMesh(this, i));
+                defaultBatch.AddAction(TexturelessMeshVertex.FromMesh(this, Indices[i]));
+
             }
         }
 
+        public void Stream<T>(IRenderer renderer, IVertexBatch<T> vertexBatch) where T : unmanaged, IMeshVertex<T>
+        {
+            for (int i = 0; i < Indices.Length; i++)
+           {
+              vertexBatch.AddAction(T.FromMesh(this, Indices[i]));
+           }
+        }
     }
 }
