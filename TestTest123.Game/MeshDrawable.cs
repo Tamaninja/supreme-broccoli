@@ -11,6 +11,7 @@ using osu.Framework.Graphics.Textures;
 using osu.Framework.Logging;
 using osuTK;
 using osuTK.Graphics;
+using TestTest123.Game.Material;
 using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
@@ -18,28 +19,23 @@ namespace TestTest123.Game
     public partial class MeshDrawable : ThreeDimensionalDrawable
     {
         public ModelDrawable Model { get; set; }
-
-
-        public Mesh Mesh;
         public MaterialDrawable Material;
 
-        public override Matrix4 GetMatrix()
-        {
-            return Model.GetMatrix() * base.GetMatrix();
-        }
+
+
+        public readonly Mesh Mesh;
+        public override Matrix4 Matrix => Model.Matrix * base.Matrix;
 
 
         public MeshDrawable(ModelDrawable parent, Mesh mesh) {
-
+            parent.LocalMatrix.BindValueChanged((t) => Invalidate(Invalidation.DrawNode, osu.Framework.Layout.InvalidationSource.Parent));
             CameraViewProjection.BindTo(parent.CameraViewProjection);
-            
 
             Name = mesh.Name;
             Mesh = mesh;
             Model = parent;
             Material = parent.Materials[mesh.MaterialIndex];
             Colour = Material.Colour;
-
 
 
             Material.Add(CreateProxy());

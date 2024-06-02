@@ -1,21 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Assimp;
-using osu.Framework.Graphics;
-using osu.Framework.Graphics.Rendering;
-using osu.Framework.Graphics.Textures;
-using SixLabors.ImageSharp.Metadata;
-using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
 {
     public record class Model
     {
-        public List<Material> Materials;
+        public List<Assimp.Material> Materials;
         public List<Mesh> Meshes;
         public readonly string Filepath;
         public Model(string filepath) {
@@ -29,7 +19,7 @@ namespace TestTest123.Game
 
         public static Model BOX_3D()
         {
-            return (new Model(@"C:\Users\lielk\Documents\GitHub\supreme-broccoli\TestTest123.Resources\Models\Trashcan_Small1.fbx"));
+            return (new Model(@"D:\Tamaninja\Documents\TestTest123\TestTest123.Resources\Models\Trashcan_Small1.fbx"));
         }
         private List<Mesh> createMesh(List<Assimp.Mesh> assimpMeshes)
         {

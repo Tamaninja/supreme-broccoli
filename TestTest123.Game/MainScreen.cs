@@ -6,6 +6,7 @@ using osu.Framework.Graphics.Sprites;
 using osu.Framework.Screens;
 using osuTK;
 using osuTK.Graphics;
+using TestTest123.Game.Material;
 
 namespace TestTest123.Game
 {
@@ -16,10 +17,11 @@ namespace TestTest123.Game
         private ThreeDimensionalStageDrawable mainStage;
 
         [BackgroundDependencyLoader]
-        private void load()
+        private void load(MaterialStore materialStore)
         {
-            InternalChildren = new Drawable[]
-            {
+            InternalChildren =
+            [
+
                 new Box
                 {
                     RelativeSizeAxes = Axes.Both,
@@ -37,8 +39,10 @@ namespace TestTest123.Game
                     Font = FontUsage.Default.With(size: 30),
                     AllowMultiline = true
                 },
-                mainStage = new ThreeDimensionalStageDrawable(),
-            };
+                mainStage = [],
+                materialStore
+
+            ];
         }
     }
 }

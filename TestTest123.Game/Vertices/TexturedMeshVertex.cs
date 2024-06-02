@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,22 +19,30 @@ namespace TestTest123.Game.Vertices
         [VertexMember(3, VertexAttribPointerType.Float)]
         public Vector3D TexturePosition;
 
+
         public static TexturedMeshVertex FromMesh(Mesh mesh, int index)
         {
-            return (new TexturedMeshVertex
+            if (mesh.TextureCoords[0].Count == 0)
+            {
+                return new TexturedMeshVertex
+                {
+                    Position = mesh.Vertices[index],
+                    TexturePosition = new Vector3D(0)
+                };
+            }
+
+            return new TexturedMeshVertex
             {
                 Position = mesh.Vertices[index],
                 TexturePosition = mesh.TextureCoords[0][index],
-            });
+            };
         }
 
         public bool Equals(TexturedMeshVertex other)
         {
-
-            
-            return (Position == other.Position)
-                && (TexturePosition == other.TexturePosition);
-
+            return (Position == other.Position && TexturePosition == other.TexturePosition);
         }
+
+
     }
 }

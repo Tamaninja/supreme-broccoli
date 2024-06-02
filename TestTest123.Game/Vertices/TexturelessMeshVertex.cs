@@ -15,7 +15,6 @@ namespace TestTest123.Game.Vertices
         [VertexMember(3, VertexAttribPointerType.Float)]
         public Vector3D Position;
 
-
         public static TexturelessMeshVertex FromMesh(Mesh mesh, int index)
         {
             return new TexturelessMeshVertex
@@ -28,5 +27,6 @@ namespace TestTest123.Game.Vertices
         {
             return Position == other.Position;
         }
+
     }
 }
