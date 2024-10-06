@@ -14,19 +14,19 @@ namespace TestTest123.Game
     {
         private Camera camera;
         private SpriteText text;
-        private ThreeDimensionalStageDrawable mainStage;
+        private Scene mainStage;
 
         [BackgroundDependencyLoader]
         private void load(MaterialStore materialStore)
         {
             InternalChildren =
             [
-
                 new Box
                 {
                     RelativeSizeAxes = Axes.Both,
-                    Colour = Color4.Black.Opacity(0.2f)
+                    Colour = Color4.Black
                 },
+
 
                 text = new SpriteText
                 {
@@ -40,7 +40,8 @@ namespace TestTest123.Game
                     AllowMultiline = true
                 },
                 mainStage = [],
-                materialStore
+                materialStore,
+
 
             ];
         }

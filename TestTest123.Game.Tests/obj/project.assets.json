@@ -1266,6 +1266,15 @@
           "lib/net5.0/vk.dll": {}
         }
       },
+      "Rocksmith2014.XML/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Rocksmith2014.XML.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Rocksmith2014.XML.dll": {}
+        }
+      },
       "runtime.native.System/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -2089,8 +2098,9 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AssimpNet": "4.1.0",
+          "Rocksmith2014.XML": "1.1.1",
           "TestTest123.Resources": "1.0.0",
-          "ppy.osu.Framework": "2024.509.0"
+          "ppy.osu.Framework": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TestTest123.Game.dll": {}
@@ -2103,8 +2113,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "AssimpNet": "4.1.0",
-          "ppy.osu.Framework": "2024.509.0"
+          "AssimpNet": "4.1.0"
         },
         "compile": {
           "bin/placeholder/TestTest123.Resources.dll": {}
@@ -3396,6 +3405,18 @@
         "lib/netstandard1.4/vk.dll",
         "ppy.vk.1.0.26.nupkg.sha512",
         "ppy.vk.nuspec"
+      ]
+    },
+    "Rocksmith2014.XML/1.1.1": {
+      "sha512": "DJRXv0pKSSMhF90KoBZQU6aCo2QmA/jLf3Qe+ldsWcB1sm2Behn6NOxvsnDHPWn6ckZ1NWP8Q3gzimFzTddOGw==",
+      "type": "package",
+      "path": "rocksmith2014.xml/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Rocksmith2014.XML.dll",
+        "rocksmith2014.xml.1.1.1.nupkg.sha512",
+        "rocksmith2014.xml.nuspec"
       ]
     },
     "runtime.native.System/4.0.0": {
@@ -5737,11 +5758,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
       "projectName": "TestTest123.Game.Tests",
-      "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
+      "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
       "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-      "outputPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5755,16 +5776,16 @@
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj": {
-              "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj"
+            "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
+              "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj"
             }
           }
         }
@@ -5817,7 +5838,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

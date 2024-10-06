@@ -1,16 +1,7 @@
-﻿using HidSharp.Reports;
-using osu.Framework.Graphics;
-using osu.Framework.Graphics.Colour;
-using osu.Framework.Graphics.Containers;
-using osu.Framework.Graphics.Rendering;
-using osu.Framework.Graphics.Shaders;
-using osu.Framework.Graphics.Textures;
+﻿using osu.Framework.Graphics.Rendering;
 using osu.Framework.Logging;
 using osuTK;
-using osuTK.Graphics;
 using TestTest123.Game.Material;
-using TestTest123.Game.Vertices;
-using Vortice;
 
 namespace TestTest123.Game
 {
@@ -32,6 +23,7 @@ namespace TestTest123.Game
 
                 mesh = source.Mesh;
                 material = new UniformMaterial { Colour = source.Colour.TopLeft.ToVector() };
+                
             }
 
 
@@ -57,12 +49,18 @@ namespace TestTest123.Game
                 renderer.PushDepthInfo(DepthInfo.Default);
                 renderer.PushProjectionMatrix(premultiplied);
 
-                mesh.Draw(renderer);
+                    mesh.Draw();
 
                 renderer.PopProjectionMatrix();
                 renderer.PopDepthInfo();
 
 
+            }
+
+            protected override void Dispose(bool isDisposing)
+            {
+                mesh.Dispose();
+                base.Dispose(isDisposing);
             }
         }
     }

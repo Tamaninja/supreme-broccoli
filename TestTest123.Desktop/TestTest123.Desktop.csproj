@@ -14,8 +14,4 @@
   <ItemGroup Label="Resources">
     <EmbeddedResource Include="game.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="AssimpNet" Version="4.1.0" />
-    <PackageReference Include="ppy.osu.Framework" Version="2024.509.0" />
-  </ItemGroup>
 </Project>

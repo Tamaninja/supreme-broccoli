@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj": {}
+    "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {}
   },
   "projects": {
-    "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+    "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj",
+        "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
         "projectName": "TestTest123.Resources",
-        "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj",
+        "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
         "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-        "outputPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\obj\\",
+        "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,8 +25,8 @@
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,10 +53,6 @@
             "AssimpNet": {
               "target": "Package",
               "version": "[4.1.0, )"
-            },
-            "ppy.osu.Framework": {
-              "target": "Package",
-              "version": "[2024.509.0, )"
             }
           },
           "imports": [
@@ -75,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

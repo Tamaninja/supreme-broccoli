@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4CTvj4qvRq2EOsW7cs9C0UNKiP/PQpDXj/WSryc7kAP2/6r53FNrHFSbaTMPCSA+iJiv9HFatOssuCFLvzVq6w==",
+  "dgSpecHash": "QQAq43eWF+o=",
   "success": true,
-  "projectFilePath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.iOS\\TestTest123.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tamaninja\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ffmpeg.autogen\\4.3.0.1\\ffmpeg.autogen.4.3.0.1.nupkg.sha512",
@@ -17,7 +17,7 @@
     "C:\\Users\\Tamaninja\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0-rc.1.21451.13\\microsoft.extensions.dependencyinjection.abstractions.6.0.0-rc.1.21451.13.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.0.3\\microsoft.extensions.dependencymodel.2.0.3.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.11\\microsoft.extensions.objectpool.5.0.11.nupkg.sha512",
-    "C:\\Users\\Tamaninja\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
+    "C:\\Users\\Tamaninja\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.5\\microsoft.net.illink.tasks.8.0.5.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\nativelibraryloader\\1.0.13\\nativelibraryloader.1.0.13.nupkg.sha512",
@@ -53,6 +53,7 @@
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ppy.veldrid.openglbindings\\4.9.11-ged7d28974e\\ppy.veldrid.openglbindings.4.9.11-ged7d28974e.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ppy.veldrid.spirv\\1.0.15-gca6cec7843\\ppy.veldrid.spirv.1.0.15-gca6cec7843.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ppy.vk\\1.0.26\\ppy.vk.1.0.26.nupkg.sha512",
+    "C:\\Users\\Tamaninja\\.nuget\\packages\\rocksmith2014.xml\\1.1.1\\rocksmith2014.xml.1.1.1.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\runtime.any.system.collections\\4.0.11\\runtime.any.system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\runtime.any.system.globalization\\4.0.11\\runtime.any.system.globalization.4.0.11.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\runtime.any.system.io\\4.1.0\\runtime.any.system.io.4.1.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VBgi4WIBOT28JyUHriraIYkrbDpVrczFgdZBeOGlliowpGNXuiEVfk3FxSxFRpqUdNnlWHWw2X0cKKLcJ18k7w==",
+  "dgSpecHash": "3338/waCoo0=",
   "success": true,
-  "projectFilePath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tamaninja\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ffmpeg.autogen\\4.3.0.1\\ffmpeg.autogen.4.3.0.1.nupkg.sha512",
@@ -56,6 +56,7 @@
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ppy.veldrid.openglbindings\\4.9.11-ged7d28974e\\ppy.veldrid.openglbindings.4.9.11-ged7d28974e.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ppy.veldrid.spirv\\1.0.15-gca6cec7843\\ppy.veldrid.spirv.1.0.15-gca6cec7843.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\ppy.vk\\1.0.26\\ppy.vk.1.0.26.nupkg.sha512",
+    "C:\\Users\\Tamaninja\\.nuget\\packages\\rocksmith2014.xml\\1.1.1\\rocksmith2014.xml.1.1.1.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\sharpfnt\\2.0.0\\sharpfnt.2.0.0.nupkg.sha512",
     "C:\\Users\\Tamaninja\\.nuget\\packages\\sharpgen.runtime\\2.0.0-beta.13\\sharpgen.runtime.2.0.0-beta.13.nupkg.sha512",

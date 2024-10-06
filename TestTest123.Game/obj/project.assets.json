@@ -568,45 +568,6 @@
           }
         }
       },
-      "ppy.osu.Framework/2024.509.0": {
-        "type": "package",
-        "dependencies": {
-          "FFmpeg.AutoGen": "4.3.0.1",
-          "JetBrains.Annotations": "2023.3.0",
-          "Markdig": "0.23.0",
-          "Microsoft.Diagnostics.Runtime": "2.0.161401",
-          "Microsoft.Extensions.ObjectPool": "5.0.11",
-          "NUnit": "3.13.3",
-          "Newtonsoft.Json": "13.0.3",
-          "NuGet.ProjectModel": "5.11.0",
-          "OpenTabletDriver": "0.6.4",
-          "SharpFNT": "2.0.0",
-          "SixLabors.ImageSharp": "3.1.4",
-          "StbiSharp": "1.1.0",
-          "System.Numerics.Tensors": "8.0.0",
-          "managed-midi": "1.10.0",
-          "ppy.ManagedBass": "2022.1216.0",
-          "ppy.ManagedBass.Fx": "2022.1216.0",
-          "ppy.ManagedBass.Mix": "2022.1216.0",
-          "ppy.ManagedBass.Wasapi": "2022.1216.0",
-          "ppy.SDL3-CS": "2024.418.1",
-          "ppy.Veldrid": "4.9.11-ged7d28974e",
-          "ppy.Veldrid.SPIRV": "1.0.15-gca6cec7843",
-          "ppy.osu.Framework.NativeLibs": "2024.326.0-nativelibs",
-          "ppy.osu.Framework.SourceGeneration": "2023.720.0",
-          "ppy.osuTK.NS20": "1.0.211"
-        },
-        "compile": {
-          "lib/net8.0/osu.Framework.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/osu.Framework.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "ppy.osu.Framework.NativeLibs/2024.326.0-nativelibs": {
         "type": "package",
         "compile": {
@@ -794,7 +755,73 @@
           "lib/netstandard2.0/osuTK.dll": {}
         }
       },
-      "ppy.SDL3-CS/2024.418.1": {
+      "ppy.SDL2-CS/1.0.741-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SDL2-CS.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SDL2-CS.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/ios/native/SDL2.xcframework/Info.plist": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/ios/native/SDL2.xcframework/ios-arm64/SDL2.framework/Info.plist": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/ios/native/SDL2.xcframework/ios-arm64/SDL2.framework/SDL2": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/ios/native/SDL2.xcframework/ios-arm64_x86_64-simulator/SDL2.framework/Info.plist": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/ios/native/SDL2.xcframework/ios-arm64_x86_64-simulator/SDL2.framework/SDL2": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/linux-x64/native/libSDL2.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x86/native/libSDL2.so": {
+            "assetType": "native",
+            "rid": "linux-x86"
+          },
+          "runtimes/osx-arm64/native/libSDL2.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libSDL2.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm64/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "ppy.SDL3-CS/2024.528.0": {
         "type": "package",
         "dependencies": {
           "JetBrains.Annotations": "2023.3.0"
@@ -810,6 +837,22 @@
           }
         },
         "runtimeTargets": {
+          "runtimes/android-arm/native/libSDL3.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libSDL3.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libSDL3.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/libSDL3.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
           "runtimes/ios/native/SDL3.xcframework/Info.plist": {
             "assetType": "native",
             "rid": "ios"
@@ -829,6 +872,14 @@
           "runtimes/ios/native/SDL3.xcframework/ios-arm64_x86_64-simulator/SDL3.framework/SDL3": {
             "assetType": "native",
             "rid": "ios"
+          },
+          "runtimes/linux-arm/native/libSDL3.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libSDL3.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
           },
           "runtimes/linux-x64/native/libSDL3.so": {
             "assetType": "native",
@@ -860,52 +911,49 @@
           }
         }
       },
-      "ppy.Veldrid/4.9.11-ged7d28974e": {
+      "ppy.Veldrid/4.9.58-gfe61932a71": {
         "type": "package",
         "dependencies": {
           "NativeLibraryLoader": "1.0.13",
           "Vortice.D3DCompiler": "2.4.2",
           "Vortice.Direct3D11": "2.4.2",
-          "ppy.Veldrid.MetalBindings": "4.9.11-ged7d28974e",
-          "ppy.Veldrid.OpenGLBindings": "4.9.11-ged7d28974e",
+          "ppy.Veldrid.MetalBindings": "4.9.58-gfe61932a71",
+          "ppy.Veldrid.OpenGLBindings": "4.9.58-gfe61932a71",
           "ppy.Vk": "1.0.26"
         },
         "compile": {
-          "lib/net6.0/ppy.Veldrid.dll": {
+          "lib/net8.0/ppy.Veldrid.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/ppy.Veldrid.dll": {
+          "lib/net8.0/ppy.Veldrid.dll": {
             "related": ".pdb;.xml"
           }
         }
       },
-      "ppy.Veldrid.MetalBindings/4.9.11-ged7d28974e": {
+      "ppy.Veldrid.MetalBindings/4.9.58-gfe61932a71": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/netstandard2.0/ppy.Veldrid.MetalBindings.dll": {
+          "lib/net8.0/ppy.Veldrid.MetalBindings.dll": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/ppy.Veldrid.MetalBindings.dll": {
+          "lib/net8.0/ppy.Veldrid.MetalBindings.dll": {
             "related": ".pdb"
           }
         }
       },
-      "ppy.Veldrid.OpenGLBindings/4.9.11-ged7d28974e": {
+      "ppy.Veldrid.OpenGLBindings/4.9.58-gfe61932a71": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/ppy.Veldrid.OpenGLBindings.dll": {
+          "lib/net8.0/ppy.Veldrid.OpenGLBindings.dll": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/ppy.Veldrid.OpenGLBindings.dll": {
+          "lib/net8.0/ppy.Veldrid.OpenGLBindings.dll": {
             "related": ".pdb"
           }
         }
@@ -976,6 +1024,15 @@
         },
         "runtime": {
           "lib/net5.0/vk.dll": {}
+        }
+      },
+      "Rocksmith2014.XML/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Rocksmith2014.XML.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Rocksmith2014.XML.dll": {}
         }
       },
       "runtime.native.System/4.0.0": {
@@ -1796,12 +1853,49 @@
           }
         }
       },
-      "TestTest123.Resources/1.0.0": {
+      "ppy.osu.Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AssimpNet": "4.1.0",
-          "ppy.osu.Framework": "2024.509.0"
+          "FFmpeg.AutoGen": "4.3.0.1",
+          "JetBrains.Annotations": "2023.3.0",
+          "Markdig": "0.23.0",
+          "Microsoft.Diagnostics.Runtime": "2.0.161401",
+          "Microsoft.Extensions.ObjectPool": "5.0.11",
+          "NUnit": "3.13.3",
+          "Newtonsoft.Json": "13.0.3",
+          "NuGet.ProjectModel": "5.11.0",
+          "OpenTabletDriver": "0.6.4",
+          "SharpFNT": "2.0.0",
+          "SixLabors.ImageSharp": "3.1.4",
+          "StbiSharp": "1.1.0",
+          "System.Numerics.Tensors": "8.0.0",
+          "managed-midi": "1.10.0",
+          "ppy.ManagedBass": "2022.1216.0",
+          "ppy.ManagedBass.Fx": "2022.1216.0",
+          "ppy.ManagedBass.Mix": "2022.1216.0",
+          "ppy.ManagedBass.Wasapi": "2022.1216.0",
+          "ppy.SDL2-CS": "1.0.741-alpha",
+          "ppy.SDL3-CS": "2024.528.0",
+          "ppy.Veldrid": "4.9.58-gfe61932a71",
+          "ppy.Veldrid.SPIRV": "1.0.15-gca6cec7843",
+          "ppy.osu.Framework.NativeLibs": "2024.326.0-nativelibs",
+          "ppy.osu.Framework.SourceGeneration": "2023.720.0",
+          "ppy.osuTK.NS20": "1.0.211"
+        },
+        "compile": {
+          "bin/placeholder/ppy.osu.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ppy.osu.Framework.dll": {}
+        }
+      },
+      "TestTest123.Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AssimpNet": "4.1.0"
         },
         "compile": {
           "bin/placeholder/TestTest123.Resources.dll": {}
@@ -2607,20 +2701,6 @@
         "ppy.managedbass.wasapi.nuspec"
       ]
     },
-    "ppy.osu.Framework/2024.509.0": {
-      "sha512": "s1knNI6wpTaED2sVTESzPh/HdXKSAkGJqdW3p7hfM2uoW+aHJnIUmd+Tpo0eBgXEi3nIQOWhARZkwwJm+k9q3A==",
-      "type": "package",
-      "path": "ppy.osu.framework/2024.509.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net8.0/osu.Framework.dll",
-        "lib/net8.0/osu.Framework.xml",
-        "ppy.osu.framework.2024.509.0.nupkg.sha512",
-        "ppy.osu.framework.nuspec"
-      ]
-    },
     "ppy.osu.Framework.NativeLibs/2024.326.0-nativelibs": {
       "sha512": "h+SdpcOkEMSaMqLughyN5r/1DFJhKvUPqBADb6aMpLVUuC54vg1j+w7ah2hO4LGFH1ntugMlcvipG9tjmDRHVQ==",
       "type": "package",
@@ -2700,22 +2780,54 @@
         "ppy.osutk.ns20.nuspec"
       ]
     },
-    "ppy.SDL3-CS/2024.418.1": {
-      "sha512": "sQ59QByktEXxI0MHo859O373o5vfYdoIrH1Z6BwoDrXAl6MEOxn9icBQPT8FZJHqwwv6ug73086epc/vaDZZgQ==",
+    "ppy.SDL2-CS/1.0.741-alpha": {
+      "sha512": "6mjubcZCHcYRog2nit9gmcQss7hTprnAvfR9U3UmCcEi1KoNyzKDuI862mNae0dmgLPviSubywG08e54jT52Lg==",
       "type": "package",
-      "path": "ppy.sdl3-cs/2024.418.1",
+      "path": "ppy.sdl2-cs/1.0.741-alpha",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/app.config",
+        "contentFiles/any/net6.0/app.config",
+        "lib/net6.0/SDL2-CS.dll",
+        "ppy.sdl2-cs.1.0.741-alpha.nupkg.sha512",
+        "ppy.sdl2-cs.nuspec",
+        "runtimes/ios/native/SDL2.xcframework/Info.plist",
+        "runtimes/ios/native/SDL2.xcframework/ios-arm64/SDL2.framework/Info.plist",
+        "runtimes/ios/native/SDL2.xcframework/ios-arm64/SDL2.framework/SDL2",
+        "runtimes/ios/native/SDL2.xcframework/ios-arm64_x86_64-simulator/SDL2.framework/Info.plist",
+        "runtimes/ios/native/SDL2.xcframework/ios-arm64_x86_64-simulator/SDL2.framework/SDL2",
+        "runtimes/linux-x64/native/libSDL2.so",
+        "runtimes/linux-x86/native/libSDL2.so",
+        "runtimes/osx-arm64/native/libSDL2.dylib",
+        "runtimes/osx-x64/native/libSDL2.dylib",
+        "runtimes/win-arm64/native/SDL2.dll",
+        "runtimes/win-x64/native/SDL2.dll",
+        "runtimes/win-x86/native/SDL2.dll"
+      ]
+    },
+    "ppy.SDL3-CS/2024.528.0": {
+      "sha512": "wVOW8ZkrVRd/jGEsTdhktcxMMz/21Uxomt5hevEE7TqunI/5JS7JUe2NZsVJtEQGm+6TfpJKXgM2oUu83R10eA==",
+      "type": "package",
+      "path": "ppy.sdl3-cs/2024.528.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SDL3-CS.dll",
         "lib/net8.0/SDL3-CS.xml",
-        "ppy.sdl3-cs.2024.418.1.nupkg.sha512",
+        "ppy.sdl3-cs.2024.528.0.nupkg.sha512",
         "ppy.sdl3-cs.nuspec",
+        "runtimes/android-arm/native/libSDL3.so",
+        "runtimes/android-arm64/native/libSDL3.so",
+        "runtimes/android-x64/native/libSDL3.so",
+        "runtimes/android-x86/native/libSDL3.so",
         "runtimes/ios/native/SDL3.xcframework/Info.plist",
         "runtimes/ios/native/SDL3.xcframework/ios-arm64/SDL3.framework/Info.plist",
         "runtimes/ios/native/SDL3.xcframework/ios-arm64/SDL3.framework/SDL3",
         "runtimes/ios/native/SDL3.xcframework/ios-arm64_x86_64-simulator/SDL3.framework/Info.plist",
         "runtimes/ios/native/SDL3.xcframework/ios-arm64_x86_64-simulator/SDL3.framework/SDL3",
+        "runtimes/linux-arm/native/libSDL3.so",
+        "runtimes/linux-arm64/native/libSDL3.so",
         "runtimes/linux-x64/native/libSDL3.so",
         "runtimes/linux-x86/native/libSDL3.so",
         "runtimes/osx-arm64/native/libSDL3.dylib",
@@ -2725,46 +2837,43 @@
         "runtimes/win-x86/native/SDL3.dll"
       ]
     },
-    "ppy.Veldrid/4.9.11-ged7d28974e": {
-      "sha512": "UY7tITXBbuZI8f7wp4z2MLvUJKZKno2Euw3lh35WXXwiBavnMnVF5VGiLozlTsnrvA9ZfjvcaBBGC29L+juTuw==",
+    "ppy.Veldrid/4.9.58-gfe61932a71": {
+      "sha512": "w5CM02qMZcDxvFk8MVb8SvgOyThbIOuDujaYHX4GRCkxQS/N45uRhH/+ZCjZUfAZlffHjqzwfc6zB2gL+cF8DQ==",
       "type": "package",
-      "path": "ppy.veldrid/4.9.11-ged7d28974e",
+      "path": "ppy.veldrid/4.9.58-gfe61932a71",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net6.0/ppy.Veldrid.dll",
-        "lib/net6.0/ppy.Veldrid.pdb",
-        "lib/net6.0/ppy.Veldrid.xml",
-        "lib/netstandard2.0/ppy.Veldrid.dll",
-        "lib/netstandard2.0/ppy.Veldrid.pdb",
-        "lib/netstandard2.0/ppy.Veldrid.xml",
-        "ppy.veldrid.4.9.11-ged7d28974e.nupkg.sha512",
+        "lib/net8.0/ppy.Veldrid.dll",
+        "lib/net8.0/ppy.Veldrid.pdb",
+        "lib/net8.0/ppy.Veldrid.xml",
+        "ppy.veldrid.4.9.58-gfe61932a71.nupkg.sha512",
         "ppy.veldrid.nuspec"
       ]
     },
-    "ppy.Veldrid.MetalBindings/4.9.11-ged7d28974e": {
-      "sha512": "BDtuVa2vGxWYxwHKlpnuVAJqdKnAv/wgs9V1n/ud3daZoLTT8VYHAI8gBfgmnYAni4r93R3KqjtmquGMhUpRoQ==",
+    "ppy.Veldrid.MetalBindings/4.9.58-gfe61932a71": {
+      "sha512": "ZhvOqLIZlifS+8ALstU5dF388DXk3SWS4f1lmnXLbnE2KTFrQ8+3xbqI79CpkjJ1RQlyiaLGWkD9fIw096amMA==",
       "type": "package",
-      "path": "ppy.veldrid.metalbindings/4.9.11-ged7d28974e",
+      "path": "ppy.veldrid.metalbindings/4.9.58-gfe61932a71",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netstandard2.0/ppy.Veldrid.MetalBindings.dll",
-        "lib/netstandard2.0/ppy.Veldrid.MetalBindings.pdb",
-        "ppy.veldrid.metalbindings.4.9.11-ged7d28974e.nupkg.sha512",
+        "lib/net8.0/ppy.Veldrid.MetalBindings.dll",
+        "lib/net8.0/ppy.Veldrid.MetalBindings.pdb",
+        "ppy.veldrid.metalbindings.4.9.58-gfe61932a71.nupkg.sha512",
         "ppy.veldrid.metalbindings.nuspec"
       ]
     },
-    "ppy.Veldrid.OpenGLBindings/4.9.11-ged7d28974e": {
-      "sha512": "Ko04jkTTKK5cQtn6KXuyMjGg5ReOM50PAxQF8n2YQ1YyJ0oY8QJMvisyJd4yrLl9mvF2QCvyXRVWT89QQNeeHw==",
+    "ppy.Veldrid.OpenGLBindings/4.9.58-gfe61932a71": {
+      "sha512": "tyrr2BI0/OR3o+uWfMTg5n7CNK7qZAjH5BpH3aFoIKqIp/g4wdtqeMzzv/KCovDoH94x33Y9EUBlZ11ZNg4zYA==",
       "type": "package",
-      "path": "ppy.veldrid.openglbindings/4.9.11-ged7d28974e",
+      "path": "ppy.veldrid.openglbindings/4.9.58-gfe61932a71",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netstandard2.0/ppy.Veldrid.OpenGLBindings.dll",
-        "lib/netstandard2.0/ppy.Veldrid.OpenGLBindings.pdb",
-        "ppy.veldrid.openglbindings.4.9.11-ged7d28974e.nupkg.sha512",
+        "lib/net8.0/ppy.Veldrid.OpenGLBindings.dll",
+        "lib/net8.0/ppy.Veldrid.OpenGLBindings.pdb",
+        "ppy.veldrid.openglbindings.4.9.58-gfe61932a71.nupkg.sha512",
         "ppy.veldrid.openglbindings.nuspec"
       ]
     },
@@ -2807,6 +2916,18 @@
         "lib/netstandard1.4/vk.dll",
         "ppy.vk.1.0.26.nupkg.sha512",
         "ppy.vk.nuspec"
+      ]
+    },
+    "Rocksmith2014.XML/1.1.1": {
+      "sha512": "DJRXv0pKSSMhF90KoBZQU6aCo2QmA/jLf3Qe+ldsWcB1sm2Behn6NOxvsnDHPWn6ckZ1NWP8Q3gzimFzTddOGw==",
+      "type": "package",
+      "path": "rocksmith2014.xml/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Rocksmith2014.XML.dll",
+        "rocksmith2014.xml.1.1.1.nupkg.sha512",
+        "rocksmith2014.xml.nuspec"
       ]
     },
     "runtime.native.System/4.0.0": {
@@ -5121,6 +5242,11 @@
         "vortice.mathematics.nuspec"
       ]
     },
+    "ppy.osu.Framework/1.0.0": {
+      "type": "project",
+      "path": "../../osu-framework/osu.Framework/osu.Framework.csproj",
+      "msbuildProject": "../../osu-framework/osu.Framework/osu.Framework.csproj"
+    },
     "TestTest123.Resources/1.0.0": {
       "type": "project",
       "path": "../TestTest123.Resources/TestTest123.Resources.csproj",
@@ -5130,8 +5256,9 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AssimpNet >= 4.1.0",
+      "Rocksmith2014.XML >= 1.1.1",
       "TestTest123.Resources >= 1.0.0",
-      "ppy.osu.Framework >= 2024.509.0"
+      "ppy.osu.Framework >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5141,11 +5268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj",
+      "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
       "projectName": "TestTest123.Game",
-      "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\TestTest123.Game.csproj",
+      "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
       "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-      "outputPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Game\\obj\\",
+      "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5159,16 +5286,19 @@
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj": {
-              "projectPath": "D:\\Tamaninja\\Documents\\TestTest123\\TestTest123.Resources\\TestTest123.Resources.csproj"
+            "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj": {
+              "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj"
+            },
+            "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+              "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
             }
           }
         }
@@ -5192,9 +5322,9 @@
             "target": "Package",
             "version": "[4.1.0, )"
           },
-          "ppy.osu.Framework": {
+          "Rocksmith2014.XML": {
             "target": "Package",
-            "version": "[2024.509.0, )"
+            "version": "[1.1.1, )"
           }
         },
         "imports": [
@@ -5213,7 +5343,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

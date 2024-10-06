@@ -13,10 +13,10 @@ namespace TestTest123.Game
         {
             switch (i)
             {
-                case 1: return Color4.Orange;
+                case 3: return Color4.Orange;
                 case 2: return Color4.Blue;
-                case 3: return Color4.Yellow;
-                case 4: return Color4.Red;
+                case 1: return Color4.Yellow;
+                case 0: return Color4.Red;
                     default: return Color4.White;
             }
         }

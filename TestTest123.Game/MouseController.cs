@@ -16,20 +16,11 @@ namespace TestTest123.Game
         private float sensitivity = 0.25f;
         private float pitch = 0;
         private float yaw = 0;
-        private float speed = 100;
+        private float speed = 10;
 
         public MouseController(Camera camera)
         {
             this.camera = camera;
-            Children = [
-                new SpriteText()
-                {
-                    Text = camera.CameraViewProjection.ToString(),
-                    Colour = Colour4.White,
-                    AllowMultiline = true,
-                    Depth = 0
-                }
-            ];
             RelativeSizeAxes = Axes.Both;
         }
         protected override bool OnMouseMove(MouseMoveEvent e)
@@ -53,27 +44,27 @@ namespace TestTest123.Game
             {
 
                 case Key.Space:
-                    camera.MoveToOffset(Vector3.UnitY, speed, Easing.None);
+                    camera.MoveToOffset(Vector3.UnitY * speed, 250, Easing.In);
                     return true;
 
                 case Key.LShift:
-                    camera.MoveToOffset(-Vector3.UnitY, speed, Easing.None);
+                    camera.MoveToOffset(-Vector3.UnitY * speed, 250, Easing.In);
                     return true;
 
                 case Key.A:
-                    camera.MoveToOffset(camera.Right, speed, Easing.None);
+                    camera.MoveToOffset(camera.Right * speed, 250, Easing.In);
                     return true;
 
                 case Key.D:
-                    camera.MoveToOffset(-camera.Right, speed, Easing.None);
+                    camera.MoveToOffset(-camera.Right * speed, 250, Easing.In);
                     return true;
 
                 case Key.S:
-                    camera.MoveToOffset(-camera.Forward, speed, Easing.None);
+                    camera.MoveToOffset(-camera.Forward * speed, 250, Easing.In);
                     return true;
 
                 case Key.W:
-                    camera.MoveToOffset(camera.Forward, speed, Easing.None);
+                    camera.MoveToOffset(camera.Forward * speed, 250, Easing.In);
                     return true;
 
 

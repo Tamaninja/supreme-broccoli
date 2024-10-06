@@ -3,41 +3,33 @@ using System.Collections.Generic;
 using osu.Framework.Allocation;
 using osu.Framework.Extensions.EnumExtensions;
 using osu.Framework.Graphics;
-using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Rendering;
-using osu.Framework.Graphics.Textures;
 using osu.Framework.Layout;
-using osu.Framework.Logging;
-using osu.Framework.Testing;
-using osuTK;
-using osuTK.Graphics;
-using SharpGen.Runtime.Win32;
 using TestTest123.Game.Material;
-using TestTest123.Game.Vertices;
 namespace TestTest123.Game
 {
-    public partial class ModelDrawable : ThreeDimensionalDrawable
+    public abstract partial class ModelDrawable : ThreeDimensionalDrawable
     {
 
 
         public Model Model { get; private set; }
-        public ThreeDimensionalStageDrawable Stage;
-        public Container<MaterialDrawable> Materials { get; private set; } = [];
+        public List<MaterialDrawable> Materials { get; private set; } = [];
         public List<MeshDrawable> Meshes { get; private set; } = [];
 
 
-        public ModelDrawable(Model model, ThreeDimensionalStageDrawable stage)
+        public ModelDrawable()
         {
-            Stage = stage;
-            Model = model;
-
-            
         }
 
+        protected abstract Model LoadModel(IRenderer renderer);
+
         [BackgroundDependencyLoader]
-        private void load(MaterialStore materialStore)
+        private void load(MaterialStore materialStore, IRenderer renderer)
         {
+            Model = LoadModel(renderer);
+
             Materials = materialStore.GetMaterials(Model);
+
 
             loadMeshes();
         }

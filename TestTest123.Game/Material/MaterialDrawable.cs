@@ -28,6 +28,7 @@ namespace TestTest123.Game.Material
         {
             Name = material.Name;
             Colour = material.ColorDiffuse.FromAssimp();
+            Alpha = material.ColorDiffuse.A;
             RelativeSizeAxes = Axes.Both;
 
 
@@ -45,7 +46,7 @@ namespace TestTest123.Game.Material
         {
 
             Texture = renderer.WhitePixel;
-            TextureShader = shaders.Load("nino", "nino");
+            TextureShader = shaders.Load("textureless", "textureless");
 
             if (IsTextured)
             {
@@ -81,7 +82,7 @@ namespace TestTest123.Game.Material
             protected override void Draw(IRenderer renderer)
             {
 
-                texture.Bind();
+                texture?.Bind();
                 shader.Bind();
 
                 base.Draw(renderer);

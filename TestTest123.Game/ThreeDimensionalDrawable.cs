@@ -27,7 +27,6 @@ namespace TestTest123.Game
         private Vector3 relativeForward = WORLD_FORWARD;
 
 
-
         private readonly LayoutValue<Matrix4> rotationMatrixBacking = new(Invalidation.MiscGeometry | Invalidation.DrawInfo);
 
         private Vector3 position = Vector3.Zero;
@@ -92,8 +91,11 @@ namespace TestTest123.Game
                 UpdateMatrix();
             }
         }
+
+
         public ThreeDimensionalDrawable()
         {
+
             CameraViewProjection = new Bindable<Matrix4>(Matrix4.Identity);
             LocalMatrix = new Bindable<Matrix4>(Matrix4.Identity);
 

@@ -3,21 +3,20 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Assimp;
+
 using osu.Framework;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
+using osu.Framework.Graphics.Rendering;
 using osu.Framework.IO.Stores;
+using osu.Framework.Logging;
 using osuTK;
 
 namespace TestTest123.Game.Material
 {
-    public partial class MaterialStore : Container<Container<MaterialDrawable>>
+    public partial class MaterialStore : Container<MaterialDrawable>
     {
-        private Dictionary<Model, Container<MaterialDrawable>> materialList = [];
+        private Dictionary<string, List<MaterialDrawable>> materialList = [];
 
         public override Vector2 Size => Vector2.One;
 
@@ -29,18 +28,20 @@ namespace TestTest123.Game.Material
 
 
 
-        public Container<MaterialDrawable> GetMaterials(Model model)
+        public List<MaterialDrawable> GetMaterials(Model model)
         {
-            if (!materialList.TryGetValue(model, out var materials))
+            if (!materialList.TryGetValue(model.Filepath, out var materials))
             {
-                materials = new Container<MaterialDrawable>();
+                Logger.LogPrint("no match found");
+                materials = [];
                 for (var i = 0; i < model.Materials.Count; i++)
                 {
-                    materials.Add(new MaterialDrawable(model.Materials[i]));
+                    MaterialDrawable material = new MaterialDrawable(model.Materials[i]);
+                    materials.Add(material);
+                    AddInternal(material);
 
                 }
-                materialList[model] = materials;
-                AddInternal(materials);
+                materialList[model.Filepath] = materials;
             }
 
             return materials;

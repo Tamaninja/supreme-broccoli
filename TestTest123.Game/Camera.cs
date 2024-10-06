@@ -7,6 +7,7 @@ using osu.Framework.Allocation;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Layout;
+using osu.Framework.Logging;
 
 
 
@@ -35,8 +36,8 @@ namespace TestTest123.Game
         
 
 
-        public Camera(float verticalFOV, float aspectRatio, float nearPlane, float farPlane)
-        {
+        public Camera(float verticalFOV, float aspectRatio, float nearPlane, float farPlane) {
+        
             VerticalFOV = verticalFOV;
             AspectRatio = aspectRatio;
             NearPlane = nearPlane;
@@ -56,12 +57,19 @@ namespace TestTest123.Game
                 MathHelper.DegreesToRadians(VerticalFOV), AspectRatio, NearPlane, FarPlane);
             return (matrix);
         }
+        public Matrix4 LookAt(Vector3 position)
+        {
+            Matrix4 matrix = Matrix4.LookAt(Position3D, position, WORLD_UP);
+
+            Forward = matrix.Column2.Xyz;
+            return(matrix);
+        }
 
         private Matrix4 createViewMatrix()
         {
             Matrix4 matrix = Matrix4.LookAt(Position3D, Position3D + Forward, WORLD_UP);
 
-            return (matrix);
+            return matrix;
         }
 
         [BackgroundDependencyLoader]

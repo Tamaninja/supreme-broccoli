@@ -12,7 +12,6 @@ using osu.Framework.Logging;
 using osuTK;
 using osuTK.Graphics;
 using TestTest123.Game.Material;
-using TestTest123.Game.Vertices;
 
 namespace TestTest123.Game
 {
@@ -20,6 +19,7 @@ namespace TestTest123.Game
     {
         public ModelDrawable Model { get; set; }
         public MaterialDrawable Material;
+        private Drawable proxy;
 
 
 
@@ -27,7 +27,7 @@ namespace TestTest123.Game
         public override Matrix4 Matrix => Model.Matrix * base.Matrix;
 
 
-        public MeshDrawable(ModelDrawable parent, Mesh mesh) {
+        public MeshDrawable(ModelDrawable parent, Mesh mesh){
             parent.LocalMatrix.BindValueChanged((t) => Invalidate(Invalidation.DrawNode, osu.Framework.Layout.InvalidationSource.Parent));
             CameraViewProjection.BindTo(parent.CameraViewProjection);
 
@@ -36,9 +36,12 @@ namespace TestTest123.Game
             Model = parent;
             Material = parent.Materials[mesh.MaterialIndex];
             Colour = Material.Colour;
+            Alpha = Material.Alpha;
+
+            proxy = CreateProxy();
 
 
-            Material.Add(CreateProxy());
+            Material.Add(proxy);
         }
 
 
@@ -52,6 +55,12 @@ namespace TestTest123.Game
            
             return (new MeshDrawNode(this));
 
+        }
+        protected override void Dispose(bool isDisposing)
+        {
+
+            proxy?.Dispose();
+            base.Dispose(isDisposing);
         }
     }
 }
