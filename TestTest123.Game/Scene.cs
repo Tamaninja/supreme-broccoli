@@ -20,16 +20,13 @@ namespace TestTest123.Game
     {
         public Camera Camera;
         public SpriteText Debug;
-        private NotePool notePool;
         private Bindable<int> currentSongTime = new(0);
 
         public Scene()
         {
             RelativeSizeAxes = Axes.Both;
             Debug = new SpriteText();
-            notePool = new NotePool();
 
-            AddInternal(notePool);
             AddInternal(Debug);
         }
 
@@ -41,24 +38,29 @@ namespace TestTest123.Game
             Camera = new Camera(50, 16 / 9, 1, 5000);
             AddInternal(Camera);
 
-            MusicalChart musicalChart = new MusicalChart("C:\\Users\\Tamaninja\\Desktop\\psarc test\\Cortex_Chanson-dun-jour-dhiver_v1_p\\arr_bass_RS2.xml", Time.Current + 5000);
-            currentSongTime.BindValueChanged((t) => Debug.Text = "(" + t.NewValue + "/" + musicalChart.Duration + ")");
-
-            for (int i = 0; i < musicalChart.Notes.Count; i++)
-            {
-                {
-
-                    NoteDrawable note = notePool.GenerateDrawable(musicalChart.Notes[i]);
-
-                    AddInternal(note);
+            NoteDrawable note = new NoteDrawable();
+            AddInternal(note);
 
 
-                    note.BindCamera(Camera);
-                    note.OnLoadComplete += (t) => Camera.LookAt(note.Position3D);
+            note.BindCamera(Camera);
 
-                }
+            /*            MusicalChart musicalChart = new MusicalChart("C:\\Users\\lielk\\OneDrive\\Desktop\\psarc tests\\Telula_3-3-3_v1_p\\arr_bass_RS2.xml", Time.Current + 5000);
+                        currentSongTime.BindValueChanged((t) => Debug.Text = "(" + t.NewValue + "/" + musicalChart.Duration + ")");
 
-            }
+                        for (int i = 0; i < musicalChart.Notes.Count; i++)
+                        {
+                            {
+
+                                NoteDrawable note = notePool.GenerateDrawable(musicalChart.Notes[i]);
+
+                                AddInternal(note);
+
+
+                                note.BindCamera(Camera);
+
+                            }
+
+                        }*/
         }
 
         protected override void Update()

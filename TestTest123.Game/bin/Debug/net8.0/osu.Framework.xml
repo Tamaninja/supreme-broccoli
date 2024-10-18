@@ -586,11 +586,6 @@
             </summary>
             <param name="target">Populates this parameter with the targeted object.</param>
         </member>
-        <member name="F:osu.Framework.Allocation.ObjectUsage`1.Usage">
-            <summary>
-            Whether this usage is actively being written to or read from.
-            </summary>
-        </member>
         <member name="T:osu.Framework.Allocation.ResolvedAttribute">
             <summary>
             An attribute that is attached to properties of a <see cref="T:osu.Framework.Graphics.Drawable"/> component to indicate that the value of the property should be retrieved from a dependency cache.
@@ -661,23 +656,6 @@
             Handles triple-buffering of any object type.
             Thread safety assumes at most one writer and one reader.
             Comes with the added assurance that the most recent <see cref="M:osu.Framework.Allocation.TripleBuffer`1.GetForRead"/> object is not written to.
-            </summary>
-        </member>
-        <member name="F:osu.Framework.Allocation.TripleBuffer`1.pendingCompletedWriteIndex">
-            <summary>
-            The freshest buffer index which has finished a write, and is waiting to be read.
-            Will be set to <c>null</c> after being read once.
-            </summary>
-        </member>
-        <member name="F:osu.Framework.Allocation.TripleBuffer`1.lastWriteIndex">
-            <summary>
-            The last buffer index which was obtained for writing.
-            </summary>
-        </member>
-        <member name="F:osu.Framework.Allocation.TripleBuffer`1.lastReadIndex">
-            <summary>
-            The last buffer index which was obtained for reading.
-            Note that this will remain "active" even after a <see cref="M:osu.Framework.Allocation.TripleBuffer`1.GetForRead"/> ends, to give benefit of doubt that the usage may still be accessing it.
             </summary>
         </member>
         <member name="T:osu.Framework.Allocation.ValueInvokeOnDisposal">
@@ -1324,11 +1302,6 @@
             The handle for this mixer.
             </summary>
         </member>
-        <member name="F:osu.Framework.Audio.Mixing.Bass.BassAudioMixer.ActiveEffects">
-            <summary>
-            The list of effects which are currently active in the BASS mix.
-            </summary>
-        </member>
         <member name="F:osu.Framework.Audio.Mixing.Bass.BassAudioMixer.activeChannels">
             <summary>
             The list of channels which are currently active in the BASS mix.
@@ -1521,15 +1494,6 @@
             Supports DSP effects independent of other <see cref="T:osu.Framework.Audio.Mixing.IAudioMixer"/>s.
             </summary>
         </member>
-        <member name="P:osu.Framework.Audio.Mixing.IAudioMixer.Effects">
-            <summary>
-            The effects currently applied to the mix.
-            <para>
-            Effects are stored in order of decreasing priority such that the effect at <c>index = 0</c> in the list has the highest priority
-            and the effect at <c>index = Count - 1</c> in the list has the lowest priority.
-            </para>
-            </summary>
-        </member>
         <member name="M:osu.Framework.Audio.Mixing.IAudioMixer.Add(osu.Framework.Audio.Mixing.IAudioChannel)">
             <summary>
             Adds a channel to the mix.
@@ -1541,6 +1505,26 @@
             Removes a channel from the mix.
             </summary>
             <param name="channel">The channel to remove.</param>
+        </member>
+        <member name="M:osu.Framework.Audio.Mixing.IAudioMixer.AddEffect(ManagedBass.IEffectParameter,System.Int32)">
+            <summary>
+            Applies an effect to the mixer.
+            </summary>
+            <param name="effect">The effect (e.g. <see cref="T:ManagedBass.Fx.BQFEffect"/>.</param>
+            <param name="priority">The effect priority. Lower values indicate higher priority and negative values are allowed.
+                When there are multiple effects with the same priority, their ordering depends on the order in which they are added to the <see cref="T:osu.Framework.Audio.Mixing.IAudioMixer"/>.</param>
+        </member>
+        <member name="M:osu.Framework.Audio.Mixing.IAudioMixer.RemoveEffect(ManagedBass.IEffectParameter)">
+            <summary>
+            Removes an effect from the mixer.
+            </summary>
+            <param name="effect">The effect.</param>
+        </member>
+        <member name="M:osu.Framework.Audio.Mixing.IAudioMixer.UpdateEffect(ManagedBass.IEffectParameter)">
+            <summary>
+            Updates an effect's parameters.
+            </summary>
+            <param name="effect"></param>
         </member>
         <member name="T:osu.Framework.Audio.Sample.ISample">
             <summary>
@@ -5886,7 +5870,7 @@
         <member name="T:osu.Framework.Graphics.Containers.CompositeDrawable">
             <summary>
             A drawable consisting of a composite of child drawables which are
-            manages by the composite object itself. Transformations applied to
+            managed by the composite object itself. Transformations applied to
             a <see cref="T:osu.Framework.Graphics.Containers.CompositeDrawable"/> are also applied to its children.
             Additionally, <see cref="T:osu.Framework.Graphics.Containers.CompositeDrawable"/>s support various effects, such as masking, edge effect,
             padding, and automatic sizing depending on their children.
@@ -8440,6 +8424,15 @@
             Will never recreate its contents or raise <see cref="E:osu.Framework.Graphics.Containers.TextPartManual.DrawablePartsRecreated"/>.
             </summary>
         </member>
+        <member name="T:osu.Framework.Graphics.Containers.VirtualisedListContainer`2">
+            <summary>
+            This class is an alternative to combined <see cref="T:osu.Framework.Graphics.Containers.ScrollContainer`1"/> / <see cref="T:osu.Framework.Graphics.Containers.FlowContainer`1"/> usage
+            for large lists (think thousands of items).
+            This class efficiently handles collection change events, as well as applies pooling to only allocate drawables for what is actually visible
+            on screen.
+            The trade-off is that every row has to have an estimated or fixed height so that layout can be estimated cheaply pre-emptively.
+            </summary>
+        </member>
         <member name="T:osu.Framework.Graphics.Containers.VisibilityContainer">
             <summary>
             A container which adds a basic visibility state.
@@ -9264,7 +9257,7 @@
         </member>
         <member name="P:osu.Framework.Graphics.Drawable.IsProxy">
             <summary>
-            True iff this <see cref="T:osu.Framework.Graphics.Drawable"/> is not a proxy of any <see cref="T:osu.Framework.Graphics.Drawable"/>.
+            True iff this <see cref="T:osu.Framework.Graphics.Drawable"/> is a proxy of any <see cref="T:osu.Framework.Graphics.Drawable"/>.
             </summary>
         </member>
         <member name="M:osu.Framework.Graphics.Drawable.CreateProxy">
@@ -10130,6 +10123,11 @@
             <summary>
             Applies the state of <see cref="P:osu.Framework.Graphics.DrawNode.Source"/> to this <see cref="T:osu.Framework.Graphics.DrawNode"/> for use in rendering.
             The applied state must remain immutable.
+            </summary>
+        </member>
+        <member name="P:osu.Framework.Graphics.DrawNode.SetBlending">
+            <summary>
+            Whether the renderer should set blending parameters of this <see cref="T:osu.Framework.Graphics.DrawNode"/>.
             </summary>
         </member>
         <member name="M:osu.Framework.Graphics.DrawNode.Draw(osu.Framework.Graphics.Rendering.IRenderer)">
@@ -13518,6 +13516,13 @@
         <member name="P:osu.Framework.Graphics.Shapes.EquilateralTriangle.Height">
             <summary>
             Sets the height of the triangle, adjusting the width as appropriate.
+            </summary>
+        </member>
+        <member name="T:osu.Framework.Graphics.Shapes.FastCircle">
+            <summary>
+            A circle that is rendered directly to the screen using a specialised shader.
+            This behaves slightly differently from <see cref="T:osu.Framework.Graphics.Shapes.Circle"/> but offers
+            higher performance in scenarios where many circles are drawn at once.
             </summary>
         </member>
         <member name="T:osu.Framework.Graphics.Shapes.Triangle">
@@ -21264,6 +21269,42 @@
             Interface for <see cref="T:osu.Framework.Graphics.IDrawable"/> components that support reading and writing text.
             </summary>
         </member>
+        <member name="T:osu.Framework.Graphics.Sprites.NineSliceSprite">
+             <summary>
+             A <see cref="T:osu.Framework.Graphics.Sprites.Sprite"/> that uses <see href="https://en.wikipedia.org/wiki/9-slice_scaling">9-slice scaling</see> to stretch a Texture.
+             When resizing a <see cref="T:osu.Framework.Graphics.Sprites.NineSliceSprite"/>, the corners will remain unscaled.
+            
+                 A                          B
+               +---+----------------------+---+
+             C | 1 |          2           | 3 |
+               +---+----------------------+---+
+               |   |                      |   |
+               | 4 |          5           | 6 |
+               |   |                      |   |
+               +---+----------------------+---+
+             D | 7 |          8           | 9 |
+               +---+----------------------+---+
+            
+             When changing the <see cref="P:osu.Framework.Graphics.Drawable.Width"/>, areas 1, 4, 7, 3, 6, and 9 (A and B) will remain unscaled.
+             When changing the <see cref="P:osu.Framework.Graphics.Drawable.Height"/>, areas 1, 2, 3, 7, 8, and 9 (C and D) will remain unscaled.
+             </summary>
+        </member>
+        <member name="P:osu.Framework.Graphics.Sprites.NineSliceSprite.TextureInset">
+            <summary>
+            The inset of the texture that will remain unscaled when resizing this <see cref="T:osu.Framework.Graphics.Sprites.NineSliceSprite"/>.
+            May be absolute or relative units (controlled by <see cref="P:osu.Framework.Graphics.Sprites.NineSliceSprite.TextureInsetRelativeAxes"/>).
+            </summary>
+        </member>
+        <member name="P:osu.Framework.Graphics.Sprites.NineSliceSprite.TextureInsetRelativeAxes">
+            <summary>
+            Controls which <see cref="T:osu.Framework.Graphics.Axes"/> of <see cref="P:osu.Framework.Graphics.Sprites.NineSliceSprite.TextureInset"/> are relative w.r.t.
+            <see cref="P:osu.Framework.Graphics.Sprites.Sprite.Texture"/>'s <see cref="P:osu.Framework.Graphics.Textures.Texture.DisplaySize"/> (from 0 to 1) rather than absolute.
+            </summary>
+            <remarks>
+            When setting this property, the <see cref="P:osu.Framework.Graphics.Sprites.NineSliceSprite.TextureInset"/> is converted such that the absolute TextureInset
+            remains invariant.
+            </remarks>
+        </member>
         <member name="T:osu.Framework.Graphics.Sprites.Sprite">
             <summary>
             A sprite that displays its texture.
@@ -21630,6 +21671,11 @@
         <member name="P:osu.Framework.Graphics.Textures.Texture.DisplayHeight">
             <summary>
             The height of this texture when drawn to the screen.
+            </summary>
+        </member>
+        <member name="P:osu.Framework.Graphics.Textures.Texture.DisplaySize">
+            <summary>
+            The size of this texture when drawn to the screen.
             </summary>
         </member>
         <member name="P:osu.Framework.Graphics.Textures.Texture.Opacity">
@@ -23727,6 +23773,11 @@
             This property is related to selecting menu items using keyboard or hovering.
             </summary>
         </member>
+        <member name="M:osu.Framework.Graphics.UserInterface.DropdownHeader.onClick(osu.Framework.Input.Events.ClickEvent)">
+            <summary>
+            Handles clicks on the header to open/close the menu.
+            </summary>
+        </member>
         <member name="M:osu.Framework.Graphics.UserInterface.DropdownSearchBar.Back">
             <summary>
             Clears the search term.
@@ -23751,11 +23802,6 @@
         <member name="M:osu.Framework.Graphics.UserInterface.DropdownSearchBar.onMenuStateChanged(osu.Framework.Graphics.UserInterface.MenuState)">
             <summary>
             Handles changes to the menu visibility.
-            </summary>
-        </member>
-        <member name="M:osu.Framework.Graphics.UserInterface.DropdownSearchBar.onClick(osu.Framework.Input.Events.ClickEvent)">
-            <summary>
-            Handles clicks on the search bar.
             </summary>
         </member>
         <member name="M:osu.Framework.Graphics.UserInterface.DropdownSearchBar.CreateTextBox">
@@ -24973,7 +25019,7 @@
              <summary>
              Most documentation recommends that three buffers are used to avoid contention.
             
-             We already have a triple buffer (see <see cref="F:osu.Framework.Platform.GameHost.DrawRoots"/>) governing draw nodes.
+             We already have a triple buffer governing draw nodes.
              In theory we could set this to two, but there's also a global usage of a vertex batch in <see cref="T:osu.Framework.Graphics.Veldrid.VeldridRenderer"/> (see <see cref="P:osu.Framework.Graphics.Rendering.Renderer.DefaultQuadBatch"/>).
             
              So this is for now an unfortunate memory overhead. Further work could be done to provide
@@ -29448,6 +29494,12 @@
             The currently focused <see cref="T:osu.Framework.Graphics.Drawable"/>. Null if there is no current focus.
             </summary>
         </member>
+        <member name="F:osu.Framework.Input.InputManager.FocusedDrawableThisClick">
+            <summary>
+            Any drawable that was focused directly via <see cref="M:osu.Framework.Input.InputManager.ChangeFocus(osu.Framework.Graphics.Drawable,osu.Framework.Input.States.InputState)"/> during the handling of a click,
+            and <i>not</i> as a result of the automatic post-process change of focus from the click.
+            </summary>
+        </member>
         <member name="M:osu.Framework.Input.InputManager.CreateInitialState">
             <summary>
             The initial input state. <see cref="F:osu.Framework.Input.InputManager.CurrentState"/> is always equal (as a reference) to the value returned from this.
@@ -29887,18 +29939,15 @@
             If there's an InputManager above us, decide whether we should use their available state.
             </summary>
         </member>
-        <member name="M:osu.Framework.Input.PassThroughInputManager.Sync(System.Boolean)">
+        <member name="M:osu.Framework.Input.PassThroughInputManager.syncReleasedInputs">
             <summary>
-            Sync input state to parent <see cref="T:osu.Framework.Input.InputManager"/>'s <see cref="T:osu.Framework.Input.States.InputState"/>.
-            Call this when parent <see cref="T:osu.Framework.Input.InputManager"/> changed somehow.
+            Updates state of any buttons that have been released by parent while <see cref="P:osu.Framework.Input.PassThroughInputManager.UseParentInput"/> was disabled.
             </summary>
-            <param name="useCachedParentInputManager">If this is false, assume parent input manager is unchanged from before.</param>
         </member>
-        <member name="M:osu.Framework.Input.PassThroughInputManager.SyncInputState(osu.Framework.Input.States.InputState)">
+        <member name="M:osu.Framework.Input.PassThroughInputManager.syncJoystickAxes">
             <summary>
-            Sync current state to a certain state.
+            Updates state of joystick axes that have changed values while <see cref="P:osu.Framework.Input.PassThroughInputManager.UseParentInput"/> was disabled.
             </summary>
-            <param name="state">The state to synchronise current with. If this is null, it is regarded as an empty state.</param>
         </member>
         <member name="T:osu.Framework.Input.PlatformActionContainer">
             <summary>
@@ -32463,29 +32512,31 @@
         </member>
         <member name="M:osu.Framework.Platform.GameHost.OpenFileExternally(System.String)">
             <summary>
-            Requests that a file be opened externally with an associated application, if available.
+            Requests that a file or folder be opened externally with an associated application, if available.
             </summary>
             <remarks>
-            Some platforms do not support interacting with files externally (ie. mobile or sandboxed platforms), check the return value as to whether it succeeded.
+            Some platforms do not support interacting with files externally (ie. mobile or sandboxed platforms), check the return value to discern whether it succeeded.
             </remarks>
             <param name="filename">The absolute path to the file which should be opened.</param>
             <returns>Whether the file was successfully opened.</returns>
         </member>
         <member name="M:osu.Framework.Platform.GameHost.PresentFileExternally(System.String)">
-            <summary>
-            Requests to present a file externally in the platform's native file browser.
-            </summary>
-            <remarks>
-            This will open the parent folder and, (if available) highlight the file.
-            Some platforms do not support interacting with files externally (ie. mobile or sandboxed platforms), check the return value as to whether it succeeded.
-            </remarks>
-            <example>
-                <para>"C:\Windows\explorer.exe" -> opens 'C:\Windows' and highlights 'explorer.exe' in the window.</para>
-                <para>"C:\Windows\System32" -> opens 'C:\Windows' and highlights 'System32' in the window.</para>
-                <para>"C:\Windows\System32\" -> opens 'C:\Windows\System32' and highlights nothing.</para>
-            </example>
-            <param name="filename">The absolute path to the file/folder to be shown in its parent folder.</param>
-            <returns>Whether the file was successfully presented.</returns>
+             <summary>
+             Requests to present a file externally in the platform's native file browser.
+             </summary>
+             <remarks>
+             This will open the parent folder and, (if available) highlight the file.
+             Some platforms do not support interacting with files externally (ie. mobile or sandboxed platforms), check the return value to discern whether it succeeded.
+            
+             If a folder path is provided to this method, it will prefer highlighting the folder in the parent folder, rather than showing the contents.
+             To display the contents of a folder, use <see cref="M:osu.Framework.Platform.GameHost.OpenFileExternally(System.String)"/> instead.
+             </remarks>
+             <example>
+                 <para>"C:\Windows\explorer.exe" -> opens 'C:\Windows' and highlights 'explorer.exe' in the window.</para>
+                 <para>"C:\Windows\System32" -> opens 'C:\Windows' and highlights 'System32' in the window.</para>
+             </example>
+             <param name="filename">The absolute path to the file/folder to be shown in its parent folder.</param>
+             <returns>Whether the file was successfully presented.</returns>
         </member>
         <member name="M:osu.Framework.Platform.GameHost.OpenUrlExternally(System.String)">
             <summary>
@@ -32668,7 +32719,7 @@
         </member>
         <member name="P:osu.Framework.Platform.GameHost.SceneGraphClock">
             <summary>
-            The clock which is to be used by the scene graph (will be assigned to <see cref="F:osu.Framework.Platform.GameHost.Root"/>).
+            The clock which is to be used by the scene graph (will be assigned to <see cref="P:osu.Framework.Platform.GameHost.Root"/>).
             </summary>
         </member>
         <member name="F:osu.Framework.Platform.GameHost.maximum_sane_fps">
@@ -32784,12 +32835,13 @@
             A GameHost which doesn't require a graphical or sound device.
             </summary>
         </member>
-        <member name="M:osu.Framework.Platform.HeadlessGameHost.FastClock.#ctor(System.Double)">
+        <member name="M:osu.Framework.Platform.HeadlessGameHost.FastClock.#ctor(System.Double,osu.Framework.Threading.GameThread[])">
             <summary>
             A clock which increments each time <see cref="P:osu.Framework.Platform.HeadlessGameHost.FastClock.CurrentTime"/> is requested.
             Run fast. Run consistent.
             </summary>
             <param name="increment">Milliseconds we should increment the clock by each time the time is requested.</param>
+            <param name="gameThreads">The game threads.</param>
         </member>
         <member name="P:osu.Framework.Platform.IAndroidGraphicsSurface.JniEnvHandle">
             <summary>
@@ -36329,6 +36381,11 @@
             <remarks>
             A value of 0 is treated the same as "unlimited" or <see cref="F:System.Double.MaxValue"/>.
             </remarks>
+        </member>
+        <member name="P:osu.Framework.Threading.GameThread.FrameIndex">
+            <summary>
+            The amount of times this thread has run.
+            </summary>
         </member>
         <member name="E:osu.Framework.Threading.GameThread.OnNewFrame">
             <summary>

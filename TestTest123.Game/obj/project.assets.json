@@ -74,7 +74,7 @@
           }
         }
       },
-      "managed-midi/1.10.0": {
+      "managed-midi/1.10.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp2.1/Commons.Music.Midi.dll": {
@@ -568,7 +568,7 @@
           }
         }
       },
-      "ppy.osu.Framework.NativeLibs/2024.326.0-nativelibs": {
+      "ppy.osu.Framework.NativeLibs/2024.809.1-nativelibs": {
         "type": "package",
         "compile": {
           "lib/net8.0/_._": {}
@@ -821,7 +821,7 @@
           }
         }
       },
-      "ppy.SDL3-CS/2024.528.0": {
+      "ppy.SDL3-CS/2024.916.0": {
         "type": "package",
         "dependencies": {
           "JetBrains.Annotations": "2023.3.0"
@@ -911,14 +911,14 @@
           }
         }
       },
-      "ppy.Veldrid/4.9.58-gfe61932a71": {
+      "ppy.Veldrid/4.9.62-gca0239da6b": {
         "type": "package",
         "dependencies": {
           "NativeLibraryLoader": "1.0.13",
           "Vortice.D3DCompiler": "2.4.2",
           "Vortice.Direct3D11": "2.4.2",
-          "ppy.Veldrid.MetalBindings": "4.9.58-gfe61932a71",
-          "ppy.Veldrid.OpenGLBindings": "4.9.58-gfe61932a71",
+          "ppy.Veldrid.MetalBindings": "4.9.62-gca0239da6b",
+          "ppy.Veldrid.OpenGLBindings": "4.9.62-gca0239da6b",
           "ppy.Vk": "1.0.26"
         },
         "compile": {
@@ -932,7 +932,7 @@
           }
         }
       },
-      "ppy.Veldrid.MetalBindings/4.9.58-gfe61932a71": {
+      "ppy.Veldrid.MetalBindings/4.9.62-gca0239da6b": {
         "type": "package",
         "compile": {
           "lib/net8.0/ppy.Veldrid.MetalBindings.dll": {
@@ -945,7 +945,7 @@
           }
         }
       },
-      "ppy.Veldrid.OpenGLBindings/4.9.58-gfe61932a71": {
+      "ppy.Veldrid.OpenGLBindings/4.9.62-gca0239da6b": {
         "type": "package",
         "compile": {
           "lib/net8.0/ppy.Veldrid.OpenGLBindings.dll": {
@@ -958,7 +958,7 @@
           }
         }
       },
-      "ppy.Veldrid.SPIRV/1.0.15-gca6cec7843": {
+      "ppy.Veldrid.SPIRV/1.0.15-gfbb03d21c2": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
@@ -987,15 +987,11 @@
             "assetType": "native",
             "rid": "ios"
           },
-          "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/Info.plist": {
+          "runtimes/ios/native/veldrid-spirv.xcframework/ios-arm64_x86_64-simulator/veldrid-spirv.framework/Info.plist": {
             "assetType": "native",
             "rid": "ios"
           },
-          "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/_CodeSignature/CodeResources": {
-            "assetType": "native",
-            "rid": "ios"
-          },
-          "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/veldrid-spirv": {
+          "runtimes/ios/native/veldrid-spirv.xcframework/ios-arm64_x86_64-simulator/veldrid-spirv.framework/veldrid-spirv": {
             "assetType": "native",
             "rid": "ios"
           },
@@ -1097,7 +1093,7 @@
           "buildMultiTargeting/_._": {}
         }
       },
-      "SixLabors.ImageSharp/3.1.4": {
+      "SixLabors.ImageSharp/3.1.5": {
         "type": "package",
         "compile": {
           "lib/net6.0/SixLabors.ImageSharp.dll": {
@@ -1868,19 +1864,19 @@
           "NuGet.ProjectModel": "5.11.0",
           "OpenTabletDriver": "0.6.4",
           "SharpFNT": "2.0.0",
-          "SixLabors.ImageSharp": "3.1.4",
+          "SixLabors.ImageSharp": "3.1.5",
           "StbiSharp": "1.1.0",
           "System.Numerics.Tensors": "8.0.0",
-          "managed-midi": "1.10.0",
+          "managed-midi": "1.10.1",
           "ppy.ManagedBass": "2022.1216.0",
           "ppy.ManagedBass.Fx": "2022.1216.0",
           "ppy.ManagedBass.Mix": "2022.1216.0",
           "ppy.ManagedBass.Wasapi": "2022.1216.0",
           "ppy.SDL2-CS": "1.0.741-alpha",
-          "ppy.SDL3-CS": "2024.528.0",
-          "ppy.Veldrid": "4.9.58-gfe61932a71",
-          "ppy.Veldrid.SPIRV": "1.0.15-gca6cec7843",
-          "ppy.osu.Framework.NativeLibs": "2024.326.0-nativelibs",
+          "ppy.SDL3-CS": "2024.916.0",
+          "ppy.Veldrid": "4.9.62-gca0239da6b",
+          "ppy.Veldrid.SPIRV": "1.0.15-gfbb03d21c2",
+          "ppy.osu.Framework.NativeLibs": "2024.809.1-nativelibs",
           "ppy.osu.Framework.SourceGeneration": "2023.720.0",
           "ppy.osuTK.NS20": "1.0.211"
         },
@@ -1988,10 +1984,10 @@
         "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml"
       ]
     },
-    "managed-midi/1.10.0": {
-      "sha512": "4cSJEIBDwl7F6cUs3wqnshuAaURgQCpDUaQIT8DVsyScP9m9Q1DRnak57kSJ4askjlfmSBlyib279eF/0diCAA==",
+    "managed-midi/1.10.1": {
+      "sha512": "5k3IOpByUZku1kDDFLhD25NwogNeXipH7bPE2b+WIRwpJdntRuIv4NchZoI5AMZxTzzSZW6If/l9+zhLxzORgA==",
       "type": "package",
-      "path": "managed-midi/1.10.0",
+      "path": "managed-midi/1.10.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2019,7 +2015,7 @@
         "lib/uap10.0/Commons.Music.Midi.dll",
         "lib/uap10.0/Commons.Music.Midi.pdb",
         "lib/uap10.0/Commons.Music.Midi.pri",
-        "managed-midi.1.10.0.nupkg.sha512",
+        "managed-midi.1.10.1.nupkg.sha512",
         "managed-midi.nuspec"
       ]
     },
@@ -2701,16 +2697,16 @@
         "ppy.managedbass.wasapi.nuspec"
       ]
     },
-    "ppy.osu.Framework.NativeLibs/2024.326.0-nativelibs": {
-      "sha512": "h+SdpcOkEMSaMqLughyN5r/1DFJhKvUPqBADb6aMpLVUuC54vg1j+w7ah2hO4LGFH1ntugMlcvipG9tjmDRHVQ==",
+    "ppy.osu.Framework.NativeLibs/2024.809.1-nativelibs": {
+      "sha512": "oh4VI3BMebV9O/1Qv3qEtSK4RtZ3MIU9yynr48IfvL/J0JoPB9dhyWvi3/lieGN7HCVMtiKWfiMxySSrbcNG/Q==",
       "type": "package",
-      "path": "ppy.osu.framework.nativelibs/2024.326.0-nativelibs",
+      "path": "ppy.osu.framework.nativelibs/2024.809.1-nativelibs",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
         "lib/net8.0/_._",
-        "ppy.osu.framework.nativelibs.2024.326.0-nativelibs.nupkg.sha512",
+        "ppy.osu.framework.nativelibs.2024.809.1-nativelibs.nupkg.sha512",
         "ppy.osu.framework.nativelibs.nuspec",
         "runtimes/android/native/_._",
         "runtimes/linux-x64/native/libavcodec.so.58",
@@ -2806,16 +2802,16 @@
         "runtimes/win-x86/native/SDL2.dll"
       ]
     },
-    "ppy.SDL3-CS/2024.528.0": {
-      "sha512": "wVOW8ZkrVRd/jGEsTdhktcxMMz/21Uxomt5hevEE7TqunI/5JS7JUe2NZsVJtEQGm+6TfpJKXgM2oUu83R10eA==",
+    "ppy.SDL3-CS/2024.916.0": {
+      "sha512": "Ogt/FKU91l2QHzhHQN7No86h+tVuhHpsPFb+KsJ0bk3d/2WWF+sbbizgzyVluw6hHsEg0mxSTTLUemkhAn3tJg==",
       "type": "package",
-      "path": "ppy.sdl3-cs/2024.528.0",
+      "path": "ppy.sdl3-cs/2024.916.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SDL3-CS.dll",
         "lib/net8.0/SDL3-CS.xml",
-        "ppy.sdl3-cs.2024.528.0.nupkg.sha512",
+        "ppy.sdl3-cs.2024.916.0.nupkg.sha512",
         "ppy.sdl3-cs.nuspec",
         "runtimes/android-arm/native/libSDL3.so",
         "runtimes/android-arm64/native/libSDL3.so",
@@ -2837,50 +2833,50 @@
         "runtimes/win-x86/native/SDL3.dll"
       ]
     },
-    "ppy.Veldrid/4.9.58-gfe61932a71": {
-      "sha512": "w5CM02qMZcDxvFk8MVb8SvgOyThbIOuDujaYHX4GRCkxQS/N45uRhH/+ZCjZUfAZlffHjqzwfc6zB2gL+cF8DQ==",
+    "ppy.Veldrid/4.9.62-gca0239da6b": {
+      "sha512": "hJlEcOUg1te/qzKrqyx1w73h+8/3Iwx+Wh7jfmW+eShnPCxafgoYaYgo2mavZzP2sBORumzojUVn++bwurs7Gw==",
       "type": "package",
-      "path": "ppy.veldrid/4.9.58-gfe61932a71",
+      "path": "ppy.veldrid/4.9.62-gca0239da6b",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/ppy.Veldrid.dll",
         "lib/net8.0/ppy.Veldrid.pdb",
         "lib/net8.0/ppy.Veldrid.xml",
-        "ppy.veldrid.4.9.58-gfe61932a71.nupkg.sha512",
+        "ppy.veldrid.4.9.62-gca0239da6b.nupkg.sha512",
         "ppy.veldrid.nuspec"
       ]
     },
-    "ppy.Veldrid.MetalBindings/4.9.58-gfe61932a71": {
-      "sha512": "ZhvOqLIZlifS+8ALstU5dF388DXk3SWS4f1lmnXLbnE2KTFrQ8+3xbqI79CpkjJ1RQlyiaLGWkD9fIw096amMA==",
+    "ppy.Veldrid.MetalBindings/4.9.62-gca0239da6b": {
+      "sha512": "YLAUg0hxZyyjAeicxX+Z/3cw/3i202TeMcVPiUZIeA35S3APDSlLpDcDfBrL7orl0L+VW7kRc3yE26nOQCVwGA==",
       "type": "package",
-      "path": "ppy.veldrid.metalbindings/4.9.58-gfe61932a71",
+      "path": "ppy.veldrid.metalbindings/4.9.62-gca0239da6b",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/ppy.Veldrid.MetalBindings.dll",
         "lib/net8.0/ppy.Veldrid.MetalBindings.pdb",
-        "ppy.veldrid.metalbindings.4.9.58-gfe61932a71.nupkg.sha512",
+        "ppy.veldrid.metalbindings.4.9.62-gca0239da6b.nupkg.sha512",
         "ppy.veldrid.metalbindings.nuspec"
       ]
     },
-    "ppy.Veldrid.OpenGLBindings/4.9.58-gfe61932a71": {
-      "sha512": "tyrr2BI0/OR3o+uWfMTg5n7CNK7qZAjH5BpH3aFoIKqIp/g4wdtqeMzzv/KCovDoH94x33Y9EUBlZ11ZNg4zYA==",
+    "ppy.Veldrid.OpenGLBindings/4.9.62-gca0239da6b": {
+      "sha512": "HUBGBVbxiGzytxZ0280uiFIc/yxkpcQgjSKMMFRRu2K7KN4DzPtEtC+AsIoCp6zIsofzdgQKJn7cSYSH6NUPBw==",
       "type": "package",
-      "path": "ppy.veldrid.openglbindings/4.9.58-gfe61932a71",
+      "path": "ppy.veldrid.openglbindings/4.9.62-gca0239da6b",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/ppy.Veldrid.OpenGLBindings.dll",
         "lib/net8.0/ppy.Veldrid.OpenGLBindings.pdb",
-        "ppy.veldrid.openglbindings.4.9.58-gfe61932a71.nupkg.sha512",
+        "ppy.veldrid.openglbindings.4.9.62-gca0239da6b.nupkg.sha512",
         "ppy.veldrid.openglbindings.nuspec"
       ]
     },
-    "ppy.Veldrid.SPIRV/1.0.15-gca6cec7843": {
-      "sha512": "I5XXXT+wnYn28WufZ+q/cRwIdQAVzKchal8rQwHTfAX3FHAoxGb3cKQKiwFJTkDbWRO6udM/GNXaHTfmo1jjow==",
+    "ppy.Veldrid.SPIRV/1.0.15-gfbb03d21c2": {
+      "sha512": "CLEyvMC5ZQ3ppO4j4vdL4uvpa4hP5e+IyLL1CquNMTEFWXUgu0z+jYalkUF/dtKPm45gqXic97oITfzOPRsmTw==",
       "type": "package",
-      "path": "ppy.veldrid.spirv/1.0.15-gca6cec7843",
+      "path": "ppy.veldrid.spirv/1.0.15-gfbb03d21c2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2891,14 +2887,13 @@
         "build/net40/Veldrid.SPIRV.targets",
         "lib/net6.0/ppy.Veldrid.SPIRV.dll",
         "lib/net6.0/ppy.Veldrid.SPIRV.xml",
-        "ppy.veldrid.spirv.1.0.15-gca6cec7843.nupkg.sha512",
+        "ppy.veldrid.spirv.1.0.15-gfbb03d21c2.nupkg.sha512",
         "ppy.veldrid.spirv.nuspec",
         "runtimes/ios/native/veldrid-spirv.xcframework/Info.plist",
         "runtimes/ios/native/veldrid-spirv.xcframework/ios-arm64/veldrid-spirv.framework/Info.plist",
         "runtimes/ios/native/veldrid-spirv.xcframework/ios-arm64/veldrid-spirv.framework/veldrid-spirv",
-        "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/Info.plist",
-        "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/_CodeSignature/CodeResources",
-        "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/veldrid-spirv",
+        "runtimes/ios/native/veldrid-spirv.xcframework/ios-arm64_x86_64-simulator/veldrid-spirv.framework/Info.plist",
+        "runtimes/ios/native/veldrid-spirv.xcframework/ios-arm64_x86_64-simulator/veldrid-spirv.framework/veldrid-spirv",
         "runtimes/linux-x64/native/libveldrid-spirv.so",
         "runtimes/osx/native/libveldrid-spirv.dylib",
         "runtimes/win-x64/native/libveldrid-spirv.dll",
@@ -2999,10 +2994,10 @@
         "sharpgen.runtime.com.nuspec"
       ]
     },
-    "SixLabors.ImageSharp/3.1.4": {
-      "sha512": "lFIdxgGDA5iYkUMRFOze7BGLcdpoLFbR+a20kc1W7NepvzU7ejtxtWOg9RvgG7kb9tBoJ3ONYOK6kLil/dgF1w==",
+    "SixLabors.ImageSharp/3.1.5": {
+      "sha512": "lNtlq7dSI/QEbYey+A0xn48z5w4XHSffF8222cC4F4YwTXfEImuiBavQcWjr49LThT/pRmtWJRcqA/PlL+eJ6g==",
       "type": "package",
-      "path": "sixlabors.imagesharp/3.1.4",
+      "path": "sixlabors.imagesharp/3.1.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3011,7 +3006,7 @@
         "lib/net6.0/SixLabors.ImageSharp.dll",
         "lib/net6.0/SixLabors.ImageSharp.xml",
         "sixlabors.imagesharp.128.png",
-        "sixlabors.imagesharp.3.1.4.nupkg.sha512",
+        "sixlabors.imagesharp.3.1.5.nupkg.sha512",
         "sixlabors.imagesharp.nuspec"
       ]
     },
@@ -5262,23 +5257,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tamaninja\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lielk\\.nuget\\packages\\": {},
+    "E:\\Downloads\\VS Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+      "projectUniqueName": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
       "projectName": "TestTest123.Game",
-      "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
-      "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\obj\\",
+      "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+      "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+      "outputPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Downloads\\VS Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5286,19 +5281,19 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj": {
-              "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj"
+            "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj": {
+              "projectPath": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj"
             },
-            "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
-              "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
+            "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+              "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
             }
           }
         }
@@ -5343,7 +5338,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

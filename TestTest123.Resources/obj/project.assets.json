@@ -4625,23 +4625,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tamaninja\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lielk\\.nuget\\packages\\": {},
+    "E:\\Downloads\\VS Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
+      "projectUniqueName": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
       "projectName": "TestTest123.Resources",
-      "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
-      "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\obj\\",
+      "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
+      "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+      "outputPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Downloads\\VS Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4649,8 +4649,8 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4695,7 +4695,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

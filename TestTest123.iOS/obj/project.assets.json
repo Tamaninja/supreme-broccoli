@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-ios17.2": {
+    "net8.0-ios18.0": {
       "AssimpNet/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -218,7 +218,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.5": {
+      "Microsoft.NET.ILLink.Tasks/8.0.10": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -2068,7 +2068,7 @@
         }
       }
     },
-    "net8.0-ios17.2/iossimulator-x64": {
+    "net8.0-ios18.0/iossimulator-x64": {
       "AssimpNet/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -2267,7 +2267,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.5": {
+      "Microsoft.NET.ILLink.Tasks/8.0.10": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -4192,10 +4192,10 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.5": {
-      "sha512": "4ISW1Ndgz86FkIbu5rVlMqhhtojdy5rUlxC/N+9kPh9qbYcvHiCvYbHKzAPVIx9OPYIjT9trXt7JI42Y5Ukq6A==",
+    "Microsoft.NET.ILLink.Tasks/8.0.10": {
+      "sha512": "xT8jYjlroY7SLbGtoV9vUTVW/TPgodL4Egc31a444Xe0TMytLZ3UlKQ0kxMZsy/CrWsFB6wtKnSG1SsXcWreew==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.5",
+      "path": "microsoft.net.illink.tasks/8.0.10",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4209,7 +4209,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.5.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -7869,9 +7869,9 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0-ios17.2": [
+    "net8.0-ios18.0": [
       "AssimpNet >= 4.1.0",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.5",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.10",
       "TestTest123.Game >= 1.0.0",
       "TestTest123.Resources >= 1.0.0",
       "ppy.osu.Framework >= 2024.509.0",
@@ -7879,23 +7879,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tamaninja\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lielk\\.nuget\\packages\\": {},
+    "E:\\Downloads\\VS Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
+      "projectUniqueName": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
       "projectName": "TestTest123.iOS",
-      "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
-      "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\obj\\",
+      "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
+      "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+      "outputPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Downloads\\VS Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7903,19 +7903,19 @@
         "net8.0-ios"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0-ios17.2": {
+        "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
           "projectReferences": {
-            "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
-              "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj"
+            "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
+              "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj"
             },
-            "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
-              "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
+            "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+              "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
             }
           }
         }
@@ -7932,7 +7932,7 @@
       }
     },
     "frameworks": {
-      "net8.0-ios17.2": {
+      "net8.0-ios18.0": {
         "targetAlias": "net8.0-ios",
         "dependencies": {
           "AssimpNet": {
@@ -7942,7 +7942,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.5, )",
+            "version": "[8.0.10, )",
             "autoReferenced": true
           },
           "ppy.osu.Framework": {
@@ -7973,7 +7973,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

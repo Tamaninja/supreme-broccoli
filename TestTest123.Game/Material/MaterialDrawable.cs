@@ -46,7 +46,7 @@ namespace TestTest123.Game.Material
         {
 
             Texture = renderer.WhitePixel;
-            TextureShader = shaders.Load("textureless", "textureless");
+            TextureShader = shaders.Load("nino", "nino");
 
             if (IsTextured)
             {

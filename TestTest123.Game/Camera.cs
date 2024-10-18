@@ -8,6 +8,7 @@ using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Layout;
 using osu.Framework.Logging;
+using osu.Framework.Graphics.Sprites;
 
 
 
@@ -30,6 +31,8 @@ namespace TestTest123.Game
 
         public float AspectRatio { get; set; }
 
+        private SpriteText debugText;
+
 
 
 
@@ -44,12 +47,19 @@ namespace TestTest123.Game
             FarPlane = farPlane;
 
             RelativeSizeAxes = Axes.Both;
+            InternalChild = debugText = new SpriteText()
+            {
+                Text = ""
+            };
+            debugText.Anchor = Anchor.TopCentre;
 
         }
         public override void UpdateMatrix()
         {
 
             CameraViewProjection.Value = createViewMatrix() * ProjectionMatrix;
+            debugText.Text = CameraViewProjection.Value.Column2.ToString();
+            
         }
         private Matrix4 createProjectionMatrix()
         {

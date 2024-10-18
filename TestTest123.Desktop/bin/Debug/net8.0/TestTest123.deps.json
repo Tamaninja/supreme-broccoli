@@ -72,7 +72,7 @@
           }
         }
       },
-      "managed-midi/1.10.0": {
+      "managed-midi/1.10.1": {
         "runtime": {
           "lib/netcoreapp2.1/Commons.Music.Midi.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -403,7 +403,7 @@
           }
         }
       },
-      "ppy.osu.Framework.NativeLibs/2024.326.0-nativelibs": {
+      "ppy.osu.Framework.NativeLibs/2024.809.1-nativelibs": {
         "runtimeTargets": {
           "runtimes/linux-x64/native/libavcodec.so.58": {
             "rid": "linux-x64",
@@ -508,7 +508,7 @@
           "runtimes/win-arm64/native/bass.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "2.4.16.4"
+            "fileVersion": "2.4.17.0"
           },
           "runtimes/win-arm64/native/bass_fx.dll": {
             "rid": "win-arm64",
@@ -518,7 +518,7 @@
           "runtimes/win-arm64/native/bassmix.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "2.4.10.8"
+            "fileVersion": "2.4.12.0"
           },
           "runtimes/win-arm64/native/swscale-5.dll": {
             "rid": "win-arm64",
@@ -543,7 +543,7 @@
           "runtimes/win-x64/native/bass.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "2.4.16.7"
+            "fileVersion": "2.4.17.0"
           },
           "runtimes/win-x64/native/bass_fx.dll": {
             "rid": "win-x64",
@@ -553,7 +553,7 @@
           "runtimes/win-x64/native/bassmix.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "2.4.11.1"
+            "fileVersion": "2.4.12.0"
           },
           "runtimes/win-x64/native/basswasapi.dll": {
             "rid": "win-x64",
@@ -583,7 +583,7 @@
           "runtimes/win-x86/native/bass.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "2.4.16.7"
+            "fileVersion": "2.4.17.0"
           },
           "runtimes/win-x86/native/bass_fx.dll": {
             "rid": "win-x86",
@@ -593,7 +593,7 @@
           "runtimes/win-x86/native/bassmix.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "2.4.11.1"
+            "fileVersion": "2.4.12.0"
           },
           "runtimes/win-x86/native/basswasapi.dll": {
             "rid": "win-x86",
@@ -686,14 +686,14 @@
           }
         }
       },
-      "ppy.SDL3-CS/2024.528.0": {
+      "ppy.SDL3-CS/2024.916.0": {
         "dependencies": {
           "JetBrains.Annotations": "2023.3.0"
         },
         "runtime": {
           "lib/net8.0/SDL3-CS.dll": {
-            "assemblyVersion": "2024.528.0.0",
-            "fileVersion": "2024.528.0.0"
+            "assemblyVersion": "2024.916.0.0",
+            "fileVersion": "2024.916.0.0"
           }
         },
         "runtimeTargets": {
@@ -789,47 +789,47 @@
           }
         }
       },
-      "ppy.Veldrid/4.9.58-gfe61932a71": {
+      "ppy.Veldrid/4.9.62-gca0239da6b": {
         "dependencies": {
           "NativeLibraryLoader": "1.0.13",
           "Vortice.D3DCompiler": "2.4.2",
           "Vortice.Direct3D11": "2.4.2",
-          "ppy.Veldrid.MetalBindings": "4.9.58-gfe61932a71",
-          "ppy.Veldrid.OpenGLBindings": "4.9.58-gfe61932a71",
+          "ppy.Veldrid.MetalBindings": "4.9.62-gca0239da6b",
+          "ppy.Veldrid.OpenGLBindings": "4.9.62-gca0239da6b",
           "ppy.Vk": "1.0.26"
         },
         "runtime": {
           "lib/net8.0/ppy.Veldrid.dll": {
             "assemblyVersion": "4.9.0.0",
-            "fileVersion": "4.9.58.25086"
+            "fileVersion": "4.9.62.714"
           }
         }
       },
-      "ppy.Veldrid.MetalBindings/4.9.58-gfe61932a71": {
+      "ppy.Veldrid.MetalBindings/4.9.62-gca0239da6b": {
         "runtime": {
           "lib/net8.0/ppy.Veldrid.MetalBindings.dll": {
             "assemblyVersion": "4.9.0.0",
-            "fileVersion": "4.9.58.25086"
+            "fileVersion": "4.9.62.714"
           }
         }
       },
-      "ppy.Veldrid.OpenGLBindings/4.9.58-gfe61932a71": {
+      "ppy.Veldrid.OpenGLBindings/4.9.62-gca0239da6b": {
         "runtime": {
           "lib/net8.0/ppy.Veldrid.OpenGLBindings.dll": {
             "assemblyVersion": "4.9.0.0",
-            "fileVersion": "4.9.58.25086"
+            "fileVersion": "4.9.62.714"
           }
         }
       },
-      "ppy.Veldrid.SPIRV/1.0.15-gca6cec7843": {
+      "ppy.Veldrid.SPIRV/1.0.15-gfbb03d21c2": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "ppy.Veldrid": "4.9.58-gfe61932a71"
+          "ppy.Veldrid": "4.9.62-gca0239da6b"
         },
         "runtime": {
           "lib/net6.0/ppy.Veldrid.SPIRV.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.15.21"
+            "fileVersion": "1.0.15.37"
           }
         },
         "runtimeTargets": {
@@ -848,17 +848,12 @@
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
-          "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/Info.plist": {
+          "runtimes/ios/native/veldrid-spirv.xcframework/ios-arm64_x86_64-simulator/veldrid-spirv.framework/Info.plist": {
             "rid": "ios",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
-          "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/_CodeSignature/CodeResources": {
-            "rid": "ios",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/ios/native/veldrid-spirv.xcframework/ios-x86_64-simulator/veldrid-spirv.framework/veldrid-spirv": {
+          "runtimes/ios/native/veldrid-spirv.xcframework/ios-arm64_x86_64-simulator/veldrid-spirv.framework/veldrid-spirv": {
             "rid": "ios",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
@@ -941,11 +936,11 @@
           }
         }
       },
-      "SixLabors.ImageSharp/3.1.4": {
+      "SixLabors.ImageSharp/3.1.5": {
         "runtime": {
           "lib/net6.0/SixLabors.ImageSharp.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.1.4.0"
+            "fileVersion": "3.1.5.0"
           }
         }
       },
@@ -1345,24 +1340,27 @@
           "NuGet.ProjectModel": "5.11.0",
           "OpenTabletDriver": "0.6.4",
           "SharpFNT": "2.0.0",
-          "SixLabors.ImageSharp": "3.1.4",
+          "SixLabors.ImageSharp": "3.1.5",
           "StbiSharp": "1.1.0",
           "System.Numerics.Tensors": "8.0.0",
-          "managed-midi": "1.10.0",
+          "managed-midi": "1.10.1",
           "ppy.ManagedBass": "2022.1216.0",
           "ppy.ManagedBass.Fx": "2022.1216.0",
           "ppy.ManagedBass.Mix": "2022.1216.0",
           "ppy.ManagedBass.Wasapi": "2022.1216.0",
           "ppy.SDL2-CS": "1.0.741-alpha",
-          "ppy.SDL3-CS": "2024.528.0",
-          "ppy.Veldrid": "4.9.58-gfe61932a71",
-          "ppy.Veldrid.SPIRV": "1.0.15-gca6cec7843",
-          "ppy.osu.Framework.NativeLibs": "2024.326.0-nativelibs",
+          "ppy.SDL3-CS": "2024.916.0",
+          "ppy.Veldrid": "4.9.62-gca0239da6b",
+          "ppy.Veldrid.SPIRV": "1.0.15-gfbb03d21c2",
+          "ppy.osu.Framework.NativeLibs": "2024.809.1-nativelibs",
           "ppy.osu.Framework.SourceGeneration": "2023.720.0",
           "ppy.osuTK.NS20": "1.0.211"
         },
         "runtime": {
-          "osu.Framework.dll": {}
+          "osu.Framework.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "TestTest123.Game/1.0.0": {
@@ -1373,7 +1371,10 @@
           "ppy.osu.Framework": "1.0.0"
         },
         "runtime": {
-          "TestTest123.Game.dll": {}
+          "TestTest123.Game.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "TestTest123.Resources/1.0.0": {
@@ -1381,7 +1382,10 @@
           "AssimpNet": "4.1.0"
         },
         "runtime": {
-          "TestTest123.Resources.dll": {}
+          "TestTest123.Resources.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "osu.Framework/1.0.0.0": {
@@ -1428,12 +1432,12 @@
       "path": "jetbrains.annotations/2023.3.0",
       "hashPath": "jetbrains.annotations.2023.3.0.nupkg.sha512"
     },
-    "managed-midi/1.10.0": {
+    "managed-midi/1.10.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4cSJEIBDwl7F6cUs3wqnshuAaURgQCpDUaQIT8DVsyScP9m9Q1DRnak57kSJ4askjlfmSBlyib279eF/0diCAA==",
-      "path": "managed-midi/1.10.0",
-      "hashPath": "managed-midi.1.10.0.nupkg.sha512"
+      "sha512": "sha512-5k3IOpByUZku1kDDFLhD25NwogNeXipH7bPE2b+WIRwpJdntRuIv4NchZoI5AMZxTzzSZW6If/l9+zhLxzORgA==",
+      "path": "managed-midi/1.10.1",
+      "hashPath": "managed-midi.1.10.1.nupkg.sha512"
     },
     "Markdig/0.23.0": {
       "type": "package",
@@ -1659,12 +1663,12 @@
       "path": "ppy.managedbass.wasapi/2022.1216.0",
       "hashPath": "ppy.managedbass.wasapi.2022.1216.0.nupkg.sha512"
     },
-    "ppy.osu.Framework.NativeLibs/2024.326.0-nativelibs": {
+    "ppy.osu.Framework.NativeLibs/2024.809.1-nativelibs": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-h+SdpcOkEMSaMqLughyN5r/1DFJhKvUPqBADb6aMpLVUuC54vg1j+w7ah2hO4LGFH1ntugMlcvipG9tjmDRHVQ==",
-      "path": "ppy.osu.framework.nativelibs/2024.326.0-nativelibs",
-      "hashPath": "ppy.osu.framework.nativelibs.2024.326.0-nativelibs.nupkg.sha512"
+      "sha512": "sha512-oh4VI3BMebV9O/1Qv3qEtSK4RtZ3MIU9yynr48IfvL/J0JoPB9dhyWvi3/lieGN7HCVMtiKWfiMxySSrbcNG/Q==",
+      "path": "ppy.osu.framework.nativelibs/2024.809.1-nativelibs",
+      "hashPath": "ppy.osu.framework.nativelibs.2024.809.1-nativelibs.nupkg.sha512"
     },
     "ppy.osu.Framework.SourceGeneration/2023.720.0": {
       "type": "package",
@@ -1687,40 +1691,40 @@
       "path": "ppy.sdl2-cs/1.0.741-alpha",
       "hashPath": "ppy.sdl2-cs.1.0.741-alpha.nupkg.sha512"
     },
-    "ppy.SDL3-CS/2024.528.0": {
+    "ppy.SDL3-CS/2024.916.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wVOW8ZkrVRd/jGEsTdhktcxMMz/21Uxomt5hevEE7TqunI/5JS7JUe2NZsVJtEQGm+6TfpJKXgM2oUu83R10eA==",
-      "path": "ppy.sdl3-cs/2024.528.0",
-      "hashPath": "ppy.sdl3-cs.2024.528.0.nupkg.sha512"
+      "sha512": "sha512-Ogt/FKU91l2QHzhHQN7No86h+tVuhHpsPFb+KsJ0bk3d/2WWF+sbbizgzyVluw6hHsEg0mxSTTLUemkhAn3tJg==",
+      "path": "ppy.sdl3-cs/2024.916.0",
+      "hashPath": "ppy.sdl3-cs.2024.916.0.nupkg.sha512"
     },
-    "ppy.Veldrid/4.9.58-gfe61932a71": {
+    "ppy.Veldrid/4.9.62-gca0239da6b": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-w5CM02qMZcDxvFk8MVb8SvgOyThbIOuDujaYHX4GRCkxQS/N45uRhH/+ZCjZUfAZlffHjqzwfc6zB2gL+cF8DQ==",
-      "path": "ppy.veldrid/4.9.58-gfe61932a71",
-      "hashPath": "ppy.veldrid.4.9.58-gfe61932a71.nupkg.sha512"
+      "sha512": "sha512-hJlEcOUg1te/qzKrqyx1w73h+8/3Iwx+Wh7jfmW+eShnPCxafgoYaYgo2mavZzP2sBORumzojUVn++bwurs7Gw==",
+      "path": "ppy.veldrid/4.9.62-gca0239da6b",
+      "hashPath": "ppy.veldrid.4.9.62-gca0239da6b.nupkg.sha512"
     },
-    "ppy.Veldrid.MetalBindings/4.9.58-gfe61932a71": {
+    "ppy.Veldrid.MetalBindings/4.9.62-gca0239da6b": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZhvOqLIZlifS+8ALstU5dF388DXk3SWS4f1lmnXLbnE2KTFrQ8+3xbqI79CpkjJ1RQlyiaLGWkD9fIw096amMA==",
-      "path": "ppy.veldrid.metalbindings/4.9.58-gfe61932a71",
-      "hashPath": "ppy.veldrid.metalbindings.4.9.58-gfe61932a71.nupkg.sha512"
+      "sha512": "sha512-YLAUg0hxZyyjAeicxX+Z/3cw/3i202TeMcVPiUZIeA35S3APDSlLpDcDfBrL7orl0L+VW7kRc3yE26nOQCVwGA==",
+      "path": "ppy.veldrid.metalbindings/4.9.62-gca0239da6b",
+      "hashPath": "ppy.veldrid.metalbindings.4.9.62-gca0239da6b.nupkg.sha512"
     },
-    "ppy.Veldrid.OpenGLBindings/4.9.58-gfe61932a71": {
+    "ppy.Veldrid.OpenGLBindings/4.9.62-gca0239da6b": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tyrr2BI0/OR3o+uWfMTg5n7CNK7qZAjH5BpH3aFoIKqIp/g4wdtqeMzzv/KCovDoH94x33Y9EUBlZ11ZNg4zYA==",
-      "path": "ppy.veldrid.openglbindings/4.9.58-gfe61932a71",
-      "hashPath": "ppy.veldrid.openglbindings.4.9.58-gfe61932a71.nupkg.sha512"
+      "sha512": "sha512-HUBGBVbxiGzytxZ0280uiFIc/yxkpcQgjSKMMFRRu2K7KN4DzPtEtC+AsIoCp6zIsofzdgQKJn7cSYSH6NUPBw==",
+      "path": "ppy.veldrid.openglbindings/4.9.62-gca0239da6b",
+      "hashPath": "ppy.veldrid.openglbindings.4.9.62-gca0239da6b.nupkg.sha512"
     },
-    "ppy.Veldrid.SPIRV/1.0.15-gca6cec7843": {
+    "ppy.Veldrid.SPIRV/1.0.15-gfbb03d21c2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-I5XXXT+wnYn28WufZ+q/cRwIdQAVzKchal8rQwHTfAX3FHAoxGb3cKQKiwFJTkDbWRO6udM/GNXaHTfmo1jjow==",
-      "path": "ppy.veldrid.spirv/1.0.15-gca6cec7843",
-      "hashPath": "ppy.veldrid.spirv.1.0.15-gca6cec7843.nupkg.sha512"
+      "sha512": "sha512-CLEyvMC5ZQ3ppO4j4vdL4uvpa4hP5e+IyLL1CquNMTEFWXUgu0z+jYalkUF/dtKPm45gqXic97oITfzOPRsmTw==",
+      "path": "ppy.veldrid.spirv/1.0.15-gfbb03d21c2",
+      "hashPath": "ppy.veldrid.spirv.1.0.15-gfbb03d21c2.nupkg.sha512"
     },
     "ppy.Vk/1.0.26": {
       "type": "package",
@@ -1764,12 +1768,12 @@
       "path": "sharpgen.runtime.com/2.0.0-beta.13",
       "hashPath": "sharpgen.runtime.com.2.0.0-beta.13.nupkg.sha512"
     },
-    "SixLabors.ImageSharp/3.1.4": {
+    "SixLabors.ImageSharp/3.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lFIdxgGDA5iYkUMRFOze7BGLcdpoLFbR+a20kc1W7NepvzU7ejtxtWOg9RvgG7kb9tBoJ3ONYOK6kLil/dgF1w==",
-      "path": "sixlabors.imagesharp/3.1.4",
-      "hashPath": "sixlabors.imagesharp.3.1.4.nupkg.sha512"
+      "sha512": "sha512-lNtlq7dSI/QEbYey+A0xn48z5w4XHSffF8222cC4F4YwTXfEImuiBavQcWjr49LThT/pRmtWJRcqA/PlL+eJ6g==",
+      "path": "sixlabors.imagesharp/3.1.5",
+      "hashPath": "sixlabors.imagesharp.3.1.5.nupkg.sha512"
     },
     "StbiSharp/1.1.0": {
       "type": "package",

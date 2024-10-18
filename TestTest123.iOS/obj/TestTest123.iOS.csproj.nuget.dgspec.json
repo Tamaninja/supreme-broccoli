@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj": {}
+    "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj": {
+    "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj",
+        "projectUniqueName": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj",
         "projectName": "ppy.osu.Framework",
-        "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj",
-        "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\obj\\",
+        "projectPath": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj",
+        "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+        "outputPath": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Downloads\\VS Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,8 +25,8 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -109,7 +109,7 @@
             },
             "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[3.1.5, )"
             },
             "StbiSharp": {
               "target": "Package",
@@ -121,7 +121,7 @@
             },
             "managed-midi": {
               "target": "Package",
-              "version": "[1.10.0, )"
+              "version": "[1.10.1, )"
             },
             "ppy.ManagedBass": {
               "target": "Package",
@@ -145,19 +145,19 @@
             },
             "ppy.SDL3-CS": {
               "target": "Package",
-              "version": "[2024.528.0, )"
+              "version": "[2024.916.0, )"
             },
             "ppy.Veldrid": {
               "target": "Package",
-              "version": "[4.9.58-gfe61932a71, )"
+              "version": "[4.9.62-gca0239da6b, )"
             },
             "ppy.Veldrid.SPIRV": {
               "target": "Package",
-              "version": "[1.0.15-gca6cec7843, )"
+              "version": "[1.0.15-gfbb03d21c2, )"
             },
             "ppy.osu.Framework.NativeLibs": {
               "target": "Package",
-              "version": "[2024.326.0-nativelibs, )"
+              "version": "[2024.809.1-nativelibs, )"
             },
             "ppy.osu.Framework.SourceGeneration": {
               "target": "Package",
@@ -184,24 +184,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
+    "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+        "projectUniqueName": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
         "projectName": "TestTest123.Game",
-        "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
-        "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\obj\\",
+        "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+        "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+        "outputPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Downloads\\VS Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -209,19 +209,19 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj": {
-                "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework\\osu.Framework\\osu.Framework.csproj"
+              "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj": {
+                "projectPath": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj"
               },
-              "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
-                "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
+              "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+                "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
               }
             }
           }
@@ -266,24 +266,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj": {
+    "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
+        "projectUniqueName": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
         "projectName": "TestTest123.iOS",
-        "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
-        "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.iOS\\obj\\",
+        "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
+        "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+        "outputPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Downloads\\VS Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -291,19 +291,19 @@
           "net8.0-ios"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-ios17.2": {
+          "net8.0-ios18.0": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {
-              "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
-                "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj"
+              "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj": {
+                "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj"
               },
-              "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
-                "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
+              "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+                "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj"
               }
             }
           }
@@ -320,7 +320,7 @@
         }
       },
       "frameworks": {
-        "net8.0-ios17.2": {
+        "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
             "AssimpNet": {
@@ -330,7 +330,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.5, )",
+              "version": "[8.0.10, )",
               "autoReferenced": true
             },
             "ppy.osu.Framework": {
@@ -361,7 +361,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -370,20 +370,20 @@
         }
       }
     },
-    "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
+    "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
+        "projectUniqueName": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
         "projectName": "TestTest123.Resources",
-        "projectPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
-        "packagesPath": "C:\\Users\\Tamaninja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\supreme-broccoli\\TestTest123.Resources\\obj\\",
+        "projectPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
+        "packagesPath": "C:\\Users\\lielk\\.nuget\\packages\\",
+        "outputPath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Downloads\\VS Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tamaninja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lielk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -391,8 +391,8 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\Tamaninja\\source\\repos\\Tamaninja\\osu-framework": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -437,7 +437,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
