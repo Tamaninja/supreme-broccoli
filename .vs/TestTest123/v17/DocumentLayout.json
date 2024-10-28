@@ -3,30 +3,108 @@
   "WorkspaceRootPath": "E:\\Rocksmeth\\supreme-broccoli\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\vertices\\texturedmeshvertex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\veldridmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\meshdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\meshdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\buffers\\veldridvertexbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\modeldrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\modeldrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\vertices\\texturedvertex3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\threedimensionaldrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\threedimensionaldrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\vertices\\texturelessmeshvertex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\sh_nino.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\sh_nino.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\osu.framework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\sh_nino.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
       "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\sh_nino.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\batches\\veldridvertexbatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\planedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\planedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\notedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\notedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\ithreedimensional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\ithreedimensional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\cameradrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\cameradrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\musicalchart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\musicalchart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\drawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\vertices\\texturedmeshvertex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\measure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\measure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\threedimensionalextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\threedimensionalextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\maskinginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\sh_nino.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\sh_nino.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\material\\shaderdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\material\\shaderdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\testtest123.game.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123.game.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\testtest123.game.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123.game.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\veldridmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\buffers\\veldridindexbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\buffers\\veldridvertexbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\veldridrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -35,58 +113,102 @@
       "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\mesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\containers\\compositedrawable_drawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\pipelines\\graphicspipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\sh_textureless.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\sh_textureless.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\batches\\veldridvertexbatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\codeanalysis\\bannedsymbols.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\dummy\\dummyrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\audio\\waveformgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\shapes\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\material\\uniformcolour4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\material\\uniformcolour4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\material\\uniformmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\material\\uniformmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\containers\\container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\containers\\compositedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\utils\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\drawable_proxydrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\sh_textureless.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
       "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\sh_textureless.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\shaders\\d_dddps.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\shaders\\d_dddps.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\sprites\\spritetext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\visualisation\\propertydisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\bindables\\bindable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\shaders\\d_dddvs.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\shaders\\d_dddvs.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\d.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\d.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\material\\materialdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\material\\materialdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\shaders\\d_dddps.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\shaders\\d_dddps.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\shaders\\sh_textureless.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\shaders\\sh_textureless.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\threading\\gamethread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\platform\\gamehost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\models\\lighting mcqueen\\lightingmcqueen.obj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\models\\lighting mcqueen\\lightingmcqueen.obj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\containers\\lifetimemanagementcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\vertices\\texturedvertex3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\vertices\\texturelessmeshvertex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\vertices\\veldridvertexutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\meshdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\meshdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\pipelines\\graphicspipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\buffers\\veldridindexbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\development\\threadsafety.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\veldrid\\buffers\\staging\\managedstagingbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -107,22 +229,7 @@
       "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\vertices\\timedtexturedvertex2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\meshdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\meshdrawnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\modeldrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\modeldrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\graphics\\rendering\\dummy\\dummyrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\osu.framework.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\threedimensionaldrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\threedimensionaldrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\37eccc3de1f6e5ea5760939fd622161c8b8adfdbacfe4e630b0d1c184e947f6c\\MeshDrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -168,40 +275,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123gamebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\material\\uniformcolour4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\material\\uniformcolour4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\material\\materialstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\material\\materialstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\material\\uniformmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\material\\uniformmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\audio\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\audio\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\threedimensionalextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\threedimensionalextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\audio\\wasapidevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -236,14 +311,6 @@
       "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\models\\lighting mcqueen\\lightingmcqueen.mtl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.game\\testtest123.game.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1ADACD09-7BE3-46A1-AEAB-C41E78E8700F}|TestTest123.Game\\TestTest123.Game.csproj|solutionrelative:testtest123.game\\testtest123.game.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\models\\lighting mcqueen\\lightingmcqueen.obj||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\models\\lighting mcqueen\\lightingmcqueen.obj||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|e:\\rocksmeth\\supreme-broccoli\\testtest123.resources\\testtest123resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31D3872C-3A4F-437E-9655-3EF58DD62F46}|TestTest123.Resources\\TestTest123.Resources.csproj|solutionrelative:testtest123.resources\\testtest123resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -260,12 +327,6 @@
       "RelativeMoniker": "D:0:0:{0A9CA1A5-5147-4AA8-9B9D-87178DE5A78D}|TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj|solutionrelative:testtest123.game.tests\\testtest123.game.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\threading\\gamethread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\platform\\gamehost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6D7CF82-467B-4D75-A0D4-3B647DCD0769}|..\\osu-framework\\osu.Framework\\osu.Framework.csproj|e:\\rocksmeth\\osu-framework\\osu.framework\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -279,254 +340,574 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
+              "Title": "ThreeDimensionalDrawNode.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalDrawNode.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalDrawNode.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalDrawNode.cs",
+              "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalDrawNode.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwEoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T04:40:46.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Scene.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Scene.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\Scene.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Scene.cs",
               "RelativeToolTip": "TestTest123.Game\\Scene.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAWwCgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:11:29.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VeldridVertexBuffer.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridVertexBuffer.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridVertexBuffer.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridVertexBuffer.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridVertexBuffer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwCUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:21:08.931Z",
+              "WhenOpened": "2024-10-12T19:11:29.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "VeldridVertexUtils.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Vertices\\VeldridVertexUtils.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Vertices\\VeldridVertexUtils.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Vertices\\VeldridVertexUtils.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Vertices\\VeldridVertexUtils.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "TestTest123Game.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123Game.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123Game.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123Game.cs",
+              "RelativeToolTip": "TestTest123.Game\\TestTest123Game.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T23:52:11.456Z"
+              "WhenOpened": "2024-03-25T22:59:05.408Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MaterialDrawable.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\MaterialDrawable.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Material\\MaterialDrawable.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\MaterialDrawable.cs",
-              "RelativeToolTip": "TestTest123.Game\\Material\\MaterialDrawable.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDAAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "VeldridIndexBuffer.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridIndexBuffer.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridIndexBuffer.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridIndexBuffer.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridIndexBuffer.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAiwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T15:12:12.872Z"
+              "WhenOpened": "2024-10-12T19:49:31.496Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "sh_nino.fs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_nino.fs",
-              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_nino.fs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_nino.fs",
-              "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_nino.fs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-24T18:51:14.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "sh_textureless.fs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_textureless.fs",
-              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_textureless.fs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_textureless.fs",
-              "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_textureless.fs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-24T18:51:44.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "sh_textureless.vs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_textureless.vs",
-              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_textureless.vs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_textureless.vs",
-              "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_textureless.vs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-27T17:32:17.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "sh_nino.vs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_nino.vs",
-              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_nino.vs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_nino.vs",
-              "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_nino.vs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-14T08:56:08.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VeldridRenderer.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridRenderer.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridRenderer.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridRenderer.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridRenderer.cs",
-              "ViewState": "AgIAAEsBAAAAAAAAAAAjwGABAAAjAAAAAAAAAA==",
+              "Title": "PlaneDrawable.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\PlaneDrawable.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\PlaneDrawable.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\PlaneDrawable.cs",
+              "RelativeToolTip": "TestTest123.Game\\PlaneDrawable.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADgvxIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:53:33.116Z"
+              "WhenOpened": "2024-10-18T15:47:18.376Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VeldridMesh.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridMesh.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridMesh.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridMesh.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridMesh.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAArwCMAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "CameraDrawable.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\CameraDrawable.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\CameraDrawable.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\CameraDrawable.cs",
+              "RelativeToolTip": "TestTest123.Game\\CameraDrawable.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAvwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:47:16.936Z",
+              "WhenOpened": "2024-04-03T19:56:31.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "VeldridVertexBatch.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Batches\\VeldridVertexBatch.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Batches\\VeldridVertexBatch.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Batches\\VeldridVertexBatch.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Batches\\VeldridVertexBatch.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAswGMAAAAJAAAAAAAAAA==",
+              "Title": "NoteDrawable.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\NoteDrawable.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\NoteDrawable.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\NoteDrawable.cs",
+              "RelativeToolTip": "TestTest123.Game\\NoteDrawable.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADgvxkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:13:28.081Z"
+              "WhenOpened": "2024-10-18T15:55:36.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Drawable.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Drawable.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Drawable.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Drawable.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Drawable.cs",
+              "ViewState": "AgIAANIBAAAAAAAAAAAwwNUBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T07:39:58.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelDrawNode.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ModelDrawNode.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\ModelDrawNode.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ModelDrawNode.cs",
+              "RelativeToolTip": "TestTest123.Game\\ModelDrawNode.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T06:53:28.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IThreeDimensional.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\IThreeDimensional.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\IThreeDimensional.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\IThreeDimensional.cs",
+              "RelativeToolTip": "TestTest123.Game\\IThreeDimensional.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T19:16:02.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MusicalChart.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MusicalChart.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\MusicalChart.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MusicalChart.cs",
+              "RelativeToolTip": "TestTest123.Game\\MusicalChart.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T22:13:51.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MeshDrawNode.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MeshDrawNode.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\MeshDrawNode.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MeshDrawNode.cs",
+              "RelativeToolTip": "TestTest123.Game\\MeshDrawNode.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:18:43.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sh_nino.fs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_nino.fs",
+              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_nino.fs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_nino.fs",
+              "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_nino.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-24T18:51:14.496Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TexturelessMeshVertex.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturelessMeshVertex.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturelessMeshVertex.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturelessMeshVertex.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturelessMeshVertex.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:01:21.182Z"
+              "Title": "osu.Framework.csproj",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\osu.Framework.csproj",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\osu.Framework.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-21T08:21:45.706Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Utils.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Utils.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Utils.cs",
+              "RelativeToolTip": "TestTest123.Game\\Utils.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:13:32.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Measure.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Measure.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Measure.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Measure.cs",
+              "RelativeToolTip": "TestTest123.Game\\Measure.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T06:42:55.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainScreen.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MainScreen.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\MainScreen.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MainScreen.cs",
+              "RelativeToolTip": "TestTest123.Game\\MainScreen.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T23:39:52.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TestTest123GameBase.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123GameBase.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123GameBase.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123GameBase.cs",
+              "RelativeToolTip": "TestTest123.Game\\TestTest123GameBase.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T23:00:16.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MaskingInfo.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\MaskingInfo.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\MaskingInfo.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\MaskingInfo.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\MaskingInfo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T00:46:30.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "sh_nino.vs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_nino.vs",
+              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_nino.vs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_nino.vs",
+              "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_nino.vs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-14T08:56:08.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "TexturedMeshVertex.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedMeshVertex.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedMeshVertex.cs",
               "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedMeshVertex.cs",
               "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedMeshVertex.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T00:44:06.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MeshDrawable.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MeshDrawable.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\MeshDrawable.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MeshDrawable.cs",
-              "RelativeToolTip": "TestTest123.Game\\MeshDrawable.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACsAAAASAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "ShaderDrawNode.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\ShaderDrawNode.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Material\\ShaderDrawNode.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\ShaderDrawNode.cs",
+              "RelativeToolTip": "TestTest123.Game\\Material\\ShaderDrawNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T06:54:06.79Z"
+              "WhenOpened": "2024-05-31T15:12:12.872Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TexturedVertex3D.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex3D.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex3D.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex3D.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex3D.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "ThreeDimensionalExtentions.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalExtentions.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalExtentions.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalExtentions.cs",
+              "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalExtentions.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:05:38.584Z"
+              "WhenOpened": "2024-05-25T11:36:55.309Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 22,
               "Title": "Model.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Model.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Model.cs",
               "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Model.cs",
               "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Model.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T19:10:35.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Mesh.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Mesh.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Mesh.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Mesh.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Mesh.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "DocumentIndex": 28,
+              "Title": "VeldridRenderer.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridRenderer.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridRenderer.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridRenderer.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridRenderer.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAgwLcAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:46:19.684Z"
+              "WhenOpened": "2024-10-12T19:53:33.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Camera.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Camera.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Camera.cs",
-              "RelativeToolTip": "TestTest123.Game\\Camera.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAD4v0oAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "CompositeDrawable_DrawNode.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Containers\\CompositeDrawable_DrawNode.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Containers\\CompositeDrawable_DrawNode.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Containers\\CompositeDrawable_DrawNode.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Containers\\CompositeDrawable_DrawNode.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:56:31.913Z"
+              "WhenOpened": "2024-10-20T04:51:31.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
+              "Title": "VeldridVertexBuffer.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridVertexBuffer.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridVertexBuffer.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridVertexBuffer.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridVertexBuffer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:21:08.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "GraphicsPipeline.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Pipelines\\GraphicsPipeline.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Pipelines\\GraphicsPipeline.cs",
               "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Pipelines\\GraphicsPipeline.cs",
               "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Pipelines\\GraphicsPipeline.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAswL8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAEwK0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T19:54:37.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "VeldridIndexBuffer.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridIndexBuffer.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridIndexBuffer.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridIndexBuffer.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridIndexBuffer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "DocumentIndex": 34,
+              "Title": "DummyRenderer.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Dummy\\DummyRenderer.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Dummy\\DummyRenderer.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Dummy\\DummyRenderer.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Dummy\\DummyRenderer.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAmwIsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:49:31.496Z"
+              "WhenOpened": "2024-10-12T19:09:46.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 29,
+              "Title": "Mesh.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Mesh.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Mesh.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Mesh.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Mesh.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T19:46:19.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VeldridMesh.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridMesh.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridMesh.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridMesh.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\VeldridMesh.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T19:47:16.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TestTest123.Game",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123.Game.csproj",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+              "RelativeToolTip": "TestTest123.Game\\TestTest123.Game.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-24T00:54:43.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TestTest123.Game.csproj",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123.Game.csproj",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
+              "RelativeToolTip": "TestTest123.Game\\TestTest123.Game.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-25T22:58:35.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "VeldridVertexBatch.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Batches\\VeldridVertexBatch.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Batches\\VeldridVertexBatch.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Batches\\VeldridVertexBatch.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Batches\\VeldridVertexBatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:13:28.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Renderer.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Renderer.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Renderer.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Renderer.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Renderer.cs",
+              "ViewState": "AgIAANoBAAAAAAAAAAAUwFcFAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T19:10:17.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BannedSymbols.txt",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\CodeAnalysis\\BannedSymbols.txt",
+              "RelativeDocumentMoniker": "..\\osu-framework\\CodeAnalysis\\BannedSymbols.txt",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\CodeAnalysis\\BannedSymbols.txt",
+              "RelativeToolTip": "..\\osu-framework\\CodeAnalysis\\BannedSymbols.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-23T12:44:18.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "WaveformGraph.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Audio\\WaveformGraph.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Audio\\WaveformGraph.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Audio\\WaveformGraph.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Audio\\WaveformGraph.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwHUBAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T23:33:49.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UniformMaterial.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\UniformMaterial.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Material\\UniformMaterial.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\UniformMaterial.cs",
+              "RelativeToolTip": "TestTest123.Game\\Material\\UniformMaterial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T12:52:34.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Triangle.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Shapes\\Triangle.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Shapes\\Triangle.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Shapes\\Triangle.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Shapes\\Triangle.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAnwEUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T23:32:50.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UniformColour4.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\UniformColour4.cs",
+              "RelativeDocumentMoniker": "TestTest123.Game\\Material\\UniformColour4.cs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\UniformColour4.cs",
+              "RelativeToolTip": "TestTest123.Game\\Material\\UniformColour4.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvwwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T13:14:17.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Container.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Containers\\Container.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Containers\\Container.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Containers\\Container.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Containers\\Container.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAAASwAABAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T06:33:39.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CompositeDrawable.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Containers\\CompositeDrawable.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Containers\\CompositeDrawable.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Containers\\CompositeDrawable.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Containers\\CompositeDrawable.cs",
+              "ViewState": "AgIAADkCAAAAAAAAAADgv00CAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:06:45.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Drawable_ProxyDrawable.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Drawable_ProxyDrawable.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Drawable_ProxyDrawable.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Drawable_ProxyDrawable.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Drawable_ProxyDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T00:37:46.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Validation.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Utils\\Validation.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Utils\\Validation.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Utils\\Validation.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Utils\\Validation.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T00:49:14.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "sh_textureless.fs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_textureless.fs",
+              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_textureless.fs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_textureless.fs",
+              "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_textureless.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-24T18:51:44.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
               "Title": "d_dddPS.glsl",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\shaders\\d_dddPS.glsl",
               "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\shaders\\d_dddPS.glsl",
@@ -538,43 +919,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 48,
               "Title": "d_dddVS.glsl",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\shaders\\d_dddVS.glsl",
               "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\shaders\\d_dddVS.glsl",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\shaders\\d_dddVS.glsl",
               "RelativeToolTip": "TestTest123.Resources\\Shaders\\shaders\\d_dddVS.glsl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-18T07:19:03.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MainScreen.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MainScreen.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\MainScreen.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MainScreen.cs",
-              "RelativeToolTip": "TestTest123.Game\\MainScreen.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvxoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T23:39:52.047Z"
+              "DocumentIndex": 51,
+              "Title": "sh_textureless.vs",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_textureless.vs",
+              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\sh_textureless.vs",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\sh_textureless.vs",
+              "RelativeToolTip": "TestTest123.Resources\\Shaders\\sh_textureless.vs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-27T17:32:17.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 45,
+              "Title": "SpriteText.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Sprites\\SpriteText.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Sprites\\SpriteText.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Sprites\\SpriteText.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Sprites\\SpriteText.cs",
+              "ViewState": "AgIAAEQCAAAAAAAAAAAUwFcCAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T20:52:02.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "PropertyDisplay.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Visualisation\\PropertyDisplay.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Visualisation\\PropertyDisplay.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Visualisation\\PropertyDisplay.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Visualisation\\PropertyDisplay.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAswEMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T20:52:04.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Bindable.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Bindables\\Bindable.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Bindables\\Bindable.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Bindables\\Bindable.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Bindables\\Bindable.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAUwN4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T20:52:11.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "d.glsl",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\d.glsl",
+              "RelativeDocumentMoniker": "TestTest123.Resources\\Shaders\\d.glsl",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Shaders\\d.glsl",
+              "RelativeToolTip": "TestTest123.Resources\\Shaders\\d.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T20:28:47.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
               "Title": "GameThread.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Threading\\GameThread.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Threading\\GameThread.cs",
               "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Threading\\GameThread.cs",
               "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Threading\\GameThread.cs",
-              "ViewState": "AgIAAI0BAAAAAAAAAAAjwKABAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAALYBAAAAAAAAAAAUwMkBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T20:05:38.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 53,
+              "Title": "GameHost.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Platform\\GameHost.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Platform\\GameHost.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Platform\\GameHost.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Platform\\GameHost.cs",
+              "ViewState": "AgIAAM4BAAAAAAAAAADwv+ABAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T20:05:35.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "LightingMcqueen.obj",
+              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
+              "RelativeDocumentMoniker": "TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
+              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
+              "RelativeToolTip": "TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwCcAAAAMAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-05-23T11:35:42.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "TexturelessMeshVertex.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturelessMeshVertex.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturelessMeshVertex.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturelessMeshVertex.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturelessMeshVertex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:01:21.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "LifetimeManagementContainer.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Containers\\LifetimeManagementContainer.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Containers\\LifetimeManagementContainer.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Containers\\LifetimeManagementContainer.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Containers\\LifetimeManagementContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:20:09.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "VeldridVertexUtils.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Vertices\\VeldridVertexUtils.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Vertices\\VeldridVertexUtils.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Vertices\\VeldridVertexUtils.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Vertices\\VeldridVertexUtils.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T23:52:11.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "TexturedVertex3D.cs",
+              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex3D.cs",
+              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex3D.cs",
+              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex3D.cs",
+              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex3D.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:05:38.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
               "Title": "TexturedVertex2D.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex2D.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TexturedVertex2D.cs",
@@ -586,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 61,
               "Title": "VeldridMetalVertexBuffer.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridMetalVertexBuffer.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\VeldridMetalVertexBuffer.cs",
@@ -598,19 +1099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Renderer.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Renderer.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Renderer.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Renderer.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Renderer.cs",
-              "ViewState": "AgIAAKQEAAAAAAAAAAAUwPsDAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:10:17.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 59,
               "Title": "ThreadSafety.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Development\\ThreadSafety.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Development\\ThreadSafety.cs",
@@ -622,7 +1111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 60,
               "Title": "ManagedStagingBuffer.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\Staging\\ManagedStagingBuffer.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\Staging\\ManagedStagingBuffer.cs",
@@ -634,7 +1123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 63,
               "Title": "PersistentStagingBuffer.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\Staging\\PersistentStagingBuffer.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\Staging\\PersistentStagingBuffer.cs",
@@ -646,31 +1135,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 62,
               "Title": "DeferredStagingBuffer.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\Staging\\DeferredStagingBuffer.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\Staging\\DeferredStagingBuffer.cs",
               "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\Staging\\DeferredStagingBuffer.cs",
               "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Veldrid\\Buffers\\Staging\\DeferredStagingBuffer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T01:25:37.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "GameHost.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Platform\\GameHost.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Platform\\GameHost.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Platform\\GameHost.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Platform\\GameHost.cs",
-              "ViewState": "AgIAABcCAAAAAAAAAAArwCsCAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T20:05:35.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 65,
               "Title": "TimedTexturedVertex2D.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TimedTexturedVertex2D.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Vertices\\TimedTexturedVertex2D.cs",
@@ -682,54 +1159,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 66,
               "Title": "osu.Framework",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\osu.Framework.csproj",
               "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\osu.Framework.csproj",
               "RelativeToolTip": "..\\osu-framework\\osu.Framework\\osu.Framework.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-12T19:22:20.451Z"
+              "WhenOpened": "2024-10-12T19:22:20.451Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ThreeDimensionalDrawable.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalDrawable.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalDrawable.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalDrawable.cs",
-              "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalDrawable.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAawDYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:16:02.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 93,
               "Title": "Game.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Game.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Game.cs",
               "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Game.cs",
               "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Game.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T19:15:07.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "DummyRenderer.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Dummy\\DummyRenderer.cs",
-              "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Dummy\\DummyRenderer.cs",
-              "ToolTip": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Dummy\\DummyRenderer.cs",
-              "RelativeToolTip": "..\\osu-framework\\osu.Framework\\Graphics\\Rendering\\Dummy\\DummyRenderer.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAUwJEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:09:46.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 94,
               "Title": "ThreadedTaskScheduler.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\osu-framework\\osu.Framework\\Threading\\ThreadedTaskScheduler.cs",
               "RelativeDocumentMoniker": "..\\osu-framework\\osu.Framework\\Threading\\ThreadedTaskScheduler.cs",
@@ -741,91 +1195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "TestTest123GameBase.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123GameBase.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123GameBase.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123GameBase.cs",
-              "RelativeToolTip": "TestTest123.Game\\TestTest123GameBase.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwBYAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T23:00:16.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "MouseController.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MouseController.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\MouseController.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MouseController.cs",
-              "RelativeToolTip": "TestTest123.Game\\MouseController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwA4AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T11:41:43.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "MeshDrawNode.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MeshDrawNode.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\MeshDrawNode.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\MeshDrawNode.cs",
-              "RelativeToolTip": "TestTest123.Game\\MeshDrawNode.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAADwvzkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T04:18:43.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "UniformColour4.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\UniformColour4.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Material\\UniformColour4.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\UniformColour4.cs",
-              "RelativeToolTip": "TestTest123.Game\\Material\\UniformColour4.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAADwvwwAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T13:14:17.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ModelDrawable.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ModelDrawable.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\ModelDrawable.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ModelDrawable.cs",
-              "RelativeToolTip": "TestTest123.Game\\ModelDrawable.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwD4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T06:53:28.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "MaterialStore.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\MaterialStore.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Material\\MaterialStore.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\MaterialStore.cs",
-              "RelativeToolTip": "TestTest123.Game\\Material\\MaterialStore.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T23:24:22.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "UniformMaterial.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\UniformMaterial.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Material\\UniformMaterial.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Material\\UniformMaterial.cs",
-              "RelativeToolTip": "TestTest123.Game\\Material\\UniformMaterial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T12:52:34.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 67,
               "Title": "MeshDrawable.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\37eccc3de1f6e5ea5760939fd622161c8b8adfdbacfe4e630b0d1c184e947f6c\\MeshDrawable.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\37eccc3de1f6e5ea5760939fd622161c8b8adfdbacfe4e630b0d1c184e947f6c\\MeshDrawable.cs [Read Only]",
@@ -835,209 +1205,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "TestTest123Game.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123Game.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123Game.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123Game.cs",
-              "RelativeToolTip": "TestTest123.Game\\TestTest123Game.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T22:59:05.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 80,
               "Title": "Speaker.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Audio\\Speaker.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\Audio\\Speaker.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Audio\\Speaker.cs",
               "RelativeToolTip": "TestTest123.Game\\Audio\\Speaker.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAuwBUAAAAgAAAA",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAuwBUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-26T20:11:51.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "ThreeDimensionalExtentions.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalExtentions.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\ThreeDimensionalExtentions.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\ThreeDimensionalExtentions.cs",
-              "RelativeToolTip": "TestTest123.Game\\ThreeDimensionalExtentions.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAuwCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T11:36:55.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "Utils.cs",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Utils.cs",
-              "RelativeDocumentMoniker": "TestTest123.Game\\Utils.cs",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Utils.cs",
-              "RelativeToolTip": "TestTest123.Game\\Utils.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T17:13:32.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 81,
               "Title": "WasapiDevice.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Audio\\WasapiDevice.cs",
               "RelativeDocumentMoniker": "TestTest123.Game\\Audio\\WasapiDevice.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\Audio\\WasapiDevice.cs",
               "RelativeToolTip": "TestTest123.Game\\Audio\\WasapiDevice.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBIAAAAMAAAA",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T03:54:11.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 82,
               "Title": "TestTest123.Resources.csproj",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
               "RelativeDocumentMoniker": "TestTest123.Resources\\TestTest123.Resources.csproj",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123.Resources.csproj",
               "RelativeToolTip": "TestTest123.Resources\\TestTest123.Resources.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAANAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-08T23:13:47.395Z"
+              "WhenOpened": "2024-05-08T23:13:47.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 83,
               "Title": "TestSceneSpinningBox.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\Visual\\TestSceneSpinningBox.cs",
               "RelativeDocumentMoniker": "TestTest123.Game.Tests\\Visual\\TestSceneSpinningBox.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\Visual\\TestSceneSpinningBox.cs",
               "RelativeToolTip": "TestTest123.Game.Tests\\Visual\\TestSceneSpinningBox.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T19:57:39.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 84,
               "Title": "TestSceneTestTest123Game.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\Visual\\TestSceneTestTest123Game.cs",
               "RelativeDocumentMoniker": "TestTest123.Game.Tests\\Visual\\TestSceneTestTest123Game.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\Visual\\TestSceneTestTest123Game.cs",
               "RelativeToolTip": "TestTest123.Game.Tests\\Visual\\TestSceneTestTest123Game.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T19:57:41.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 85,
               "Title": "TestTest123TestScene.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\Visual\\TestTest123TestScene.cs",
               "RelativeDocumentMoniker": "TestTest123.Game.Tests\\Visual\\TestTest123TestScene.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\Visual\\TestTest123TestScene.cs",
               "RelativeToolTip": "TestTest123.Game.Tests\\Visual\\TestTest123TestScene.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T19:57:45.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 86,
               "Title": "TestTest123TestBrowser.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123TestBrowser.cs",
               "RelativeDocumentMoniker": "TestTest123.Game.Tests\\TestTest123TestBrowser.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123TestBrowser.cs",
               "RelativeToolTip": "TestTest123.Game.Tests\\TestTest123TestBrowser.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAvAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T19:57:52.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 87,
               "Title": "TestTest123.iOS.csproj",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
               "RelativeDocumentMoniker": "TestTest123.iOS\\TestTest123.iOS.csproj",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.iOS\\TestTest123.iOS.csproj",
               "RelativeToolTip": "TestTest123.iOS\\TestTest123.iOS.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-08T23:13:50.061Z"
+              "WhenOpened": "2024-05-08T23:13:50.061Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 88,
               "Title": "LightingMcqueen.mtl",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.mtl",
               "RelativeDocumentMoniker": "TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.mtl",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.mtl",
               "RelativeToolTip": "TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.mtl",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAHAAAA",
+              "ViewState": "AgIAAAcAAAAAAAAAAABBwBkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-27T19:11:22.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "TestTest123.Game.csproj",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
-              "RelativeDocumentMoniker": "TestTest123.Game\\TestTest123.Game.csproj",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game\\TestTest123.Game.csproj",
-              "RelativeToolTip": "TestTest123.Game\\TestTest123.Game.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-25T22:58:35.216Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "LightingMcqueen.obj",
-              "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
-              "RelativeDocumentMoniker": "TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
-              "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
-              "RelativeToolTip": "TestTest123.Resources\\Models\\Lighting Mcqueen\\LightingMcqueen.obj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
-              "WhenOpened": "2024-05-23T11:35:42.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 68,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "ViewState": "AQIAAJIBAAAAAAAAAAAiwBMBAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2024-05-24T18:27:38.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 89,
               "Title": "TestTest123Resources.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123Resources.cs",
               "RelativeDocumentMoniker": "TestTest123.Resources\\TestTest123Resources.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Resources\\TestTest123Resources.cs",
               "RelativeToolTip": "TestTest123.Resources\\TestTest123Resources.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T06:56:16.286Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 90,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Desktop\\Program.cs",
               "RelativeDocumentMoniker": "TestTest123.Desktop\\Program.cs",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Desktop\\Program.cs",
               "RelativeToolTip": "TestTest123.Desktop\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAQAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T23:39:37.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 71,
               "Title": ".editorconfig",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\.editorconfig",
               "RelativeDocumentMoniker": ".editorconfig",
@@ -1048,135 +1359,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 70,
               "Title": "Directory.Build.props",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\Directory.Build.props",
               "RelativeDocumentMoniker": "Directory.Build.props",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\Directory.Build.props",
               "RelativeToolTip": "Directory.Build.props",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2024-05-08T23:10:24.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 69,
               "Title": "TestTest123.sln.DotSettings",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.sln.DotSettings",
               "RelativeDocumentMoniker": "TestTest123.sln.DotSettings",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.sln.DotSettings",
               "RelativeToolTip": "TestTest123.sln.DotSettings",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAIgAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-08T23:10:25.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 74,
               "Title": "Task.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\b3ab4fb85b206f2413edb729cada949a41704b6f8655f0c544f8427c6a3a5c21\\Task.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\b3ab4fb85b206f2413edb729cada949a41704b6f8655f0c544f8427c6a3a5c21\\Task.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAawM4AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T17:23:33.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 73,
               "Title": "PayloadTypeReaderWriter.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\4dd03bc4e9911101b4605bba85799ac1108247fb94000d57cf4cb48073204785\\PayloadTypeReaderWriter.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\4dd03bc4e9911101b4605bba85799ac1108247fb94000d57cf4cb48073204785\\PayloadTypeReaderWriter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T17:23:42.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 91,
               "Title": "TestTest123.Desktop.csproj",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Desktop\\TestTest123.Desktop.csproj",
               "RelativeDocumentMoniker": "TestTest123.Desktop\\TestTest123.Desktop.csproj",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Desktop\\TestTest123.Desktop.csproj",
               "RelativeToolTip": "TestTest123.Desktop\\TestTest123.Desktop.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-25T23:47:33.187Z"
+              "WhenOpened": "2024-03-25T23:47:33.187Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 76,
               "Title": "UnwrapPromise.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\282d3102042321a7ce8d2408208a03eb3d992afc8bb8c734b7aac98e31d8ce09\\UnwrapPromise.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\282d3102042321a7ce8d2408208a03eb3d992afc8bb8c734b7aac98e31d8ce09\\UnwrapPromise.cs [Read Only]",
-              "ViewState": "AQIAABgAAAAAAAAAAAAswCYAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T18:42:48.995Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 72,
               "Title": "WaitHandle.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\2ffd1c19be79e05c111cba67f59d9697391c29636876d10db5800df3a2d6cfcf\\WaitHandle.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\2ffd1c19be79e05c111cba67f59d9697391c29636876d10db5800df3a2d6cfcf\\WaitHandle.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAwIQAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T23:11:44.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 75,
               "Title": "AudioInputThread.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\565e00882c55fe5a8d6056e8f6d24cedf95f67023c3cde50d1c53a95e1e8be2c\\AudioInputThread.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\565e00882c55fe5a8d6056e8f6d24cedf95f67023c3cde50d1c53a95e1e8be2c\\AudioInputThread.cs [Read Only]",
-              "ViewState": "AQIAAB0AAAAAAAAAAAD4vygAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T22:28:49.636Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 77,
               "Title": "StartupHook.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\a20bd37e69aed539991866bb0ac38d40d8214fa1b665bfb0fc7e77089b6c2606\\StartupHook.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\a20bd37e69aed539991866bb0ac38d40d8214fa1b665bfb0fc7e77089b6c2606\\StartupHook.cs [Read Only]",
-              "ViewState": "AQIAABMAAAAAAAAAAAAswCEAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T18:42:43.482Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 92,
               "Title": "TestTest123.Game.Tests.csproj",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
               "RelativeDocumentMoniker": "TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
               "RelativeToolTip": "TestTest123.Game.Tests\\TestTest123.Game.Tests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-25T23:00:43.205Z"
+              "WhenOpened": "2024-03-25T23:00:43.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 78,
               "Title": "ID3D11DeviceContext.cs",
               "DocumentMoniker": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\34c80cdfb988ea33161ddf173a76a94c66858faabc5347baf01b76f84a5f2e6a\\ID3D11DeviceContext.cs",
               "ToolTip": "C:\\Users\\Tamaninja\\AppData\\Local\\Temp\\.vsdbgsrc\\34c80cdfb988ea33161ddf173a76a94c66858faabc5347baf01b76f84a5f2e6a\\ID3D11DeviceContext.cs [Read Only]",
-              "ViewState": "AQIAAC0NAAAAAAAAAAAUwEENAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T00:26:03.609Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 79,
               "Title": ".gitignore",
               "DocumentMoniker": "E:\\Rocksmeth\\supreme-broccoli\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
               "ToolTip": "E:\\Rocksmeth\\supreme-broccoli\\.gitignore",
               "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-04-09T20:50:16.528Z"
             }

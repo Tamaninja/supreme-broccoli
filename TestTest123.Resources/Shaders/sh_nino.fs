@@ -19,7 +19,7 @@ layout(location = 0) out vec4 o_Colour;
 void main() 
 {
 
-    o_Colour = color * texture(sampler2D(m_Texture, m_Sampler), v_TexCoord.xy);
+    o_Colour = texture(sampler2D(m_Texture, m_Sampler), v_TexCoord.xy);
 }
 
 #endif

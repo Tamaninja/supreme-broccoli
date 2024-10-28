@@ -12,19 +12,18 @@ namespace TestTest123.Game
 {
     public partial class MainScreen : Screen
     {
-        private Camera camera;
         private SpriteText text;
-        private Scene mainStage;
+        private Scene scene;
 
         [BackgroundDependencyLoader]
-        private void load(MaterialStore materialStore)
+        private void load()
         {
             InternalChildren =
             [
                 new Box
                 {
                     RelativeSizeAxes = Axes.Both,
-                    Colour = Color4.Black
+                    Colour = Color4.Black,
                 },
 
 
@@ -39,9 +38,7 @@ namespace TestTest123.Game
                     Font = FontUsage.Default.With(size: 30),
                     AllowMultiline = true
                 },
-                mainStage = [],
-                materialStore,
-
+                scene = [],
 
             ];
         }

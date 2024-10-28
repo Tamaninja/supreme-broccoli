@@ -47,7 +47,6 @@ namespace TestTest123.Game
         private void load(IRenderer renderer)
         {
             dependencies.CacheAs(new LargeTextureStore(renderer, Host.CreateTextureLoaderStore(new NamespacedResourceStore<byte[]>(Resources, "Textures"))));
-            dependencies.Cache(new MaterialStore());
             Resources.AddStore(new DllResourceStore(typeof(TestTest123Resources).Assembly));
         }
 
