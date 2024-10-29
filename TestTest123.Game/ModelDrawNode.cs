@@ -22,9 +22,8 @@ namespace TestTest123.Game
         public ModelDrawNode(ThreeDimensionalDrawNode parent) : base(parent)
         {
             Model = LoadModel(Renderer);
-            
             Name = Model.Filepath;
-            LocalMatrix = new Bindable<Matrix4>(Matrix4.Identity);
+
             loadMeshes();
 
         }

@@ -12,35 +12,35 @@ namespace TestTest123.Game
 {
     public class MeshDrawNode : ThreeDimensionalDrawNode
     {
-        private IUniformBuffer<UniformMaterial> uniformBuffer;
+
+
         public Texture Texture { get; private set; }
 
 
-
-
         public Mesh Mesh;
+        private UniformMaterial uniformMaterial;
+
         public MeshDrawNode(Mesh mesh, ModelDrawNode parent) : base(parent)
         {
             Name = mesh.Name;
             Mesh = mesh;
-
+            
 
             Assimp.Material material = parent.Model.Materials[mesh.MaterialIndex];
+            uniformMaterial = new UniformMaterial(material.ColorDiffuse);
             if (material.HasTextureDiffuse)
             {
-                Texture = TextureStore.Get(parent.Model.Materials[mesh.MaterialIndex].TextureDiffuse.FilePath);
+                Texture = TextureStore.Get(material.TextureDiffuse.FilePath);
             }
         }
 
 
         public override void Draw(IRenderer renderer)
         {
-            /*            uniformBuffer ??= renderer.CreateUniformBuffer<UniformMaterial>();
-                        uniformBuffer.Data = material;
 
-                        Source.Material.TextureShader.BindUniformBlock("u_Colour", uniformBuffer);*/
             renderer.PushProjectionMatrix(Parent.LocalMatrix.Value * renderer.ProjectionMatrix);
 
+            Scene.Shaderer?.BindUniform(uniformMaterial);
                 Texture?.Bind();
                 Mesh.Draw();
             renderer.PopProjectionMatrix();

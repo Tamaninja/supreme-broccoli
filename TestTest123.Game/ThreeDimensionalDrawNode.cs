@@ -16,6 +16,7 @@ using osu.Framework.Graphics.Textures;
 using osu.Framework.Graphics.UserInterface;
 using osu.Framework.Logging;
 using osuTK;
+using TestTest123.Game.Material;
 using Vortice;
 
 namespace TestTest123.Game
@@ -26,47 +27,43 @@ namespace TestTest123.Game
         private bool disposedValue;
 
         public String Name { get; set; }
-        public IShader TextureShader { get; set; }
         public Bindable<Matrix4> LocalMatrix { get; set; } = new Bindable<Matrix4>(Matrix4.Identity);
         public Bindable<Vector3> Forward { get; set; } = new Bindable<Vector3>(Vector3.UnitZ);
         public Bindable<Vector3> Rotation { get; set; } = new Bindable<Vector3>(Vector3.Zero);
         public Bindable<Vector3> Position { get; set; } = new Bindable<Vector3>(Vector3.Zero);
         public Bindable<Vector3> Scale { get; set; } = new Bindable<Vector3>(Vector3.One);
 
-        public Scene Scene { get;}
-
         public List<ThreeDimensionalDrawNode> Children { get; } = [];
 
         public LargeTextureStore TextureStore { get; }
+
+        public SceneNode Scene { get; set; }
+        
+
+        private void initializeBindables()
+        {
+            Forward.BindValueChanged(t => UpdateMatrix());
+            Position.BindValueChanged(t => UpdateMatrix());
+            Rotation.BindValueChanged(t => UpdateMatrix());
+            Scale.BindValueChanged(t => UpdateMatrix());
+        }
 
 
         public ThreeDimensionalDrawNode(Scene scene, IRenderer renderer, LargeTextureStore textureStore)
         {
             TextureStore = textureStore;
             Renderer = renderer;
-            Scene = scene;
-
-            Forward.BindValueChanged(t => UpdateMatrix());
-            Position.BindValueChanged(t => UpdateMatrix());
-            Rotation.BindValueChanged(t => UpdateMatrix());
-            Scale.BindValueChanged(t => UpdateMatrix());
-
-
+            initializeBindables();
         }
 
         public ThreeDimensionalDrawNode(ThreeDimensionalDrawNode parent)
         {
-            
             Parent = parent;
             Scene = parent.Scene;
             Renderer = parent.Renderer;
             TextureStore = parent.TextureStore;
 
-
-            Forward.BindValueChanged(t => UpdateMatrix());
-            Position.BindValueChanged(t => UpdateMatrix());
-            Rotation.BindValueChanged(t => UpdateMatrix());
-            Scale.BindValueChanged(t => UpdateMatrix());
+            initializeBindables();
         }
 
         public virtual void Draw(IRenderer renderer)

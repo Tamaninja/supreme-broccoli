@@ -176,11 +176,9 @@ namespace TestTest123.Game
 
                 renderer.PushDepthInfo(DepthInfo.Default);
                 renderer.PushProjectionMatrix(vpMatrix);
-                shader.Bind();
 
                     Source.Scene.Node.Draw(renderer);
 
-                shader.Unbind();
                 renderer.PopProjectionMatrix();
                 renderer.PopDepthInfo();
             }

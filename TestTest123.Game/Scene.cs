@@ -18,7 +18,6 @@ using osuTK;
 using osuTK.Graphics;
 using osuTK.Graphics.OpenGL;
 using Rocksmith2014.XML;
-using TestTest123.Game.Material;
 using Veldrid;
 using Vortice;
 
@@ -30,12 +29,11 @@ namespace TestTest123.Game
     public partial class Scene : Container, ITexturedShaderDrawable
     {
         public IShader TextureShader { get; set; }
-        public ThreeDimensionalDrawNode Node { get; private set; }
+        public SceneNode Node { get; private set; }
 
         public SpriteText Debug;
         private Bindable<int> currentSongTime = new(0);
 
-        public Dictionary<IShader, ThreeDimensionalDrawNode> ShaderNodes = [];
         public List<CameraDrawable> Cameras = [];
         private CameraDrawable camera;
 
@@ -57,31 +55,31 @@ namespace TestTest123.Game
         {
 
             TextureShader = shaders.Load("nino", "nino");
-            Node = new ThreeDimensionalDrawNode(this, renderer, textureStore)
+            Node = new SceneNode(this, renderer, textureStore)
             {
                 Name = "Scene"
             };
 
 
-/*            for (int i = 0; i < 23; i++)
-            {
-                PlaneDrawable test = new PlaneDrawable(Node);
+            /*            for (int i = 0; i < 23; i++)
+                        {
+                            PlaneDrawable test = new PlaneDrawable(Node);
 
-                AddNode(test);
+                            AddNode(test);
 
-            }*/
+                        }*/
 
             MusicalChart musicalChart = new MusicalChart("C:\\Users\\lielk\\OneDrive\\Desktop\\psarc tests\\Telula_3-3-3_v1_p\\arr_bass_RS2.xml", Time.Current + 5000);
             currentSongTime.BindValueChanged((t) => Debug.Text = "(" + t.NewValue + "/" + musicalChart.Duration + ")");
 
-             
+
             for (int i = 0; i < 55; i++)
             {
                 {
 
                     NoteDrawable note = new NoteDrawable(musicalChart.Notes[i], Node);
-/*                    note.LifetimeStart = Time.Current + musicalChart.Notes[i].Time - NoteDrawable.PRELOAD_MS;
-                    note.LifetimeEnd = Time.Current + musicalChart.Notes[i].Time + NoteDrawable.KEEPALIVE_MS;*/
+                    /*                    note.LifetimeStart = Time.Current + musicalChart.Notes[i].Time - NoteDrawable.PRELOAD_MS;
+                                        note.LifetimeEnd = Time.Current + musicalChart.Notes[i].Time + NoteDrawable.KEEPALIVE_MS;*/
                     AddNode(note);
 
                 }
@@ -92,13 +90,12 @@ namespace TestTest123.Game
         public void AddNode(ThreeDimensionalDrawNode node)
         {
 
-            node.TextureShader ??= TextureShader;
-            if (!ShaderNodes.TryGetValue(node.TextureShader, out ThreeDimensionalDrawNode shaderNode))
+            if (!Node.Shaderers.TryGetValue(TextureShader, out Shaderer shaderer))
             {
-                ShaderNodes[node.TextureShader] = shaderNode = new ShaderDrawNode(this, node.TextureShader);
-                Node.AddSubNode(shaderNode);
+                Node.Shaderers[TextureShader] = shaderer = new Shaderer(Node, TextureShader);
+                Node.AddSubNode(shaderer);
             }
-            shaderNode.AddSubNode(node);
+            shaderer.AddSubNode(node);
 
             Invalidate(Invalidation.DrawNode);
 
@@ -118,51 +115,18 @@ namespace TestTest123.Game
             }
             return (drawable);
         }
-        protected override DrawNode CreateDrawNode()
-        {
-            return new SceneDrawNode(this);
-        }
 
 
-        protected class SceneDrawNode : CompositeDrawableDrawNode {
-            protected new Scene Source => (Scene)base.Source;
-            private IShader shader;
-            private ThreeDimensionalDrawNode sceneNode;
-            private PlaneDrawable mcqueen;
-
-
-
-            public SceneDrawNode(Scene source) : base(source)
-            {
-
-            }
-
-            public override void ApplyState()
-            {
-                base.ApplyState();
-                shader = Source.TextureShader;
-                sceneNode = Source.Node;
-            }
-
-            
-
-            protected override void Draw(IRenderer renderer)
-            {
-                renderer.PushDepthInfo(new DepthInfo(function: BufferTestFunction.LessThanOrEqual));
-                renderer.PushProjectionMatrix(Source.Node.LocalMatrix.Value * Source.camera.CameraViewProjection.Value);
-                shader.Bind();
-
-                    base.Draw(renderer);
-
-                shader.Unbind();
-                renderer.PopProjectionMatrix();
-                renderer.PopDepthInfo();
-
-           }
-        }
-
-
-        
     }
+    public class SceneNode : ThreeDimensionalDrawNode
+    {
+        public Dictionary<IShader, Shaderer> Shaderers = [];
 
+        public Shaderer Shaderer { get; set; }
+
+        public SceneNode(Scene scene, IRenderer renderer, LargeTextureStore textureStore) : base(scene, renderer, textureStore)
+        {
+            Scene = this;
+        }
+    }
 }
