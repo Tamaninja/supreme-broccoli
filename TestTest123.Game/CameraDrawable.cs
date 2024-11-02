@@ -29,13 +29,13 @@ namespace TestTest123.Game
     {
         private float pitch = 0;
         private float yaw = 0;
-        private float speed = 1;
+        private float speed = 1f;
 
         
 
 
         public Bindable<Matrix4> CameraViewProjection { get; } = new Bindable<Matrix4>(Matrix4.Identity);
-        private readonly LayoutValue<Matrix4> projectionMatrix = new(Invalidation.MiscGeometry | Invalidation.DrawInfo);
+        private readonly LayoutValue<Matrix4> projectionMatrix = new(Invalidation.MiscGeometry | Invalidation.DrawInfo | Invalidation.DrawSize);
 
         public virtual Matrix4 ProjectionMatrix => projectionMatrix.IsValid ? projectionMatrix : projectionMatrix.Value = createProjectionMatrix();
 
@@ -67,6 +67,7 @@ namespace TestTest123.Game
             Forward.BindValueChanged((t) => UpdateMatrix());
 
             CameraViewProjection.BindValueChanged((t) => Invalidate(Invalidation.DrawNode));
+            
 
             AddInternal(text = new SpriteText()
             {
@@ -84,8 +85,10 @@ namespace TestTest123.Game
         }
         private Matrix4 createProjectionMatrix()
         {
+
             Matrix4 matrix = Matrix4.CreatePerspectiveFieldOfView(
                 MathHelper.DegreesToRadians(VerticalFOV), AspectRatio, NearPlane, FarPlane);
+             
             return (matrix);
         }
         public Matrix4 LookAt(Vector3 position)
@@ -152,9 +155,7 @@ namespace TestTest123.Game
         protected class CameraDrawNode : CompositeDrawableDrawNode
         {
             protected new CameraDrawable Source => (CameraDrawable)base.Source;
-            private Texture texture;
-            private IShader shader;
-            private ThreeDimensionalDrawNode sceneNode;
+            private SceneNode sceneNode;
             private Matrix4 vpMatrix;
 
             public CameraDrawNode(CameraDrawable source) : base(source)
@@ -165,7 +166,6 @@ namespace TestTest123.Game
             public override void ApplyState()
             {
                 base.ApplyState();
-                shader = Source.TextureShader;
                 sceneNode = Source.Scene.Node;
                 vpMatrix = Source.CameraViewProjection.Value;
             }
@@ -177,7 +177,7 @@ namespace TestTest123.Game
                 renderer.PushDepthInfo(DepthInfo.Default);
                 renderer.PushProjectionMatrix(vpMatrix);
 
-                    Source.Scene.Node.Draw(renderer);
+                    sceneNode.CurrentShaderer.Draw(renderer);
 
                 renderer.PopProjectionMatrix();
                 renderer.PopDepthInfo();

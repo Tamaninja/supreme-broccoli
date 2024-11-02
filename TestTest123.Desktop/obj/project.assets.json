@@ -821,7 +821,7 @@
           }
         }
       },
-      "ppy.SDL3-CS/2024.916.0": {
+      "ppy.SDL3-CS/2024.1022.0": {
         "type": "package",
         "dependencies": {
           "JetBrains.Annotations": "2023.3.0"
@@ -1873,7 +1873,7 @@
           "ppy.ManagedBass.Mix": "2022.1216.0",
           "ppy.ManagedBass.Wasapi": "2022.1216.0",
           "ppy.SDL2-CS": "1.0.741-alpha",
-          "ppy.SDL3-CS": "2024.916.0",
+          "ppy.SDL3-CS": "2024.1022.0",
           "ppy.Veldrid": "4.9.62-gca0239da6b",
           "ppy.Veldrid.SPIRV": "1.0.15-gfbb03d21c2",
           "ppy.osu.Framework.NativeLibs": "2024.809.1-nativelibs",
@@ -2818,16 +2818,16 @@
         "runtimes/win-x86/native/SDL2.dll"
       ]
     },
-    "ppy.SDL3-CS/2024.916.0": {
-      "sha512": "Ogt/FKU91l2QHzhHQN7No86h+tVuhHpsPFb+KsJ0bk3d/2WWF+sbbizgzyVluw6hHsEg0mxSTTLUemkhAn3tJg==",
+    "ppy.SDL3-CS/2024.1022.0": {
+      "sha512": "XyIRMCXN01Omz0c4w5pz1lZSpQ72SmEkof8jiyHF20lLEilOeC+rUfjCHfjjzblgk7v3galu5d0fwQXPPzeXlQ==",
       "type": "package",
-      "path": "ppy.sdl3-cs/2024.916.0",
+      "path": "ppy.sdl3-cs/2024.1022.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SDL3-CS.dll",
         "lib/net8.0/SDL3-CS.xml",
-        "ppy.sdl3-cs.2024.916.0.nupkg.sha512",
+        "ppy.sdl3-cs.2024.1022.0.nupkg.sha512",
         "ppy.sdl3-cs.nuspec",
         "runtimes/android-arm/native/libSDL3.so",
         "runtimes/android-arm64/native/libSDL3.so",

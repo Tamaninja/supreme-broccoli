@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Assimp;
 using osu.Framework.Bindables;
 using osu.Framework.Development;
 using osu.Framework.Graphics;
@@ -21,24 +22,25 @@ using Vortice;
 
 namespace TestTest123.Game
 {
-    public class ThreeDimensionalDrawNode : IThreeDimensional, IDisposable
+    public class ThreeDimensionalDrawNode : Node, IThreeDimensional, IDisposable
     {
-        protected IRenderer Renderer;
-        private bool disposedValue;
 
-        public String Name { get; set; }
         public Bindable<Matrix4> LocalMatrix { get; set; } = new Bindable<Matrix4>(Matrix4.Identity);
         public Bindable<Vector3> Forward { get; set; } = new Bindable<Vector3>(Vector3.UnitZ);
         public Bindable<Vector3> Rotation { get; set; } = new Bindable<Vector3>(Vector3.Zero);
         public Bindable<Vector3> Position { get; set; } = new Bindable<Vector3>(Vector3.Zero);
         public Bindable<Vector3> Scale { get; set; } = new Bindable<Vector3>(Vector3.One);
 
-        public List<ThreeDimensionalDrawNode> Children { get; } = [];
 
-        public LargeTextureStore TextureStore { get; }
 
-        public SceneNode Scene { get; set; }
-        
+        public Colour4 Colour { get; set; } = Colour4.White;
+
+
+        public ThreeDimensionalDrawNode(Node parent) : base(parent)
+        {
+            initializeBindables();
+        }
+
 
         private void initializeBindables()
         {
@@ -48,39 +50,6 @@ namespace TestTest123.Game
             Scale.BindValueChanged(t => UpdateMatrix());
         }
 
-
-        public ThreeDimensionalDrawNode(Scene scene, IRenderer renderer, LargeTextureStore textureStore)
-        {
-            TextureStore = textureStore;
-            Renderer = renderer;
-            initializeBindables();
-        }
-
-        public ThreeDimensionalDrawNode(ThreeDimensionalDrawNode parent)
-        {
-            Parent = parent;
-            Scene = parent.Scene;
-            Renderer = parent.Renderer;
-            TextureStore = parent.TextureStore;
-
-            initializeBindables();
-        }
-
-        public virtual void Draw(IRenderer renderer)
-        {
-            foreach (ThreeDimensionalDrawNode node in Children)
-            {
-                node.Draw(renderer);
-            }
-        }
-
-        public ThreeDimensionalDrawNode Parent { get; set; }
-        public void AddSubNode(ThreeDimensionalDrawNode node)
-        {
-            
-            node.Parent = this;
-            Children.Add(node);
-        }
 
 
         public virtual void UpdateMatrix()
@@ -97,39 +66,6 @@ namespace TestTest123.Game
             Matrix4 rotationZ = Matrix4.CreateRotationZ(Rotation.Value.Z);
 
             return (rotationX * rotationY * rotationZ);
-        }
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!disposedValue)
-            {
-                if (disposing)
-                {
-                    // TODO: dispose managed state (managed objects)
-
-                    foreach (var child in Children)
-                    {
-                        child.Dispose(disposing);
-                    }
-                }
-
-                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
-                // TODO: set large fields to null
-                disposedValue = true;
-            }
-        }
-
-        // // TODO: override finalizer only if 'Dispose(bool disposing)' has code to free unmanaged resources
-        // ~ThreeDimensionalDrawNode()
-        // {
-        //     // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
-        //     Dispose(disposing: false);
-        // }
-
-        public void Dispose()
-        {
-            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
-            Dispose(disposing: true);
-            GC.SuppressFinalize(this);
         }
     }
 }

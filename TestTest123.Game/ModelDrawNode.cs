@@ -18,13 +18,18 @@ namespace TestTest123.Game
 
 
         public Model Model { get; private set; }
+        public List<MeshDrawNode> Meshes { get; private set; } = [];
 
-        public ModelDrawNode(ThreeDimensionalDrawNode parent) : base(parent)
+        
+
+        public ModelDrawNode(SceneNode scene) : base(scene)
         {
-            Model = LoadModel(Renderer);
-            Name = Model.Filepath;
+            Model = LoadModel(Scene.Renderer);
+            Name.Value = Model.Filepath;
 
             loadMeshes();
+
+            
 
         }
 
@@ -36,7 +41,7 @@ namespace TestTest123.Game
             foreach (Mesh mesh in Model.Meshes)
             {
                 MeshDrawNode test = new MeshDrawNode(mesh, this);
-                AddSubNode(test);
+                Meshes.Add(test);
             }
         }
 

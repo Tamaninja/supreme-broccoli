@@ -145,7 +145,7 @@
             },
             "ppy.SDL3-CS": {
               "target": "Package",
-              "version": "[2024.916.0, )"
+              "version": "[2024.1022.0, )"
             },
             "ppy.Veldrid": {
               "target": "Package",

@@ -1,7 +1,9 @@
 ﻿
 
 using System;
+using System.Collections.Generic;
 using Assimp;
+using NUnit.Framework;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
@@ -12,18 +14,15 @@ using TestTest123.Game.Material;
 
 namespace TestTest123.Game
 {
-    public class Shaderer : ThreeDimensionalDrawNode
+    public class Shaderer : Node
     {
         private IUniformBuffer<UniformMaterial> uniformBuffer;
         protected IShader Shader;
-        public Shaderer(SceneNode scene, IShader shader) : base(scene)
+        public Shaderer(IShader shader, SceneNode scene) : base(scene)
         {
+            Name.Value = "Shaderer";
             Shader = shader;
-            scene.Shaderer = this;
-            Name = "Shaderer";
         }
-
-
         public void BindUniform(UniformMaterial uniformMaterial)
         {
             uniformBuffer.Data = uniformMaterial;
@@ -36,7 +35,7 @@ namespace TestTest123.Game
 
             Shader.Bind();
 
-            base.Draw(renderer);
+                base.Draw(renderer);
 
             Shader.Unbind();
         }

@@ -21,5 +21,12 @@ namespace TestTest123.Game.Material
             Colour.W = colour.A;
 
         }
+        public UniformMaterial(Colour4 colour)
+        {
+            Colour.X = colour.R;
+            Colour.Y = colour.G;
+            Colour.Z = colour.B;
+            Colour.W = colour.A;
+        }
     }
 }

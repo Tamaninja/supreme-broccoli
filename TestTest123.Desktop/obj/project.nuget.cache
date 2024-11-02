@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yBCmiohM2pY=",
+  "dgSpecHash": "5c0Vs+u6EtE=",
   "success": true,
   "projectFilePath": "E:\\Rocksmeth\\supreme-broccoli\\TestTest123.Desktop\\TestTest123.Desktop.csproj",
   "expectedPackageFiles": [
@@ -45,7 +45,7 @@
     "C:\\Users\\lielk\\.nuget\\packages\\ppy.osu.framework.sourcegeneration\\2023.720.0\\ppy.osu.framework.sourcegeneration.2023.720.0.nupkg.sha512",
     "C:\\Users\\lielk\\.nuget\\packages\\ppy.osutk.ns20\\1.0.211\\ppy.osutk.ns20.1.0.211.nupkg.sha512",
     "C:\\Users\\lielk\\.nuget\\packages\\ppy.sdl2-cs\\1.0.741-alpha\\ppy.sdl2-cs.1.0.741-alpha.nupkg.sha512",
-    "C:\\Users\\lielk\\.nuget\\packages\\ppy.sdl3-cs\\2024.916.0\\ppy.sdl3-cs.2024.916.0.nupkg.sha512",
+    "C:\\Users\\lielk\\.nuget\\packages\\ppy.sdl3-cs\\2024.1022.0\\ppy.sdl3-cs.2024.1022.0.nupkg.sha512",
     "C:\\Users\\lielk\\.nuget\\packages\\ppy.veldrid\\4.9.62-gca0239da6b\\ppy.veldrid.4.9.62-gca0239da6b.nupkg.sha512",
     "C:\\Users\\lielk\\.nuget\\packages\\ppy.veldrid.metalbindings\\4.9.62-gca0239da6b\\ppy.veldrid.metalbindings.4.9.62-gca0239da6b.nupkg.sha512",
     "C:\\Users\\lielk\\.nuget\\packages\\ppy.veldrid.openglbindings\\4.9.62-gca0239da6b\\ppy.veldrid.openglbindings.4.9.62-gca0239da6b.nupkg.sha512",

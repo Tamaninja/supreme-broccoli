@@ -689,14 +689,14 @@
           }
         }
       },
-      "ppy.SDL3-CS/2024.916.0": {
+      "ppy.SDL3-CS/2024.1022.0": {
         "dependencies": {
           "JetBrains.Annotations": "2023.3.0"
         },
         "runtime": {
           "lib/net8.0/SDL3-CS.dll": {
-            "assemblyVersion": "2024.916.0.0",
-            "fileVersion": "2024.916.0.0"
+            "assemblyVersion": "2024.1022.0.0",
+            "fileVersion": "2024.1022.0.0"
           }
         },
         "runtimeTargets": {
@@ -778,17 +778,17 @@
           "runtimes/win-arm64/native/SDL3.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "3.1.2.0"
+            "fileVersion": "3.1.5.0"
           },
           "runtimes/win-x64/native/SDL3.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "3.1.2.0"
+            "fileVersion": "3.1.5.0"
           },
           "runtimes/win-x86/native/SDL3.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "3.1.2.0"
+            "fileVersion": "3.1.5.0"
           }
         }
       },
@@ -1352,7 +1352,7 @@
           "ppy.ManagedBass.Mix": "2022.1216.0",
           "ppy.ManagedBass.Wasapi": "2022.1216.0",
           "ppy.SDL2-CS": "1.0.741-alpha",
-          "ppy.SDL3-CS": "2024.916.0",
+          "ppy.SDL3-CS": "2024.1022.0",
           "ppy.Veldrid": "4.9.62-gca0239da6b",
           "ppy.Veldrid.SPIRV": "1.0.15-gfbb03d21c2",
           "ppy.osu.Framework.NativeLibs": "2024.809.1-nativelibs",
@@ -1680,12 +1680,12 @@
       "path": "ppy.sdl2-cs/1.0.741-alpha",
       "hashPath": "ppy.sdl2-cs.1.0.741-alpha.nupkg.sha512"
     },
-    "ppy.SDL3-CS/2024.916.0": {
+    "ppy.SDL3-CS/2024.1022.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ogt/FKU91l2QHzhHQN7No86h+tVuhHpsPFb+KsJ0bk3d/2WWF+sbbizgzyVluw6hHsEg0mxSTTLUemkhAn3tJg==",
-      "path": "ppy.sdl3-cs/2024.916.0",
-      "hashPath": "ppy.sdl3-cs.2024.916.0.nupkg.sha512"
+      "sha512": "sha512-XyIRMCXN01Omz0c4w5pz1lZSpQ72SmEkof8jiyHF20lLEilOeC+rUfjCHfjjzblgk7v3galu5d0fwQXPPzeXlQ==",
+      "path": "ppy.sdl3-cs/2024.1022.0",
+      "hashPath": "ppy.sdl3-cs.2024.1022.0.nupkg.sha512"
     },
     "ppy.Veldrid/4.9.62-gca0239da6b": {
       "type": "package",

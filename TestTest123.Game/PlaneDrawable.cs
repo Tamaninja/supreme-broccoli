@@ -14,7 +14,7 @@ namespace TestTest123.Game
     public partial class PlaneDrawable : ModelDrawNode
     {
 
-        public PlaneDrawable(ThreeDimensionalDrawNode parent) : base(parent)
+        public PlaneDrawable(SceneNode scene) : base(scene)
         {
            Scale.Value = (new Vector3(0.5f));
         }
@@ -22,7 +22,7 @@ namespace TestTest123.Game
 
         protected override Model LoadModel(IRenderer renderer)
         {
-            return Model.MCQUEEN(renderer);
+            return Model.BOX_3D(renderer);
         }
 
     }

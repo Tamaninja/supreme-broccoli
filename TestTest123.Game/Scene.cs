@@ -37,16 +37,14 @@ namespace TestTest123.Game
         public List<CameraDrawable> Cameras = [];
         private CameraDrawable camera;
 
-        private Container visualization;
-
-
         public Scene()
         {
             camera = new CameraDrawable(this, 50, 16 / 9, 1f, 5000);
+/*            camera.Size = new Vector2(0.5f);
+*/
 
             Cameras.Add(camera);
             AddInternal(camera);
-            AddInternal(visualization = []);
             RelativeSizeAxes = Axes.Both;
         }
 
@@ -55,22 +53,12 @@ namespace TestTest123.Game
         {
 
             TextureShader = shaders.Load("nino", "nino");
-            Node = new SceneNode(this, renderer, textureStore)
-            {
-                Name = "Scene"
-            };
-
-
-            /*            for (int i = 0; i < 23; i++)
-                        {
-                            PlaneDrawable test = new PlaneDrawable(Node);
-
-                            AddNode(test);
-
-                        }*/
+            Node = new SceneNode(this, renderer, textureStore, shaders);
 
             MusicalChart musicalChart = new MusicalChart("C:\\Users\\lielk\\OneDrive\\Desktop\\psarc tests\\Telula_3-3-3_v1_p\\arr_bass_RS2.xml", Time.Current + 5000);
             currentSongTime.BindValueChanged((t) => Debug.Text = "(" + t.NewValue + "/" + musicalChart.Duration + ")");
+
+            PlaneDrawable drawable = new PlaneDrawable(Node);
 
 
             for (int i = 0; i < 55; i++)
@@ -78,55 +66,77 @@ namespace TestTest123.Game
                 {
 
                     NoteDrawable note = new NoteDrawable(musicalChart.Notes[i], Node);
-                    /*                    note.LifetimeStart = Time.Current + musicalChart.Notes[i].Time - NoteDrawable.PRELOAD_MS;
-                                        note.LifetimeEnd = Time.Current + musicalChart.Notes[i].Time + NoteDrawable.KEEPALIVE_MS;*/
-                    AddNode(note);
-
                 }
 
             }
 
         }
-        public void AddNode(ThreeDimensionalDrawNode node)
+
+        protected override DrawNode CreateDrawNode()
         {
-
-            if (!Node.Shaderers.TryGetValue(TextureShader, out Shaderer shaderer))
-            {
-                Node.Shaderers[TextureShader] = shaderer = new Shaderer(Node, TextureShader);
-                Node.AddSubNode(shaderer);
-            }
-            shaderer.AddSubNode(node);
-
-            Invalidate(Invalidation.DrawNode);
-
-            Remove(visualization, false);
-            AddInternal(visualization = VisualisedNode(Node));
+            return new SceneDrawNode(this);
         }
 
-        public Container VisualisedNode(ThreeDimensionalDrawNode node)
+        protected class SceneDrawNode : CompositeDrawableDrawNode
         {
-            Container drawable = new Container
+            protected new Scene Source => (Scene)base.Source;
+
+
+            public SceneDrawNode(Scene source) : base(source)
             {
-                Name = node.Name,
-            };
-            foreach (ThreeDimensionalDrawNode subNode in node.Children)
-            {
-                drawable.Add(VisualisedNode(subNode));
+
+
             }
-            return (drawable);
+
+            protected override void Draw(IRenderer renderer)
+            {
+                foreach (Shaderer shaderer in Source.Node.Shaderers.Values)
+                {
+                    Source.Node.CurrentShaderer = shaderer;
+                    base.Draw(renderer);
+                }
+            }
         }
-
-
     }
-    public class SceneNode : ThreeDimensionalDrawNode
+
+
+
+
+    public class SceneNode : Node
     {
+        public Shaderer CurrentShaderer { get; set; }
         public Dictionary<IShader, Shaderer> Shaderers = [];
+        public IRenderer Renderer { get; }
+        public TextureStore TextureStore { get; }
+        public ShaderManager ShaderManager { get; }
 
-        public Shaderer Shaderer { get; set; }
-
-        public SceneNode(Scene scene, IRenderer renderer, LargeTextureStore textureStore) : base(scene, renderer, textureStore)
+        public SceneNode(Scene scene, IRenderer renderer, LargeTextureStore textureStore, ShaderManager shaderManager) : base(scene)
         {
+            scene.Add(Visualization);
+
+            Name.Value = "Scene";
+            Renderer = renderer;
+            TextureStore = textureStore;
+            ShaderManager = shaderManager;
             Scene = this;
         }
+
+
+        public Shaderer AssignShaderer(MeshDrawNode node)
+        {
+            IShader shader = ShaderManager.Load("nino", "nino");
+            if (node.Mesh.TextureCoords.Length == 0) {
+                 shader = ShaderManager.Load("textureless", "textureless");
+            }
+
+            if (!Shaderers.TryGetValue(shader, out Shaderer shaderer))
+            {
+                Shaderers[shader] = shaderer = new Shaderer(shader, this);
+            }
+            shaderer.AddSubNode(node);
+            return shaderer;
+        }
+
+
     }
 }
