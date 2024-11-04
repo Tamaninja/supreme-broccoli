@@ -12,7 +12,7 @@ namespace TestTest123.Game
     public class Node
     {
         public SceneNode Scene { get; set; }
-        protected Container Visualization { get; } = [];
+        public Container Visualization { get; } = [];
         public List<Node> Children { get; } = [];
         private bool disposedValue;
 
@@ -32,26 +32,18 @@ namespace TestTest123.Game
         {
             Scene = scene;
             scene.AddSubNode(this);
-            /*            Scene.AssignShaderer(this);
-            */
+
             Name.BindValueChanged(t => Visualization.Name = t.NewValue);
 
         }
         public Node(Node parent)
         {
             Scene = parent.Scene;
-            /*            Scene.AssignShaderer(this);
-            */
+
             Name.BindValueChanged(t => Visualization.Name = t.NewValue);
 
         }
-        public virtual void Draw(IRenderer renderer)
-        {
-            foreach (Node node in Children)
-            {
-                node.Draw(renderer);
-            }
-        }
+
         protected virtual void Dispose(bool disposing)
         {
             if (!disposedValue)

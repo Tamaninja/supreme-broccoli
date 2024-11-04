@@ -15,18 +15,11 @@ namespace TestTest123.Game
     {
         public static int PRELOAD_MS = 10000;
         public static int KEEPALIVE_MS = 10000;
-        private static Colour4[] colorTable = [Colour4.Red, Colour4.Yellow, Colour4.Blue, Colour4.Orange];
-        private Note note;
- 
-        public NoteDrawable(Note note, SceneNode scene) : base(scene)
+        public static Colour4[] ColorTable = [Colour4.Red, Colour4.Yellow, Colour4.Blue, Colour4.Orange];
+
+        public NoteDrawable(SceneNode scene) : base(scene)
         {
-            this.note = note;
-
-            Position.Value = new Vector3(note.Fret * 2, -note.String, note.Time / 100);
-            Scale.Value = (new Vector3(0.5f));
-            Colour = colorTable[note.String];
         }
-
 
         protected override Model LoadModel(IRenderer renderer)
         {

@@ -17,55 +17,28 @@ using osu.Framework.Graphics.Textures;
 using osu.Framework.Graphics.UserInterface;
 using osu.Framework.Logging;
 using osuTK;
-using TestTest123.Game.Material;
 using Vortice;
 
 namespace TestTest123.Game
 {
-    public class ThreeDimensionalDrawNode : Node, IThreeDimensional, IDisposable
+    public class ThreeDimensionalDrawNode : Node, IDisposable
     {
+        public Material Material { get; set; }
 
-        public Bindable<Matrix4> LocalMatrix { get; set; } = new Bindable<Matrix4>(Matrix4.Identity);
-        public Bindable<Vector3> Forward { get; set; } = new Bindable<Vector3>(Vector3.UnitZ);
-        public Bindable<Vector3> Rotation { get; set; } = new Bindable<Vector3>(Vector3.Zero);
-        public Bindable<Vector3> Position { get; set; } = new Bindable<Vector3>(Vector3.Zero);
-        public Bindable<Vector3> Scale { get; set; } = new Bindable<Vector3>(Vector3.One);
-
-
-
-        public Colour4 Colour { get; set; } = Colour4.White;
-
-
+        public List<NodeInstance> Instances { get; private set; } = [];
         public ThreeDimensionalDrawNode(Node parent) : base(parent)
         {
-            initializeBindables();
+            
         }
 
-
-        private void initializeBindables()
+        public virtual void Draw(IRenderer renderer)
         {
-            Forward.BindValueChanged(t => UpdateMatrix());
-            Position.BindValueChanged(t => UpdateMatrix());
-            Rotation.BindValueChanged(t => UpdateMatrix());
-            Scale.BindValueChanged(t => UpdateMatrix());
+            foreach (ThreeDimensionalDrawNode node in Children)
+            {
+                node.Draw(renderer);
+            }
         }
 
 
-
-        public virtual void UpdateMatrix()
-        {
-            LocalMatrix.Value = (
-                Matrix4.CreateScale(Scale.Value)
-                * createRotationMatrix()
-                * Matrix4.CreateTranslation(Position.Value));
-        }
-        private Matrix4 createRotationMatrix()
-        {
-            Matrix4 rotationX = Matrix4.CreateRotationX(Rotation.Value.X);
-            Matrix4 rotationY = Matrix4.CreateRotationY(Rotation.Value.Y);
-            Matrix4 rotationZ = Matrix4.CreateRotationZ(Rotation.Value.Z);
-
-            return (rotationX * rotationY * rotationZ);
-        }
     }
 }

@@ -15,47 +15,20 @@ namespace TestTest123.Game
     {
         public readonly int Duration;
         private InstrumentalArrangement arrangement;
-        private List<TunableString> strings = [];
-        public List<Measure> Measures;
-        public List<Note> Notes { get; private set; }
+        public Note[] Notes { get; private set; }
 
-        public MusicalChart(string xmlFilePath, double startTime)
+        public MusicalChart(string xmlFilePath)
         {
 
             arrangement = InstrumentalArrangement.Load(xmlFilePath);
             Duration = arrangement.MetaData.SongLength;
 
-            initializeStrings();
 
-            Notes = arrangement.Levels[0].Notes;
+            Notes = arrangement.Levels[0].Notes.ToArray();
             
             
         }
 
-        private void initializeStrings()
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                strings.Add(new TunableString(i));
-            }
-        }
 
-    }
-
-    public class TunableString
-    {
-        public int Index { get; }
-        public Color4 Color { get; private set; }
-        public float YOffset { get; private set; }
-        public sbyte Tuning { get; set; }
-        public float Hz { get; set; }
-
-
-        public TunableString(int index)
-        {
-            Index = index;
-            Color = Utils.StringColors(index);
-            YOffset = -index;
-        }
     }
 }

@@ -16,7 +16,6 @@ namespace TestTest123.Game
 
         public PlaneDrawable(SceneNode scene) : base(scene)
         {
-           Scale.Value = (new Vector3(0.5f));
         }
 
 

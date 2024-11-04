@@ -32,19 +32,17 @@ namespace TestTest123.Game
         public SceneNode Node { get; private set; }
 
         public SpriteText Debug;
-        private Bindable<int> currentSongTime = new(0);
 
-        public List<CameraDrawable> Cameras = [];
-        private CameraDrawable camera;
 
         public Scene()
         {
-            camera = new CameraDrawable(this, 50, 16 / 9, 1f, 5000);
-/*            camera.Size = new Vector2(0.5f);
-*/
 
-            Cameras.Add(camera);
-            AddInternal(camera);
+
+            AddInternal(Debug = new SpriteText()
+            {
+                Text = ""
+            });
+            AddInternal(new CameraDrawable(this, 50, 16 / 9, 1f, 5000));
             RelativeSizeAxes = Axes.Both;
         }
 
@@ -55,17 +53,18 @@ namespace TestTest123.Game
             TextureShader = shaders.Load("nino", "nino");
             Node = new SceneNode(this, renderer, textureStore, shaders);
 
-            MusicalChart musicalChart = new MusicalChart("C:\\Users\\lielk\\OneDrive\\Desktop\\psarc tests\\Telula_3-3-3_v1_p\\arr_bass_RS2.xml", Time.Current + 5000);
-            currentSongTime.BindValueChanged((t) => Debug.Text = "(" + t.NewValue + "/" + musicalChart.Duration + ")");
+            MusicalChart musicalChart = new MusicalChart("C:\\Users\\lielk\\OneDrive\\Desktop\\psarc tests\\Telula_3-3-3_v1_p\\arr_bass_RS2.xml");
 
-            PlaneDrawable drawable = new PlaneDrawable(Node);
+            PlaneDrawable trashcan = new PlaneDrawable(Node);
 
-
-            for (int i = 0; i < 55; i++)
+            for (int i = 0; i < musicalChart.Notes.Length; i++)
             {
                 {
+                    NodeInstance instance = trashcan.CreateInstance();
 
-                    NoteDrawable note = new NoteDrawable(musicalChart.Notes[i], Node);
+                    instance.Position.Value = new Vector3(musicalChart.Notes[i].Fret * 3, -musicalChart.Notes[i].String * 3, musicalChart.Notes[i].Time / 50);
+                    instance.Scale.Value = (new Vector3(5, 5, (musicalChart.Notes[i].Sustain + 250f) / 50));
+                    instance.Colour = NoteDrawable.ColorTable[musicalChart.Notes[i].String];
                 }
 
             }
@@ -122,10 +121,11 @@ namespace TestTest123.Game
         }
 
 
-        public Shaderer AssignShaderer(MeshDrawNode node)
+        public Shaderer AssignShaderer(MeshDrawNode mesh)
         {
             IShader shader = ShaderManager.Load("nino", "nino");
-            if (node.Mesh.TextureCoords.Length == 0) {
+
+            if (mesh.Material.GetAllMaterialTextures().Length == 0) {
                  shader = ShaderManager.Load("textureless", "textureless");
             }
 
@@ -133,7 +133,7 @@ namespace TestTest123.Game
             {
                 Shaderers[shader] = shaderer = new Shaderer(shader, this);
             }
-            shaderer.AddSubNode(node);
+            shaderer.AddSubNode(mesh);
             return shaderer;
         }
 

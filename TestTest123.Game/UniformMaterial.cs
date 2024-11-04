@@ -6,7 +6,7 @@ using osu.Framework.Graphics;
 using osu.Framework.Graphics.Shaders.Types;
 using osuTK;
 
-namespace TestTest123.Game.Material
+namespace TestTest123.Game
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public record struct UniformMaterial

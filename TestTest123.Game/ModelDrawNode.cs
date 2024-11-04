@@ -1,16 +1,6 @@
-﻿
-using System.Collections.Generic;
-using osu.Framework.Allocation;
-using osu.Framework.Bindables;
-using osu.Framework.Extensions.EnumExtensions;
-using osu.Framework.Graphics;
+﻿using System.Collections.Generic;
+using Assimp;
 using osu.Framework.Graphics.Rendering;
-using osu.Framework.Graphics.Shaders;
-using osu.Framework.Graphics.Textures;
-using osu.Framework.Layout;
-using osuTK;
-using osuTK.Graphics.OpenGL;
-using TestTest123.Game.Material;
 namespace TestTest123.Game
 {
     public abstract class ModelDrawNode : ThreeDimensionalDrawNode
@@ -18,7 +8,7 @@ namespace TestTest123.Game
 
 
         public Model Model { get; private set; }
-        public List<MeshDrawNode> Meshes { get; private set; } = [];
+        public MeshDrawNode[] Meshes { get; private set; }
 
         
 
@@ -29,19 +19,29 @@ namespace TestTest123.Game
 
             loadMeshes();
 
-            
 
         }
+        public NodeInstance CreateInstance()
+        {
+            NodeInstance instance = new NodeInstance(this);
+            foreach (var mesh in Meshes)
+            {
+                mesh.Instances.Add(instance);
+            }
 
+
+            return instance;
+        }
         protected abstract Model LoadModel(IRenderer renderer);
 
 
         private void loadMeshes()
         {
-            foreach (Mesh mesh in Model.Meshes)
+            Meshes = new MeshDrawNode[Model.Meshes.Count];
+
+            for (int i = 0; i < Model.Meshes.Count; i++)
             {
-                MeshDrawNode test = new MeshDrawNode(mesh, this);
-                Meshes.Add(test);
+                Meshes[i] = new MeshDrawNode(Model.Meshes[i], this);
             }
         }
 

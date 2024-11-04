@@ -2,10 +2,6 @@
 using osuTK;
 using osu.Framework.Input.Events;
 using osu.Framework.Graphics.Rendering;
-using JetBrains.Annotations;
-using osu.Framework.Allocation;
-using osu.Framework.Graphics.Shaders;
-using osu.Framework.Graphics.Textures;
 using osu.Framework.Layout;
 using osu.Framework.Logging;
 using osu.Framework.Graphics.Sprites;
@@ -16,7 +12,6 @@ using osuTK.Input;
 using System;
 using osu.Framework.Graphics.Shaders.Types;
 using Vortice;
-using TestTest123.Game.Material;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Pooling;
 using osu.Framework.Graphics.Shapes;
@@ -25,11 +20,11 @@ using osu.Framework.Graphics.Shapes;
 
 namespace TestTest123.Game
 {
-    public partial class CameraDrawable : Container, ITexturedShaderDrawable
+    public partial class CameraDrawable : Container
     {
         private float pitch = 0;
         private float yaw = 0;
-        private float speed = 1f;
+        private float speed = 25f;
 
         
 
@@ -47,13 +42,16 @@ namespace TestTest123.Game
         public float AspectRatio { get; set; }
         public Scene Scene { get; set; }
         public Bindable<Matrix4> LocalMatrix { get; set; }
-        public IShader TextureShader {  get; set; }
         public Bindable<Vector3> Position3D { get; set; } = new Bindable<Vector3>(Vector3.Zero);
         public Bindable<Vector3> Forward { get; set; } = new Bindable<Vector3>(Vector3.UnitZ);
         public virtual Vector3 Right => Vector3.Normalize(Vector3.Cross(Vector3.UnitY, Forward.Value));
         private SpriteText text;
 
-
+        public Vector3 SetPosition
+        {
+            get => Position3D.Value;
+            set => Position3D.Value = value;
+        }
         public CameraDrawable(Scene scene, float verticalFOV, float aspectRatio, float nearPlane, float farPlane) {
             Scene = scene;
             VerticalFOV = verticalFOV;
@@ -73,14 +71,14 @@ namespace TestTest123.Game
             {
                 Text = ""
             });
-            Position3D.BindValueChanged(t => text.Text = Position3D.ToString());
-           Colour = Colour4.PaleGoldenrod;
 
+            Position3D.BindValueChanged(t => text.Text = Position3D.ToString());
+            Colour = Colour4.PaleGoldenrod;
 
         }
         public void UpdateMatrix()
         {
-            Matrix4 viewMatrix = Matrix4.LookAt(Position3D.Value, Position3D.Value + Forward.Value, IThreeDimensional.WORLD_UP);
+            Matrix4 viewMatrix = Matrix4.LookAt(Position3D.Value, Position3D.Value + Forward.Value, Vector3.UnitY);
             CameraViewProjection.Value = viewMatrix * ProjectionMatrix;            
         }
         private Matrix4 createProjectionMatrix()
@@ -93,7 +91,7 @@ namespace TestTest123.Game
         }
         public Matrix4 LookAt(Vector3 position)
         {
-            Matrix4 matrix = Matrix4.LookAt(Position3D.Value, position, IThreeDimensional.WORLD_UP);
+            Matrix4 matrix = Matrix4.LookAt(Position3D.Value, position, Vector3.UnitY);
 
             Forward.Value = matrix.Column2.Xyz;
             return(matrix);
@@ -119,33 +117,32 @@ namespace TestTest123.Game
             {
 
                 case Key.Space:
-                    Position3D.Value += (IThreeDimensional.WORLD_UP * speed);
-                    return true;
-                case Key.LShift:
-                    Position3D.Value -= (IThreeDimensional.WORLD_UP * speed);
-                    return true;
+                    this.MoveToOffset((Vector3.UnitY * speed),50);
+                    break;
+
+                case Key.ControlLeft:
+                    this.MoveToOffset(-Vector3.UnitY * speed, 50);
+                    break;
+
                 case Key.A:
-                    Position3D.Value += (Right * speed);
-                    return true;
+                    this.MoveToOffset(Right * speed, 50);
+                    break;
                 case Key.D:
-                    Position3D.Value -= (Right * speed);
-                    return true;
-                case Key.S:
-                    Position3D.Value -= (Forward.Value * speed);
-                    return true;
+
+                    this.MoveToOffset(-Right * speed, 50);
+                    break;
+
                 case Key.W:
-                    Position3D.Value += (Forward.Value * speed);
-                    return true;
-
-                default: return base.OnKeyDown(e);
+                    this.MoveToOffset(Forward.Value * speed, 50);
+                    break;
+                case Key.S:
+                    this.MoveToOffset(-Forward.Value * speed, 50);
+                    break;
+                
             }
+            return base.OnKeyDown(e);
         }
-        [BackgroundDependencyLoader]
-        private void load(ShaderManager shaders, IRenderer renderer, TextureStore textureStore)
-        {
-            TextureShader = shaders.Load("nino", "nino");
 
-        }
 
         protected override DrawNode CreateDrawNode()
         {

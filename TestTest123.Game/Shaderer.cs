@@ -10,11 +10,10 @@ using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
-using TestTest123.Game.Material;
 
 namespace TestTest123.Game
 {
-    public class Shaderer : Node
+    public class Shaderer : ThreeDimensionalDrawNode
     {
         private IUniformBuffer<UniformMaterial> uniformBuffer;
         protected IShader Shader;
@@ -28,6 +27,7 @@ namespace TestTest123.Game
             uniformBuffer.Data = uniformMaterial;
             Shader.BindUniformBlock("u_Colour", uniformBuffer);
         }
+
         public override void Draw(IRenderer renderer)
         {
 

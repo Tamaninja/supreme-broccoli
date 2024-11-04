@@ -1,5 +1,4 @@
-﻿using Assimp;
-using osu.Framework.Allocation;
+﻿using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Colour;
 using osu.Framework.Graphics.Rendering;
@@ -7,7 +6,6 @@ using osu.Framework.Graphics.Shaders;
 using osu.Framework.Graphics.Textures;
 using osu.Framework.Logging;
 using osuTK;
-using TestTest123.Game.Material;
 using Mesh = osu.Framework.Graphics.Rendering.Mesh;
 
 namespace TestTest123.Game
@@ -21,9 +19,9 @@ namespace TestTest123.Game
 
         public Mesh Mesh;
         public ModelDrawNode Parent;
-        public Assimp.Material Material { get; private set; }
+        public Colour4 Colour { get; set; } = Colour4.White;
 
-        private UniformMaterial uniformMaterial => new UniformMaterial(Parent.Colour * Colour);
+        private UniformMaterial uniformMaterial => new UniformMaterial(Colour);
 
         public MeshDrawNode(Mesh mesh, ModelDrawNode parent) : base(parent)
         {
@@ -40,21 +38,23 @@ namespace TestTest123.Game
                 Texture = Scene.TextureStore.Get(Material.TextureDiffuse.FilePath);
             }
             Scene.AssignShaderer(this);
-
         }
 
 
         public override void Draw(IRenderer renderer)
         {
-
             Texture ??= renderer.WhitePixel;
-            renderer.PushProjectionMatrix(Parent.LocalMatrix.Value * renderer.ProjectionMatrix);
-
             Scene.CurrentShaderer?.BindUniform(uniformMaterial);
-                Texture?.Bind();
-                Mesh.Draw();
-            renderer.PopProjectionMatrix();
+            Texture.Bind();
 
+            foreach (NodeInstance instance in Instances)
+            {
+                renderer.PushProjectionMatrix(instance.LocalMatrix.Value * renderer.ProjectionMatrix);
+
+                    Mesh.Draw();
+
+                renderer.PopProjectionMatrix();
+            }
         }
     }
 }

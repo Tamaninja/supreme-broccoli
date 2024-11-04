@@ -9,7 +9,6 @@ using osu.Framework.Input.Events;
 using osu.Framework.IO.Stores;
 using osu.Framework.Platform;
 using osuTK;
-using TestTest123.Game.Material;
 using TestTest123.Resources;
 
 namespace TestTest123.Game
