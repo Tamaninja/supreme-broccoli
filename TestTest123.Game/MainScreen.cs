@@ -1,5 +1,6 @@
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
+using osu.Framework.Graphics.Rendering;
 using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Screens;
@@ -36,7 +37,7 @@ namespace TestTest123.Game
                     Font = FontUsage.Default.With(size: 30),
                     AllowMultiline = true
                 },
-                scene = [],
+                scene = new BasicScene(),
 
             ];
         }

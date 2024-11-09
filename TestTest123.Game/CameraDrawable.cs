@@ -7,7 +7,6 @@ using osu.Framework.Logging;
 using osu.Framework.Graphics.Sprites;
 using osuTK.Graphics.OpenGL;
 using osu.Framework.Bindables;
-using Assimp;
 using osuTK.Input;
 using System;
 using osu.Framework.Graphics.Shaders.Types;
@@ -171,11 +170,13 @@ namespace TestTest123.Game
             {
                 base.Draw(renderer);
 
-                renderer.PushDepthInfo(DepthInfo.Default);
+                renderer.PushDepthInfo(new DepthInfo(true, true, BufferTestFunction.Always));
                 renderer.PushProjectionMatrix(vpMatrix);
 
-                    sceneNode.CurrentShaderer.Draw(renderer);
-
+               foreach (ThreeDimensionalDrawNode node in sceneNode.Shaderers[sceneNode.CurrentShader])
+               {
+                    node.Draw(renderer);
+               }
                 renderer.PopProjectionMatrix();
                 renderer.PopDepthInfo();
             }

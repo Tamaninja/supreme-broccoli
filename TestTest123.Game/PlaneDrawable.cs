@@ -11,18 +11,14 @@ using Rocksmith2014.XML;
 
 namespace TestTest123.Game
 {
-    public partial class PlaneDrawable : ModelDrawNode
+    public partial class PlaneDrawable : Model
     {
 
-        public PlaneDrawable(SceneNode scene) : base(scene)
+        public PlaneDrawable(SceneNode scene) : base(Model.MCQUEEN, scene)
         {
         }
 
 
-        protected override Model LoadModel(IRenderer renderer)
-        {
-            return Model.BOX_3D(renderer);
-        }
 
     }
 }
